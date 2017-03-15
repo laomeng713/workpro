@@ -1,7 +1,7 @@
 /*************************css-reset************************/
 body {
     margin:0;
-    background: #F1F2F7;
+    background: #ffffff;
     font-family: "Microsoft YaHei";
     font-size: 12px;
     line-height: 24px;
@@ -45,7 +45,7 @@ a:hover {
 .red-tu{
     display: block;
     float: left;
-    background: url('images/logo.png') no-repeat;
+    /*background: url('images/error.png') no-repeat;*/
     width: 200px;
     height: 200px;
 }
