@@ -2,6 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <link rel="icon" href="img/favicon.ico" type="image-icon"/>
     <title>设计与报价</title>
     <link rel="stylesheet" href="../common/common.css"/>
     <link rel="stylesheet" href="mycss.css"/>
@@ -26,27 +27,42 @@
     </div>
 </header>
 
-<div class="section">
+<div class="section clearfloat">
     <div class="text">
-                <div class="section_left">
-                    <h3>装修计算器</h3>
-                    <p>今日已有 <em>1827</em>人成功获取装修预算</p>
-                    <select id="province" runat="server" onchange="selectprovince(this);" style=" width:95px;"></select>
-                    <select id="city" runat="server" style=" width:95px;"></select><br/>
-                    <input type="text" placeholder="请输入您的建筑面积（平米）"/>
-                    <input type="text" placeholder="请输入您的手机号码接收报价结果"/><br/>
-                    <select name="" id="">
-                        <option value="">简单装修</option>
-                        <option value="">高档装修</option>
-                    </select>
+        <div class="section_left">
+            <h3>装修计算器</h3>
 
+            <p>今日已有 <em class="section_ico">1827</em>人成功获取装修预算</p>
+
+            <p>
+                <select id="province" runat="server" onchange="selectprovince(this);"></select>
+                <select id="city" runat="server"></select><br/>
+                <input class="meter" type="text" placeholder="请输入您的建筑面积（平米）"/><br/>
+                <input class="phone" type="text" placeholder="请输入您的手机号码接收报价结果"/><br/>
+                <select class="section_style">
+                    <option value="">简单装修</option>
+                    <option value="">高档装修</option>
+                </select>
+            <div class="section_err"></div>
+            </p>
+
+
+        </div>
+        <div class="section_right">
+                <h3>您家的装修预算 <span class="section_info">?</span> <b>元</b> </h3>
+                <div>
+                    <p>材料费：<span class="section_i">?</span>元</p>
+                    <p>人工费：<span class="section_i">?</span>元</p>
+                    <p>设计费：<span class="section_i">?</span>元</p>
+                    <p>质检费：<span class="section_i">?</span>元</p>
+                    <p>其他预算：<span class="section_i">?</span>元</p>
                 </div>
-                <div class="section_ right">right</div>
+        </div>
+        <div class="action">
+            <p>开始计算</p>
+        </div>
     </div>
 </div>
-
-
-
 
 
 <footer>
@@ -57,10 +73,15 @@
         <a href="#">联系我们</a> |
         <a href="#">法律声明</a> |
     </p>
+
     <p>免责声明：本网站部分内容由用户自行上传，如权利人发现存在误传其作品情形，请及时与本站联系。</p>
+
     <p>© copyright 2017 北京维纳亚科技有限公司</p>
+
     <p>京ICP备17003882号</p>
 </footer>
+<script src="../js/jquery-1.11.3.min.js"></script>
 <script src="city.js"></script>
+<script src="calculator.js"></script>
 </body>
 </html>

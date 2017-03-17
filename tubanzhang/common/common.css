@@ -2,10 +2,10 @@
 body {
     margin:0;
     background: #ffffff;/*#F1F2F7;*/
-    font-family: "Microsoft YaHei";
+    font-family:  "Microsoft YaHei", 微软雅黑, 黑体, 宋体, "Microsoft JhengHei", 华文细黑, STHeiti, MingLiu;
     font-size: 14px;
     line-height: 24px;
-    color:#333;
+    color:#666;
 
 }
 ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,p,input,button {
@@ -15,6 +15,7 @@ ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,p,input,button {
 ul,ol {
 list-style: none;
 }
+i,em{font-style: normal;}
 input,button {
 font-family: "Microsoft YaHei";
 }

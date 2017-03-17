@@ -8,7 +8,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta content="telephone=no" name="format-detection" />
-    <title>滑动显示</title>
+    <title>滑动显示图片</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="mycss.css"/>
     <link rel="stylesheet" href="../common/common.css"/>
 
@@ -19,18 +20,18 @@
     <h2 class="header_text">地中海式设计风格</h2>
     <a class="header_search" href="#"><img src="img/search.jpg" alt=""/></a>
 </header>
-<div class="imgbox">
-    <ul>
-        <li><a href="#"><img src="img/banner1.jpg"></a></li>
-        <li><a href="#"><img src="img/banner2.jpg"></a></li>
-        <li><a href="#"><img src="img/banner3.jpg"></a></li>
-        <li><a href="#"><img src="img/banner4.jpg"></a></li>
-        <li><a href="#"><img src="img/banner5.jpg"></a></li>
-    </ul>
-
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/banner1.jpg" alt=""/></div>
+        <div class="swiper-slide"><img src="img/banner2.jpg" alt=""/></div>
+        <div class="swiper-slide"><img src="img/banner3.jpg" alt=""/></div>
+        <div class="swiper-slide"><img src="img/banner4.jpg" alt=""/></div>
+        <div class="swiper-slide"><img src="img/banner5.jpg" alt=""/></div>
+    </div>
+    <div class="swiper-pagination"></div>
 </div>
 <div class="text">
-    <h2 class="text_title">地中海式设计风格:<span id="page">1</span></h2>
+    <h2 class="text_title">地中海式设计风格:<span class="current">1</span> / <span class="total"></span></h2>
 
     <p class="text_left left">免费设计</p>
     <p class="text_right right ">装修报价</p>
@@ -88,32 +89,18 @@
     </div>
 
 
-<script src="http://zeptojs.com/zepto.min.js"></script>
-<script src="mggScrollImg.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/zepto.min.js"></script>
 <script src="swipe.js"></script>
 <script>
-(function(){
-/*
-    注意：$.mggScrollImg返回的scrollImg对象上有
-            next，prev，go三个方法，可以实现外部对滚动索引的控制。
-    如：scrollImg.next();//会切换到下一张图片
-        scrollImg.go(0);//会切换到第一张图片
-*/
-var scrollImg = $.mggScrollImg('.imgbox ul',{
-        loop : false,//循环切换
-        auto : false,//自动切换
-        callback : function(ind){//这里传过来的是索引值
-            $('#page').text(ind+1);
+    var swiper = new Swiper('.swiper-container',{
+        pagination : '.swiper-pagination',
+        paginationType : 'custom',
+        paginationCustomRender: function (swiper, current, total) {
+            $('.current').text(current);
+            $('.total').text(total);
         }
     });
-    var width = document.body.scrollWidth;
-    var height=document.body.scrollHeight;
-    $('ul').height(height);
-    $('.imgbox').height(height);
-    $('ul>li ').height(height);
-
-})()
-
 </script>
 </body>
 </html>
