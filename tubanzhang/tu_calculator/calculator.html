@@ -15,7 +15,7 @@
             <li><a href="#">装修公司</a></li>
             <li><a href="#">效果图</a></li>
             <li><a href="#">装修问答</a></li>
-            <li><a href="#">装修报价</a></li>
+            <li><a class="active" href="#">装修报价</a></li>
             <li><a href="#">工地直播</a></li>
         </ul>
         <div class="nav_right">
@@ -37,13 +37,17 @@
             <p>
                 <select id="province" runat="server" onchange="selectprovince(this);"></select>
                 <select id="city" runat="server"></select><br/>
-                <input class="meter" type="text" placeholder="请输入您的建筑面积（平米）"/><br/>
-                <input class="phone" type="text" placeholder="请输入您的手机号码接收报价结果"/><br/>
+                <input class="meter"  autofocus type="text" placeholder="请输入您的建筑面积（平米）"/><br/>
+
+                <input class="phone" autofocus type="text" placeholder="请输入您的手机号码接收报价结果"/><br/>
+
                 <select class="section_style">
                     <option value="">简单装修</option>
                     <option value="">高档装修</option>
                 </select>
-            <div class="section_err"></div>
+                <div class="err_meter"></div>
+                <div class="err_phone"></div>
+
             </p>
 
 

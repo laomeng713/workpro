@@ -5,15 +5,16 @@ $(function(){
 
     //错误提示
     function errTip(str){
-        var $errTip=$('.section_err');
+        var $errTip=$('.err_phone');
         $errTip.text(str);
     }
 
     function meterCheck(meter){
         if(meter==''){
-            errTip('面积不能为空');
+            $('.err_meter').text('面积不能为空');
             return false;
         }else{
+            $('.err_meter').text('');
             return true;
         }
     }
@@ -27,6 +28,7 @@ $(function(){
                 errTip('请填写正确的手机号码');
                 return false;
             }else{
+                errTip('');
                 return true;
             }
     }
@@ -40,9 +42,9 @@ $(function(){
         if(regmeter&&regphone){
             $.ajax({
                 type:'post',
-
                 success:function(){
                     console.log('success');
+
                 },
                 error:function(){
                     console.log('error');
