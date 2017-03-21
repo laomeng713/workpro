@@ -6,10 +6,14 @@ $(function(){
 
 });
 function submitPage(){
-    var phone1,phone1,name,meter;
+    //var phone1,phone1,name,meter;
     $('.header_return').on('click',function(){
         //跳到上一页面
-        history.go(-1);
+        if(window.history.length>1){
+            history.go(-1);
+        }else{
+            location.href='index.html'
+        }
     })
 
     $('.text_left').on('click',function(){
@@ -34,10 +38,13 @@ function submitPage(){
         if($(".text_contain").css("display")=="none"){
             $(".text_contain").show();
             $(".text_change").css({"background":"url('img/change.png') 0 -30px no-repeat","background-size": "100% auto"});
-
+            var height=document.body.scrollHeight ;
+            $(".text_form").css({"height":height});
         }else{
             $(".text_contain").hide();
             $(".text_change").css({"background":"url('img/change.png') 0 0 no-repeat","background-size": "100% auto"});
+            var height=window.clientHeight  ;
+            $(".text_form").css({"height":height});
 
         }
     })

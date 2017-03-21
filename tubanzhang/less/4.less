@@ -1,11 +1,398 @@
+/*
+  *  @description:移动端公共样式
+  *  @author:mengxuchen
+  *  @update:mengxuchen (2017-03-21)
+*/
+@charset "utf-8";
+/* 设置html默认字体大小为10px,当用户放大或缩小页面时不改变字体大小。*/
+html {
+  font-size:62.5%;
+  -ms-text-size-adjust:100%;
+   -webkit-text-size-adjust:100%;
+}
+/* 清除标签自带外边距离 */
+body,div,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,input,textarea,select{
+  margin:0;
+  padding:0;
+}
+/*******************颜色的变量**********************/
+@body-color:#333; //字体颜色
+@body-bg:#fff;    //整体背景颜色
+/* 设置body字体、字体大小、行高、颜色、背景色 */
 body {
-  margin: 0;
+  font-family:'Microsoft YaHei',Helvetica,Arial,sans-serif;
+  font-size:1.4rem;
+  line-height:1.4;
+  color:@body-color;
+  background-color:@body-bg;
+  max-width:720px;
+  margin:0 auto;
+}
+/* 清除列表默认样式 */
+ul,ol,li {
+  list-style:none;
 }
 
+/* 1. 修正所有浏览器中未被继承的字体类型。
+* 2. 修正所有浏览器中未被继承的字体大小。
+* 3. 处理 Firefox 4+,Safari 5,及 Chrome 中默认设置不同的外边距。 */
+input,button,select,textarea {
+  font-family:inherit;
+  font-size:inherit;
+  line-height:inherit;
+  outline:none;
+  background:none;
+  border:none 0;
+}
+/* 1. 避免 Android 4.0.* 中 WebKit 的一个bug,防止 'audio' 与 'video' 的播放控件失效。 * 2. 修正 iOS 中不可点击的 'input' 样式。 * 3. 改善图片类型的 'input' 等光标样式的可用性与一致性。 */
+button,html input[type="button"],input[type="reset"],input[type="submit"] {
+  -webkit-appearance:button;
+}
+/* 删除 Safari 5 和 OS X 上的 Chrome 中的输入框上的内边距和搜索取消按钮 */
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance:none;
+}
+input:focus {
+  border-color:#00a151;
+}
+/* 保持垂直居中 */
+img,input,textarea {
+  vertical-align:middle;
+}
+/* 去除img边框 */
+img,hr {
+  border:none 0;
+}
+/* 处理　Firefox　与其它浏览器的差异 */
+hr {
+  -webkit-box-sizing:content-box;
+  -ms-box-sizing:content-box;
+  box-sizing:content-box;
+  height:0;
+}
+/* 清除字体倾斜 */
+i,em {
+  font-style:normal;
+}
+a {
+  text-decoration:none;
+  color:#333;
+}
+/* 设置获取焦点、活动元素的outline为0 */
+a:focus,a:active {
+  outline:0;
+}
+a:hover {
+  color:#f60;
+  text-decoration: none;
+}
+/* 去掉ios系统中元素被触摸时产生的半透明灰色遮罩 */
+div,span,a,button,input,textarea {
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+input,select,textarea {
+  border:1px solid #f3efef;
+  padding:1.5% 2%;
+  -webkit-appearance:none;
+  appearance:none;
+  -webkit-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  box-sizing:border-box;
+}
+/* ******** 字体颜色 star *********** */
+.cWhite,.cWhite:visited,.cWhite a {
+  color:#fff;
+}
+.cGray,.cGray:visited,.cGray a {
+  color:#999;
+}
+.cDGray,.cDGray:visited,.cDGray a {
+  color:#666;
+}
+.cMdGray,.cMdGray:visited,.cMdGray a {
+  color:#333;
+}
+.cEGray,.cEGray:visited,.cEGray a {
+  color:#d6d6d6;
+}
+.cFGray,.cFGray:visited,.cFGray a {
+  color:#ababab;
+}
+.cGGray,.cGGray:visited,.cGGray a {
+  color:#909090;
+}
+.cHGray,.cHGray:visited,.cHGray a {
+  color:#373737;
+}
+.cIGray,.cIGray:visited,.cIGray a {
+  color:#ccc;
+}
+.cJGray,.cJGray:visited,.cJGray a {
+  color:#a1a1a1;
+}
+.cKGray,.cKGray:visited,.cKGray a {
+  color:#373737;
+}
+.cBlack,.cBlack:visited,.cBlack a {
+  color:#000;
+}
+.cRed,.cRed:visited,.cRed a {
+  color:#ff0000;
+}
+.cBRed,.cBRed:visited,.cBRed a {
+  color:#ff4200;
+}
+.cPink,.cPink:visited,.cPink a {
+  color:#f2234f;
+}
+.cOrange,.cOrange:visited,.cOrange a {
+  color:#6eba44;
+}
+.cBlue,.cBlue:visited,.cBlue a {
+  color:#00a0e9;
+}
+.cGBlue,.cGBlue:visited,.cGBlue a {
+  color:#487de3;
+}
+.cGreen,.cGreen:visited,.cGreen a {
+  color:#8fbc03;
+}
+.cGrassGreen,.cGrassGreen:visited,.cGrassGreen a {
+  color:#6eba44;
+}
+.cRedorange {
+  color:#ff7200;
+}
+/* ******** 字体颜色 end *********** */
 
-
-
-
-
-
-
+/* ********设置字体大小**************** */
+.f10 {
+  font-size:1rem;
+}
+.f12 {
+  font-size:1.2rem;
+}
+.f14 {
+  font-size:1.4rem;
+}
+.f16 {
+  font-size:1.6rem;
+}
+.f18 {
+  font-size:1.8rem;
+}
+.f20 {
+  font-size:2rem;
+}
+.f22 {
+  font-size:2.2rem;
+}
+.f24 {
+  font-size:2.4rem;
+}
+.f26 {
+  font-size:2.6rem;
+}
+.f30 {
+  font-size:3rem;
+}
+.f34 {
+  font-size:3.4rem;
+}
+.f40 {
+  font-size:4rem;
+}
+/************* 粗体 *************/
+.fN {
+  font-weight:normal;
+}
+.fB {
+  font-weight:bold;
+}
+/* *************间距 **************/
+.mt2 {
+  margin-top:2%;
+}
+.mr2 {
+  margin-right:2%;
+}
+.mb2 {
+  margin-bottom:2%;
+}
+.ml2 {
+  margin-left:2%;
+}
+.mt3 {
+  margin-top:3%;
+}
+.ml3 {
+  margin-left:3%;
+}
+.mr3 {
+  margin-right:3%;
+}
+.mb3 {
+  margin-bottom:3%;
+}
+.ml3 {
+  margin-left:3%;
+}
+.mt4 {
+  margin-top:4%;
+}
+.mr4 {
+  margin-right:4%;
+}
+.mb4 {
+  margin-bottom:4%;
+}
+.ml4 {
+  margin-left:4%;
+}
+.mt5 {
+  margin-top:5%;
+}
+.mr5 {
+  margin-right:5%;
+}
+.mb5 {
+  margin-bottom:5%;
+}
+.ml5 {
+  margin-left:5%;
+}
+.mt7 {
+  margin-top:7%;
+}
+.mr7 {
+  margin-right:7%;
+}
+.mb7 {
+  margin-bottom:7%;
+}
+.ml7 {
+  margin-left:7%;
+}
+.mt5px {
+  margin-top:5px;
+}
+.mr5px {
+  margin-right:5px;
+}
+.mb5px {
+  margin-bottom:5px;
+}
+.ml5px {
+  margin-left:5px;
+}
+.mt10px {
+  margin-top:10px;
+}
+.mr10px {
+  margin-right:10px;
+}
+.mb10px {
+  margin-bottom:10px;
+}
+.ml10px {
+  margin-left:10px;
+}
+.mt20px {
+  margin-top:20px;
+}
+.mr20px {
+  margin-right:20px;
+}
+.mb20px {
+  margin-bottom:20px;
+}
+.ml20px {
+  margin-left:20px;
+}
+.box96 {
+  margin-left:2%;
+  margin-right:2%;
+}
+.box92 {
+  margin-left:4%;
+  margin-right:4%;
+}
+.box88 {
+  margin-left:6%;
+  margin-right:6%;
+}
+.pd-tb5 {
+  padding:0 5%;
+}
+.pd-lr4 {
+  padding:0 4%;
+}
+/*********************** 清除浮动 *****************/
+.clear {
+  clear:both;
+}
+.clear:after {
+  display:block;
+  content:'';
+  clear:both;
+}
+.clearfix {
+  *zoom:1;  /*ie浏览器*/
+}
+.clearfix:after {
+  display:block;
+  content:'';
+  height:0;
+  overflow:hidden;
+  clear:both;
+}
+/*********************** 遮罩层  *******************/
+.head_mask {
+  width:100%;
+  height:100%;
+  z-index:900;
+  background:rgba(0,0,0,0.8);
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+}
+/* ******************遮罩层 end *************************/
+/******************字体引入******************************/
+@font-face {
+  font-family:'iconfont';
+  src:url('../fonts/fontawesome-webfont.eot');
+  /* IE9*/
+  src:url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),/* IE6-IE8 */
+  url('../fonts/fontawesome-webfont.woff') format('woff'),/* chrome、firefox */
+  url('../fonts/fontawesome-webfont.ttf') format('truetype'),/* chrome、firefox、opera、Safari,Android,iOS 4.2+*/
+  url('../fonts/fontawesome-webfont.svg') format('svg');
+  /* iOS 4.1- */
+}
+.iconfont {
+  font-family:"iconfont";
+  font-style:normal;
+  -webkit-font-smoothing:antialiased;
+  -webkit-text-stroke-width:0.2px;
+  vertical-align:middle;
+}
+//.icone69f:before {
+//  content:"\e69f";
+//  font-size:24px;
+//}
+//.icone6a0:before {
+//  content:"\e6a0";
+//  font-size:24px;
+//}
+//.icone6a1:before {
+//  content:"\e6a1";
+//  font-size:12.5px;
+//}
+//.icone699:before {
+//  content:"\e699";
+//  font-size:24px;
+//}
+//.icone607:before {
+//  content:"\e607";
+//  font-size:1.2rem;
+//}

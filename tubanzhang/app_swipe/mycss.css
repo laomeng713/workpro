@@ -55,7 +55,7 @@
 
 }
 
-/*********ÎÄ±¾*************/
+/*********æ–‡æœ¬*************/
 .text{
     margin-bottom: 10px;
     width: 100%;
@@ -119,7 +119,7 @@
 .text_title{
     margin-top: 15px;
 }
-/***********ÃèÊöÎÄ×Ö***********/
+/************æè¿°æ–‡å­—************/
 .text_contain{
     display: none;
     margin-bottom: 60px;
@@ -127,13 +127,13 @@
 .text_title,.text_info,.text_img,.text_guess{
     margin-left: 10px;
 }
-/*******************Ê¡ÂÔºÅ*************/
+/*******************çœç•¥å·*************/
 .text_ell{
     display: inline-block;
-    overflow: hidden; /*×Ô¶¯Òş²ØÎÄ×Ö*/
-    text-overflow: ellipsis;/*ÎÄ×ÖÒş²ØºóÌí¼ÓÊ¡ÂÔºÅ*/
-    white-space: nowrap;/*Ç¿ÖÆ²»»»ĞĞ*/
-    width: 100%;/*²»ÔÊĞí³öÏÖ°ëºº×Ö½Ø¶Ï*/
+    overflow: hidden; /*è‡ªåŠ¨éšè—æ–‡å­—*/
+    text-overflow: ellipsis;/*æ–‡å­—éšè—åæ·»åŠ çœç•¥å·*/
+    white-space: nowrap;/*å¼ºåˆ¶ä¸æ¢è¡Œ*/
+    width: 100%;/*ä¸å…è®¸å‡ºç°åŠæ±‰å­—æˆªæ–­*/
 }
 .text_more{
     color: #D0141B;
@@ -172,7 +172,7 @@
     padding: 2px;
     border-radius: 5px;
 }
-/***************µ¯´°ÊÖ»úºÅ***********/
+/****************å¼¹çª—æ‰‹æœºå·************/
 .text_form{
     width: 100%;
     height: 100%;
