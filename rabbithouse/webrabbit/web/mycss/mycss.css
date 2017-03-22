@@ -1,0 +1,312 @@
+/*
+  *  @description:移动端公共样式
+  *  @author:mengxuchen
+  *  @update:mengxuchen (2017-03-22)
+*/
+.test {
+  border: 1px solid #dddddd;
+}
+body {
+  margin-top: 30px;
+}
+.rt {
+  float: right;
+}
+.lf {
+  float: left;
+}
+.fontcolor,
+.active {
+  color: #DF0303;
+}
+.f12 {
+  font-size: 12px;
+}
+.mr20 {
+  margin-right: 20px;
+}
+.mr10 {
+  margin-right: 10px;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+.header_top {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background-color: #FAFAFA;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.header_top .toptext {
+  position: relative;
+}
+.header_top .toptext a,
+.header_top .toptext span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+}
+.header_top .toptext em {
+  margin: 0 7px;
+  color: #ccc;
+}
+.header_top .toptext i {
+  margin-top: 9px;
+  margin-right: 7px;
+  width: 16px;
+  height: 16px;
+  float: right;
+  background: url(../../images/header-icon.png) 0 0 no-repeat;
+}
+.header_top .toptext .top_phone {
+  float: right;
+}
+.header_top .toptext .top_time {
+  color: #999999;
+  position: absolute;
+  background-color: #FFFFFF;
+  top: 30px;
+  right: 0;
+  width: 170px;
+  height: 25px;
+  line-height: 25px;
+  display: none;
+  z-index: 800;
+}
+.header_top .toptext .top_phone:hover .top_time {
+  display: block;
+}
+.logo {
+  height: 120px;
+}
+.logo .logo_left {
+  width: 222px;
+  height: 56px;
+  margin-top: 32px;
+  background: url(../../images/logo.png) no-repeat;
+}
+.logo .logo_center {
+  margin: 30px 0 0 146px;
+  height: 36px;
+  border: 2px solid #df0303;
+}
+.logo .logo_center ul li {
+  margin-right: 8px;
+  margin-top: 8px;
+  font-size: 10px;
+}
+.logo .logo_center ul li a {
+  color: #4b4b4b;
+}
+.logo .logo_center .logo_select {
+  width: 99px;
+  height: 36px;
+  background: #fff2f2;
+  text-align: center;
+  line-height: 36px;
+  cursor: pointer;
+  border-right: 1px solid #df0303;
+}
+.logo .logo_center .logo_input {
+  width: 314px;
+  height: 34px;
+  line-height: 34px;
+  background: #fff;
+  font-size: 12px;
+  color: #999;
+  border: none;
+  padding-left: 11px;
+  outline-style: none;
+}
+.logo .logo_center .logo_search {
+  width: 95px;
+  height: 36px;
+  line-height: 34px;
+  color: #fff;
+  border: none;
+  background: #df0303 url(../../images/search.png) 19px 11px no-repeat;
+  text-indent: 30px;
+  outline-style: none;
+}
+.logo .logo_right {
+  margin-top: 35px;
+}
+.logo .logo_right li {
+  width: 64px;
+  text-align: center;
+  color: #a7a7a7;
+}
+.logo .logo_right li i {
+  display: block;
+  margin: 0 auto 5px;
+  width: 30px;
+  height: 30px;
+}
+.logo .logo_right .right_icon {
+  background: url(../../images/header-icon.png) no-repeat;
+}
+.nav {
+  width: 100%;
+  height: 40px;
+  background: #DF0303;
+  float: left;
+}
+.nav ul {
+  margin-left: 110px;
+}
+.nav ul li {
+  float: left;
+}
+.nav ul li a {
+  display: block;
+  padding: 0 24px;
+  line-height: 40px;
+  color: #fff;
+  font-size: 15px;
+}
+.nav ul li a:hover {
+  background: #C80202;
+}
+footer {
+  font-size: 12px;
+}
+footer a {
+  color: #666666;
+  display: inline-block;
+}
+footer p {
+  text-align: center;
+}
+.info_sub {
+  height: 100px;
+  overflow: hidden;
+}
+.info_sub li {
+  width: 298px;
+  height: 76px;
+  background: #f8f8f8;
+  margin-right: 2px;
+  padding-top: 24px;
+}
+.info_sub li dl {
+  width: 300px;
+}
+.info_sub li dl dt {
+  width: 68px;
+  text-align: center;
+}
+.info_sub li dl dt a {
+  display: block;
+  color: #f66;
+  padding-top: 5px;
+  line-height: 26px;
+}
+.info_sub li dl dt a i {
+  display: block;
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  background: url(../../images/header-icon.png) no-repeat -240px 0;
+}
+.info_sub li dl dd {
+  line-height: 26px;
+  width: 232px;
+}
+.info_sub li dl dd a {
+  margin-right: 22px;
+  white-space: nowrap;
+  color: #333;
+}
+.crumbs {
+  padding: 12px 0 15px;
+  height: 26px;
+}
+.crumbs a {
+  color: #333;
+  font-size: 12px;
+  float: left;
+  padding-top: 8px;
+}
+.crumbs .new_spe {
+  float: left;
+  padding: 8px 5px 0;
+}
+.bigtitle {
+  height: 40px;
+  line-height: 40px;
+  font-size: 26px;
+  color: #333;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #ddd;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.news_list ul {
+  width: 870px;
+}
+.news_list ul li {
+  border-bottom: 1px dotted #dddddd;
+  padding: 30px 0;
+}
+.news_list ul li a img {
+  width: 200px;
+  height: 150px;
+}
+.news_list ul li .news_detail {
+  width: 620px;
+  height: 150px;
+}
+.news_list ul li .news_detail h3 {
+  font-size: 22px;
+  color: #333;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+.news_list ul li .news_detail p {
+  font-size: 14px;
+  color: #666;
+  position: relative;
+  line-height: 21px;
+  height: 63px;
+}
+.news_list ul li .news_detail .time_details {
+  font-size: 14px;
+  color: #999;
+}
+.news_list ul li .news_detail .time_details .see_time {
+  padding-left: 22px;
+  background: url(http://fastued3.jia.com/image/zixun/see_time.png) no-repeat left center;
+  margin-left: 60px;
+}
+.news_list ul li:hover {
+  background-color: #F8F8F8;
+}
+.news_list ul li:hover a {
+  color: #C80202;
+}
+.news_sec{
+  width: 290px;
+  border-left: 1px solid #000000;
+  padding-left: 10px;
+}
+.page_inline {
+  padding: 20px 0;
+}
+.page_inline .page {
+  text-align: center;
+}
+.page_inline .page a {
+  display: inline-block;
+  border: 1px solid #eee;
+  background: #fff;
+  text-decoration: none;
+  margin-right: 5px;
+  padding: 6px 9px;
+}
+.page_inline .page a:hover {
+  border: 1px solid #C80202;
+}
