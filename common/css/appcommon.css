@@ -4,7 +4,7 @@
   *  @author:mengxuchen
   *  @update:mengxuchen (2017-03-21)
 */
-/* 设置html默认字体大小为10px,当用户放大或缩小页面时不改变字体大小。*/
+/* 设置html默认字体大小为10px=62.5%,当用户放大或缩小页面时不改变字体大小。*/
 html {
   font-size: 62.5%;
   -ms-text-size-adjust: 100%;
@@ -37,7 +37,7 @@ select {
 body {
   font-family: 'Microsoft YaHei', Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
-  line-height: 1.4;
+  line-height: 1.5;
   color: #333333;
   background-color: #ffffff;
   max-width: 720px;
@@ -111,8 +111,10 @@ a:active {
   outline: 0;
 }
 a:hover {
-  color: #f60;
   text-decoration: none;
+}
+a:visited {
+  color: #999 ;
 }
 /* 去掉ios系统中元素被触摸时产生的半透明灰色遮罩 */
 div,
@@ -133,6 +135,17 @@ textarea {
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
+}
+.pl {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.lf {
+  float: left;
+}
+.rt {
+  float: right;
 }
 /* ******** 字体颜色 star *********** */
 .cWhite,

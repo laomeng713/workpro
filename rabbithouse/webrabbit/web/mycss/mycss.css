@@ -40,6 +40,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 10;
 }
 .header_top .toptext {
   position: relative;
@@ -245,8 +246,14 @@ footer p {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-.news_list ul {
+.news_list .news_infolist {
+  border-right: 1px dotted #eee;
   width: 870px;
+  box-sizing: border-box;
+  padding-right: 40px;
+}
+.news_list ul {
+  width: 840px;
 }
 .news_list ul li {
   border-bottom: 1px dotted #dddddd;
@@ -288,12 +295,92 @@ footer p {
 .news_list ul li:hover a {
   color: #C80202;
 }
-.news_sec{
+.news_list .news_sec {
   width: 290px;
-  border-left: 1px solid #000000;
-  padding-left: 10px;
+  overflow: hidden;
+}
+.news_list .news_sec .news_signup {
+  box-sizing: border-box;
+  border: 1px solid #dddddd;
+  width: 290px;
+  height: 380px;
+}
+.news_list .news_sec .news_signup .sing_nav {
+  height: 40px;
+}
+.news_list .news_sec .news_signup .sing_nav .common_nav {
+  height: 36px;
+  width: 144px;
+  text-align: center;
+  line-height: 37px;
+  border-bottom: 3px solid #EE2D1B;
+  background-color: #fbfbfb;
+  font-size: 16px;
+}
+.news_list .news_sec .news_signup .sing_nav .common_nav:hover {
+  cursor: pointer;
+}
+.news_list .news_sec .news_signup .sing_nav .on {
+  color: #FFFFFF;
+  background-color: #EE2D1B;
+}
+.news_list .news_sec .news_signup .sing_con .sing_design,
+.news_list .news_sec .news_signup .sing_con .sing_price {
+  padding: 25px 19px 0 19px;
+}
+.news_list .news_sec .news_signup .sing_con .sing_design h2,
+.news_list .news_sec .news_signup .sing_con .sing_price h2 {
+  position: relative;
+  left: -20px;
+  color: #EE2D1B;
+  font-size: 18px;
+  padding-top: 12px;
+  text-align: center;
+  width: 290px;
+  font-weight: 500;
+}
+.news_list .news_sec .news_signup .sing_con .sing_design form,
+.news_list .news_sec .news_signup .sing_con .sing_price form {
+  width: 250px;
+  height: 223px;
+  margin: 0 auto;
+}
+.news_list .news_sec .news_signup .sing_con .sing_design form input,
+.news_list .news_sec .news_signup .sing_con .sing_price form input {
+  margin-top: 15px;
+  height: 30px;
+  width: 250px;
+}
+.news_list .news_sec .news_signup .sing_con .sing_design form .sing_err,
+.news_list .news_sec .news_signup .sing_con .sing_price form .sing_err {
+  color: #EE2D1B;
+  display: inline-block;
+  margin-top: 10px;
+}
+.news_list .news_sec .news_signup .sing_con .sing_design form input:focus,
+.news_list .news_sec .news_signup .sing_con .sing_price form input:focus {
+  outline: none;
+  border: 1px solid #EE2D1B;
+}
+.news_list .news_sec .news_signup .sing_con .sing_design form .sing_button,
+.news_list .news_sec .news_signup .sing_con .sing_price form .sing_button {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  background-color: #EE2D1B;
+  border-radius: 4px;
+  border: none;
+}
+.news_list .news_sec .news_signup .sing_con .sing_design form p,
+.news_list .news_sec .news_signup .sing_con .sing_price form p {
+  color: #7d7d7d;
+  text-align: center;
+  margin-top: 15px;
 }
 .page_inline {
+  width: 870px;
   padding: 20px 0;
 }
 .page_inline .page {
