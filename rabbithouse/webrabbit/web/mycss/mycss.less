@@ -30,6 +30,10 @@ a{
   color:#333;
   text-decoration: none;
 }
+input:focus{
+  outline:none;
+  border:1px solid #EE2D1B;
+}
 //header
   .header_top{
     width: 100%;
@@ -184,6 +188,7 @@ a{
   }
 }
 footer{
+  margin: 30px 0;
   font-size: 12px;
   a{
     color: #666666;
@@ -324,6 +329,8 @@ footer{
   .news_sec{
     width: 290px;
     overflow: hidden;
+    a:hover{cursor: pointer}
+    //报价以及设计
     .news_signup{
       box-sizing: border-box;
       border: 1px solid #dddddd;
@@ -362,10 +369,9 @@ footer{
             width: 290px;
             font-weight: 500;
           }
-          form{
+          p{
             width: 250px;
             height: 223px;
-            //text-align: center;
             margin: 0 auto;
             input{
               margin-top: 15px;
@@ -377,26 +383,113 @@ footer{
               display: inline-block;
               margin-top: 10px;
             }
-            input:focus{
-              outline:none;
-              border:1px solid #EE2D1B;
-            }
-            .sing_button{
-              height: 40px;
-              line-height: 40px;
-              text-align: center;
-              font-size: 16px;
-              color: #fff;
-              background-color: #EE2D1B;
-              border-radius: 4px;
-              border: none;
-            }
-            p{
+            span{
+              display: block;
               color: #7d7d7d;
               text-align: center;
               margin-top: 15px;
             }
           }
+        }
+      }
+    }
+    .sing_button{
+      width: 250px;
+      display: block;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      font-size: 16px;
+      color: #fff;
+      background-color: #EE2D1B;
+      border-radius: 4px;
+      margin-top: 8px;
+    }
+    //开工时间
+    .lucy_time{
+      margin-top: 24px;
+      padding-top: 96px;
+      padding-left: 20px;
+      position: relative;
+      p{
+        margin-bottom: 20px;
+        select,input{
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-right: 10px;
+          width: 250px;
+          height: 32px;
+        }
+       .chose_select{
+         overflow: hidden;
+         option{
+
+         }
+       }
+      }
+    }
+
+    //通用标题头样式
+    .active_title{
+      font-size: 24px;
+      color: #333;
+      position: relative;
+      margin-bottom: 15px;
+      margin-top: 20px;
+      font-weight: 400;
+      a{
+        position: absolute;
+        bottom: 4px;
+        right: 0;
+        font-size: 14px;
+        color: #666;
+      }
+      a:hover{
+        color: #EE2D1B;
+      }
+    }
+    //活动预告
+    .active_advance{
+      margin-top: 40px;
+      .active_detail{
+        margin-bottom: 30px;
+        h3{
+          font-size: 18px;
+          color: #666;
+          border-left: 5px solid #dd0000;
+          line-height: 20px;
+          padding-left: 8px;
+        }
+        .active_name{
+          margin-top: 15px;
+          a{
+            font-size: 14px;
+            color: #000;
+          }
+          a:hover{
+            color: #EE2D1B;
+          }
+        }
+        .active_addres{
+          font-size: 14px;
+          color: #666;
+          margin-top: 5px;
+        }
+      }
+    }
+    //推荐专区
+    .recom_area{
+      margin-top: 40px;
+      .recom_tag{
+        width: 290px;
+        li{
+          float: left;
+          font-size: 14px;
+          color: #666;
+          padding: 4px 10px;
+          border: 1px solid #ddd;
+          margin: 0 0 11px 11px;
+          border-radius: 20px;
         }
       }
     }
@@ -408,7 +501,7 @@ footer{
   padding: 20px 0;
   .page{
     text-align: center;
-    a{
+    a {
       display: inline-block;
       border: 1px solid #eee;
       background: #fff;
@@ -416,8 +509,32 @@ footer{
       margin-right: 5px;
       padding: 6px 9px;
     }
-    a:hover{
+    input{
+      border: 1px solid #eee;
+      height: 32px;
+      line-height: 32px;
+      width: 32px;
+      text-align: center;
+    }
+    input:focus{
       border: 1px solid #C80202;
+    }
+
+   a:hover{  //悬停
+      border: 1px solid #C80202;
+    }
+    a.cur{ //当前页样式
+      color: #FFFFFF;
+      background-color:#C80202 ;
+    }
+    a.default {//无法点击时样式
+      border-color: #ddd;
+      color:#ddd;
+      cursor: default;
+    }
+    .page_pre:hover,.page_next:hover,.page_enter:hover{
+      color: #FFFFFF;
+      background-color:#C80202 ;
     }
   }
 }

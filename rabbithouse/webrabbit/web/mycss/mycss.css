@@ -32,6 +32,10 @@ a {
   color: #333;
   text-decoration: none;
 }
+input:focus {
+  outline: none;
+  border: 1px solid #EE2D1B;
+}
 .header_top {
   width: 100%;
   height: 30px;
@@ -173,6 +177,7 @@ a {
   background: #C80202;
 }
 footer {
+  margin: 30px 0;
   font-size: 12px;
 }
 footer a {
@@ -299,6 +304,9 @@ footer p {
   width: 290px;
   overflow: hidden;
 }
+.news_list .news_sec a:hover {
+  cursor: pointer;
+}
 .news_list .news_sec .news_signup {
   box-sizing: border-box;
   border: 1px solid #dddddd;
@@ -339,31 +347,34 @@ footer p {
   width: 290px;
   font-weight: 500;
 }
-.news_list .news_sec .news_signup .sing_con .sing_design form,
-.news_list .news_sec .news_signup .sing_con .sing_price form {
+.news_list .news_sec .news_signup .sing_con .sing_design p,
+.news_list .news_sec .news_signup .sing_con .sing_price p {
   width: 250px;
   height: 223px;
   margin: 0 auto;
 }
-.news_list .news_sec .news_signup .sing_con .sing_design form input,
-.news_list .news_sec .news_signup .sing_con .sing_price form input {
+.news_list .news_sec .news_signup .sing_con .sing_design p input,
+.news_list .news_sec .news_signup .sing_con .sing_price p input {
   margin-top: 15px;
   height: 30px;
   width: 250px;
 }
-.news_list .news_sec .news_signup .sing_con .sing_design form .sing_err,
-.news_list .news_sec .news_signup .sing_con .sing_price form .sing_err {
+.news_list .news_sec .news_signup .sing_con .sing_design p .sing_err,
+.news_list .news_sec .news_signup .sing_con .sing_price p .sing_err {
   color: #EE2D1B;
   display: inline-block;
   margin-top: 10px;
 }
-.news_list .news_sec .news_signup .sing_con .sing_design form input:focus,
-.news_list .news_sec .news_signup .sing_con .sing_price form input:focus {
-  outline: none;
-  border: 1px solid #EE2D1B;
+.news_list .news_sec .news_signup .sing_con .sing_design p span,
+.news_list .news_sec .news_signup .sing_con .sing_price p span {
+  display: block;
+  color: #7d7d7d;
+  text-align: center;
+  margin-top: 15px;
 }
-.news_list .news_sec .news_signup .sing_con .sing_design form .sing_button,
-.news_list .news_sec .news_signup .sing_con .sing_price form .sing_button {
+.news_list .news_sec .sing_button {
+  width: 250px;
+  display: block;
   height: 40px;
   line-height: 40px;
   text-align: center;
@@ -371,13 +382,88 @@ footer p {
   color: #fff;
   background-color: #EE2D1B;
   border-radius: 4px;
-  border: none;
+  margin-top: 8px;
 }
-.news_list .news_sec .news_signup .sing_con .sing_design form p,
-.news_list .news_sec .news_signup .sing_con .sing_price form p {
-  color: #7d7d7d;
-  text-align: center;
+.news_list .news_sec .lucy_time {
+  margin-top: 24px;
+  padding-top: 96px;
+  padding-left: 20px;
+  position: relative;
+}
+.news_list .news_sec .lucy_time p {
+  margin-bottom: 20px;
+}
+.news_list .news_sec .lucy_time p select,
+.news_list .news_sec .lucy_time p input {
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-right: 10px;
+  width: 250px;
+  height: 32px;
+}
+.news_list .news_sec .lucy_time p .chose_select {
+  overflow: hidden;
+}
+.news_list .news_sec .active_title {
+  font-size: 24px;
+  color: #333;
+  position: relative;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  font-weight: 400;
+}
+.news_list .news_sec .active_title a {
+  position: absolute;
+  bottom: 4px;
+  right: 0;
+  font-size: 14px;
+  color: #666;
+}
+.news_list .news_sec .active_title a:hover {
+  color: #EE2D1B;
+}
+.news_list .news_sec .active_advance {
+  margin-top: 40px;
+}
+.news_list .news_sec .active_advance .active_detail {
+  margin-bottom: 30px;
+}
+.news_list .news_sec .active_advance .active_detail h3 {
+  font-size: 18px;
+  color: #666;
+  border-left: 5px solid #dd0000;
+  line-height: 20px;
+  padding-left: 8px;
+}
+.news_list .news_sec .active_advance .active_detail .active_name {
   margin-top: 15px;
+}
+.news_list .news_sec .active_advance .active_detail .active_name a {
+  font-size: 14px;
+  color: #000;
+}
+.news_list .news_sec .active_advance .active_detail .active_name a:hover {
+  color: #EE2D1B;
+}
+.news_list .news_sec .active_advance .active_detail .active_addres {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}
+.news_list .news_sec .recom_area {
+  margin-top: 40px;
+}
+.news_list .news_sec .recom_area .recom_tag {
+  width: 290px;
+}
+.news_list .news_sec .recom_area .recom_tag li {
+  float: left;
+  font-size: 14px;
+  color: #666;
+  padding: 4px 10px;
+  border: 1px solid #ddd;
+  margin: 0 0 11px 11px;
+  border-radius: 20px;
 }
 .page_inline {
   width: 870px;
@@ -394,6 +480,31 @@ footer p {
   margin-right: 5px;
   padding: 6px 9px;
 }
+.page_inline .page input {
+  border: 1px solid #eee;
+  height: 32px;
+  line-height: 32px;
+  width: 32px;
+  text-align: center;
+}
+.page_inline .page input:focus {
+  border: 1px solid #C80202;
+}
 .page_inline .page a:hover {
   border: 1px solid #C80202;
+}
+.page_inline .page a.cur {
+  color: #FFFFFF;
+  background-color: #C80202 ;
+}
+.page_inline .page a.default {
+  border-color: #ddd;
+  color: #ddd;
+  cursor: default;
+}
+.page_inline .page .page_pre:hover,
+.page_inline .page .page_next:hover,
+.page_inline .page .page_enter:hover {
+  color: #FFFFFF;
+  background-color: #C80202 ;
 }
