@@ -1,5 +1,5 @@
 /*
-  *  @description:�ƶ��˹�����ʽ
+  *  @description:移动端公共样式
   *  @author:mengxuchen
   *  @update:mengxuchen (2017-03-23)
 */
@@ -33,6 +33,7 @@ body {
   line-height: 3rem;
   border-bottom: 1px solid #e6e6e6;
   box-sizing: border-box;
+  z-index: 101;
 }
 .info_nav ul {
   width: 100%;

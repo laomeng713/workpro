@@ -9,14 +9,11 @@
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
     <meta content="telephone=yes" name="format-detection"/>
-    <!--<meta name="apple-itunes-app" content="app-id=949320942,app-argument=http://17house.com/profile/?1">-->
     <meta name="applicable-device" content="mobile">
     <meta name="keywords" content="北京装修公司,北京装饰公司,北京家装设计,北京家庭装修,北京家装">
     <meta name="description" content="北京兔班长装修网提供北京装修公司、北京装饰公司、北京家装设计、北京建材团购、北京家居家具团购等相关服务信息。">
     <meta name="msapplication-tap-highlight" content="no">
     <link rel="canonical" href="http://beijing.17house.com/">
-    <!--<meta name="location" content="province=北京;city=北京;">-->
-    <!--<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />-->
     <link rel="stylesheet" href="../../common/css/swiper.min.css"/>
     <link rel="stylesheet" href="../../common/css/appcommon.css"/>
     <link rel="stylesheet" href="../wapprabbit/app/mycss/mycss.css"/>
@@ -35,9 +32,8 @@
             <li class="swiper-slide"><a href="#">学堂</a></li>
             <li class="swiper-slide"><a href="#">案例</a></li>
             <li class="swiper-slide"><a href="#">选材导购</a></li>
-            <li class="swiper-slide"><a href="#">更多</a></li>
+            <li id="click_more" class="swiper-slide"><a href="#">更多</a></li>
         </ul>
-        <div class="swiper-pagination"></div>
     </div>
 </nav>
 <div class="info_list">
@@ -169,7 +165,7 @@
 <script src="../../common/js/swiper.min.js"></script>
 <script src="../../common/js/zepto.min.js"></script>
 <script src="../../common/js/jquery-1.11.3.min.js"></script>
-<!--<script src="../../common/js/zepto-detect-gesture-touch.js"></script>-->
+<script src="index.js"></script>
 <script>
     $(function(){
         var mySwiper = new Swiper('.swiper-container', {
@@ -186,7 +182,6 @@
             $('.text').hide();
         }
     })
-
 
 
 

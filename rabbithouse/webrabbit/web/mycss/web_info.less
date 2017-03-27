@@ -1,203 +1,10 @@
 /*
-  *  @description:移动端公共样式
+  *  @description:pc端公共样式
   *  @author:mengxuchen
   *  @update:mengxuchen (2017-03-22)
 */
 
-.test{border: 1px solid #dddddd}
-body{
-  margin-top: 30px;
-}
-.rt{
-  float: right;
-}
-.lf{
-  float: left;
-}
-.fontcolor,.active{
-  color:#DF0303;
-}
-.f12{
-  font-size: 12px;
-}
-.mr20{
-  margin-right: 20px;
-}
-.mr10{
-  margin-right: 10px;
-}
-a{
-  color:#333;
-  text-decoration: none;
-}
-input:focus{
-  outline:none;
-  border:1px solid #EE2D1B;
-}
-//header
-  .header_top{
-    width: 100%;
-    height: 30px;
-    line-height: 30px;
-    background-color: #FAFAFA;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    .toptext{
-      position: relative;
-      a,span{
-        display: inline-block;
-        vertical-align: middle;
-        font-size: 12px;
-      }
-      em{
-        margin: 0 7px;
-        color:#ccc;
-      }
-      i{
-        margin-top: 9px;
-        margin-right: 7px;
-        width: 16px;
-        height: 16px;
-        float: right;
-        background: url(../../images/header-icon.png) 0 0 no-repeat  ;
-      }
 
-      .top_phone{
-        float: right;
-
-      }
-      .top_time{
-        color: #999999;
-        position: absolute;
-        background-color: #FFFFFF;
-        top:30px;
-        right: 0;
-        width: 170px;
-        height: 25px;
-        line-height: 25px;
-        display: none;
-        z-index: 800;
-      }
-      .top_phone:hover .top_time{
-        display: block;
-      }
-
-    }
-  }
-  //logo一行
-  .logo{
-    height: 120px;
-    .logo_left{
-      width: 222px;
-      height:56px;
-      margin-top: 32px;
-      background: url(../../images/logo.png) no-repeat;;
-    }
-    .logo_center{
-      //width: 525px;
-      margin: 30px 0 0 146px;
-      height: 36px;
-      border: 2px solid #df0303;
-
-      ul li{
-        margin-right: 8px;
-        margin-top: 8px;
-        font-size: 10px;
-        a{
-          color: #4b4b4b;
-        }
-      }
-
-      .logo_select{
-        width: 99px;
-        height: 36px;
-        background: #fff2f2;
-        text-align: center;
-        line-height: 36px;
-        cursor: pointer;
-        border-right: 1px solid #df0303;
-      }
-      .logo_input{
-        width: 314px;
-        height: 34px;
-        line-height: 34px;
-        background: #fff;
-        font-size: 12px;
-        color: #999;
-        border: none;
-        padding-left: 11px;
-        outline-style: none;
-      }
-      .logo_search{
-        width: 95px;
-        height: 36px;
-        line-height: 34px;
-        color: #fff;
-        border: none;
-        background: #df0303 url(../../images/search.png) 19px 11px no-repeat ;
-        text-indent: 30px;
-        outline-style: none
-      }
-    }
-
-    .logo_right{margin-top: 35px;
-      li{
-        width: 64px;
-        text-align: center;
-        color: #a7a7a7;
-        i{
-          display: block;
-          margin: 0 auto 5px;
-          width: 30px;
-          height: 30px;
-        }
-      }
-      .right_icon{
-        background: url(../../images/header-icon.png) no-repeat;
-      }
-
-    }
-  }
-
-//导航条样式
-.nav {
-  width: 100%;
-  height: 40px;
-  background: #DF0303;
-  float: left;
-  ul{margin-left: 110px;
-    li {
-      float: left;
-      //.active a{
-      //  background: #C80202;
-      //}
-      a{
-        display: block;
-        padding: 0 24px;
-        line-height: 40px;
-        color: #fff;
-        font-size: 15px;
-      }
-      a:hover {
-        background: #C80202;
-      }
-
-    }
-  }
-}
-footer{
-  margin: 30px 0;
-  font-size: 12px;
-  a{
-    color: #666666;
-    display: inline-block;
-  }
-  p{
-    text-align: center;
-  }
-}
 /// info 资讯页面css
 .info_sub{
   height: 100px;
@@ -225,22 +32,19 @@ footer{
             width: 30px;
             height:30px;
             background:url(../../images/header-icon.png) no-repeat -240px 0 ;
-            //background-size: 100% auto;
-            ////-webkit-background-size: 100% auto;
-            ////-moz-background-size: 100% auto;
-
-
           }
         }
       }
       dd{
-        //float: left;
         line-height: 26px;
         width: 232px;
         a{
           margin-right: 22px;
           white-space: nowrap;
           color: #333;
+        }
+        a:hover{
+          color: #DF0303;
         }
       }
     }
@@ -274,6 +78,7 @@ footer{
 }
 //list 问题
 .news_list{
+  //position: relative;
   .news_infolist{
     border-right: 1px dotted #eee;
     width: 870px;
@@ -336,6 +141,7 @@ footer{
       border: 1px solid #dddddd;
       width: 290px;
       height: 380px;
+      background-color: #fbfbfb;
       .sing_nav{
         height: 40px;
         .common_nav{
@@ -405,29 +211,6 @@ footer{
       border-radius: 4px;
       margin-top: 8px;
     }
-    //开工时间
-    .lucy_time{
-      margin-top: 24px;
-      padding-top: 96px;
-      padding-left: 20px;
-      position: relative;
-      p{
-        margin-bottom: 20px;
-        select,input{
-          box-sizing: border-box;
-          margin-top: 6px;
-          margin-right: 10px;
-          width: 250px;
-          height: 32px;
-        }
-       .chose_select{
-         overflow: hidden;
-         option{
-
-         }
-       }
-      }
-    }
 
     //通用标题头样式
     .active_title{
@@ -481,6 +264,8 @@ footer{
     .recom_area{
       margin-top: 40px;
       .recom_tag{
+        padding-top: 11px;
+        background: #F2F2F2;
         width: 290px;
         li{
           float: left;
@@ -495,46 +280,9 @@ footer{
     }
   }
 }
-//分页器
-.page_inline{
-  width: 870px;
-  padding: 20px 0;
-  .page{
-    text-align: center;
-    a {
-      display: inline-block;
-      border: 1px solid #eee;
-      background: #fff;
-      text-decoration: none;
-      margin-right: 5px;
-      padding: 6px 9px;
-    }
-    input{
-      border: 1px solid #eee;
-      height: 32px;
-      line-height: 32px;
-      width: 32px;
-      text-align: center;
-    }
-    input:focus{
-      border: 1px solid #C80202;
-    }
-
-   a:hover{  //悬停
-      border: 1px solid #C80202;
-    }
-    a.cur{ //当前页样式
-      color: #FFFFFF;
-      background-color:#C80202 ;
-    }
-    a.default {//无法点击时样式
-      border-color: #ddd;
-      color:#ddd;
-      cursor: default;
-    }
-    .page_pre:hover,.page_next:hover,.page_enter:hover{
-      color: #FFFFFF;
-      background-color:#C80202 ;
-    }
-  }
+.signup_position{
+  position: fixed;
+  top: 0px;
+  margin-top: 30px;
+  z-index: 100;
 }
