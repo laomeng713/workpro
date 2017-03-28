@@ -207,30 +207,25 @@
 .news_list .news_sec .active_advance {
   margin-top: 40px;
 }
-.news_list .news_sec .active_advance .active_detail {
-  margin-bottom: 30px;
+.news_list .news_sec .active_advance ul li {
+  padding: 11px 0;
+  border-top: 1px dashed #cdcdcd;
+  height: 70px;
+  font-size: 16px;
 }
-.news_list .news_sec .active_advance .active_detail h3 {
-  font-size: 18px;
+.news_list .news_sec .active_advance ul li a {
+  display: block;
+  width: 290px;
   color: #666;
-  border-left: 5px solid #dd0000;
-  line-height: 20px;
-  padding-left: 8px;
 }
-.news_list .news_sec .active_advance .active_detail .active_name {
-  margin-top: 15px;
+.news_list .news_sec .active_advance ul li a img {
+  float: left;
+  width: 92px;
+  height: 70px;
+  margin-right: 12px;
 }
-.news_list .news_sec .active_advance .active_detail .active_name a {
-  font-size: 14px;
-  color: #000;
-}
-.news_list .news_sec .active_advance .active_detail .active_name a:hover {
-  color: #EE2D1B;
-}
-.news_list .news_sec .active_advance .active_detail .active_addres {
-  font-size: 14px;
-  color: #666;
-  margin-top: 5px;
+.news_list .news_sec .active_advance ul li a:hover {
+  color: #EE2D1B ;
 }
 .news_list .news_sec .recom_area {
   margin-top: 40px;
@@ -248,6 +243,12 @@
   border: 1px solid #ddd;
   margin: 0 0 11px 11px;
   border-radius: 20px;
+}
+.news_list .news_sec .rela_list ul li {
+  padding: 10px 0;
+}
+.news_list .news_sec .rela_list ul li a {
+  font-size: 14px;
 }
 .signup_position {
   position: fixed;
