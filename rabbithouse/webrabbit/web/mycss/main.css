@@ -271,3 +271,26 @@ footer p {
 .slide_help:hover a {
   color: #EE2D1B;
 }
+.active_title {
+  font-size: 24px;
+  color: #333;
+  position: relative;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  font-weight: 400;
+}
+.active_title a {
+  position: absolute;
+  bottom: 4px;
+  right: 0;
+  font-size: 14px;
+  color: #666;
+}
+.active_title a:hover {
+  color: #EE2D1B;
+}
+.etc {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

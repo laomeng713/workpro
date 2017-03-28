@@ -3,21 +3,231 @@
  *  @author:mengxuchen
  *  @update:mengxuchen (2017-03-27)
  */
-.ask_nav{
+//a:hover{
+//  color: #DF0303;
+//}
+.title{
+  font-weight: 100;
+  color: #333;
+  font-size: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+//面包屑导航
+.ask_nav {
   width: 100%;
   height: 20px;
   padding: 12px 0;
   border-bottom: 1px solid #EEEEEE;
-  ul{
-    li{
-      color:#333;
+  ul {
+    li {
+      color: #333;
       margin-right: 5px;
-      a{
+      a {
         color: #999999;
       }
-      a:hover{
-        color:#DF0303;
+      a:hover {
+        color: #DF0303;
       }
     }
   }
 }
+
+//tab标签切换
+.ask_tab {
+  margin-bottom: 14px;
+  padding-top: 20px;
+  .ask_tab_hd {
+    height: 43px;
+    background-color: #f8f8f8;
+    border: 1px solid #e8e8e8;
+    border-bottom: none;
+    ul {
+      width: 721px;
+      li {
+        border-right: 1px solid #e8e8e8;
+        a {
+          display: block;
+          padding: 0 23px;
+          height: 43px;
+          line-height: 43px;
+          font-size: 14px;
+          color: #333;
+        }
+        a:hover{
+          color: #DF0303;
+        }
+      }
+      li.on a {
+        background-color: #fff;
+        border-top: 2px solid #DF0303;
+        border-bottom: none;
+        margin-top: -1px;
+        color: #DF0303;
+      }
+    }
+  }
+  .tab_content {
+    padding: 15px 15px 5px;
+    border: 1px solid #e8e8e8;
+    a{
+      display: inline-block;
+      padding: 0 8px;
+      height: 18px;
+      line-height: 18px;
+      color: #666;
+      margin-bottom: 10px;
+      margin-right: 15px;
+    }
+    a.cur{
+      background-color: #DF0303;
+      color: #ffffff;
+    }
+    a.cur:hover{
+      color: #ffffff;
+    }
+    a:hover{
+      color: #DF0303;
+    }
+  }
+
+}
+
+//内容页
+.ask_content{
+  margin-top: 20px;
+  .content_left{
+    width: 870px;
+    .content_list{
+      li{
+        padding: 15px 0 10px;
+        border-bottom: 1px dotted #e8e8e8;
+        .question_hd{
+          height: 20px;
+          line-height: 20px;
+          border-left: 3px solid #DF0303;
+          padding-left: 10px;
+          margin-bottom: 20px;
+          a{
+            font-size: 18px;
+            display: inline-block;
+            float: left;
+            max-width: 618px;
+            color: #000;
+          }
+        }
+        .question_con{
+          width: 100%;
+          margin: 14px 0 8px;
+        }
+        .question_ft{
+          color: #999;
+          .ans_num{
+            color: #f36f20;
+          }
+        }
+      }
+    }
+    .ask_question{
+      border: 1px solid #e8e8e8;
+      padding: 18px;
+      h1{
+        width: 560px;
+        color: #333;
+        font-size: 18px;
+        padding-bottom: 10px;
+        font-weight: normal;
+      }
+      .asker_peo{
+        margin: 10px 0;
+        line-height: 32px;
+        color: #999;
+        span{
+          margin: 0 20px;
+          color: #eeeeee;
+        }
+      }
+    }
+    .ask_answer_list{
+      .ask_answer_li{
+        padding: 20px 0 20px 0;
+        border-bottom: 1px dashed #e8e8e8;
+        .company_detail{
+          padding-bottom: 20px;
+            a{
+              display: inline-block;
+              font-size: 14px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              margin-bottom: 10px;
+              color: #DF0303;
+            }
+          .company_case{
+            color: #999;
+            .time{
+              margin-right: 40px;
+            }
+          }
+        }
+        p{
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .question_list{
+      padding: 15px 0 10px;
+      border-bottom: 1px dotted #e8e8e8;
+      width: 870px;
+      .question_hd{
+        width: 600px;
+        height: 20px;
+        line-height: 20px;
+        border-left: 3px solid #DF0303;
+        padding-left: 10px;
+        margin-bottom: 3px;
+        a{
+          font-size: 14px;
+        }
+      }
+      .question_ft{
+        color: #999;
+        .ans_num{
+          color:#DF0303;
+        }
+      }
+
+    }
+
+  }
+  .content_right{
+    width: 290px;
+    box-sizing: border-box;
+    border: 1px solid #dddddd;
+    padding: 10px 10px;
+    ul{
+      padding: 10px 10px;
+    }
+    a:hover{
+      color: #DF0303;
+    }
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

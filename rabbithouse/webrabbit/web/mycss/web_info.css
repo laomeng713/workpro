@@ -204,24 +204,6 @@
   border-radius: 4px;
   margin-top: 8px;
 }
-.news_list .news_sec .active_title {
-  font-size: 24px;
-  color: #333;
-  position: relative;
-  margin-bottom: 15px;
-  margin-top: 20px;
-  font-weight: 400;
-}
-.news_list .news_sec .active_title a {
-  position: absolute;
-  bottom: 4px;
-  right: 0;
-  font-size: 14px;
-  color: #666;
-}
-.news_list .news_sec .active_title a:hover {
-  color: #EE2D1B;
-}
 .news_list .news_sec .active_advance {
   margin-top: 40px;
 }
