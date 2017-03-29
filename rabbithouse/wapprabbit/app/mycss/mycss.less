@@ -13,6 +13,8 @@ body{
   background-color: #ee2d1b;
   position: relative;
   text-align: center;
+  z-index: 101;
+  position: relative;
   a{
     display: block;
     width: 2rem;
@@ -35,6 +37,7 @@ body{
   border-bottom: 1px solid #e6e6e6;
   box-sizing: border-box;
   z-index: 101;
+  position: relative;
   ul{
     width: 100%;
     padding: 1rem 0;
@@ -52,6 +55,29 @@ body{
     }
     li:first-child{
       border-left: none;
+    }
+  }
+}
+.more_box{
+  display: block;
+  position: fixed;
+  top: 3.3rem;
+  width: 100%;
+  background: rgba(0,0,0,0.75);
+  z-index: 100;
+  box-sizing: border-box;
+  max-width: 640px;
+  left: 50%;
+  .sub_more{
+    background: #fff;
+    width: 80%;
+    height: 100%;
+    margin-left: 20%;
+    .class_title{
+      width: 39%;
+      height: 100%;
+      background: #f3f3f3;
+      float: left;
     }
   }
 }
