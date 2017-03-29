@@ -107,6 +107,9 @@
   max-width: 618px;
   color: #000;
 }
+.ask_content .content_left .content_list li .question_hd a:hover {
+  color: #DF0303;
+}
 .ask_content .content_left .content_list li .question_con {
   width: 100%;
   margin: 14px 0 8px;
@@ -177,6 +180,9 @@
 }
 .ask_content .content_left .question_list .question_hd a {
   font-size: 14px;
+}
+.ask_content .content_left .question_list .question_hd a:hover {
+  color: #DF0303;
 }
 .ask_content .content_left .question_list .question_ft {
   color: #999;

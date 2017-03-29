@@ -25,14 +25,19 @@ body{
 .mr10{
   margin-right: 10px;
 }
+.mt50{
+  margin-top: 50px;
+}
 a{
   color:#333;
   text-decoration: none;
 }
-input:focus{
-  outline:none;
-  border:1px solid #EE2D1B;
-}
+//input:focus{
+//  outline: none;
+//  //border: 1px solid #DF0303;
+//  //border-color: #DF0303;
+//  box-shadow: 0 0 0px #DF0303;
+//}
 //header 头部样式*******start******
 .header_top{
   width: 100%;
@@ -85,6 +90,15 @@ input:focus{
 
   }
 }
+.top{
+  display: block;
+  height: 50px;
+  //margin-top: 50px;
+  img{
+    width: 100%;
+    height: 50px;
+  }
+}
 //logo一行
 .logo{
   height: 120px;
@@ -129,6 +143,18 @@ input:focus{
       line-height: 36px;
       cursor: pointer;
       border-right: 1px solid #eee;
+      .logo_text{
+        .icon_arrows{
+          display: inline-block;
+          vertical-align: middle;
+          border:4px solid transparent;
+          border-top-color:#999999 ;
+          margin-left:9px;
+          margin-top:2px;
+          transition: all .3s;
+          transform-origin:center 2px;
+        }
+      }
     }
 
     .logo_input{
@@ -234,7 +260,8 @@ footer{
       text-align: center;
     }
     input:focus{
-      border: 1px solid #C80202;
+      outline: none;
+      border-color: #C80202;
     }
 
     a:hover{  //悬停

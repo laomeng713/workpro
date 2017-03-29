@@ -3,6 +3,20 @@
   *  @author:mengxuchen
   *  @update:mengxuchen (2017-03-28)
 */
+.mr20 {
+  margin-right: 20px;
+}
+.btn_gray {
+  cursor: pointer;
+  display: inline-block;
+  background: #f2f2f2;
+  width: 88px;
+  line-height: 30px;
+  color: #666;
+  font-size: 14px;
+  text-align: center;
+  margin-right: 10px;
+}
 .quote_nav {
   padding: 10px 0;
 }
@@ -77,6 +91,9 @@
   font-size: 16px;
   line-height: 24px;
 }
+.offerlist_r .offer_plist .offer_plist_item .txtbox .p1 a:hover {
+  color: #DF0303;
+}
 .offerlist_r .offer_plist .offer_plist_item .txtbox .p2 {
   font-size: 12px;
   color: #7d7d7d;
@@ -100,4 +117,24 @@
 }
 .offerlist_r .offer_plist .offer_plist_item .ata:hover {
   background-color: #DE0F0F ;
+}
+.quote_detail {
+  position: relative;
+  padding: 40px;
+  height: 370px;
+}
+.quote_detail .house_property {
+  color: #7d7d7d;
+}
+.quote_detail .house_property h1 {
+  font-size: 24px;
+}
+.quote_detail .house_property p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+.quote_detail .house_property p .num {
+  color: #DF0303;
+  margin: 0 5px;
+  font-size: 18px;
 }

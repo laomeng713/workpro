@@ -9,14 +9,26 @@
 function main(){
     $('.logo_select').mouseover(function(){
         $('.logo_list').show();
+        $('.icon_arrows').css("transform","rotate(180deg)");
     }).mouseout(function(){
         $('.logo_list').hide();
+        $('.icon_arrows').css("transform","rotate(360deg)");
     })
-    $('.logo_list').on('click','li a',function(e){
+    $('.logo_list').on('click','li',function(e){
         e.preventDefault();
         var a=$(this);
+        console.log(a);
+        var t= a.index();
+        console.log(t);
         var b=a[a.length-1].innerText;
+        console.log(b);
         $('#logo_text')[$('#logo_text').length-1].innerHTML=b;
+        if(t==0){
+            $('.logo_input').attr('placeholder','挑选您心仪的装修公司')
+        }
+        if(t==1){
+            $('.logo_input').attr('placeholder','解决您的装修疑问')
+        }
         $('.logo_list').hide();
     })
 }
@@ -25,6 +37,7 @@ function submitPage(){
     $('.sing_nav').on('click','p',function(){
         var $this=$(this);
         var $t=$this.index();
+        console.log($t);
         var $p=$('.sing_nav p');
         var $content=$('.sing_con div');
         $p.removeClass('on');

@@ -175,9 +175,18 @@
 }
 .news_list .news_sec .news_signup .sing_con .sing_design p input,
 .news_list .news_sec .news_signup .sing_con .sing_price p input {
+  border: 1px solid #DDD;
+  box-sizing: border-box;
+  padding: 0 10px;
   margin-top: 15px;
   height: 30px;
+  line-height: 30px;
   width: 250px;
+}
+.news_list .news_sec .news_signup .sing_con .sing_design p input:focus,
+.news_list .news_sec .news_signup .sing_con .sing_price p input:focus {
+  outline: none;
+  border: 1px solid #DF0303;
 }
 .news_list .news_sec .news_signup .sing_con .sing_design p .sing_err,
 .news_list .news_sec .news_signup .sing_con .sing_price p .sing_err {
