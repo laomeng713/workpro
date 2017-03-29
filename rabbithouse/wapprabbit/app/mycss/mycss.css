@@ -56,15 +56,15 @@ body {
   border-left: none;
 }
 .more_box {
-  display: block;
+  display: none;
   position: fixed;
-  top: 3.3rem;
+  top: 0;
+  left: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.75);
   z-index: 100;
   box-sizing: border-box;
   max-width: 640px;
-  left: 50%;
 }
 .more_box .sub_more {
   background: #fff;
