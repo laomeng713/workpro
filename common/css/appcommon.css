@@ -427,8 +427,12 @@ textarea {
   *zoom: 1;
   /*ie浏览器*/
 }
+.clearfix:before{
+  display: table;
+  content: '';
+}
 .clearfix:after {
-  display: block;
+  display: table;
   content: '';
   height: 0;
   overflow: hidden;
