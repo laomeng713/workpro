@@ -173,7 +173,7 @@
     </div>
 </section>
 <aside class="text">
-    <a class="text_left lf"> <i class="icon_left"></i>免费设计</a>
+    <a class="text_left lf" > <i class="icon_left"></i>免费设计</a>
     <a class="text_right rt "><i class="icon_right"></i>装修报价</a>
 </aside>
 <div class="text_form text_forml">
@@ -184,7 +184,7 @@
         <i class="err"></i>
         <input class="phone"  autofocus type="tel" placeholder="您的手机号码"/><br/>
         <em class="count"></em>
-        <button class="reset_order">立即预约</button>
+        <button class="reset_order" onclick="errorCheck($(this),1)">立即预约</button>
         <p>每日申请前100名，送设计及详细报价</p>
     </div>
 </div>
@@ -196,7 +196,7 @@
         <i class="err"></i>
         <input class="phone"  autofocus type="tel" placeholder="您的手机号码"/><br/>
         <em class="count"></em>
-        <button class="reset_price">立即报价</button>
+        <button class="reset_price" onclick="errorCheck($(this),2)">立即报价</button>
         <p>今日已有 <span class="amount">1049</span>人成功获取装修报价服务</p>
     </div>
 </div>
@@ -238,7 +238,7 @@
         paginationHide :true
     })
     var $content=$('.news_content p:gt(3)');
-//    console.log($content);
+    //    console.log($content);
     $content.hide();
     $('.click_all').click(function(){
         $content.show();
@@ -251,7 +251,6 @@
         }else{
             $('.sub_title').css('display','-webkit-box');
         }
-
     })
 </script>
 </body>

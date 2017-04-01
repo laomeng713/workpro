@@ -191,19 +191,19 @@ $('.news_praise').click(function () {
     var s = $('.news_praise').attr('data_status');
     if (s == 0) {
         //没有被点中
-        $('.news_praise').css("background", "url('images/zan_icon.png') 0 -19px no-repeat");
+        $('.news_praise').css("background", "url('../images/zan_icon.png') 0 -19px no-repeat");
         $('.news_praise').css("background-size", "100%");
         $('.news_praise').attr('data_status', 1);
         var num = $('.news_praise').siblings('i').text();
-        console.log(num);
+        //console.log(num);
         num++;
         $('.news_praise').siblings('i').text(num);
     } else if (s == 1) {//说明被选中
-        $('.news_praise').css("background", "url('')  no-repeat");
+        $('.news_praise').css("background", "url('../images/zan_icon.png')  no-repeat");
         $('.news_praise').css("background-size", "100%");
         $('.news_praise').attr('data_status', 0);
         var num = $('.news_praise').siblings('i').text();
-        console.log(num);
+        //console.log(num);
         num--;
         $('.news_praise').siblings('i').text(num);
     }
