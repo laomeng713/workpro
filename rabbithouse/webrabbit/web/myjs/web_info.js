@@ -10,5 +10,8 @@ $(function(){
         slide_help(); //返回顶部
         sign_area(); //页面达到一定高度。。。只显示收集信息框
     });
+
     $('.footer').load("../tpl/include/footer.html");
+
 })
+
