@@ -118,23 +118,134 @@
 .offerlist_r .offer_plist .offer_plist_item .ata:hover {
   background-color: #DE0F0F ;
 }
-.quote_detail {
+.f18 {
+  font-size: 18px;
+}
+.f30 {
+  font-size: 30px;
+}
+.f14 {
+  font-size: 14px;
+}
+.ml190 {
+  margin-left: 190px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.cBred {
+  color: #DE0F0F;
+}
+.cGray {
+  color: #999;
+}
+.tc {
+  text-align: center;
+}
+.arrows {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #DE0F0F;
+}
+.span {
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  background: #fff;
+  text-align: center;
+  font-size: 14px;
+  border-color: #fff;
+  margin: 0 5px;
+  padding: 0;
+  line-height: 30px;
+}
+.quote_combo {
   position: relative;
   padding: 40px;
   height: 370px;
+  background: url("../../images/quto_bac.jpg") no-repeat;
 }
-.quote_detail .house_property {
-  color: #7d7d7d;
+.quote_combo .house_property {
+  color: #FFFFFF;
 }
-.quote_detail .house_property h1 {
+.quote_combo .house_property h1 {
   font-size: 24px;
 }
-.quote_detail .house_property p {
+.quote_combo .house_property p {
   font-size: 18px;
   margin-top: 20px;
 }
-.quote_detail .house_property p .num {
+.quote_combo .house_property p .num {
   color: #DF0303;
   margin: 0 5px;
   font-size: 18px;
+}
+.quote_combo .complex,
+.quote_combo .simple {
+  float: left;
+  width: 540px;
+  height: 190px;
+  border-radius: 5px;
+  margin-top: 30px;
+  line-height: 1.65;
+  padding-left: 40px;
+  background: #feff89 url("../../images/complex.png") no-repeat right 15px;
+}
+.quote_combo .complex h2,
+.quote_combo .simple h2 {
+  margin-top: 30px;
+  font-size: 20px;
+}
+.quote_combo .complex ul,
+.quote_combo .simple ul {
+  margin-top: 5px;
+}
+.quote_combo .complex ul li,
+.quote_combo .simple ul li {
+  font-size: 18px;
+}
+.quote_combo .complex ul li span,
+.quote_combo .simple ul li span {
+  margin-top: -4px;
+  display: inline-block;
+  color: #ff4200;
+  vertical-align: middle;
+  font-size: 30px;
+}
+.quote_combo .simple {
+  margin-left: 30px;
+  background: #b7e3ff url("../../images/simple.png") no-repeat right 5px;
+  background-size: 37% auto;
+  -webkit-background-size: 37% auto;
+  -moz-background-size: 37% auto;
+}
+.quto_detail {
+  margin-top: 42px;
+}
+.quto_detail h2 {
+  font-size: 30px;
+  line-height: 30px;
+  padding-bottom: 10px;
+  font-weight: normal;
+}
+.quto_detail .quto_area ul {
+  background: #dfdfdf;
+  padding: 35px 0 0 35px;
+}
+.quto_detail .quto_area ul .w60 {
+  display: inline-block;
+  width: 62px;
+  margin-right: 6px;
+  font-size: 14px;
+  text-align: center;
+}
+.quto_detail .quto_area ul .type_btn {
+  display: inline-block;
+  width: 360px;
+  line-height: 46px;
+  border: 1px solid #cecece;
+  border-left: none;
+  margin-left: -4px;
 }
