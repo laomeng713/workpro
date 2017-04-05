@@ -200,7 +200,8 @@
 .ask_content .content_right {
   width: 290px;
   box-sizing: border-box;
-  border: 1px solid #dddddd;
+  border-left: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
   padding: 10px 10px;
 }
 .ask_content .content_right ul {

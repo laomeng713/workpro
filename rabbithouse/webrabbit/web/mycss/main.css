@@ -15,25 +15,73 @@ body {
 .lf {
   float: left;
 }
-.fontcolor,
-.active {
-  color: #DF0303;
-}
 .f12 {
   font-size: 12px;
 }
-.mr20 {
-  margin-right: 20px;
+.f14 {
+  font-size: 14px;
+}
+.f18 {
+  font-size: 18px;
+}
+.f24 {
+  font-size: 24px;
+}
+.f30 {
+  font-size: 30px;
+}
+.f36 {
+  font-size: 36px;
+}
+.fB {
+  font-weight: bold;
+}
+.mr5 {
+  margin-right: 5px;
 }
 .mr10 {
   margin-right: 10px;
 }
+.mr20 {
+  margin-right: 20px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mt30 {
+  margin-top: 30px;
+}
 .mt50 {
   margin-top: 50px;
+}
+.ml5 {
+  margin-left: 5px;
+}
+.ml190 {
+  margin-left: 190px;
+}
+.fN {
+  font-weight: normal;
+}
+.cBred {
+  color: #DE0F0F;
+}
+.cGray {
+  color: #999;
+}
+.tc {
+  text-align: center;
+}
+.vm {
+  vertical-align: middle;
 }
 a {
   color: #333;
   text-decoration: none;
+}
+.fontcolor,
+.active {
+  color: #DF0303;
 }
 .header_top {
   width: 100%;
@@ -271,6 +319,7 @@ footer p {
   bottom: 100px;
   right: 10px;
   border: 1px solid #ddd;
+  background-color: #FFFFFF;
 }
 .slide_help a {
   display: block;
@@ -311,4 +360,102 @@ footer p {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+}
+.news_signup {
+  box-sizing: border-box;
+  border: 1px solid #dddddd;
+  width: 290px;
+  height: 380px;
+  background-color: #fbfbfb;
+}
+.news_signup .sing_nav {
+  height: 40px;
+}
+.news_signup .sing_nav .common_nav {
+  height: 36px;
+  width: 144px;
+  text-align: center;
+  line-height: 37px;
+  border-bottom: 3px solid #EE2D1B;
+  background-color: #fbfbfb;
+  font-size: 16px;
+}
+.news_signup .sing_nav .common_nav:hover {
+  cursor: pointer;
+}
+.news_signup .sing_nav .on {
+  color: #FFFFFF;
+  background-color: #EE2D1B;
+}
+.news_signup .sing_con .sing_design,
+.news_signup .sing_con .sing_price {
+  padding: 25px 19px 0 19px;
+}
+.news_signup .sing_con .sing_design h2,
+.news_signup .sing_con .sing_price h2 {
+  position: relative;
+  left: -20px;
+  color: #EE2D1B;
+  font-size: 18px;
+  padding-top: 12px;
+  text-align: center;
+  width: 290px;
+  font-weight: 500;
+}
+.news_signup .sing_con .sing_design p,
+.news_signup .sing_con .sing_price p {
+  width: 250px;
+  height: 223px;
+  margin: 0 auto;
+}
+.news_signup .sing_con .sing_design p input,
+.news_signup .sing_con .sing_price p input {
+  border: 1px solid #DDD;
+  box-sizing: border-box;
+  padding: 0 10px;
+  margin-top: 15px;
+  height: 30px;
+  line-height: 30px;
+  width: 250px;
+}
+.news_signup .sing_con .sing_design p input:focus,
+.news_signup .sing_con .sing_price p input:focus {
+  outline: none;
+  border: 1px solid #DF0303;
+}
+.news_signup .sing_con .sing_design p .sing_err,
+.news_signup .sing_con .sing_price p .sing_err {
+  color: #EE2D1B;
+  display: inline-block;
+  margin-top: 10px;
+}
+.news_signup .sing_con .sing_design p span,
+.news_signup .sing_con .sing_price p span {
+  display: block;
+  color: #7d7d7d;
+  text-align: center;
+  margin-top: 15px;
+}
+.news_signup .sing_con .sing_design p a:hover,
+.news_signup .sing_con .sing_price p a:hover {
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.sing_button {
+  width: 250px;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  background-color: #EE2D1B;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+.signup_position {
+  position: fixed;
+  top: 0px;
+  margin-top: 30px;
+  z-index: 100;
 }

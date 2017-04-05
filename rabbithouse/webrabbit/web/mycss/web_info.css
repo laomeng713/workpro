@@ -433,93 +433,6 @@
 .news_list .news_sec a:hover {
   cursor: pointer;
 }
-.news_list .news_sec .news_signup {
-  box-sizing: border-box;
-  border: 1px solid #dddddd;
-  width: 290px;
-  height: 380px;
-  background-color: #fbfbfb;
-}
-.news_list .news_sec .news_signup .sing_nav {
-  height: 40px;
-}
-.news_list .news_sec .news_signup .sing_nav .common_nav {
-  height: 36px;
-  width: 144px;
-  text-align: center;
-  line-height: 37px;
-  border-bottom: 3px solid #EE2D1B;
-  background-color: #fbfbfb;
-  font-size: 16px;
-}
-.news_list .news_sec .news_signup .sing_nav .common_nav:hover {
-  cursor: pointer;
-}
-.news_list .news_sec .news_signup .sing_nav .on {
-  color: #FFFFFF;
-  background-color: #EE2D1B;
-}
-.news_list .news_sec .news_signup .sing_con .sing_design,
-.news_list .news_sec .news_signup .sing_con .sing_price {
-  padding: 25px 19px 0 19px;
-}
-.news_list .news_sec .news_signup .sing_con .sing_design h2,
-.news_list .news_sec .news_signup .sing_con .sing_price h2 {
-  position: relative;
-  left: -20px;
-  color: #EE2D1B;
-  font-size: 18px;
-  padding-top: 12px;
-  text-align: center;
-  width: 290px;
-  font-weight: 500;
-}
-.news_list .news_sec .news_signup .sing_con .sing_design p,
-.news_list .news_sec .news_signup .sing_con .sing_price p {
-  width: 250px;
-  height: 223px;
-  margin: 0 auto;
-}
-.news_list .news_sec .news_signup .sing_con .sing_design p input,
-.news_list .news_sec .news_signup .sing_con .sing_price p input {
-  border: 1px solid #DDD;
-  box-sizing: border-box;
-  padding: 0 10px;
-  margin-top: 15px;
-  height: 30px;
-  line-height: 30px;
-  width: 250px;
-}
-.news_list .news_sec .news_signup .sing_con .sing_design p input:focus,
-.news_list .news_sec .news_signup .sing_con .sing_price p input:focus {
-  outline: none;
-  border: 1px solid #DF0303;
-}
-.news_list .news_sec .news_signup .sing_con .sing_design p .sing_err,
-.news_list .news_sec .news_signup .sing_con .sing_price p .sing_err {
-  color: #EE2D1B;
-  display: inline-block;
-  margin-top: 10px;
-}
-.news_list .news_sec .news_signup .sing_con .sing_design p span,
-.news_list .news_sec .news_signup .sing_con .sing_price p span {
-  display: block;
-  color: #7d7d7d;
-  text-align: center;
-  margin-top: 15px;
-}
-.news_list .news_sec .sing_button {
-  width: 250px;
-  display: block;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  font-size: 16px;
-  color: #fff;
-  background-color: #EE2D1B;
-  border-radius: 4px;
-  margin-top: 8px;
-}
 .news_list .news_sec .active_advance {
   margin-top: 40px;
 }
@@ -586,10 +499,4 @@
 }
 .news_list .news_sec .rec_special ul li:hover img {
   transform: scale(1.1, 1.1);
-}
-.signup_position {
-  position: fixed;
-  top: 0px;
-  margin-top: 30px;
-  z-index: 100;
 }

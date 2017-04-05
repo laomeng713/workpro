@@ -118,36 +118,19 @@
 .offerlist_r .offer_plist .offer_plist_item .ata:hover {
   background-color: #DE0F0F ;
 }
-.f18 {
-  font-size: 18px;
-}
-.f30 {
-  font-size: 30px;
-}
-.f14 {
-  font-size: 14px;
-}
-.ml190 {
-  margin-left: 190px;
-}
-.mt20 {
-  margin-top: 20px;
-}
-.cBred {
-  color: #DE0F0F;
-}
-.cGray {
-  color: #999;
-}
-.tc {
-  text-align: center;
-}
 .arrows {
+  display: none;
+  position: absolute;
+  bottom: -15px;
+  left: 155px;
   width: 0;
   height: 0;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
   border-top: 15px solid #DE0F0F;
+}
+.on {
+  display: block;
 }
 .span {
   display: inline-block;
@@ -166,6 +149,66 @@
   padding: 40px;
   height: 370px;
   background: url("../../images/quto_bac.jpg") no-repeat;
+}
+.quote_combo .top_share {
+  position: absolute;
+  top: 35px;
+  right: 100px;
+}
+.quote_combo .top_share .share_icon {
+  position: absolute;
+  right: 0;
+  width: 36px;
+  height: 30px;
+  overflow: hidden;
+  line-height: 28px;
+  background: #fff;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  padding: 2px 0;
+  -webkit-transition: 1s -webkit-transform ease;
+  -moz-transition: 1s -moz-transform ease;
+  -ms-transition: 1s -ms-transform ease;
+  transition: 1s transform ease;
+}
+.quote_combo .top_share .share_icon img {
+  float: left;
+  display: block;
+  width: 16px;
+  height: 14px;
+  margin: 8px 10px;
+}
+.quote_combo .top_share .share_icon .share_iconlist {
+  float: left;
+  font-size: 12px;
+  padding-left: 17px;
+  line-height: 16px;
+  height: 16px;
+  background: url(../../images/icons16.png) no-repeat;
+  cursor: pointer;
+  margin: 6px 6px 6px 0;
+}
+.quote_combo .top_share .share_icon .weibo {
+  background-position: 0px -104px;
+}
+.quote_combo .top_share .share_icon .tencent {
+  background-position: 0px -260px;
+}
+.quote_combo .top_share .share_icon .qqzoom {
+  background-position: 0px -51px;
+}
+.quote_combo .top_share .share_icon .douban {
+  background-position: 0px -468px;
+}
+.quote_combo .top_share .share_icon .renren {
+  background-position: 0px -208px;
+}
+.quote_combo .top_share .share_icon:hover {
+  width: 189px;
+  -webkit-transform: translateX(-5px);
+  -moz-transform: translateX(-5px);
+  -ms-transform: translateX(-5px);
+  transform: translateX(-5px);
 }
 .quote_combo .house_property {
   color: #FFFFFF;
@@ -230,22 +273,76 @@
   padding-bottom: 10px;
   font-weight: normal;
 }
-.quto_detail .quto_area ul {
+.quto_detail .quote_area ul {
   background: #dfdfdf;
   padding: 35px 0 0 35px;
 }
-.quto_detail .quto_area ul .w60 {
+.quto_detail .quote_area ul .w60 {
   display: inline-block;
   width: 62px;
   margin-right: 6px;
   font-size: 14px;
   text-align: center;
 }
-.quto_detail .quto_area ul .type_btn {
+.quto_detail .quote_area ul .type_btn {
+  position: relative;
   display: inline-block;
   width: 360px;
   line-height: 46px;
   border: 1px solid #cecece;
   border-left: none;
   margin-left: -4px;
+  background: linear-gradient(#d7d7d7, #ffffff);
+  cursor: pointer;
+}
+.quto_detail .quote_area ul .active {
+  position: relative;
+  background: #DE0F0F;
+  border: 1px solid #DE0F0F;
+  color: #fff;
+}
+.quto_detail .quote_area .quote_con {
+  display: none;
+  border: 1px solid #cecece;
+  border-top: none;
+}
+.quto_detail .quote_area .quote_con .total_price {
+  height: 100px;
+  line-height: 2.6;
+  background: #fafafa;
+}
+.quto_detail .quote_area .quote_con .quote_detail {
+  padding: 7px 61px 30px 53px;
+}
+.quto_detail .quote_area .quote_con .quote_detail .icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.quto_detail .quote_area .quote_con .quote_detail .bedroom {
+  background: #ebf9fc url(../../images/bedroom.png) no-repeat center center;
+}
+.quto_detail .quote_area .quote_con .quote_detail .s_bedroom {
+  background: #ebf9fc url(../../images/s_bedroom.png) no-repeat center center;
+}
+.quto_detail .quote_area .quote_con .quote_detail .guest_bedroom {
+  background: #ebf9fc url(../../images/guest_bedroom.png) no-repeat center center;
+}
+.quto_detail .quote_area .quote_con .quote_detail .guest_room {
+  background: #ebf9fc url(../../images/guest_room.png) no-repeat center center;
+}
+.quto_detail .quote_area .quote_con .quote_detail .kitchen {
+  background: #ebf9fc url(../../images/kitchen.png) no-repeat center center;
+}
+.quto_detail .quote_area .quote_con .quote_detail .toilet {
+  background: #ebf9fc url(../../images/toilet.png) no-repeat center center;
+}
+.quto_detail .quote_area .quote_con .quote_detail .balcony {
+  background: #ebf9fc url(../../images/balcony.png) no-repeat center center;
+}
+.quto_detail .quote_area .cur {
+  display: block;
 }

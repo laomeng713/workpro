@@ -265,6 +265,66 @@
                     <div class="rt">20147-03-28 10:48:01</div>
                 </div>
             </li>
+            <li>
+                <div class="question_hd">
+                    <a href="">[厨房/餐厅]厨房彩铝门价格有知道的吗？</a>
+                </div>
+                <div class="question_con etc">
+                    简约时尚电视景墙设计，自己装修，专家给点意见，最好有图片和文字说明，用那些材料，谢谢专家，谢谢
+                </div>
+                <div class="question_ft clearfloat">
+                    <div class="lf">已有 <i class="ans_num">3</i>个回答</div>
+                    <div class="rt">20147-03-28 10:48:01</div>
+                </div>
+            </li>
+            <li>
+                <div class="question_hd">
+                    <a href="">[厨房/餐厅]厨房彩铝门价格有知道的吗？</a>
+                </div>
+                <div class="question_con etc">
+                    简约时尚电视景墙设计，自己装修，专家给点意见，最好有图片和文字说明，用那些材料，谢谢专家，谢谢
+                </div>
+                <div class="question_ft clearfloat">
+                    <div class="lf">已有 <i class="ans_num">3</i>个回答</div>
+                    <div class="rt">20147-03-28 10:48:01</div>
+                </div>
+            </li>
+            <li>
+                <div class="question_hd">
+                    <a href="">[厨房/餐厅]厨房彩铝门价格有知道的吗？</a>
+                </div>
+                <div class="question_con etc">
+                    简约时尚电视景墙设计，自己装修，专家给点意见，最好有图片和文字说明，用那些材料，谢谢专家，谢谢
+                </div>
+                <div class="question_ft clearfloat">
+                    <div class="lf">已有 <i class="ans_num">3</i>个回答</div>
+                    <div class="rt">20147-03-28 10:48:01</div>
+                </div>
+            </li>
+            <li>
+                <div class="question_hd">
+                    <a href="">[厨房/餐厅]厨房彩铝门价格有知道的吗？</a>
+                </div>
+                <div class="question_con etc">
+                    简约时尚电视景墙设计，自己装修，专家给点意见，最好有图片和文字说明，用那些材料，谢谢专家，谢谢
+                </div>
+                <div class="question_ft clearfloat">
+                    <div class="lf">已有 <i class="ans_num">3</i>个回答</div>
+                    <div class="rt">20147-03-28 10:48:01</div>
+                </div>
+            </li>
+            <li>
+                <div class="question_hd">
+                    <a href="">[厨房/餐厅]厨房彩铝门价格有知道的吗？</a>
+                </div>
+                <div class="question_con etc">
+                    简约时尚电视景墙设计，自己装修，专家给点意见，最好有图片和文字说明，用那些材料，谢谢专家，谢谢
+                </div>
+                <div class="question_ft clearfloat">
+                    <div class="lf">已有 <i class="ans_num">3</i>个回答</div>
+                    <div class="rt">20147-03-28 10:48:01</div>
+                </div>
+            </li>
         </ul>
 
         <!--分页器-->
@@ -290,11 +350,43 @@
     </div>
     <div class="content_right rt">
         <!--侧栏页-->
-        <!--通用标题头部-->
-        <h2 class="active_title">装修公司推荐
+        <div class="news_signup  clearfloat">
+            <!--tab 标签 导航-->
+            <div class="sing_nav clearfloat">
+                <p class="common_nav on lf">免费设计</p>
+
+                <p class="common_nav rt">建材询价</p>
+            </div>
+            <!--登陆信息-->
+            <div class="sing_con">
+                <div class="sing_design" style="display:block;">
+                    <h2>选风格填面积，立即看美家效果图</h2>
+                    <p>
+                        <input class="meter" type="text" placeholder="您的房屋面积（平米）"/>
+                        <input class="phone" type="text" placeholder="您的手机号码"/><br/>
+                        <span class="sing_err"></span> <!--错误提示-->
+                        <a class="sing_button" onclick="errorCheck($(this),1)">免费获取</a>
+                        <span>每日前20名申请用户，获3D装修设计题</span>
+                    </p>
+                </div>
+                <div class="sing_price" style="display:none;">
+                    <h2>装修买建材总共要多少钱</h2>
+                    <p>
+                        <input class="meter" type="text" placeholder="您的房屋面积（平米）"/>
+                        <input class="phone" type="text" placeholder="您的手机号码"/><br/>
+                        <span class="sing_err"></span> <!--错误提示-->
+                        <a class="sing_button" onclick="errorCheck($(this),2)">免费获取</a>
+                        <span>该报价为当地行情，仅供参考，稍后会有建材专家致电您，提供专业的建材购买咨询服务。</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="left_show">
+            <!--通用标题头部-->
+            <h2 class="active_title">装修公司推荐
             <a href="#">更多</a>
         </h2>
-        <ul>
+            <ul>
             <li>
                 <a href="">
                     <img src="../images/content_list01.jpg" alt=""/>
@@ -324,6 +416,8 @@
                 </a>
             </li>
         </ul>
+
+        </div>
     </div>
 </div>
 
@@ -356,11 +450,7 @@
 <script src="../web/myjs/index.js"></script>
 <script src="../web/myjs/ask_lm_gzsj.js"></script>
 <script>
-$('.ask_tab_hd li').click(function(){
-    var index=$(this).index();
-    $(this).addClass("on").siblings("li").removeClass("on");
-    $(".tab_content p").removeClass("in").eq(index).addClass("in");
-})
+
 </script>
 </body>
 </html>

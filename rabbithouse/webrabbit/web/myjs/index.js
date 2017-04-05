@@ -147,14 +147,12 @@ function submitPage(){
 ///页面达到一定高度。。。只显示收集信息框
 function sign_area(){
     window.addEventListener("scroll",function(){
-        var height=document.body.scrollTop;
+        var height=document.documentElement.scrollTop;
         if(height>1700){
-            $('.active_advance').hide();
-            $('.recom_area').hide();
+            $('.left_show').hide();
             $('.news_signup').addClass('signup_position');
         }else{
-            $('.active_advance').show();
-            $('.recom_area').show();
+            $('.left_show').show();
             $('.news_signup').removeClass('signup_position');
         }
     })
@@ -164,7 +162,7 @@ function sign_area(){
 //返回顶部
 function slide_help(){
     window.addEventListener("scroll",function(){
-        var height=document.body.scrollTop;
+        var height=document.documentElement.scrollTop;
         if(height>400){
             $('.slide_help').show();
         }else{
