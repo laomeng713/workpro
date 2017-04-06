@@ -1,0 +1,239 @@
+.choose_city {
+  position: relative;
+  margin: 14px auto 0 auto;
+  box-sizing: border-box;
+  height: auto;
+  font-size: 14px;
+  border: 5px solid #DF0303;
+  background: #fff;
+}
+.choose_city .title_city {
+  padding-left: 28px;
+  width: 118px;
+  float: left;
+  font-weight: bold;
+  color: #333;
+}
+.choose_city .hot_city {
+  margin-top: 17px;
+  overflow: hidden;
+  height: 50px;
+  line-height: 50px;
+  clear: both;
+}
+.choose_city .hot_city .hot_citylist {
+  width: 814px;
+  float: left;
+}
+.choose_city .hot_city .hot_citylist span a {
+  margin-right: 28px;
+  display: inline-block;
+  color: #DF0303;
+  float: left;
+}
+.choose_city .hot_city .hot_citylist div {
+  float: left;
+  font-size: 12px;
+  color: #333;
+}
+.choose_city .hot_city .hot_citylist div i {
+  color: #DF0303;
+}
+.choose_city .fast_search {
+  margin-top: 3px;
+  line-height: 30px;
+}
+.choose_city .fast_search select {
+  color: #666666;
+  height: 21px;
+  border: 1px solid #d7d7d7;
+  vertical-align: middle;
+  width: 133px;
+}
+.choose_city .fast_search select:focus {
+  outline: none;
+  border: 1px solid #DF0303;
+}
+.choose_city .fast_search input {
+  box-sizing: border-box;
+  padding: 0 20px;
+  width: 68px;
+  height: 21px;
+  line-height: 24px \9;
+  text-align: center;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  background: #DF0303;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  transition: .3s background linear;
+  cursor: pointer;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.choose_city .letter_search {
+  margin: 20px 0 20px 0;
+  height: 46px;
+  line-height: 46px;
+  border-top: 1px solid #d7d7d7;
+  border-bottom: 1px solid #d7d7d7;
+  background: #f4f4f4;
+}
+.choose_city .letter_search .letter_list {
+  margin: 11px 10px 0 0;
+  float: right;
+  font-size: 0;
+  overflow: hidden;
+}
+.choose_city .letter_search .letter_list a {
+  display: inline-block;
+  font-size: 14px;
+  color: #666;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  overflow: hidden;
+}
+.choose_city .letter_search .letter_list a.se_cur {
+  background: #DF0303;
+  color: #fff;
+}
+.choose_city .city_box .city_area {
+  margin-bottom: 20px;
+  overflow: hidden;
+  clear: both;
+}
+.choose_city .city_box .city_area .city_dt {
+  width: 814px;
+  float: left;
+}
+.choose_city .city_box .city_area .city_dt a {
+  margin: 0 18px 12px 0;
+  font-size: 12px;
+  color: #5f675e;
+  display: inline-block;
+}
+.choose_city .city_box .city_area .city_dt .cur {
+  color: #DF0303;
+  font-weight: bold;
+  font-size: 14px;
+}
+.choose_city .city_box .city_area .city_dt span a {
+  color: #DF0303;
+}
+.choose_city .city_box .city_area .city_dt span .default {
+  color: #5f675e;
+}
+.most_title {
+  position: relative;
+  margin-top: 27px;
+  height: 58px;
+  line-height: 58px;
+  border-top: 3px solid #DF0303;
+  border-bottom: 1px solid #d7d7d7;
+}
+.most_title .title_share {
+  margin-top: 20px;
+  float: right;
+}
+.most_title .title_share a {
+  float: left;
+  font-size: 12px;
+  line-height: 16px;
+  height: 16px;
+  cursor: pointer;
+  margin: 6px 6px 6px 0;
+}
+.most_title strong {
+  font-size: 20px;
+  color: #DF0303;
+}
+.most_title .update_num {
+  padding-left: 15px;
+  color: #999;
+}
+.most_title .update_num i {
+  padding: 0 5px;
+  color: #DF0303;
+}
+.decoration .deco_content .info_list {
+  color: #666;
+}
+.decoration .deco_content .info_list a {
+  color: #666;
+}
+.decoration .deco_content .deco_tab {
+  margin-top: 20px;
+  height: 118px;
+  background: #fff;
+  border: 1px solid #d7d7d7;
+}
+.decoration .deco_content .deco_tab .tab_title {
+  width: 970px;
+  overflow: hidden;
+}
+.decoration .deco_content .deco_tab .tab_title ul {
+  box-sizing: border-box;
+  width: 974px;
+  height: 48px;
+  overflow: hidden;
+}
+.decoration .deco_content .deco_tab .tab_title ul li {
+  width: 194px;
+  box-sizing: border-box;
+  display: inline;
+  float: left;
+  height: 47px;
+  line-height: 40px;
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+  border-right: 1px solid #d7d7d7;
+  border-bottom: 1px solid #d7d7d7;
+  background: #f2f2f2;
+  cursor: pointer;
+}
+.decoration .deco_content .deco_tab .tab_title ul .tab_cur {
+  height: 48px;
+  line-height: 45px;
+  background: #fff;
+  border-bottom: 1px solid #fff;
+  border-top: 5px solid #DF0303 ;
+  color: #DF0303;
+  font-weight: bold;
+}
+.fashion_style .style_list {
+  margin-top: 15px;
+  width: 978px;
+}
+.fashion_style .style_list li {
+  width: 155px;
+  height: 175px;
+  overflow: hidden;
+  float: left;
+  margin-right: 8px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.fashion_style .style_list li img {
+  width: 155px;
+}
+.fashion_style .style_list li span {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 27px;
+  line-height: 27px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bolder;
+  background: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}

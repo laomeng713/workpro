@@ -31,6 +31,10 @@ font-family: "Microsoft YaHei";
     width:1200px;
     margin: 0 auto;
 }
+.containerSmall{
+    width:970px;
+    margin: 0 auto;
+}
 .clearfloat:after {
     content: "";
     display: table;
