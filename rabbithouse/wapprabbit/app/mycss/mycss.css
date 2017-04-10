@@ -98,6 +98,9 @@ body {
   width: 40%;
   float: left;
 }
+.more_box .sub_more .class_detail ul {
+  display: none;
+}
 .more_box .sub_more .class_detail ul li a {
   padding: 0.9rem 0.9rem 0.9rem 3rem;
   display: block;
@@ -105,6 +108,9 @@ body {
   line-height: 2.36rem;
   font-size: 1.4rem;
   color: #666;
+}
+.more_box .sub_more .class_detail .cur {
+  display: block;
 }
 .info_list a {
   color: #333;

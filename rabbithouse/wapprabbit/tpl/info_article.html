@@ -180,7 +180,7 @@
     <div class="textForml">
         <span class="close right"></span>
         <p>10秒钟报名，立即获得 免费设计方案</p>
-        <input class="name"  autofocus type="text" placeholder="您的姓名"/> <br/>
+        <input class="name"  autofocus type="text" placeholder="您的姓名"/><br/>
         <i class="err"></i>
         <input class="phone"  autofocus type="tel" placeholder="您的手机号码"/><br/>
         <em class="count"></em>
@@ -192,7 +192,7 @@
     <div class="textForml">
         <span class="close right"></span>
         <p>免费报价清单 10s轻松获取</p>
-        <input class="meter"  autofocus type="number" placeholder="您家的面积(平米)"/> <br/>
+        <input class="meter"  autofocus type="number" placeholder="您家的面积(平米)"/><br/>
         <i class="err"></i>
         <input class="phone"  autofocus type="tel" placeholder="您的手机号码"/><br/>
         <em class="count"></em>
@@ -231,25 +231,59 @@
 <script src="../app/myjs/index.js"></script>
 <script>
     var mySwiper = new Swiper('.swiper-container', {
-//        slidesPerView: 'auto',
         scrollContainer: true,
         mode: 'vertical',
         pagination : '.swiper-pagination',
         paginationHide :true
     })
+
+//    搜索界面弹出以及取消界面
+    $('.header_search').click(function () {
+        $('.search_page').show();
+        noScrollCom();
+
+    })
+    $('.search_cancel').click(function () {
+        $('.search_page').hide();
+        autoScrollCom();
+    })
+
+
+//    点击加载更多
     var $content=$('.news_content p:gt(3)');
-    //    console.log($content);
     $content.hide();
     $('.click_all').click(function(){
         $content.show();
         $('.click_all').hide();
     })
+//    省略号点击显示更多文字
     $('.caption_content').click(function(){
         if($(".sub_title").css("display")=="-webkit-box"){
             $('.sub_title').css('display','block');
             $('.sub_title').css('height','auto');
         }else{
             $('.sub_title').css('display','-webkit-box');
+        }
+    })
+//    点赞判断
+    $('.news_praise').click(function () {
+        var s = $('.news_praise').attr('data_status');
+        if (s == 0) {
+            //没有被点中
+            $('.news_praise').css("background", "url('../images/zan_icon.png') 0 -19px no-repeat");
+            $('.news_praise').css("background-size", "100%");
+            $('.news_praise').attr('data_status', 1);
+            var num = $('.news_praise').siblings('i').text();
+            num++;
+            $('.news_praise').siblings('i').text(num);
+        } else if (s == 1) {//说明被选中
+            $('.news_praise').css("background", "url('../images/zan_icon.png')  no-repeat");
+            $('.news_praise').css("background-size", "100%");
+            $('.news_praise').attr('data_status', 0);
+            var num = $('.news_praise').siblings('i').text();
+            //console.log(num);
+            num--;
+            $('.news_praise').siblings('i').text(num);
         }
     })
 </script>

@@ -147,6 +147,12 @@ textarea {
 .rt {
   float: right;
 }
+.tc {
+  text-align: center;
+}
+.vm {
+  vertical-align: middle;
+}
 /* ******** 字体颜色 star *********** */
 .cWhite,
 .cWhite:visited,
@@ -427,12 +433,8 @@ textarea {
   *zoom: 1;
   /*ie浏览器*/
 }
-.clearfix:before{
-  display: table;
-  content: '';
-}
 .clearfix:after {
-  display: table;
+  display: block;
   content: '';
   height: 0;
   overflow: hidden;

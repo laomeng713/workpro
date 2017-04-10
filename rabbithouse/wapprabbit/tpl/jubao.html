@@ -53,7 +53,41 @@
 <script src="../../../common/js/jquery-1.11.3.min.js"></script>
 <script src="../app/myjs/index.js"></script>
 <script>
-
+    //举报页面功能
+    $('.report_reason').on("click", "li", function () {
+        var $this = $(this);
+        if ($this.hasClass("cur")) {
+            $this.removeClass("cur");
+        } else {
+            $this.addClass("cur");
+        }
+        if ($('.report_reason li').hasClass("cur")) {
+            $('.common_btn').addClass("cur");
+        } else {
+            $('.common_btn').removeClass("cur");
+        }
+    })
+    $('.another_rea').click(function () {
+        if ($('.report_text').css("display") == "none") {
+            $('.report_text').show();
+        } else {
+            $('.report_text').hide();
+        }
+    })
+    $('.common_btn').click(function () {
+        if ($(this).hasClass("cur")) {
+            //提交成功。。。。
+            $.ajax({
+                type: "post",
+                success: function () {
+                    console.log('success');
+                }
+            })
+        } else {
+            //提交失败。。。。。
+            console.log('error');
+        }
+    })
 </script>
 </body>
 </html>
