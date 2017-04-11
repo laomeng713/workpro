@@ -9,6 +9,7 @@ html {
   font-size: 62.5%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  color: #444;
 }
 /* 清除标签自带外边距离 */
 body,
@@ -38,8 +39,8 @@ body {
   font-family: 'Microsoft YaHei', Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
   line-height: 1.5;
-  color: #333333;
-  background-color: #ffffff;
+  color: #333;
+  background-color: #fff;
   max-width: 720px;
   margin: 0 auto;
 }

@@ -18,14 +18,16 @@
     <link rel="stylesheet" href="../../../common/css/swiper.min.css"/>
     <link rel="stylesheet" href="../../../common/css/appcommon.css"/>
     <link rel="stylesheet" href="../app/mycss/mycss.css"/>
+
 </head>
 <body>
 <header class="header">
     <a class="pl"></a>
+
     <h2 class="f18">装修头条</h2>
 </header>
 <nav class="info_nav">
-    <div class="swiper-container">
+    <div class="swiper-container1">
         <ul class="swiper-wrapper">
             <li class="swiper-slide"><a href="#">推荐</a></li>
             <li class="swiper-slide"><a href="#">新闻</a></li>
@@ -109,6 +111,18 @@
         </div>
     </div>
 </div>
+
+<!--banner-->
+<nav class="info_banner swiper-container">
+    <ul class="swiper-wrapper">
+        <li class="swiper-slide"><a href="#"><img src="../images/banner01.jpg" alt=""/></a></li>
+        <li class="swiper-slide"><a href="#"><img src="../images/banner02.jpg" alt=""/></a></li>
+        <li class="swiper-slide"><a href="#"><img src="../images/banner03.jpg" alt=""/></a></li>
+        <li class="swiper-slide"><a href="#"><img src="../images/banner04.jpg" alt=""/></a></li>
+    </ul>
+    <!--<div class="page_num"></div>-->
+</nav>
+<!--列表区-->
 <div class="info_list">
     <a class="clearfix" href="info_article.html">
         <div class="info_lf lf mr4 clearfix">
@@ -239,6 +253,7 @@
     <div class="text_form cur text_forml">
         <div class="textForml">
             <span class="close right"></span>
+
             <p>10秒钟报名，立即获得 免费设计方案</p>
             <input class="name" autofocus type="text" placeholder="您的姓名"/> <br/>
             <i class="err"></i>
@@ -251,6 +266,7 @@
     <div class=" text_form cur text_formr">
         <div class="textForml">
             <span class="close right"></span>
+
             <p>免费报价清单 10s轻松获取</p>
             <input class="meter" autofocus type="number" placeholder="您家的面积(平米)"/> <br/>
             <i class="err"></i>
@@ -267,10 +283,14 @@
 <script src="../../../common/js/jquery-1.11.3.min.js"></script>
 <script src="../app/myjs/index.js"></script>
 <script>
-    $(function () {
-        var mySwiper = new Swiper('.swiper-container', {
-            slidesPerView: 'auto'
-        })
+//    导航条的轮播
+    var mySwiper2 = new Swiper('.swiper-container1', {
+        slidesPerView: 'auto'
+    })
+//banner的轮播
+    var mySwiper3 = new Swiper('.swiper-container', {
+//        pagination: '.page_num',
+//        paginationType : 'fraction'
     })
 
 

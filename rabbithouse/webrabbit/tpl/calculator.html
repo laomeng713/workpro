@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>计算报价</title>
+    <title>北京装修公司_北京家装设计_家居装饰-兔班长装修网北京</title>
+    <meta name="keywords" content="北京装修公司,北京装饰公司,北京家装设计,北京家庭装修,北京家装">
+    <meta name="description" content="北京兔班长装修网提供北京装修公司、北京装饰公司、北京家装设计、北京建材团购、北京家居家具团购等相关服务信息。">
+    <link rel="canonical" href="http://www.tu8zhang.com/">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="../../../common/css/webcommon.css"/>
+    <link rel="stylesheet" href="../web/mycss/main.css"/>
+    <style>
+        /*******************头部******************/
+        .nav {
+            width: 100%;
+            height: 40px;
+            border-bottom: 3px solid #DF0303;
+            float: left;
+        }
+        .nav ul{margin-left: 110px}
+        .nav_img{width: 110px;margin-top: 5px}
+        .nav ul li {
+            float: left;
+        }
+        .nav ul li a {
+            display: block;
+            padding: 0 24px;
+            line-height: 40px;
+            font-size: 15px;
+        }
+        .nav_right{
+            margin-right: 100px;
+            margin-top: 10px;
+            float: right;
+        }
+        .nav_right a{
+            margin-left: 20px;
+        }
+        .nav_right a:last-child{
+            color: #DF0303;
+        }
+        .active{
+            color:#DE2729;
+        }
+        /************section***********/
+        .section{
+            background: url("../images/background.jpg") no-repeat;
+            background-size: 100% 100%;
+            height: 600px;
+            /*background-color: #666666;*/
+            position: relative;
+        }
+        .text{
+            position: absolute;
+            margin: 140px  0 50px -490px  ;
+            left: 50%;
+            width: 980px;
+            height: 405px;
+            background-color: #FDFEFE;
+            box-shadow: 10px 10px 5px #888888;
+
+        }
+        /****************action********************/
+        .action{
+            background-color: #DF0303 ;
+            width: 118px;
+            height:118px;
+            border-radius: 50%;
+            position: absolute;
+            top: 30%;
+            left: 42%;
+        }
+        .action:hover{
+            cursor: pointer;
+            background-color: #EA3B3B;
+        }
+        .action p{
+            color:#FFFFFF;
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            width: 48px;
+            font-size: 24px;
+        }
+        /*********left**********/
+        .section_left{
+            padding-top: 50px;
+            width: 50%;
+            float: left;
+            /*border-right: 1px solid #dddddd;*/
+        }
+        .section_left h3,.section_left p,.section_right div{
+            text-align: center;
+        }
+        .section_left h3,.section_right h3{
+            font-size: 28px;
+        }
+        .section_left p,.section_left h3,#pro,#city,.section_left input,.section_style{
+            margin-bottom: 10px;
+        }
+        #pro,#city{
+            color: #666;
+            background: #f6f6f6;
+            width: 128px;
+            vertical-align: middle;
+        }
+        .section_left input,.section_style{
+            width: 246px;
+        }
+        .section_style{
+            width: 260px;
+            color: #666666;
+        }
+        .section_left input,#pro,#city,.section_style{
+            height: 36px;
+            line-height: 36px;
+            border: 1px solid #ececec;
+            padding: 0 6px;
+        }
+        .err_meter,.err_phone{
+            text-indent:120px;
+        }
+        .err_meter,.err_phone,.section_ico,.section_info,.section_i{
+            color: #DF0303;
+        }
+        /**************right***********/
+        .section_right{
+            text-align: center;
+            float: right;
+            padding-top: 40px;
+            width: 49%;
+        }
+        .section_right h3{
+            font-size: 24px;
+            margin-bottom: 15px;
+            text-indent: 100px;
+            margin-right: 30px;
+        }
+        .section_info{
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .section_right b{
+            font-size: 20px;
+        }
+        .section_right div{
+            margin: 0 auto;
+            width: 340px;
+            height: 200px;
+            padding: 30px 10px;
+            border: 1px  solid #ddd;
+        }
+        .section_right div p{
+            margin: 10px;
+        }
+        .section_i{
+            display: inline-block;
+            margin: 0 20px;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+<body>
+<header class="clearfloat">
+    <div class="nav clearfloat">
+        <ul>
+            <li><a href="#"><img class="nav_img" src="../images/logo.png" alt=""/></a></li>
+            <li><a href="#">装修公司</a></li>
+            <li><a href="#">效果图</a></li>
+            <li><a href="#">装修问答</a></li>
+            <li><a class="active" href="#">装修报价</a></li>
+            <li><a href="#">工地直播</a></li>
+        </ul>
+        <div class="nav_right">
+            <a href="#">登陆</a>
+            <a href="#">注册</a>
+            <a href="#">返回首页</a>
+        </div>
+
+    </div>
+</header>
+
+<div class="section clearfloat">
+    <div class="text">
+        <div class="section_left">
+            <h3>装修计算器</h3>
+
+            <p>今日已有 <em class="section_ico">1827</em>人成功获取装修预算</p>
+
+            <p>
+                <select id="pro"  onchange="selectc(this);"></select>
+                <select id="city"></select><br/>
+                <input class="meter"  autofocus type="text" placeholder="请输入您的建筑面积（平米）"/><br/>
+
+                <input class="phone" autofocus type="text" placeholder="请输入您的手机号码接收报价结果"/><br/>
+
+                <select class="section_style">
+                    <option value="">简单装修</option>
+                    <option value="">高档装修</option>
+                </select>
+            <div class="err_meter"></div>
+            <div class="err_phone"></div>
+
+            </p>
+
+
+        </div>
+        <div class="section_right">
+            <h3>您家的装修预算 <span class="section_info">?</span> <b>元</b> </h3>
+            <div>
+                <p>材料费：<span class="section_i">?</span>元</p>
+                <p>人工费：<span class="section_i">?</span>元</p>
+                <p>设计费：<span class="section_i">?</span>元</p>
+                <p>质检费：<span class="section_i">?</span>元</p>
+                <p>其他预算：<span class="section_i">?</span>元</p>
+            </div>
+        </div>
+        <div class="action">
+            <p>开始计算</p>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <p>
+        <a href="#">关于我们</a> |
+        <a href="#">友情链接</a> |
+        <a href="#">意见反馈</a> |
+        <a href="#">联系我们</a> |
+        <a href="#">法律声明</a> |
+    </p>
+
+    <p>免责声明：本网站部分内容由用户自行上传，如权利人发现存在误传其作品情形，请及时与本站联系。</p>
+
+    <p>© copyright 2017 北京维纳亚科技有限公司</p>
+
+    <p>京ICP备17003882号</p>
+</footer>
+<script src="../../../common/js/jquery-1.11.3.min.js"></script>
+<script src="../web/myjs/index.js"></script>
+<script>
+    $(function(){
+
+        //错误提示
+        function errTip(str){
+            var $errTip=$('.err_phone');
+            $errTip.text(str);
+        }
+
+        function meterCheck(meter){
+            if(meter==''){
+                $('.err_meter').text('面积不能为空');
+                return false;
+            }else{
+                $('.err_meter').text('');
+                return true;
+            }
+        }
+        //手机号码
+        function phoneCheck(phone){
+            var regPhone=/^1[3578]\d{9}$/;
+            if(phone==''){
+                errTip('手机号不能为空');
+                return false;
+            }else if(!regPhone.test(phone)){//手机号码不正确
+                errTip('请填写正确的手机号码');
+                return false;
+            }else{
+                errTip('');
+                return true;
+            }
+        }
+
+        //点击事件
+        $('.action').on('click',function(event){
+            var meter=$.trim($('.meter').val());
+            var phone=$.trim($('.phone').val());
+            var regmeter=meterCheck(meter);
+            var regphone=phoneCheck(phone);
+            if(regmeter&&regphone){
+                $.ajax({
+                    type:'post',
+                    success:function(){
+                        console.log('success');
+
+                    },
+                    error:function(){
+                        console.log('error');
+                    }
+                })
+
+            }
+        })
+
+    })
+</script>
+</body>
+</html>

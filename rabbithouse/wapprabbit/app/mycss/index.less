@@ -2,6 +2,7 @@
 body{
   background-color: #efefef;
 }
+p,h4,span{color: #333333}
 .index_header {
   display: flex;
   position: fixed;
@@ -336,6 +337,7 @@ body{
 }
 //装修服务
 .zx_server{
+  padding: 0 0.5rem;
   margin-top: 0.9rem;
   background-color: #FFFFFF;
   .server_offer{
@@ -525,10 +527,459 @@ body{
     }
   }
 }
+//找装修公司
+.zx_company{
+  padding: 0 0.5rem;
+  margin-top: 0.9rem;
+  background-color: #FFFFFF;
+  .company_tip{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+    li{
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      -webkit-flex: 1;
+      flex: 1;
+      position: relative;
+      padding: 1.2rem 1rem;
+      border-right:1px solid #E8E8E8;
+      border-bottom:1px solid #E8E8E8;
+      .name{
+        font-size: 1.3rem;
+        position: relative;
+        z-index: 2;
+        color: #333333;
+      }
+      .details{
+        font-size: .1rem;
+        color: #999;
+        padding-top: .02rem;
+        position: relative;
+        z-index: 2;
+      }
+      .img_box{
+        width: 9.9rem;
+        height: 6.9rem;
+        position: absolute;
+        right: -8px;
+        top: 10px;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    li:last-child{
+      border-right: none;
+    }
+  }
+  .company_content{
+    li{
+      padding: 0.8rem 1rem 0.4rem;
+      position: relative;
+      border-bottom: 1px solid #e0e0e0;
+      .company_mess{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        position: relative;
+        padding: 0.6rem 0;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        .img_box{
+          width: 7rem;
+          height: 7rem;
+          margin-right: 1rem;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .text{
+          -webkit-box-flex: 1;
+          -ms-flex: 1;
+          -webkit-flex: 1;
+          flex: 1;
+          position: relative;
+          .name{
+            font-size: 1.4rem;
+            max-width: 60%;
+            display: -webkit-box;
+          }
+          .comment{
+            font-size: 1rem;
+            margin-top: 0.7rem;
+            p{
+              color: #999;
+            }
+          }
+          .company_price{
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 1.1rem;
+            text-align: right;
+            span{
 
+            }
+          }
+        }
+        .btn{
+          display: inline-block;
+          color: #fff;
+          font-size: 1rem;
+          background-color: #d00;
+          padding: 0.3rem 0.7rem;
+          border-radius: 25px;
+          position: absolute;
+          right: 0;
+          bottom: 0.8rem;
+        }
+      }
+      .company_combo{
+        margin-left: 8rem;
+        font-size: 1rem;
+        color: #666;
+        padding: 0.7rem 0;
+        border-top: 1px solid #e0e0e0;
+        .text{
+          max-width: 100%;
+          display: -webkit-box;
+          span{
+            color: #fff;
+            padding: 0.2rem;
+            line-height: 1;
+            display: inline-block;
+            -ms-transform: translateY(-10%);
+            transform: translateY(-10%);
+            -webkit-transform: translateY(-10%);
+            font-size: 0.7rem;
+            margin-right: 0.5rem;
+            background-color: #fd772f;
+            font-family: sans-serif;
+          }
+        }
+      }
+    }
 
+  }
+  .company_bottom{
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin-top: 0.4rem;
+    font-size: 0.9rem;
+    color: #999;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+//买建材家具
+.shop_store{
+  padding: 0 0.5rem;
+  margin-top: 0.9rem;
+  background-color: #FFFFFF;
+  li{
+    padding: 0.8rem 0 0;
+    .store_mess{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      position: relative;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      padding: 0 1rem;
+      margin: 0.8rem 0;
+      .text{
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        -webkit-flex: 1;
+        flex: 1;
+        position: relative;
+        h4{
+          font-size: 1.4rem;
+          max-width: 60%;
+          display: -webkit-box;
+        }
+        .store_appraise{
+          font-size: .1rem;
+          margin-top: 0.7rem;
+          .star_icon{
+            display: inline-block;
+            width: 5.5rem;
+            height: 1rem;
+            background: url(//mued3.jia.com/image/mobile/zhuangxiu/zxgs/star-ctrl-icon.png) 0 100% no-repeat;
+            background-size: 100%;
+          }
+        }
+        .store_tips{
+          color: #999;
+          font-size: 1rem;
+          margin-top: 0.5rem;
+        }
+        .store_details{
+          position: absolute;
+          right: 0;
+          top: 0;
+          font-size: .11rem;
+          text-align: right;
+          span{
+            display: block;
+            padding-left: 1.5rem;
+            background: url(//mued3.jia.com/image/mobile/activity/wp-kb-icon.png) left .02rem no-repeat;
+            background-size: 1rem;
+          }
+        }
+      }
+      .btn{
+        display: inline-block;
+        color: #fff;
+        font-size: 1rem;
+        background-color: #d00;
+        padding: 0.3rem 0.7rem;
+        border-radius: 25px;
+        position: absolute;
+        right: 0;
+        bottom: 0.8rem;
+      }
+    }
+    .store_content{
+      padding: 0 1rem;
+      .content_title{
+        margin-right: 1rem;
+        font-size: 1rem;
+        color: #666;
+        padding: 0.7rem 0;
+        border-top: 1px dashed #e0e0e0;
+        .text{
+          max-width: 100%;
+          display: -webkit-box;
+          span{
+            color: #fff;
+            padding: 0.2rem;
+            line-height: 1;
+            display: inline-block;
+            font-size: 0.7rem;
+            margin-right: 0.5rem;
+            background-color: #db0000;
+            font-family: sans-serif;
+          }
+        }
+      }
+      .myswiper-container{
+        position: relative;
+        overflow: hidden;
+        ul{
+          //overflow: hidden;
+          li{
+            a{
+              display: block;
+              padding-right: 0.6rem;
+              .image_box{
+                width: auto;
+                height: auto;
+                //padding-top: 100%;
+                margin-right: 0;
+                img{
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+              .shop_name{
+                padding-top: 0.3rem;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+              }
+              .shop_price{
+                font-size: 0.9rem;
+                color: #999;
+                line-height: 1.4rem;
+                display: -webkit-box;
+                .num{
+                  color: #d00;
+                }
+              }
+            }
+          }
+        }
 
+      }
+    }
+  }
+}
+//更多经典案例
+.more_case{
+  padding: 0 0.5rem;
+  background-color: #fff;
+  margin-top: .9rem;
+  ul{
+      li{
+        width: 48%;
+        float: left;
+        margin-bottom: 4%;
+        position: relative;
+        .image_box{
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .text{
+          padding: 0 1rem;
+          .name{
+            font-size: 1.4rem;
+            font-weight: 700;
+            padding-top: 0.3rem;
+          }
+          .details{
+            font-size: 1rem;
+            color: #666;
+            padding-top: 0.2rem;
+          }
+        }
+      }
+    li:nth-child(2n+2){
+      margin-left:4% ;
+    }
+  }
+}
+//精彩专题
+.special_area{
+  padding: 0 0.5rem;
+  background-color: #fff;
+  margin-top: .9rem;
+  ul{
+    li{
+      position: relative;
+      padding: 0px  1rem  1rem;
+      a{
+        display: block;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
 
+    }
+  }
+}
+//组团特价
+.group_price{
+  padding: 0 0.5rem;
+  //background-color: #fff;
+  margin-top: .9rem;
+  .title{
+    padding: 1rem 0px;
+    .main_text{
+      font-size: 1.5rem;
+    }
+    .main_desc{
+      font-size: 1rem;
+      color: rgb(102, 102, 102);
+    }
+  }
+  ul{
+    li{
+      width: 48%;
+      a{
+        display: block;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    li:nth-child(2n+2){
+      margin-left:4% ;
+    }
+  }
+}
+//.信息说明
+.info_intru{
+  padding: 0.76rem 16% 0;
+  background-color: #efefef;
+  p{
+    font-size: 0.9rem;
+    color: #999;
+    text-align: center;
+    padding: 1.2rem 0;
+  }
+}
+//热线
+.hot_line{
+  font-size: 1.24rem;
+  color: #333;
+  text-align: center;
+  height: 3.44rem;
+  line-height: 3.44rem;
+  background-color: #ddd;
+  span{
+    color: #ff3333;
+    font-weight: 600;
+  }
+}
+//固定底部
+.footer_nav{
+  padding: 0.4rem 0 0.36rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  z-index: 100;
+  ul{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: -ms-flexbox;
+    display: flex;
+    li{
+      moz-box-flex: 1;
+      -webkit-box-flex: 1;
+      -o-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      text-align: center;
+      color: #333;
+      font-size: 1rem;
+      a{
+        display: block;
+        //margin-bottom: 10px;
+        span{
+          text-indent: -99999px;
+          display: inline-block;
+          width: 2.07rem;
+          height: 2.07rem;
+          background: url(../../images/footer-nav.png) no-repeat;
+          background-size: 100%;
+        }
+        p{
+          margin-top: 0.2rem;
+        }
+      }
+    }
+  }
+}
 
 
 

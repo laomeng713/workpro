@@ -92,12 +92,12 @@ function selectc(pobj){
     }
 }
 scity('p','c');
+
 $('.letter_list a').click(function(){
     var index=$(this).attr('data_letter');
     console.log(index);
     $(this).addClass("se_cur").siblings('a').removeClass("se_cur");
     $('.city_box span a').addClass("default");
     $('.city_box  a').removeClass("cur");
-    //$('.city_box').find('[data_letter="'+index+'"]').siblings('a').addClass(".default");
     $('.city_box').find('[data_letter="'+index+'"]').addClass("cur");
 })
