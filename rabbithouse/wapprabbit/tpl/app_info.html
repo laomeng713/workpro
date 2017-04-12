@@ -18,18 +18,19 @@
     <link rel="stylesheet" href="../../../common/css/swiper.min.css"/>
     <link rel="stylesheet" href="../../../common/css/appcommon.css"/>
     <link rel="stylesheet" href="../app/mycss/mycss.css"/>
-
 </head>
 <body>
 <header class="header">
     <a class="pl"></a>
-
     <h2 class="f18">装修头条</h2>
 </header>
 <nav class="info_nav">
     <div class="swiper-container1">
         <ul class="swiper-wrapper">
             <li class="swiper-slide"><a href="#">推荐</a></li>
+            <li class="swiper-slide"><a href="#">新闻</a></li>
+            <li class="swiper-slide"><a href="#">学堂</a></li>
+            <li class="swiper-slide"><a href="#">案例</a></li>
             <li class="swiper-slide"><a href="#">新闻</a></li>
             <li class="swiper-slide"><a href="#">学堂</a></li>
             <li class="swiper-slide"><a href="#">案例</a></li>
@@ -120,7 +121,7 @@
         <li class="swiper-slide"><a href="#"><img src="../images/banner03.jpg" alt=""/></a></li>
         <li class="swiper-slide"><a href="#"><img src="../images/banner04.jpg" alt=""/></a></li>
     </ul>
-    <!--<div class="page_num"></div>-->
+    <div class="swiper-pagination"></div>
 </nav>
 <!--列表区-->
 <div class="info_list">
@@ -285,11 +286,11 @@
 <script>
 //    导航条的轮播
     var mySwiper2 = new Swiper('.swiper-container1', {
-        slidesPerView: 'auto'
+        slidesPerView: '6'
     })
 //banner的轮播
     var mySwiper3 = new Swiper('.swiper-container', {
-//        pagination: '.page_num',
+        pagination: '.swiper-pagination'
 //        paginationType : 'fraction'
     })
 
