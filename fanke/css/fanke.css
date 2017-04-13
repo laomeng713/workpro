@@ -1875,7 +1875,7 @@ img {
   background: #fff;
   z-index: 99999;
   left: 50%;
-  top: 50%;
+  top: 25%;
   margin-left: -240px;
 }
 .layer_order_v2 .layer_title_v2 {
@@ -1923,6 +1923,16 @@ img {
   position: absolute;
   left: 0;
   top: 18px;
+}
+.layer_order_v2 .layer_content_v2 .rank_li i {
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 5px;
+  right: 15px;
+  top: 25px;
+  background: url("../images/newly_icon.png") no-repeat -76px -487px;
+  z-index: 3;
 }
 .layer_order_v2 .layer_content_v2 .rank_li .placeholder {
   height: 16px;
@@ -1973,21 +1983,30 @@ img {
   background: url("../images/JiaMarry_gotoTop.png") no-repeat -97px 0;
   margin: 20px 24px;
 }
+.footer_slide {
+  width: 100%;
+  height: 160px;
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+  left: 0;
+}
 .pop_wrap {
   width: 100%;
   background: #0a0b0f;
   height: 160px;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
   opacity: 0.8;
-  z-index: 10000;
 }
 .contr_center {
   width: 1190px;
   height: 160px;
   margin: 0 auto;
   position: relative;
+  bottom: 0;
+  left: 0;
 }
 .contr_center .add_close {
   width: 20px;
@@ -2018,6 +2037,9 @@ img {
   left: 0;
   bottom: 0;
   width: 207px;
+}
+.contr_center .add_img .add_left dl dt img {
+  z-index: 100;
 }
 .contr_center .add_img .add_left dl dd {
   padding-top: 30px;

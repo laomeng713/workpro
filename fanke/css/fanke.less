@@ -1935,7 +1935,7 @@ img {
   background: #fff;
   z-index: 99999;
   left: 50%;
-  top: 50%;
+  top: 25%;
   margin-left: -240px;
   .layer_title_v2 {
     font-size: 26px;
@@ -1982,6 +1982,16 @@ img {
         position: absolute;
         left: 0;
         top: 18px;
+      }
+      i{
+        display: block;
+        position: absolute;
+        width: 8px;
+        height: 5px;
+        right: 15px;
+        top: 25px;
+        background: url("../images/newly_icon.png") no-repeat -76px -487px;
+        z-index: 3;
       }
       .placeholder {
         height: 16px;
@@ -2037,21 +2047,32 @@ img {
   margin: 20px 24px;
 }
 //底部小广告
+.footer_slide{
+  width: 100%;
+  height: 160px;
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+  left: 0;
+}
 .pop_wrap{
   width: 100%;
   background: #0a0b0f;
   height: 160px;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
   opacity: 0.8;
-  z-index: 10000;
+  //z-index: 10000;
 }
 .contr_center{
   width: 1190px;
   height: 160px;
   margin: 0 auto;
   position: relative;
+  bottom: 0;
+  left: 0;
+  //z-index: 1000;
   .add_close{
     width: 20px;
     height: 20px;
@@ -2078,6 +2099,9 @@ img {
           left: 0;
           bottom: 0;
           width: 207px;
+          img{
+            z-index: 100;
+          }
         }
         dd{
           padding-top: 30px;
