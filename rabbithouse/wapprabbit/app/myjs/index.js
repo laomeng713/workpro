@@ -33,7 +33,9 @@ function f1() {
         $('.text').hide();
     }
 }
+
 $(window).bind('scroll', f1);
+
 //点击更多显示导航条
 $('#click_more').click(function () {
     noScrollCom();
@@ -51,7 +53,7 @@ $('.more_box').click(function () {
     $('.more_box').hide();
     autoScrollCom();
 })
-//导航轮播
+//点击更多导航轮播
 var mySwiper_v = new Swiper('.class_detail', {
     mode: 'vertical',
     scrollContainer: true,
@@ -157,6 +159,52 @@ function errorCheck($obj, num) {
     }
 
 }
+// 点击加载更多
+var $content=$('.news_content .pt_ans:gt(2)');
+$content.hide();
+$('.click_all').click(function(){
+    $content.show();
+    $('.click_all').hide();
+})
 
+//    搜索界面弹出以及取消界面
+$('.header_search').click(function () {
+    $('.search_page').show();
+    noScrollCom();
 
+})
+$('.search_cancel').click(function () {
+    $('.search_page').hide();
+    autoScrollCom();
+})
+
+//    导航条的轮播
+var mySwiper2 = new Swiper('.swiper-container1', {
+    slidesPerView: '6'
+})
+//banner的轮播
+var mySwiper3 = new Swiper('.swiper-container', {
+    pagination: '.swiper-pagination'
+})
+//    点赞判断
+$('.news_praise').click(function () {
+    var s = $('.news_praise').attr('data_status');
+    if (s == 0) {
+        //没有被点中
+        $('.news_praise').css("background", "url('../images/zan_icon.png') 0 -19px no-repeat");
+        $('.news_praise').css("background-size", "100%");
+        $('.news_praise').attr('data_status', 1);
+        var num = $('.news_praise').siblings('i').text();
+        num++;
+        $('.news_praise').siblings('i').text(num);
+    } else if (s == 1) {//说明被选中
+        $('.news_praise').css("background", "url('../images/zan_icon.png')  no-repeat");
+        $('.news_praise').css("background-size", "100%");
+        $('.news_praise').attr('data_status', 0);
+        var num = $('.news_praise').siblings('i').text();
+        //console.log(num);
+        num--;
+        $('.news_praise').siblings('i').text(num);
+    }
+})
 

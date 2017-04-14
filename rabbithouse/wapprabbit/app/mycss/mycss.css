@@ -7,6 +7,9 @@ body {
   margin-bottom: 5.3rem;
   background-color: #efefef;
 }
+h2 {
+  font-weight: 500;
+}
 .header {
   position: fixed;
   width: 100%;
@@ -31,8 +34,14 @@ body {
 .header section h2 {
   width: 16rem;
   height: 3.4rem;
+  line-height: 3.4rem;
   display: inline-block;
   color: #FFFFFF;
+}
+.header section .header_right {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .info_nav {
   width: 100%;
@@ -104,7 +113,7 @@ body {
   display: none;
 }
 .more_box .sub_more .class_detail ul li a {
-  padding: 0.9rem 0.9rem 0.9rem 3rem;
+  padding: 0.9rem 0.9rem 0.9rem 2rem;
   display: block;
   height: 2.36rem;
   line-height: 2.36rem;
@@ -152,14 +161,13 @@ body {
   background: url(../../images/footer-nav.png) no-repeat;
   background-size: 100%;
 }
-.footer_nav ul li a p {
-  margin-top: 0.2rem;
-}
 .info_banner {
   padding-top: 42.6%;
   position: relative;
   overflow: hidden;
   width: 100%;
+  margin-top: 7rem;
+  margin-bottom: 1rem;
 }
 .info_banner ul {
   position: absolute;
@@ -229,16 +237,13 @@ body {
 .ask_type ul .type03 a:before {
   background-position: 0 -12rem;
 }
-.info_list {
-  padding-bottom: 5.4rem;
-}
 .info_list li {
   margin-bottom: 0.9rem;
 }
 .info_list li a {
   display: block;
   background: #fff;
-  padding: 0.9rem 1.4rem;
+  padding: 0.9rem 1rem;
 }
 .info_list li a .ask_question {
   border-bottom: 1px solid #EFEFEF;
@@ -255,7 +260,7 @@ body {
 }
 .info_list li a .ask_question h3 {
   margin-top: 0.8rem;
-  padding-bottom: 1.3rem;
+  padding-bottom: 1rem;
   font-weight: 500;
 }
 .info_list li a .ask_question h3 span {
@@ -273,10 +278,10 @@ body {
 }
 .info_list li a .ask_question h3 .list_img {
   display: block;
-  width: 11.4rem;
+  width: 40%;
   height: 7.7rem;
   float: right;
-  margin-top: -2.5rem;
+  margin-top: -0.5rem;
   position: relative;
   background: #f6f5f3 url("//mued3.jia.com/image/mobile/toutiao/tt_loading.png") no-repeat center;
 }
@@ -511,11 +516,10 @@ em {
   display: block;
   line-height: 2.5rem;
 }
-.newsHeader .sub_header .header_home {
+.newsHeader .sub_header .header_home,
+.newsHeader .sub_header .header_return {
   width: 3rem;
   height: 2rem;
-  background: url("../../images/header-icon.png") 0px 1px no-repeat;
-  background-size: 1.7rem;
   margin: 0.2rem;
 }
 .newsHeader .sub_header .header_search {
@@ -529,6 +533,14 @@ em {
   position: absolute;
   right: 0;
 }
+.newsHeader .sub_header .header_home {
+  background: url("../../images/header-icon.png") 0px 1px no-repeat;
+  background-size: 1.7rem;
+}
+.newsHeader .sub_header .header_return {
+  background: url("../../images/header-icon.png") 0px 1px no-repeat;
+  background-size: 1.7rem;
+}
 .newsHeader .sub_header .toutiao {
   height: 2rem;
 }
@@ -540,10 +552,11 @@ em {
   color: #EE2D1B;
 }
 .new_section {
-  padding: 2rem 1.4rem 0;
+  padding: 0.8rem 1rem 0;
 }
 .new_section .section_caption {
-  width: 100%;
+  background-color: #fff;
+  padding: 1rem 1rem;
 }
 .new_section .section_caption .caption_detail {
   margin: 1rem 0;
@@ -591,14 +604,18 @@ em {
   background: #e2e2e2;
 }
 .new_section .news_content {
+  background-color: #fff;
   font-size: 1.54rem;
   line-height: 2.4rem;
   overflow: hidden;
+  padding: 1rem 1rem;
 }
 .new_section .news_content p {
-  margin-bottom: 2.2rem;
+  margin-bottom: 1.2rem;
 }
 .new_section .click_all {
+  padding-top: 1rem;
+  background-color: #fff;
   color: #0065a8;
   display: block;
   text-align: center;
@@ -607,10 +624,10 @@ em {
   display: block;
 }
 .new_section .praise_area {
+  background-color: #fff;
   padding: 0 0 .07rem 0;
   color: #999;
   font-size: .13rem;
-  margin-left: -0.14rem;
   margin-bottom: 1rem;
 }
 .new_section .praise_area span {
@@ -682,6 +699,7 @@ em {
   left: 0rem;
   height: 100%;
   background-color: #FFFFFF;
+  z-index: 200;
 }
 .search_page .app_search {
   position: relative;

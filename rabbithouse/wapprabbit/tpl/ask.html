@@ -20,10 +20,12 @@
     <link rel="stylesheet" href="../app/mycss/mycss.css"/>
 </head>
 <body>
+<!--固定头部-->
 <header class="header">
     <section>
-        <a class="pl"></a>
+        <a class="pl header_left"></a>
         <h2 class="f18">装修头条</h2>
+        <a href="javascript:;" class="header_right header_search"></a>
     </section>
     <nav class="info_nav">
         <div class="swiper-container1">
@@ -41,7 +43,7 @@
         </div>
     </nav>
 </header>
-
+<!--更多列表页-->
 <div class="more_box clearfix">
     <div class="sub_more clearfix">
         <div class="class_title">
@@ -190,6 +192,33 @@
     </ul>
 </section>
 
+<!--//弹出搜索界面-->
+<aside class="search_page">
+    <div class="app_search">
+        <p class="search_header">
+            <input type="text" placeholder="文章\装修\号问答" autofocus/>
+            <i></i>
+        </p>
+        <span class="search_cancel">取消</span>
+    </div>
+    <div class="hot_search">
+        <h2 class="search_title">热门搜索:</h2>
+        <div class="search_key">
+            <a href="">简约风格</a>
+            <a href="">日式风格装修</a>
+            <a href="">装修报价</a>
+            <a href="">地板</a>
+            <a href="">春季装修好处</a>
+
+            <a href="">装修哪天开工</a>
+            <a href="">地板砖十大品牌</a>
+
+        </div>
+    </div>
+</aside>
+
+
+
 <!--固定底部-->
 <nav class="footer_nav">
     <ul>
@@ -225,10 +254,21 @@
 <script src="../../../common/js/jquery-1.11.3.min.js"></script>
 <script src="../app/myjs/index.js"></script>
 <script>
-    //    导航条的轮播
-    var mySwiper2 = new Swiper('.swiper-container1', {
-        slidesPerView: '6'
-    })
+//    //    导航条的轮播
+//    var mySwiper2 = new Swiper('.swiper-container1', {
+//        slidesPerView: '6'
+//    })
+
+//    //    搜索界面弹出以及取消界面
+//    $('.header_search').click(function () {
+//        $('.search_page').show();
+//        noScrollCom();
+//
+//    })
+//    $('.search_cancel').click(function () {
+//        $('.search_page').hide();
+//        autoScrollCom();
+//    })
 
 
 </script>
