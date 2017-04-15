@@ -139,8 +139,8 @@
         <p class="apply_num">已有 <i>18</i>人报名</p>
     </div>
     <div class="apply_mess">
-        <input class="mobile" type="tel" maxlength="11" placeholder="输入手机号"/>
-        <a href="javascript:;">免费报名</a>
+        <input class="index_mobile" type="tel" maxlength="11" placeholder="输入手机号"/>
+        <a onclick="errorCheck($(this),1)" href="javascript:;">免费报名</a>
     </div>
     <p class="tc more_href">
         <a class="sign" href="">了解活动详情
@@ -785,6 +785,31 @@
         var mySwiper1 = new Swiper('.myswiper-container', {
             slidesPerView : 3
         })
+        function checkPhone($obj,num){
+            var $div = $obj.closest("div");
+            var phone="";
+            var regPhone = $obj.closest("div");
+            phone = $.trim($div.find(".index_mobile").val());
+            if (phone == "") {
+                $div.find(".count").text('手机号不能为空');
+                return false;
+            }
+            if (!regPhone.test(phone)) {
+                $div.find(".count").text('请填写正确的手机号码');
+                return false;
+            } else {
+                $div.find(".count").text('');
+            }
+            $.ajax({
+                type: "post",
+                success: function () {
+                    console.log('succcess');
+                },
+                error: function () {
+                    console.log('error');
+                }
+            })
+        }
 
     })
 

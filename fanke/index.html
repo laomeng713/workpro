@@ -2063,6 +2063,15 @@ function phoneCheck($obj, num) {
         } else {
             $form.find('.add_tip').text('');
         }
+        $.ajax({
+            type:'post',
+            success:function(){
+                console.log('success');
+            },
+            error:function(){
+                console.log('error');
+            }
+        })
     }
     if (num == 3) {
         uname = $.trim($form.find('#user_name').val());
@@ -2084,6 +2093,15 @@ function phoneCheck($obj, num) {
         }else {
             $form.find("input[name='mobile']").css("border", "1px solid #fff");
         }
+        $.ajax({
+            type:'post',
+            success:function(){
+                console.log('success');
+            },
+            error:function(){
+                console.log('error');
+            }
+        })
     }
     if (num == 2) {
         uname = $.trim($form.find('#user_name').val());
@@ -2104,6 +2122,15 @@ function phoneCheck($obj, num) {
         } else {
             $form.find('#mobile_tips').text('');
         }
+        $.ajax({
+            type:'post',
+            success:function(){
+                console.log('success');
+            },
+            error:function(){
+                console.log('error');
+            }
+        })
     }
     if (num == 1) {
         uname = $.trim($form.find('#user_name').val());
@@ -2125,6 +2152,16 @@ function phoneCheck($obj, num) {
         } else {
             $form.find('#user_phone_tips').text('');
         }
+        $.ajax({
+            type:'post',
+            success:function(){
+                console.log('success');
+            },
+            error:function(){
+                console.log('error');
+            }
+        })
+
     }
 
 }

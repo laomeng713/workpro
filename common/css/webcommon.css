@@ -19,6 +19,10 @@ i,em{font-style: normal;}
 input,button {
 font-family: "Microsoft YaHei";
 }
+/* 清除表格单元格间距，合并边框 */
+table{border-spacing:0;border-collapse:collapse;}
+/* 表格水平居中，垂直居中 */
+table,tr,td{text-align:center; text-valign:middle;}
 
 /*a {*/
     /*color:#333;*/
