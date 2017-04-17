@@ -1,0 +1,337 @@
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #333;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #333;
+}
+
+input:-ms-input-placeholder{
+  color: #333;
+}
+
+input::-webkit-input-placeholder{
+  color: #333;
+}
+
+.quote_header {
+  padding: 0.5rem 0;
+  background-color: #fff;
+  .quote_img {
+    margin: 0.7rem 0 0 2.2rem;
+    //padding-left: 3%;
+    img {
+      width: 9rem;
+    }
+  }
+  .quote_title {
+    color: #282828;
+    float: right;
+    margin-top: 1rem;
+    margin-right: 0.4rem;
+    position: relative;
+    font-size: 1rem;
+  }
+}
+
+.quote_banner {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.quote_scroll {
+  height: 3rem;
+  margin: 0 0;
+  line-height: 2.1rem;
+  overflow: hidden;
+  font-size: 1.4rem;
+  color: #666;
+  li {
+    height: 2.6rem;
+    line-height: 2.6rem;
+    overflow: hidden;
+    padding: 0.6rem 0 0 1.8rem;
+    i {
+      display: inline-block;
+      width: 1.2rem;
+      height: 1.2rem;
+      background: url("http://s1.17house.com/common_h5/images/inform_icon1.png");
+      background-size: 100%;
+    }
+  }
+}
+
+.quote_list .quote_form {
+  padding: 0 15px;
+  background: transparent;
+}
+
+.quote_list .quote_form div {
+  position: relative;
+  background: #fff;
+  border: solid 1px #e1e1e1;
+  border-radius: 0.8rem;
+  margin: 1rem 0;
+  overflow: hidden;
+}
+
+.quote_list .quote_form div input {
+  border: none;
+  padding-left: 1rem;
+  display: block;
+  height: 4rem;
+  width: 100%;
+}
+
+.quote_triangle{
+  display: block;
+  width: 10px;
+  height: 10px;
+  font-size: 0;
+  position: absolute;
+  top: 20px;
+  right: 18px;
+  border-top: 1px solid #999;
+  border-right: 1px solid #999;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.quote_list .quote_form div input:focus {
+  outline: none;
+}
+
+.quote_list .quote_form .quote_err {
+  color: #DD0000;
+}
+
+.quote_list .quote_form .quote_submit {
+  border: none;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #EA5504;
+  border-radius: 0.4rem;
+  -webkit-appearance: none;
+  margin-top: 1.3rem;
+  height: 4rem;
+  width: 100%;
+  text-align: center;
+  outline: none;
+}
+
+.calu_result {
+  background-color: #ffffff;
+  border: solid 1px #e3e3e3;
+  margin: 1.3rem;
+  .resul_title {
+    border-bottom: 1px solid #ececec;
+    line-height: 5rem;
+    min-height: 5rem;
+  }
+  .calu_list {
+    color: #999;
+    li {
+      position: relative;
+      line-height: 5rem;
+      min-height: 5rem;
+      border-bottom: 1px solid #ececec;
+      clear: both;
+      .clist {
+        display: inline-block;
+        width: 22%;
+        text-align: center;
+        strong {
+          font-weight: normal;
+          color: #333;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+//城市选择
+
+/*! discover 2016-03-29 */
+.cascade_scroll_selects {
+
+  font-family:arial,verdana,sans-serif
+                          }
+.cascade_scroll_selects .scs_container {
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:99998
+}
+.cascade_scroll_selects .scs_container .scs_cover {
+  z-index:1;
+  background:rgba(0,0,0,0.7);
+  filter:alpha(opacity=70);
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0
+}
+.cascade_scroll_selects .scs_container .scs_dialog {
+  width:100%;
+  max-width:100%;
+  position:fixed;
+  bottom:0;
+  left:0;
+  z-index:2;
+  font-size:12px;
+  text-shadow:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  -ms-touch-action:pan-y;
+  touch-action:pan-y;
+  background:#f7f7f7;
+  display:none
+}
+.cascade_scroll_selects .scs_container .scs_dialog .scs_selects {
+  margin:0 auto;
+  position:relative;
+  zoom:1;
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-pack:center;
+  -webkit-justify-content:center;
+  -ms-flex-pack:center;
+  justify-content:center
+}
+.cascade_scroll_selects .scs_container .scs_dialog .scs_selects_group {
+  padding:.5em .25em;
+  min-width:40px;
+  max-width:100%;
+  -webkit-box-flex:1;
+  -webkit-flex:1 auto;
+  -ms-flex:1 auto;
+  flex:1 auto;
+  -ms-touch-action:none;
+  touch-action:none
+}
+.cascade_scroll_selects .scs_container .scs_dialog .scs_selects_group_view {
+  height:200px;
+  overflow:hidden;
+  position:relative
+}
+.cascade_scroll_selects .scs_container .scs_dialog .scs_selects_group_view:before {
+  content:'';
+  position:absolute;
+  left:0;
+  top:80px;
+  bottom:auto;
+  right:auto;
+  height:1px;
+  width:100%;
+  background-color:#EA5504;
+  display:block;
+  z-index:-1
+}
+.cascade_scroll_selects .scs_container .scs_dialog .scs_selects_group_view:after {
+  content:'';
+  position:absolute;
+  left:0;
+  bottom:80px;
+  right:auto;
+  top:auto;
+  height:1px;
+  width:100%;
+  background-color:#EA5504;
+  display:block;
+  z-index:-1
+}
+.cascade_scroll_selects .scs_container .scs_dialog .scs_selects_group_view .scs_items {
+  position:relative;
+  z-index:3;
+  -webkit-transform:translate3d(0,0,0);
+  transform:translate3d(0,0,0)
+}
+.cascade_scroll_selects .scs_container .scs_dialog .scs_selects_group_title {
+  line-height:30px;
+  height:30px;
+  text-align:center;
+  white-space:nowrap;
+  font-weight:bold;
+  text-transform:upperscse;
+  color:#EA5504;
+  width:100%;
+  font-size:1.375em
+}
+.cascade_scroll_selects .scs_container .scs_dialog .scs_item {
+  height:40px;
+  line-height:40px;
+  cursor:pointer;
+  text-align:center;
+  padding:0 5px;
+  white-space:nowrap;
+  vertical-align:bottom;
+  width:100%;
+  color:#454545;
+  position:relative;
+  overflow:hidden;
+  text-overflow:ellipsis
+}
+.cascade_scroll_selects .scs_container .scs_dialog .scs_item.scs_selected {
+  font-weight:700
+}
+.cascade_scroll_selects .scs_container .scs_dialog .scs_btns {
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-pack:center;
+  -webkit-justify-content:center;
+  -ms-flex-pack:center;
+  justify-content:center;
+  -webkit-box-orient:horizontal
+}
+.cascade_scroll_selects .scs_container .scs_dialog .scs_btns .scs_btn {
+  height:40px;
+  line-height:40px;
+  -webkit-box-flex:1;
+  -webkit-flex:1 auto;
+  -ms-flex:1 auto;
+  flex:1 auto;
+  -ms-touch-action:none;
+  touch-action:none;
+  text-align:center;
+  cursor:pointer
+}
+.cascade_scroll_selects .scs_container .scs_dialog .scs_btns .scs_btn_ok {
+  background-color:#EA5504;
+  color:#fff
+}
+.cascade_scroll_selects .scs_container .scs_dialog .scs_btns .scs_btn_span {
+  -webkit-box-flex:2;
+  -webkit-flex:2 auto;
+  -ms-flex:2 auto;
+  flex:2 auto;
+  -ms-touch-action:none;
+  touch-action:none;
+  text-align:center
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
