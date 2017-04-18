@@ -12,6 +12,8 @@ ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,p,input,button {
     margin:0;
     padding:0;
 }
+input{_border:none;outline:none}
+input:focus{border: none}
 ul,ol {
 list-style: none;
 }
@@ -45,4 +47,7 @@ table,tr,td{text-align:center; text-valign:middle;}
     height: 0;
     clear: both;
     visibility: hidden;
+}
+img{
+    border: none;
 }
