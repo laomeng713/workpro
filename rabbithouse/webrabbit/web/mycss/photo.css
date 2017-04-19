@@ -1,0 +1,202 @@
+body {
+  background: #f1eee5;
+}
+a {
+  text-decoration: none;
+}
+.pho_header {
+  height: 39px;
+  position: relative;
+  z-index: 21;
+  border-bottom: 1px solid #e2dcd4;
+  background: #ffffff;
+}
+.pho_header .pho_inner_header {
+  position: relative;
+}
+.pho_header .pho_inner_header h1 {
+  float: left;
+  width: 120px;
+  height: 39px;
+}
+.pho_header .pho_inner_header .pho_header_nav li {
+  float: left;
+  height: 39px;
+  line-height: 39px;
+  padding: 0 20px;
+}
+.pho_header .pho_inner_header .pho_header_nav li a {
+  font-size: 12px;
+  color: #333;
+}
+.pho_header .pho_inner_header .pho_header_nav li a:hover {
+  color: #DD0000;
+}
+.pho_header .pho_inner_header .pho_header_wrap {
+  position: relative;
+  float: right;
+  height: 39px;
+}
+.pho_header .pho_inner_header .pho_header_wrap li {
+  float: left;
+  margin-right: 20px;
+  height: 39px;
+  line-height: 39px;
+}
+.pho_header .pho_inner_header .pho_header_wrap li a {
+  padding: 0 6px;
+  color: #333;
+}
+.pho_header .pho_inner_header .pho_header_wrap li span {
+  padding: 0 22px;
+  color: #ddd;
+}
+.pho_header .pho_inner_header .pho_header_wrap li i {
+  display: inline-block;
+  width: 15px;
+  height: 14px;
+  background: url(http://fastued3.jia.com/image/tuku/jiaju/fur_icon.png) -123px -84px no-repeat;
+  vertical-align: middle;
+  margin-top: -4px;
+  margin-right: 4px;
+}
+.outer_wrap {
+  margin: 0px 20px;
+  width: 100%;
+}
+.outer_wrap .left_wrap {
+  margin-right: 315px;
+}
+.outer_wrap .left_wrap .left_bar {
+  height: 35px;
+  line-height: 35px;
+  position: relative;
+}
+.outer_wrap .left_wrap .left_bar .crumb {
+  position: absolute;
+  left: 0;
+  height: 35px;
+  line-height: 35px;
+}
+.outer_wrap .left_wrap .left_bar .crumb a {
+  color: #666;
+}
+.outer_wrap .left_wrap .left_bar .crumb i {
+  color: #999;
+}
+.outer_wrap .left_wrap .left_bar .mobile_rel {
+  height: 23px;
+  padding: 7px 0 6px;
+  position: absolute;
+  right: 0;
+  font-size: 12px;
+  color: #333;
+  line-height: 22px;
+  z-index: 10;
+}
+.outer_wrap .left_wrap .left_bar .mobile_rel i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-right: 5px;
+}
+.outer_wrap .left_wrap .left_bar .mobile_rel .app_box {
+  display: inline-block;
+  position: relative;
+  padding-left: 16px;
+  z-index: 10;
+}
+.outer_wrap .left_wrap .left_bar .mobile_rel .send_mobile {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: 100px;
+  padding: 7px 0 6px 16px;
+  margin-left: 20px;
+}
+.outer_wrap .left_wrap .left_bar .mobile_rel .send_mobile .app {
+  top: 7px;
+}
+.outer_wrap .left_wrap .left_bar .mobile_rel .app {
+  width: 11px;
+  height: 22px;
+  background: url(http://fastued3.jia.com/image/tuku/jiaju/fur_icon.png) -21px top no-repeat;
+}
+.pc_show {
+  background-color: #ffffff;
+  position: relative;
+  padding: 10px 0;
+  margin: 0 auto;
+  text-align: center;
+}
+.pc_slide {
+  width: 500px;
+  height: 500px;
+}
+.view .swiper-container .swiper-slide img {
+  width: 100%;
+}
+.view .arrow-left {
+  background: url(../../images/index_tab_l.png) no-repeat left top;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -25px;
+  width: 28px;
+  height: 51px;
+  z-index: 10;
+}
+.view .arrow-right {
+  background: url(../../images/index_tab_r.png) no-repeat left bottom;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -25px;
+  width: 28px;
+  height: 51px;
+  z-index: 10;
+}
+.preview {
+  width: 100%;
+  margin-top: 10px;
+  position: absolute;
+  background-color: #666666;
+  opacity: 0.8;
+  padding: 5px 0px;
+  bottom: 0;
+}
+.preview .swiper-container {
+  margin-left: 35px;
+}
+.preview .swiper-slide {
+  width: 84px;
+  height: 84px;
+  margin: 0 3px;
+}
+.preview .arrow-left {
+  background: url(../../images/feel3.png) no-repeat left top;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -9px;
+  width: 9px;
+  height: 18px;
+  z-index: 10;
+}
+.preview .arrow-right {
+  background: url(../../images/feel4.png) no-repeat left bottom;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -9px;
+  width: 9px;
+  height: 18px;
+  z-index: 10;
+}
+.preview img {
+  padding: 1px;
+}
+.preview .active-nav img {
+  padding: 0;
+  border: 2px solid #Fff;
+}

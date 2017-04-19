@@ -51,3 +51,9 @@ table,tr,td{text-align:center; text-valign:middle;}
 img{
     border: none;
 }
+.rt{
+    float: right;
+}
+.lf{
+    float: left;
+}
