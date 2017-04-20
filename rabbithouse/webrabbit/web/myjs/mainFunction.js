@@ -35,6 +35,7 @@ function main(){
 //tab 标签切换
 function submitPage(){
     $('.sing_nav').on('click','p',function(){
+        console.log(2222);
         var $this=$(this);
         var $t=$this.index();
         console.log($t);
@@ -169,4 +170,15 @@ function slide_help(){
             $('.slide_help').hide();
         }
     })
+}
+//随即颜色函数
+function getRandomColor(){
+    var r= Math.floor(Math.random()*256);
+    var g= Math.floor(Math.random()*256);
+    var b= Math.floor(Math.random()*256);
+    var R= r.toString(16);//换成16进制
+    console.log(R);
+    var G= g.toString(16);//换成16进制
+    var B= b.toString(16);//换成16进制
+    return "#"+R+G+B;
 }

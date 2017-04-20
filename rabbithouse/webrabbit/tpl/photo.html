@@ -10,6 +10,8 @@
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="../../../common/css/webcommon.css"/>
     <link rel="stylesheet" href="../../../common/css/swiper.min.css"/>
+    <link rel="stylesheet" href="../web/mycss/main.css"/>
+    <link rel="stylesheet" href="../web/mycss/web_info.css"/>
     <link rel="stylesheet" href="../web/mycss/photo.css"/>
 </head>
 <body>
@@ -23,7 +25,161 @@
         </h1>
         <ul class="pho_header_nav lf clearfloat">
             <li><a href="">家居美图</a></li>
-            <li><a href="">家居图册</a></li>
+            <li class="show_item">
+                <a href="">家居图册</a>
+                <i>》</i>
+                <div class="item_lsit">
+                    <div class="item_inner">
+                        <dl class="item_con lf">
+                            <dt>
+                                <h3>预算</h3>
+                            </dt>
+                            <dd>
+                                <div class="item_word">
+                                    <span>
+                                        <a href="">3万以下</a>
+                                    </span>
+                                    <span>
+                                        <a href="">3-5万</a>
+                                    </span>
+                                    <span>
+                                        <a href="">5-10万</a>
+                                    </span>
+                                    <span>
+                                        <a href="">10-15万</a>
+                                    </span>
+                                    <span>
+                                        <a href="">15-20万</a>
+                                    </span>
+                                    <span>
+                                        <a href="">20万以上</a>
+                                    </span>
+                                    <span>
+                                        <a href="">经济型</a>
+                                    </span>
+                                     <span>
+                                        <a href="">富裕型</a>
+                                    </span>
+                                     <span>
+                                        <a href="">豪华型</a>
+                                    </span>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="item_con lf">
+                            <dt>
+                            <h3>风格</h3>
+                            </dt>
+                            <dd>
+                                <div class="item_word">
+                                    <span>
+                                        <a href="">简约</a>
+                                    </span>
+                                    <span>
+                                        <a href="">现代</a>
+                                    </span>
+                                    <span>
+                                        <a href="">中式</a>
+                                    </span>
+                                    <span>
+                                        <a href="">欧式</a>
+                                    </span>
+                                    <span>
+                                        <a href="">田园</a>
+                                    </span>
+                                    <span>
+                                        <a href="">地中海</a>
+                                    </span>
+                                    <span>
+                                        <a href="">新古典</a>
+                                    </span>
+                                     <span>
+                                        <a href="">混搭</a>
+                                    </span>
+                                     <span>
+                                        <a href="">东南亚</a>
+                                    </span>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="item_con lf">
+                            <dt>
+                            <h3>户型</h3>
+                            </dt>
+                            <dd>
+                                <div class="item_word">
+                                    <span>
+                                        <a href="">小户型</a>
+                                    </span>
+                                    <span>
+                                        <a href="">一居室</a>
+                                    </span>
+                                    <span>
+                                        <a href="">二居室</a>
+                                    </span>
+                                    <span>
+                                        <a href="">三居室</a>
+                                    </span>
+                                    <span>
+                                        <a href="">四居室</a>
+                                    </span>
+                                    <span>
+                                        <a href="">公寓</a>
+                                    </span>
+                                    <span>
+                                        <a href="">复式</a>
+                                    </span>
+                                     <span>
+                                        <a href="">别墅</a>
+                                    </span>
+                                     <span>
+                                        <a href="">跃层</a>
+                                    </span>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="item_con lf">
+                            <dt>
+                            <h3>预算</h3>
+                            </dt>
+                            <dd>
+                                <div class="item_word">
+                                    <span>
+                                        <a href="">40㎡</a>
+                                    </span>
+                                    <span>
+                                        <a href="">50㎡</a>
+                                    </span>
+                                    <span>
+                                        <a href="">60㎡</a>
+                                    </span>
+                                    <span>
+                                        <a href="">70㎡</a>
+                                    </span>
+                                    <span>
+                                        <a href="">80㎡</a>
+                                    </span>
+                                    <span>
+                                        <a href="">90㎡</a>
+                                    </span>
+                                    <span>
+                                        <a href="">100㎡</a>
+                                    </span>
+                                     <span>
+                                        <a href="">110㎡</a>
+                                    </span>
+                                     <span>
+                                        <a href="">120㎡</a>
+                                    </span>
+                                    <span>
+                                        <a href="">130㎡</a>
+                                    </span>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </li>
             <li><a href="">精选专题</a></li>
             <li><a href="">找装修公司</a></li>
             <li><a href="">设计与报价</a></li>
@@ -48,6 +204,7 @@
 </section>
 
 <section class="outer_wrap">
+    <!--左-----图片展示页面-->
     <div class="left_wrap">
         <div class="left_bar">
             <div class="crumb">
@@ -64,7 +221,7 @@
                 </div>
                 <div class="send_mobile">
                     <i class="app"></i>
-                    <a href="">发送到手机</a>
+                    <a class="ask_box" href="javascript:;">发送到手机</a>
                 </div>
             </div>
         </div>
@@ -74,24 +231,67 @@
                     <div class="swiper-container">
                         <a class="arrow-left" href="#"></a>
                         <a class="arrow-right" href="#"></a>
+                        <p class="style_point">装修成这样花多少钱 ？</p>
                         <div class="swiper-wrapper">
                             <div class="swiper-slide ">
-                                <img class="lazyload" src="../images/b1.jpg" alt="">
+                                <img class="lazyload" src="../images/list1.jpg" alt="">
                             </div>
                             <div class="swiper-slide ">
-                                <img class="lazyload" src="../images/b2.jpg" alt="">
+                                <img class="lazyload" src="../images/list2.jpg" alt="">
                             </div>
                             <div class="swiper-slide ">
-                                <img class="lazyload" src="../images/b3.jpg" alt="">
+                                <img class="lazyload" src="../images/list3.jpg" alt="">
                             </div>
                             <div class="swiper-slide ">
-                                <img class="lazyload" src="../images/b4.jpg" alt="">
+                                <img class="lazyload" src="../images/list4.jpg" alt="">
                             </div>
                             <div class="swiper-slide ">
-                                <img class="lazyload" src="../images/b5.jpg" alt="">
+                                <img class="lazyload" src="../images/list5.jpg" alt="">
                             </div>
                             <div class="swiper-slide ">
-                                <img class="lazyload" src="../images/b6.jpg" alt="">
+                                <img class="lazyload" src="../images/list1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide ">
+                                <img class="lazyload" src="../images/list2.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide ">
+                                <img class="lazyload" src="../images/list3.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide ">
+                                <img class="lazyload" src="../images/list4.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide ">
+                                <img class="lazyload" src="../images/list5.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide ">
+                                <img class="lazyload" src="../images/list1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide ">
+                                <img class="lazyload" src="../images/list2.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide ">
+                                <img class="lazyload" src="../images/list3.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide ">
+                                <img class="lazyload" src="../images/list4.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide ">
+                                <img class="lazyload" src="../images/list5.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide ">
+                                <img class="lazyload" src="../images/list1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide ">
+                                <img class="lazyload" src="../images/list2.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide ">
+                                <img class="lazyload" src="../images/list3.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide ">
+                                <img class="lazyload" src="../images/list4.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide ">
+                                <img class="lazyload" src="../images/list5.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -103,45 +303,382 @@
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide ">
-                                <img src="../images/s1.jpg" alt="">
+                                <img src="../images/list1.jpg" alt="">
                             </div>
                             <div class="swiper-slide ">
-                                <img src="../images/s2.jpg" alt="">
+                                <img src="../images/list2.jpg" alt="">
                             </div>
                             <div class="swiper-slide ">
-                                <img src="../images/s3.jpg" alt="">
+                                <img src="../images/list3.jpg" alt="">
                             </div>
                             <div class="swiper-slide ">
-                                <img src="../images/s4.jpg" alt="">
+                                <img src="../images/list4.jpg" alt="">
                             </div>
                             <div class="swiper-slide ">
-                                <img src="../images/s5.jpg" alt="">
+                                <img src="../images/list5.jpg" alt="">
                             </div>
                             <div class="swiper-slide ">
-                                <img src="../images/s6.jpg" alt="">
+                                <img src="../images/list1.jpg" alt="">
                             </div>
+                            <div class="swiper-slide ">
+                                <img src="../images/list2.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide ">
+                                <img src="../images/list3.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide ">
+                                <img src="../images/list4.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide ">
+                                <img src="../images/list5.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide ">
+                                <img src="../images/list1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide ">
+                                <img src="../images/list2.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide ">
+                                <img src="../images/list3.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide ">
+                                <img src="../images/list4.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide ">
+                                <img src="../images/list5.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide ">
+                                <img src="../images/list1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide ">
+                                <img src="../images/list2.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide ">
+                                <img src="../images/list3.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide ">
+                                <img src="../images/list4.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide ">
+                                <img src="../images/list5.jpg" alt="">
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
+    <!--右-----信息展示页面-->
+    <div class="right_wrap">
+        <div class="scroll_content">
+            <div class="news_sec rt clearfloat">
+                <!--报价以及设计-->
+                <div class="news_signup  clearfloat">
+                    <!--tab 标签 导航-->
+                    <div class="sing_nav clearfloat">
+                        <p class="common_nav on lf">免费设计</p>
+                        <p class="common_nav rt">建材询价</p>
+                    </div>
+                    <!--登陆信息-->
+                    <div class="sing_con">
+                        <div class="sing_design" style="display:block;">
+                            <h2>选风格填面积，立即看美家效果图</h2>
 
+                            <p>
+                                <input class="meter" type="text" placeholder="您的房屋面积（平米）"/>
+                                <input class="phone" type="text" placeholder="您的手机号码"/><br/>
+                                <span class="sing_err"></span> <!--错误提示-->
+                                <a class="sing_button" onclick="errorCheck($(this),1)">免费获取</a>
+                                <span>每日前20名申请用户，获3D装修设计题</span>
+                            </p>
+                        </div>
+                        <div class="sing_price" style="display:none;">
+                            <h2>装修买建材总共要多少钱</h2>
+
+                            <p>
+                                <input class="meter" type="text" placeholder="您的房屋面积（平米）"/>
+                                <input class="phone" type="text" placeholder="您的手机号码"/><br/>
+                                <span class="sing_err"></span> <!--错误提示-->
+                                <a class="sing_button" onclick="errorCheck($(this),2)">免费获取</a>
+                                <span>该报价为当地行情，仅供参考，稍后会有建材专家致电您，提供专业的建材购买咨询服务。</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="left_show">
+                    <!--活动预告-->
+                    <div class="active_advance">
+                        <!--通用标题头部-->
+                        <h2 class="active_title"> 热门文章
+                            <a href="#">更多</a>
+                        </h2>
+                        <ul>
+                            <li class="">
+                                <a class="" href="">
+                                    <img src="../images/list02.jpg" alt=""/>
+                                    装修一个新家大概要花多少钱？装修预算怎么定才合理？
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="" href="">
+                                    <img src="../images/list02.jpg" alt=""/>
+                                    装修一个新家大概要花多少钱？装修预算怎么定才合理？
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="" href="">
+                                    <img src="../images/list02.jpg" alt=""/>
+                                    装修一个新家大概要花多少钱？装修预算怎么定才合理？
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--推荐专区-->
+                    <div class="recom_area">
+                        <h2 class="active_title">热门资讯
+                            <a href="#">更多</a>
+                        </h2>
+                        <ul class="recom_tag clearfloat">
+                            <li><a title="昆山大公小区" href="#">房价走势图</a></li>
+                            <li><a title="未来几年房价走势图" href="#">未来几年房价走势图</a></li>
+                            <li><a title="昆山大公小区房价走势图" href="#">小区房价走势图</a></li>
+                            <li><a title="未来几年房价走势图" href="#">走势图</a></li>
+                            <li><a title="昆山大公小区房价走势图" href="#">房价走势图</a></li>
+                            <li><a title="未来几年房价走势图" href="#">房价走势图</a></li>
+                            <li><a title="昆山大公小区房价走势图" href="#">小区房价走势图</a></li>
+                            <li><a title="昆山大公小区房价走势图" href="#">走势图</a></li>
+                            <li><a title="未来几年房价走势图" href="#">未来几年</a></li>
+                            <li><a title="昆山大公小区房价走势图" href="#">昆山大公小区</a></li>
+                            <li><a title="未来几年房价走势图" href="#">房价走势图</a></li>
+                            <li><a title="昆山大公小区房价走势图" href="#">昆山大公小区</a></li>
+                            <li><a title="未来几年房价走势图" href="#">走势图</a></li>
+                        </ul>
+                    </div>
+                    <!--推荐专题-->
+                    <div class="rec_special clearfloat">
+                        <h2 class="active_title">推荐专题
+                            <a href="#">更多</a>
+                        </h2>
+                        <ul class="clearfloat">
+                            <li class="lf">
+                                <a href="">
+                                    <img src="../images/rec_01.jpg" alt=""/>
+                                    <!--<span>春季到来绿满窗 家居收纳俏模样</span>-->
+                                </a>
+                            </li>
+                            <li class="lf">
+                                <a href="">
+                                    <img src="../images/rec_01.jpg" alt=""/>
+                                    <!--<span>春季到来绿满窗 家居收纳俏模样</span>-->
+                                </a>
+                            </li>
+                            <li class="lf">
+                                <a href="">
+                                    <img src="../images/rec_01.jpg" alt=""/>
+                                    <!--<span>春季到来绿满窗 家居收纳俏模样</span>-->
+                                </a>
+                            </li>
+                            <li class="lf">
+                                <a href="">
+                                    <img src="../images/rec_01.jpg" alt=""/>
+                                    <!--<span>春季到来绿满窗 家居收纳俏模样</span>-->
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--相关推荐-->
+                    <div class="rela_list">
+                        <h2 class="active_title">相关推荐
+                            <a href="#">更多</a>
+                        </h2>
+                        <ul>
+                            <li><a href="#">墙面装修设计硅藻泥</a></li>
+                            <li><a href="#">电视背景墙硅藻泥</a></li>
+                            <li><a href="#">大津硅藻泥</a></li>
+                            <li><a href="#">硅藻泥</a></li>
+                            <li><a href="#">硅藻泥市场</a></li>
+                            <li><a href="#">硅藻泥背景墙怎么样</a></li>
+                            <li><a href="#">硅藻泥沙发背景墙</a></li>
+                            <li><a href="#">硅藻泥背景墙多少钱</a></li>
+                            <li><a href="#">硅藻泥涂料</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!--弹窗-->
+<div class="transfer_bac"></div>
+<div class="window_box">
+    <div class="window_title">
+        <a class="window_close" href=""></a>
+    </div>
+    <div class="window_container">
+        <div class="send_message">
+            <div class="send_init">
+                <div class="tophone_top">
+                    <em></em>
+                    <div class="thisImg">
+                        <img src="../images/list1.jpg" alt=""/>
+                    </div>
+                </div>
+                <form class="tophone_down">
+                    <input  name="mobile" class="send_phone" placeholder="输入手机号，将效果图发送到手机" type="text"/>
+                    <a href="javascript:;" onclick="windowCheck($(this),1)" class="send_btn">立即发送</a>
+                    <p class="phone_err error_tip"></p>
+                    <p class="info_desc">*为了您的隐私和我们的口碑，您的信息会被严格保密</p>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--装修成这样花多少钱-->
+<div class="online_quote">
+    <a class="quote_close" href="javascript:;">x</a>
+    <div class="online_left">
+        <img src="../images/list1.jpg" alt=""/>
+    </div>
+    <div class="online_right">
+        <div class="online_main">
+            <h3>装修成这样花多少钱</h3>
+            <form class="quote_con">
+                <p class="quote_tip error_tip"></p>
+                <div class="online_step">
+                    <div class="house_meter">
+                        <span>建筑面积：</span>
+                        <input name="meter" placeholder="您家的建筑面积" type="text"/>
+                        <em>㎡</em>
+                    </div>
+                    <div class="house_style">
+                        <span>户型结构：</span>
+                        <!--<input placeholder="您的手机号（我们严格保护用户隐私）" type="text"/>-->
+                        <select>
+                            <option value="">1室</option>
+                            <option value="">2室</option>
+                            <option value="">3室</option>
+                            <option value="">4室</option>
+                        </select>
+                        <select>
+                            <option value="">1厅</option>
+                            <option value="">2厅</option>
+                            <option value="">3厅</option>
+                            <option value="">4厅</option>
+                        </select>
+                        <select>
+                            <option value="">1卫</option>
+                            <option value="">2卫</option>
+                            <option value="">3卫</option>
+                            <option value="">4卫</option>
+                        </select>
+                    </div>
+                    <div class="house_phone">
+                        <span>手机号码：</span>
+                        <input name="mobile" placeholder="您的手机号（我们严格保护用户隐私）" type="text"/>
+                    </div>
+                </div>
+                <a onclick="windowCheck($(this),2)"  class="quote_now" href="javascript:;">立即在线报价</a>
+            </form>
+        </div>
+    </div>
+</div>
 <script src="../web/myjs/swiper.js"></script>
 <script src="../web/myjs/jQuery1.7.js"></script>
 <script src="../web/myjs/jquery.mousewheel.min.js"></script>
+<script src="../web/myjs/mainFunction.js"></script>
 <script type="text/javascript">
-    $(function () {
-//        heightChange();
-    })
-
-    var a = $(window).height() - $('.pc_show').offset().top - 20;
+    function windowCheck($obj,num){
+        var $form=$obj.closest('form');
+        var meter="",phone="";
+        var regPhone = /^1[3578]\d{9}$/;
+        if(num==2){
+            meter=$.trim( $form.find("input[name='meter']").val());
+            phone=$.trim( $form.find("input[name='mobile']").val());
+            console.log(phone);
+            if (meter == "") {
+                $form.find('.error_tip').text('面积不能为空');
+                return false;
+            }
+            if (phone == '') {
+                $form.find('.error_tip').text('手机号不能为空');
+                return false;
+            }
+            if (!regPhone.test(phone)) {
+                $form.find('.error_tip').text('请填写正确的手机号码');
+                return false;
+            } else {
+                $form.find('.error_tip').text('');
+            }
+            $.ajax({
+                type:'post',
+                success:function(){
+                    console.log('success');
+                },
+                error:function(){
+                    console.log('error');
+                }
+            })
+        }
+        if(num==1){
+            phone=$.trim( $form.find("input[name='mobile']").val());
+            if (phone == '') {
+                $form.find('.error_tip').text('手机号不能为空');
+                return false;
+            }
+            if (!regPhone.test(phone)) {
+                $form.find('.error_tip').text('请填写正确的手机号码');
+                return false;
+            } else {
+                $form.find('.error_tip').text('');
+            }
+            $.ajax({
+                type:'post',
+                success:function(){
+                    console.log('success');
+                },
+                error:function(){
+                    console.log('error');
+                }
+            })
+        }
+    }
+    submitPage();
+    var a = parseInt($(window).height() - $('.pc_show').offset().top - 20);
     var b = a - $('.preview').height() - 20;
-    //        $('.lazyload').css('height',b)
-            $('.pc_show').css('height',a);
+            $('.lazyload').css('height',b)
+    $('.pc_show').css('height',a);
+//    window.location.reload();
+    $(window).resize(function(){
+        window.location.reload();
+    });
 
+    var c=parseInt($('.news_sec').css('height'));
 
+    var scrollMoveCom = function (e) {
+        e.preventDefault && e.preventDefault();
+        e.returnValue = false;
+        e.stopPropagation && e.stopPropagation();
+        return false
+    };
+    //解除禁止屏幕滚动
+    function autoScrollCom() {
+        var a = ["touchmove", "scroll", "mousewheel"];
+        a.forEach(function (b) {
+            document.removeEventListener(b, scrollMoveCom)
+        })
+    }
+
+    //禁止屏幕滚动
+    function noScrollCom() {
+        var a = ["touchmove", "scroll", "mousewheel"];
+        a.forEach(function (b) {
+            document.addEventListener(b, scrollMoveCom)
+        })
+    }
     var viewSwiper = new Swiper('.view .swiper-container', {
         onSlideChangeStart: function () {
             updateNavPosition()
@@ -151,6 +688,8 @@
     $('.view .arrow-left,.preview .arrow-left').on('click', function (e) {
         e.preventDefault();
         imgPrev();
+        var color=getRandomColor();
+        $('.style_point').css({'color':color,'border-color':color});
 
 
     })
@@ -165,6 +704,8 @@
     $('.view .arrow-right,.preview .arrow-right').on('click', function (e) {
         e.preventDefault()
         imgNext();
+        var color=getRandomColor();
+        $('.style_point').css({'color':color,'border-color':color});
 
     })
     function imgNext() {
@@ -188,22 +729,67 @@
         var activeNav = $('.preview .swiper-slide').eq(viewSwiper.activeIndex).addClass('active-nav')
         if (!activeNav.hasClass('swiper-slide-visible')) {
             if (activeNav.index() > previewSwiper.activeIndex) {
-                var thumbsPerNav = Math.floor(previewSwiper.width / activeNav.width()) - 1
+                var thumbsPerNav = Math.floor(previewSwiper.width / activeNav.width()) -10
                 previewSwiper.swipeTo(activeNav.index() - thumbsPerNav)
             } else {
                 previewSwiper.swipeTo(activeNav.index())
             }
         }
     }
+    function getRandomColor(){
+        var r= Math.floor(Math.random()*256);
+        var g= Math.floor(Math.random()*256);
+        var b= Math.floor(Math.random()*256);
+        var R= r.toString(16);//换成16进制
+        console.log(R);
+        var G= g.toString(16);//换成16进制
+        var B= b.toString(16);//换成16进制
+        return "#"+R+G+B;
+    }
+
     $('.pc_show').mousewheel(function (event, delta) {
+        var color=getRandomColor();
         console.log(delta);
         if (delta == 1) { //鼠标向上滚delta=1，
             imgPrev();
+            noScrollCom();
+            $('.style_point').css({'color':color,'border-color':color});
+
         }
         if (delta == -1) {//鼠标向下滚delta=-1
             imgNext();
+            noScrollCom();
+            $('.style_point').css({'color':color,'border-color':color});
         }
     })
+    $('.right_wrap').mousewheel(function (event, delta) {
+        console.log(delta);
+        if (delta == 1) { //鼠标向上滚delta=1，
+            autoScrollCom();
+
+        }
+        if (delta == -1) {//鼠标向下滚delta=-1
+            autoScrollCom();
+        }
+    })
+
+$('.ask_box').click(function(){
+    $('.transfer_bac').show();
+    $('.window_box').show();
+})
+$('.window_close').click(function(){
+    $('.transfer_bac').hide();
+    $('.window_box').hide();
+})
+$('.style_point').click(function(){
+    $('.transfer_bac').show();
+    $('.online_quote').show();
+})
+    $('.quote_close').click(function(){
+        $('.transfer_bac').hide();
+        $('.online_quote').hide();
+    })
+
 </script>
 </body>
 </html>

@@ -426,45 +426,45 @@
 .news_list ul li:hover a {
   color: #C80202;
 }
-.news_list .news_sec {
+.news_sec {
   width: 290px;
   overflow: hidden;
 }
-.news_list .news_sec a:hover {
+.news_sec a:hover {
   cursor: pointer;
 }
-.news_list .news_sec .active_advance {
+.news_sec .active_advance {
   margin-top: 40px;
 }
-.news_list .news_sec .active_advance ul li {
+.news_sec .active_advance ul li {
   padding: 11px 0;
   border-top: 1px dashed #cdcdcd;
   height: 70px;
   font-size: 16px;
 }
-.news_list .news_sec .active_advance ul li a {
+.news_sec .active_advance ul li a {
   display: block;
   width: 290px;
   color: #666;
 }
-.news_list .news_sec .active_advance ul li a img {
+.news_sec .active_advance ul li a img {
   float: left;
   width: 92px;
   height: 70px;
   margin-right: 12px;
 }
-.news_list .news_sec .active_advance ul li a:hover {
+.news_sec .active_advance ul li a:hover {
   color: #EE2D1B ;
 }
-.news_list .news_sec .recom_area {
+.news_sec .recom_area {
   margin-top: 40px;
 }
-.news_list .news_sec .recom_area .recom_tag {
+.news_sec .recom_area .recom_tag {
   padding-top: 11px;
   background: #F2F2F2;
   width: 290px;
 }
-.news_list .news_sec .recom_area .recom_tag li {
+.news_sec .recom_area .recom_tag li {
   float: left;
   font-size: 14px;
   color: #666;
@@ -473,16 +473,16 @@
   margin: 0 0 11px 11px;
   border-radius: 20px;
 }
-.news_list .news_sec .rela_list ul li {
+.news_sec .rela_list ul li {
   padding: 10px 0;
 }
-.news_list .news_sec .rela_list ul li a {
+.news_sec .rela_list ul li a {
   font-size: 14px;
 }
-.news_list .news_sec .rec_special ul {
+.news_sec .rec_special ul {
   width: 300px;
 }
-.news_list .news_sec .rec_special ul li {
+.news_sec .rec_special ul li {
   border: none;
   padding: 0;
   width: 133px;
@@ -492,11 +492,11 @@
   position: relative;
   border: 1px solid #999;
 }
-.news_list .news_sec .rec_special ul li a img {
+.news_sec .rec_special ul li a img {
   width: 100%;
   height: 100%;
   transition: all .5s;
 }
-.news_list .news_sec .rec_special ul li:hover img {
+.news_sec .rec_special ul li:hover img {
   transform: scale(1.1, 1.1);
 }

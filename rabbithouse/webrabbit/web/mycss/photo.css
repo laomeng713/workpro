@@ -1,12 +1,14 @@
 body {
   background: #f1eee5;
+  margin-top: 0px;
 }
 a {
   text-decoration: none;
 }
 .pho_header {
+  width: 100%;
+  position: fixed;
   height: 39px;
-  position: relative;
   z-index: 21;
   border-bottom: 1px solid #e2dcd4;
   background: #ffffff;
@@ -31,6 +33,65 @@ a {
 }
 .pho_header .pho_inner_header .pho_header_nav li a:hover {
   color: #DD0000;
+}
+.pho_header .pho_inner_header .pho_header_nav li .item_lsit {
+  width: 723px;
+  background: #fff;
+  position: absolute;
+  z-index: 12;
+  display: none;
+  left: 215px;
+  top: 39px;
+  border: 1px solid #e2dcd4;
+  overflow: hidden;
+}
+.pho_header .pho_inner_header .pho_header_nav li .item_lsit .item_inner {
+  width: 727px;
+}
+.pho_header .pho_inner_header .pho_header_nav li .item_lsit .item_inner .item_con {
+  width: 181px;
+}
+.pho_header .pho_inner_header .pho_header_nav li .item_lsit .item_inner .item_con dt {
+  padding-left: 26px;
+}
+.pho_header .pho_inner_header .pho_header_nav li .item_lsit .item_inner .item_con dt h3 {
+  font-weight: bold;
+  height: 30px;
+  line-height: 30px;
+  font-size: 13px;
+  text-indent: 2px;
+  color: #333;
+  border-bottom: 1px solid #e6e3df;
+  padding-top: 9px;
+  width: 135px;
+}
+.pho_header .pho_inner_header .pho_header_nav li .item_lsit .item_inner .item_con dd {
+  padding: 0px 0 24px;
+  background: #fff;
+}
+.pho_header .pho_inner_header .pho_header_nav li .item_lsit .item_inner .item_con dd .item_word {
+  padding-left: 24px;
+  height: 224px;
+  overflow: hidden;
+}
+.pho_header .pho_inner_header .pho_header_nav li .item_lsit .item_inner .item_con dd .item_word span {
+  display: block;
+  float: left;
+  height: 28px;
+  width: 70px;
+}
+.pho_header .pho_inner_header .pho_header_nav li .item_lsit .item_inner .item_con dd .item_word span a {
+  font-size: 12px;
+  color: #333;
+  padding: 0 2px;
+}
+.pho_header .pho_inner_header .pho_header_nav li .item_lsit .item_inner .item_con dd .item_word span a:hover {
+  background: #d00;
+  color: #fff;
+  border-radius: 2px;
+}
+.pho_header .pho_inner_header .pho_header_nav .show_item:hover .item_lsit {
+  display: block;
 }
 .pho_header .pho_inner_header .pho_header_wrap {
   position: relative;
@@ -65,12 +126,17 @@ a {
   width: 100%;
 }
 .outer_wrap .left_wrap {
+  width: 75%;
   margin-right: 315px;
+  padding-right: 20px;
+  position: fixed;
 }
 .outer_wrap .left_wrap .left_bar {
   height: 35px;
   line-height: 35px;
   position: relative;
+  margin-top: 40px;
+  z-index: 100;
 }
 .outer_wrap .left_wrap .left_bar .crumb {
   position: absolute;
@@ -110,9 +176,10 @@ a {
   position: absolute;
   left: 100%;
   top: 0;
-  width: 100px;
+  width: 315px;
   padding: 7px 0 6px 16px;
   margin-left: 20px;
+  background-color: #F1EEE5 ;
 }
 .outer_wrap .left_wrap .left_bar .mobile_rel .send_mobile .app {
   top: 7px;
@@ -128,13 +195,6 @@ a {
   padding: 10px 0;
   margin: 0 auto;
   text-align: center;
-}
-.pc_slide {
-  width: 500px;
-  height: 500px;
-}
-.view .swiper-container .swiper-slide img {
-  width: 100%;
 }
 .view .arrow-left {
   background: url(../../images/index_tab_l.png) no-repeat left top;
@@ -156,6 +216,21 @@ a {
   height: 51px;
   z-index: 10;
 }
+.view .style_point {
+  color: #F5A437;
+  width: 129px;
+  height: 25px;
+  position: absolute;
+  font-size: 12px;
+  border-radius: 71px;
+  border: 2px solid #F5A437;
+  padding: 2px 2px;
+  background-color: #ffffff;
+  z-index: 10;
+  right: 50px;
+  top: 80%;
+  cursor: pointer;
+}
 .preview {
   width: 100%;
   margin-top: 10px;
@@ -174,29 +249,301 @@ a {
   margin: 0 3px;
 }
 .preview .arrow-left {
-  background: url(../../images/feel3.png) no-repeat left top;
+  background: url(../../images/fav_bg.png) no-repeat;
   position: absolute;
-  left: 10px;
-  top: 50%;
-  margin-top: -9px;
-  width: 9px;
-  height: 18px;
-  z-index: 10;
+  width: 22px;
+  height: 49px;
+  text-indent: -999px;
+  overflow: hidden;
+  top: 18px;
+  left: 2px;
+  background-position: -100px 0;
 }
 .preview .arrow-right {
-  background: url(../../images/feel4.png) no-repeat left bottom;
+  background: url(../../images/fav_bg.png) no-repeat;
   position: absolute;
-  right: 10px;
-  top: 50%;
-  margin-top: -9px;
-  width: 9px;
-  height: 18px;
+  width: 22px;
+  height: 49px;
+  text-indent: -999px;
+  overflow: hidden;
+  top: 18px;
+  right: 2px;
   z-index: 10;
+  background-position: -122px 0;
 }
 .preview img {
+  width: 100%;
+  height: 95%;
   padding: 1px;
 }
 .preview .active-nav img {
   padding: 0;
   border: 2px solid #Fff;
+}
+.right_wrap {
+  width: 23%;
+  height: 2000px;
+  position: absolute;
+  right: -10px;
+  top: 35px;
+  overflow-y: hidden;
+  z-index: -1;
+}
+.right_wrap .scroll_content {
+  top: 40px;
+  left: 0;
+  position: absolute;
+}
+.transfer_bac {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: #000;
+  opacity: .75;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.window_box {
+  display: none;
+  background: #fff;
+  position: fixed;
+  z-index: 9999;
+  overflow: hidden;
+  left: 480px;
+  top: 150px;
+  width: 480px;
+  height: 360px;
+}
+.window_box .window_title {
+  height: 40px;
+  float: left;
+  width: 100%;
+  position: relative;
+}
+.window_box .window_title .window_close {
+  z-index: 100;
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  width: 16px;
+  height: 16px;
+  background: url(http://img.to8to.com/to8to_img/global.png?v=20160512) no-repeat 0 -165px;
+}
+.window_box .window_container {
+  background: #fff;
+  width: 100%;
+  height: 312px;
+  display: inline-block;
+}
+.window_box .window_container .send_message {
+  position: relative;
+  top: -38px;
+}
+.window_box .window_container .send_message .send_init .tophone_top em {
+  display: block;
+  width: 480px;
+  height: 204px;
+  background: url(http://img.to8to.com/to8to_img/xgt/xgt_xqy.png) no-repeat -567px -390px;
+}
+.window_box .window_container .send_message .send_init .tophone_top .thisImg {
+  position: relative;
+  height: 87px;
+  width: 146px;
+  left: 72px;
+  top: -151px;
+}
+.window_box .window_container .send_message .send_init .tophone_top .thisImg img {
+  display: block;
+  max-width: 146px;
+  max-height: 87px;
+  margin: 0 auto;
+}
+.window_box .window_container .send_message .send_init .tophone_down {
+  position: absolute;
+  bottom: -32px;
+  left: 82px;
+  width: 339px;
+  margin: 10px auto;
+  margin-top: 55px;
+}
+.window_box .window_container .send_message .send_init .tophone_down .send_phone {
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 11px;
+  margin-right: 11px;
+  border: 1px solid #999;
+}
+.window_box .window_container .send_message .send_init .tophone_down .send_btn {
+  text-align: center;
+  position: absolute;
+  width: 95px;
+  color: #fff;
+  background-color: #fe5f00;
+  line-height: 33px;
+  border: 0;
+  cursor: pointer;
+}
+.window_box .window_container .send_message .send_init .tophone_down .info_desc {
+  width: 294px;
+  margin: 0 auto;
+  color: #fe5f00;
+  margin-top: 25px;
+}
+.window_box .window_container .send_message .send_init .phone_err {
+  text-indent: 84px;
+  color: red;
+}
+.online_quote {
+  width: 810px;
+  height: 450px;
+  margin-left: -405px;
+  margin-top: -265px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 1000;
+  display: none;
+}
+.online_quote .quote_close {
+  width: 30px;
+  height: 30px;
+  background: url(http://fastued2.jia.com/image/tuku/tg_rec_bg.png) left -79px no-repeat;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  text-indent: -999px;
+  overflow: hidden;
+  z-index: 2;
+}
+.online_quote .online_left {
+  width: 405px;
+  float: left;
+  overflow: hidden;
+  height: 450px;
+  background: #fff;
+  text-align: center;
+}
+.online_quote .online_left img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+.online_quote .online_right {
+  width: 405px;
+  float: right;
+  height: 450px;
+  background: #f5f5f5;
+}
+.online_quote .online_right .online_main {
+  height: 450px;
+  background: #f5f5f5;
+  width: 100%;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.online_quote .online_right .online_main h3 {
+  font-size: 28px;
+  color: #333;
+  padding-top: 49px;
+  line-height: 60px;
+  text-align: center;
+  padding-bottom: 40px;
+  white-space: nowrap;
+  font-weight: 400;
+}
+.online_quote .online_right .online_main .quote_con {
+  padding: 0;
+  margin: 0 auto;
+  width: 327px;
+  position: relative;
+}
+.online_quote .online_right .online_main .quote_con .quote_tip {
+  bottom: 40px;
+  top: auto;
+  line-height: 35px;
+  left: 97px;
+  position: absolute;
+  color: #d00;
+}
+.online_quote .online_right .online_main .quote_con .online_step {
+  position: relative;
+  z-index: 1;
+  width: 327px;
+}
+.online_quote .online_right .online_main .quote_con .online_step .house_meter {
+  line-height: 34px;
+  position: relative;
+  margin-bottom: 12px;
+  height: 40px;
+}
+.online_quote .online_right .online_main .quote_con .online_step .house_meter em {
+  position: absolute;
+  right: 8px;
+  height: 100%;
+  top: 0;
+  color: #999;
+  font-size: 16px;
+}
+.online_quote .online_right .online_main .quote_con .online_step .house_style {
+  width: 335px;
+  height: 40px;
+  position: relative;
+  margin-bottom: 12px;
+  z-index: 10;
+  line-height: 34px;
+}
+.online_quote .online_right .online_main .quote_con .online_step .house_style select {
+  min-width: 45px;
+  height: 38px;
+  line-height: 38px;
+  margin-right: 5px;
+  background: #fff;
+  position: relative;
+  margin-bottom: 6px;
+  border: 1px solid #ddd;
+  padding: 0 16px 0 9px;
+  outline: none;
+}
+.online_quote .online_right .online_main .quote_con .online_step .house_phone {
+  padding-bottom: 25px;
+  height: 40px;
+  position: relative;
+}
+.online_quote .online_right .online_main .quote_con .house_meter span,
+.online_quote .online_right .online_main .quote_con .house_style span,
+.online_quote .online_right .online_main .quote_con .house_phone span {
+  display: inline-block;
+  font-size: 14px;
+  color: #333;
+  width: 97px;
+  line-height: 40px;
+  height: 40px;
+}
+.online_quote .online_right .online_main .quote_con .house_meter input,
+.online_quote .online_right .online_main .quote_con .house_phone input {
+  width: 208px;
+  padding: 11px 10px;
+  font-size: 12px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 16px;
+  line-height: 16px;
+  border: 1px solid #ddd;
+}
+.online_quote .online_right .online_main .quote_con .quote_now {
+  display: block;
+  width: 318px;
+  margin: 0 auto;
+  height: 40px;
+  line-height: 40px;
+  background: #ff5252;
+  transition: .3s all ease;
+  color: #fff;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 14px;
 }
