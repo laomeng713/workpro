@@ -148,7 +148,7 @@ function submitPage(){
 ///页面达到一定高度。。。只显示收集信息框
 function sign_area(){
     window.addEventListener("scroll",function(){
-        var height=document.documentElement.scrollTop;
+        var height=document.documentElement.scrollTop|| window.pageYOffset || document.body.scrollTop;
         if(height>1700){
             $('.left_show').hide();
             $('.news_signup').addClass('signup_position');
@@ -163,7 +163,7 @@ function sign_area(){
 //返回顶部
 function slide_help(){
     window.addEventListener("scroll",function(){
-        var height=document.documentElement.scrollTop;
+        var height=document.documentElement.scrollTop|| window.pageYOffset || document.body.scrollTop;
         if(height>400){
             $('.slide_help').show();
         }else{

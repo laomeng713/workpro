@@ -23,7 +23,7 @@
 <!--头部-->
 <header class="index_header">
     <h1 class="top_title">兔班长</h1>
-    <a class="index_city" href="">北京
+    <a class="index_city" href="city.html">北京
         <i class="arrow_city"></i>
     </a>
     <a class="search_input" href="javascript:;">
@@ -140,7 +140,8 @@
     </div>
     <div class="apply_mess">
         <input class="index_mobile" type="tel" maxlength="11" placeholder="输入手机号"/>
-        <a onclick="errorCheck($(this),1)" href="javascript:;">免费报名</a>
+        <a onclick="checkPhone($(this))" href="javascript:;">免费报名</a>
+        <p class="count"></p>
     </div>
     <p class="tc more_href">
         <a class="sign" href="">了解活动详情
@@ -771,12 +772,35 @@
 
     </ul>
 </nav>
+<!--//弹出搜索界面-->
+<aside class="search_page">
+    <div class="app_search">
+        <p class="search_header">
+            <input type="text" placeholder="文章\装修\号问答" autofocus/>
+            <i></i>
+        </p>
+        <span class="search_cancel">取消</span>
+    </div>
+    <div class="hot_search">
+        <h2 class="search_title">热门搜索:</h2>
+        <div class="search_key">
+            <a href="">简约风格</a>
+            <a href="">日式风格装修</a>
+            <a href="">装修报价</a>
+            <a href="">地板</a>
+            <a href="">春季装修好处</a>
+
+            <a href="">装修哪天开工</a>
+            <a href="">地板砖十大品牌</a>
+
+        </div>
+    </div>
+</aside>
 <script src="../../../common/js/swiper.min.js"></script>
 <script src="../../../common/js/zepto.min.js"></script>
 <script src="../../../common/js/jquery-1.11.3.min.js"></script>
-<script src="../app/myjs/index.js"></script>
 <script>
-    $(function () {
+
         var mySwiper = new Swiper('.swiper-container', {
             slidesPerView: 'auto',
             autoplay: 3000,
@@ -785,11 +809,12 @@
         var mySwiper1 = new Swiper('.myswiper-container', {
             slidesPerView : 3
         })
-        function checkPhone($obj,num){
+        function checkPhone($obj){
             var $div = $obj.closest("div");
             var phone="";
-            var regPhone = $obj.closest("div");
+            var regPhone = /^1[3578]\d{9}$/;
             phone = $.trim($div.find(".index_mobile").val());
+            console.log(phone);
             if (phone == "") {
                 $div.find(".count").text('手机号不能为空');
                 return false;
@@ -803,7 +828,7 @@
             $.ajax({
                 type: "post",
                 success: function () {
-                    console.log('succcess');
+                    console.log('success');
                 },
                 error: function () {
                     console.log('error');
@@ -811,7 +836,17 @@
             })
         }
 
-    })
+        // 搜索界面弹出以及取消界面
+        $('.search_input').click(function () {
+            $('.search_page').show();
+            noScrollCom();
+        })
+        $('.search_cancel').click(function () {
+            $('.search_page').hide();
+            autoScrollCom();
+        })
+
+
 
 </script>
 </body>

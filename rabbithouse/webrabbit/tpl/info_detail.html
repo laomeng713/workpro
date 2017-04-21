@@ -653,13 +653,20 @@
 </footer>
 <script src="../../../common/js/jquery-1.11.3.min.js"></script>
 <script src="../web/myjs/mainFunction.js"></script>
-<script src="../web/myjs/web_info.js"></script>
 <script>
-    $('.rec_area_nav li').click(function(){
-        var index=$(this).index();
-        $(this).addClass("cur").siblings('li').removeClass("cur");
-        $('.rec_area_con ul').removeClass("cur").eq(index).addClass("cur");
+    $(function(){
+        main();  //头部选择类型切换
+        submitPage();//tab 标签切换
+        slide_help(); //返回顶部
+        sign_area(); //页面达到一定高度。。。只显示收集信息框
+        $('.rec_area_nav li').click(function(){
+            var index=$(this).index();
+            $(this).addClass("cur").siblings('li').removeClass("cur");
+            $('.rec_area_con ul').removeClass("cur").eq(index).addClass("cur");
+        })
     })
+
+
 </script>
 </body>
 </html>

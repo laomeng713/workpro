@@ -587,7 +587,7 @@
     </div>
 </div>
 <script src="../web/myjs/swiper.js"></script>
-<script src="../web/myjs/jQuery1.7.js"></script>
+<script src="../../../common/js/jquery-1.11.3.min.js"></script>
 <script src="../web/myjs/jquery.mousewheel.min.js"></script>
 <script src="../web/myjs/mainFunction.js"></script>
 <script type="text/javascript">
@@ -679,9 +679,10 @@
             document.addEventListener(b, scrollMoveCom)
         })
     }
+
     var viewSwiper = new Swiper('.view .swiper-container', {
         onSlideChangeStart: function () {
-            updateNavPosition()
+            updateNavPosition();
         }
     })
 
@@ -725,6 +726,10 @@
     })
 
     function updateNavPosition() {
+        var loadPath1=$('.view .swiper-container .swiper-slide-active img').attr('src');
+        console.log(loadPath1);
+        $('.online_left img').attr('src',loadPath1);
+        $('.thisImg img').attr('src',loadPath1);
         $('.preview .active-nav').removeClass('active-nav')
         var activeNav = $('.preview .swiper-slide').eq(viewSwiper.activeIndex).addClass('active-nav')
         if (!activeNav.hasClass('swiper-slide-visible')) {
@@ -741,7 +746,7 @@
         var g= Math.floor(Math.random()*256);
         var b= Math.floor(Math.random()*256);
         var R= r.toString(16);//换成16进制
-        console.log(R);
+//        console.log(R);
         var G= g.toString(16);//换成16进制
         var B= b.toString(16);//换成16进制
         return "#"+R+G+B;
@@ -749,7 +754,7 @@
 
     $('.pc_show').mousewheel(function (event, delta) {
         var color=getRandomColor();
-        console.log(delta);
+//        console.log(delta);
         if (delta == 1) { //鼠标向上滚delta=1，
             imgPrev();
             noScrollCom();
