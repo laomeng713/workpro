@@ -167,7 +167,7 @@ $('.click_all').click(function(){
     $('.click_all').hide();
 })
 
-//    搜索界面弹出以及取消界面
+// 搜索界面弹出以及取消界面
 $('.header_search').click(function () {
     $('.search_page').show();
     noScrollCom();

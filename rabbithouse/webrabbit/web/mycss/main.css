@@ -9,12 +9,6 @@
 body {
   margin-top: 30px;
 }
-.rt {
-  float: right;
-}
-.lf {
-  float: left;
-}
 .f12 {
   font-size: 12px;
 }
@@ -214,6 +208,7 @@ a {
   border: none;
   background-color: #df0303 ;
   outline-style: none;
+  cursor: pointer;
 }
 .logo .logo_right {
   margin-top: 35px;
@@ -252,6 +247,9 @@ a {
   color: #fff;
 }
 footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
   border-top: 1px solid #dddddd;
   padding-top: 10px;
   margin: 30px 0;
@@ -320,6 +318,7 @@ footer p {
   right: 10px;
   border: 1px solid #ddd;
   background-color: #FFFFFF;
+  z-index: 10;
 }
 .slide_help a {
   display: block;

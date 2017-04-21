@@ -305,6 +305,7 @@
   display: none;
   border: 1px solid #cecece;
   border-top: none;
+  margin: 0 auto;
 }
 .quto_detail .quote_area .quote_con .total_price {
   height: 100px;
@@ -313,6 +314,10 @@
 }
 .quto_detail .quote_area .quote_con .quote_detail {
   padding: 7px 61px 30px 53px;
+  margin: 0 auto;
+}
+.quto_detail .quote_area .quote_con .quote_detail h3 {
+  margin: 10px 75px;
 }
 .quto_detail .quote_area .quote_con .quote_detail .icon {
   display: inline-block;

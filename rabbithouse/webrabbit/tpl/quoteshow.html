@@ -23,7 +23,6 @@
             <em>|</em>
             <a class="active" href="#">北京</a>
             <a href="#">上海</a>
-
             <span class="top_phone fontcolor"> 7*24小时免费直拨 400-8032-163
                 <span class="top_time">（服务时间：8：00~21：00）</span>
             </span>
@@ -211,8 +210,8 @@
                 </span>
                 以下是《施工报价清单》（即除主材外的半包明细）
             </p>
-            <div class="quote_detail">
-                <h3 class="f14 mt30">
+            <div class="quote_detail clearfloat">
+                <h3 class="f14 mt30 lf">
                     <span>
                         <i class="icon bedroom"></i>
                         <span class="f24">主卧</span>
@@ -224,7 +223,7 @@
                         </span>
                     </span>
                 </h3>
-                <h3 class="f14 mt30">
+                <h3 class="f14 mt30 lf">
                     <span>
                         <i class="icon s_bedroom"></i>
                         <span class="f24"> 次卧</span>
@@ -236,7 +235,7 @@
                         </span>
                     </span>
                 </h3>
-                <h3 class="f14 mt30">
+                <h3 class="f14 mt30 lf">
                     <span>
                         <i class="icon guest_bedroom"></i>
                         <span class="f24">客卧</span>
@@ -248,7 +247,7 @@
                         </span>
                     </span>
                 </h3>
-                <h3 class="f14 mt30">
+                <h3 class="f14 mt30 lf">
                     <span>
                         <i class="icon guest_room"></i>
                         <span class="f24">客厅</span>
@@ -260,7 +259,7 @@
                         </span>
                     </span>
                 </h3>
-                <h3 class="f14 mt30">
+                <h3 class="f14 mt30 lf">
                     <span>
                         <i class="icon kitchen"></i>
                         <span class="f24">厨房</span>
@@ -272,7 +271,7 @@
                         </span>
                     </span>
                 </h3>
-                <h3 class="f14 mt30">
+                <h3 class="f14 mt30 lf">
                     <span>
                         <i class="icon toilet"></i>
                         <span class="f24">厕所</span>
@@ -284,7 +283,7 @@
                         </span>
                     </span>
                 </h3>
-                <h3 class="f14 mt30">
+                <h3 class="f14 mt30 lf">
                     <span>
                         <i class="icon balcony"></i>
                         <span class="f24">阳台</span>
@@ -299,7 +298,7 @@
             </div>
         </div>
         <!--简装修-->
-        <div class="quote_con">
+        <div class="quote_con ">
             <p class="total_price tc">
                 <span class="f18 fB">总价格</span>
                 <span class="mr10 cBred vm">
@@ -308,8 +307,8 @@
                 </span>
                 以下是《施工报价清单》（即除主材外的半包明细）
             </p>
-            <div class="quote_detail">
-                <h3 class="f14 mt30">
+            <div class="quote_detail clearfloat">
+                <h3 class="f14 mt30 lf">
                     <span>
                         <i class="icon bedroom"></i>
                         <span class="f24">主卧</span>
@@ -321,7 +320,7 @@
                         </span>
                     </span>
                 </h3>
-                <h3 class="f14 mt30">
+                <h3 class="f14 mt30 lf">
                     <span>
                         <i class="icon s_bedroom"></i>
                         <span class="f24"> 次卧</span>
@@ -333,7 +332,7 @@
                         </span>
                     </span>
                 </h3>
-                <h3 class="f14 mt30">
+                <h3 class="f14 mt30 lf">
                     <span>
                         <i class="icon guest_bedroom"></i>
                         <span class="f24">客卧</span>
@@ -345,7 +344,7 @@
                         </span>
                     </span>
                 </h3>
-                <h3 class="f14 mt30">
+                <h3 class="f14 mt30 lf">
                     <span>
                         <i class="icon guest_room"></i>
                         <span class="f24">客厅</span>
@@ -357,7 +356,7 @@
                         </span>
                     </span>
                 </h3>
-                <h3 class="f14 mt30">
+                <h3 class="f14 mt30 lf">
                     <span>
                         <i class="icon kitchen"></i>
                         <span class="f24">厨房</span>
@@ -369,7 +368,7 @@
                         </span>
                     </span>
                 </h3>
-                <h3 class="f14 mt30">
+                <h3 class="f14 mt30 lf">
                     <span>
                         <i class="icon toilet"></i>
                         <span class="f24">厕所</span>
@@ -381,7 +380,7 @@
                         </span>
                     </span>
                 </h3>
-                <h3 class="f14 mt30">
+                <h3 class="f14 mt30 lf">
                     <span>
                         <i class="icon balcony"></i>
                         <span class="f24">阳台</span>
@@ -425,15 +424,19 @@
 </footer>
 <script src="../../../common/js/jquery-1.11.3.min.js"></script>
 <script src="../web/myjs/mainFunction.js"></script>
-<script src="../web/myjs/ask_lm_gzsj.js"></script>
 <script>
-$('.tab_change span').click(function(){
-    var index=$(this).index();
-    $(this).addClass("active").siblings('span').removeClass("active");
-    $(this).children('i').addClass("on");
-    $(this).siblings('span').children('i').removeClass("on");
-    $('.quote_area .quote_con').removeClass("cur").eq(index).addClass("cur");
-})
+    $(function() {
+        main();  //头部选择类型切换
+        submitPage();//手机信息tab 标签切换
+        $('.tab_change span').click(function(){
+            var index=$(this).index();
+            $(this).addClass("active").siblings('span').removeClass("active");
+            $(this).children('i').addClass("on");
+            $(this).siblings('span').children('i').removeClass("on");
+            $('.quote_area .quote_con').removeClass("cur").eq(index).addClass("cur");
+        })
+    })
+
 </script>
 </body>
 </html>

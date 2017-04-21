@@ -222,6 +222,7 @@ option:focus {
   border: none;
   background-color: #df0303 ;
   outline-style: none;
+  cursor: pointer;
 }
 .logo .logo_right {
   margin-top: 35px;

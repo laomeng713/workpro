@@ -9,10 +9,7 @@
     <link rel="canonical" href="http://www.tu8zhang.com/">
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="../../../common/css/webcommon.css"/>
-    <!--<link rel="stylesheet" href="../web/mycss/main.css"/>-->
     <link rel="stylesheet" href="../web/mycss/calculator.css"/>
-
-
 </head>
 <body>
 <!--头部-->
@@ -77,16 +74,15 @@
                   <!--ccccc-->
                 </div>
             </form>
-
         </div>
         <div class="qbox_c">
             <div class="bg_line"></div>
-            <div class="btnbox">
+            <div onclick="quoteCheck($(this))" class="btnbox">
                 <div class="x_line"></div>
                 <div class="y_line"></div>
                 <div onclick="quoteCheck($(this))" class="btn_bg"></div>
                 <div class="middle_anmite"></div>
-                <div class="btn_text">开始计算</div>
+                <div onclick="quoteCheck($(this))" class="btn_text">开始计算</div>
             </div>
         </div>
         <div class="qbox_r">
@@ -216,7 +212,7 @@
     </div>
 </footer>
 <script src="../../../common/js/jquery-1.11.3.min.js"></script>
-<script src="../web/myjs/index.js"></script>
+<script src="../web/myjs/city.js"></script>
 <script>
 
     function quoteCheck($obj) {

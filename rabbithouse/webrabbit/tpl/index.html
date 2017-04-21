@@ -800,7 +800,7 @@
             友链合作>
         </a>
     </div>
-    <div class="link_center lf test">
+    <div class="link_center lf ">
         <p>关于我们</p>
         <img src="../images/about_01.png" alt=""/>
     </div>
@@ -829,73 +829,78 @@
 </footer>
 <script src="../../../common/js/jquery-1.11.3.min.js"></script>
 <script src="../web/myjs/mainFunction.js"></script>
-<script src="../web/myjs/ask_lm_gzsj.js"></script>
-<script src="../web/myjs/index.js"></script>
+<script src="../web/myjs/city.js"></script>
 <script>
-    $('.tab_title li').mouseover(function () {
-        var index = $(this).index();
-        $(this).addClass("tab_cur").siblings("li").removeClass("tab_cur");
-        $('.tab_main .tab_center').removeClass("cur").eq(index).addClass("cur");
-    })
-    $('.style_list li').mouseover(function () {
-        $(this).children('em').removeClass("cur");
-        $(this).siblings("li").children('em').addClass("cur");
-    })
-    $('.style_list li').mouseout(function () {
-        $('.style_list li em').removeClass("cur");
+    $(function(){
+        main();  //头部选择类型切换
+        submitPage();//手机信息tab 标签切换
+        $('.tab_title li').mouseover(function () {
+            var index = $(this).index();
+            $(this).addClass("tab_cur").siblings("li").removeClass("tab_cur");
+            $('.tab_main .tab_center').removeClass("cur").eq(index).addClass("cur");
+        })
+        $('.style_list li').mouseover(function () {
+            $(this).children('em').removeClass("cur");
+            $(this).siblings("li").children('em').addClass("cur");
+        })
+        $('.style_list li').mouseout(function () {
+            $('.style_list li em').removeClass("cur");
 
-    })
+        })
 
-    function mobileCheck($obj, num) {
-        var $form = $obj.closest("form");
-        var uname = "", phone = "";
-        var regPhone = /^1[3578]\d{9}$/;
-
-        function errCheck() {
-            uname = $.trim($form.find('.userName').val());
-            phone = $.trim($form.find('.phoneNum').val());
-            if (uname == '') {
-                $form.find('.error_name').text('* 请输入您的姓名');
-                return false;
-            } else {
-                $form.find('.error_name').text('');
-            }
-            if (phone == '') {
-                $form.find('.error_phone').text('* 手机号不能为空');
-                return false;
-            }
-            if (!regPhone.test(phone)) {
-                console.log(1111);
-                $form.find('.error_phone').text('* 请输入正确的手机号');
-                return false;
-            } else {
-                $form.find('.error_phone').text('');
-            }
-            $.ajax({
-                success: function () {
-                    console.log('success');
+        function mobileCheck($obj, num) {
+            var $form = $obj.closest("form");
+            var uname = "", phone = "";
+            var regPhone = /^1[3578]\d{9}$/;
+            function errCheck() {
+                uname = $.trim($form.find('.userName').val());
+                phone = $.trim($form.find('.phoneNum').val());
+                if (uname == '') {
+                    $form.find('.error_name').text('* 请输入您的姓名');
+                    return false;
+                } else {
+                    $form.find('.error_name').text('');
                 }
-            })
+                if (phone == '') {
+                    $form.find('.error_phone').text('* 手机号不能为空');
+                    return false;
+                }
+                if (!regPhone.test(phone)) {
+                    console.log(1111);
+                    $form.find('.error_phone').text('* 请输入正确的手机号');
+                    return false;
+                } else {
+                    $form.find('.error_phone').text('');
+                }
+                $.ajax({
+                    success: function () {
+                        console.log('success');
+                    }
+                })
+            }
+
+            switch (num) {
+                case 1:
+                    errCheck();
+                    break;
+                case 2:
+                    errCheck();
+                    break;
+                case 3:
+                    errCheck();
+                    break;
+                case 4:
+                    errCheck();
+                    break;
+                case 5:
+                    errCheck();
+                    break;
+            }
         }
 
-        switch (num) {
-            case 1:
-                errCheck();
-                break;
-            case 2:
-                errCheck();
-                break;
-            case 3:
-                errCheck();
-                break;
-            case 4:
-                errCheck();
-                break;
-            case 5:
-                errCheck();
-                break;
-        }
-    }
+
+    })
+
 </script>
 </body>
 </html>

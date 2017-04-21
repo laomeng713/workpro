@@ -9,9 +9,12 @@
     <link rel="canonical" href="http://www.tu8zhang.com/">
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="../../../common/css/webcommon.css"/>
-    <link rel="stylesheet" href="../web/mycss/main.css"/>
     <style>
+        body{
+            position: relative;
+        }
         .container{
+            position: relative;
             width: 555px;
             margin: 0 auto;
             padding-top: 106px;
@@ -43,6 +46,25 @@
             color: #666;
             margin-top: 10px;
         }
+        footer {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: -380px;
+            border-top: 1px solid #dddddd;
+            padding-top: 10px;
+            margin: 30px 0;
+            font-size: 12px;
+        }
+        footer a {
+            color: #666666;
+            padding: 0 10px;
+            display: inline-block;
+        }
+        footer p {
+            text-align: center;
+            margin: 5px 0;
+        }
     </style>
 </head>
 <body>
@@ -53,7 +75,7 @@
     <div class="text">
         <h1>抱歉，您访问的页面不存在！</h1>
         <p>您可以尝试：</p>
-        <p>1.检查输入的网址，或者返回<a id="return">上一页</a></p>
+        <p>1.检查输入的网址，或者返回<a  href="javascript:;" id="return">上一页</a></p>
         <p>2.快速进入<a href="http://www.tu8zhang.com/">首页</a></p>
     </div>
 

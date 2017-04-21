@@ -7,12 +7,7 @@
 body{
   margin-top: 30px;
 }
-.rt{
-  float: right;
-}
-.lf{
-  float: left;
-}
+
 .f12{
   font-size: 12px;
 }
@@ -218,7 +213,8 @@ a{
       color: #fff;
       border: none;
       background-color: #df0303 ;
-      outline-style: none
+      outline-style: none;
+      cursor: pointer;
     }
   }
 
@@ -266,6 +262,9 @@ a{
 //header 头部样式********end*****
 //footer 页尾样式********start*******
 footer{
+  position: relative;
+  left: 0;
+  bottom: 0;
   border-top: 1px solid #dddddd;
   padding-top: 10px;
   margin: 30px 0;
@@ -337,6 +336,7 @@ footer{
   right: 10px;
   border: 1px solid #ddd;
   background-color: #FFFFFF;
+  z-index: 10;
   a{
     display: block;
     margin-top: 10px;

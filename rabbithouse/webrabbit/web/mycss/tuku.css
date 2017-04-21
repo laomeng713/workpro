@@ -1,0 +1,445 @@
+body {
+  background-color: #f1eee5;
+}
+.tlist_wrap {
+  margin-top: 10px;
+}
+.tlist_wrap .tlist_selc {
+  background: #fff;
+}
+.tlist_wrap .tlist_selc .crumb_sel {
+  height: 43px;
+  line-height: 43px;
+  padding-left: 24px;
+}
+.tlist_wrap .tlist_selc .crumb_sel em {
+  color: #999;
+  margin-left: 15px;
+}
+.tlist_wrap .tlist_selc .crumb_sel .sel_choosen {
+  height: 18px;
+  line-height: 18px;
+  border: 1px solid #d00;
+  position: relative;
+  padding: 0 17px 0 7px;
+  min-width: 34px;
+  max-width: 68px;
+  color: #d00;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  margin-right: 3px;
+}
+.tlist_wrap .tlist_selc .crumb_sel .sel_choosen i {
+  position: absolute;
+  top: 6px;
+  right: 5px;
+  background: url(http://fastued3.jia.com/image/tuku/jiaju/fur_icon.png) -91px -91px no-repeat;
+  width: 7px;
+  height: 7px;
+}
+.tlist_wrap .tlist_selc .crumb_sel .sel_choosen:hover {
+  background: #d00;
+  color: #fff;
+  text-decoration: none;
+}
+.tlist_wrap .tlist_selc .crumb_sel .sel_choosen:hover i {
+  background-position: -91px -98px;
+}
+.tlist_wrap .tlist_selc .tlist_item {
+  padding: 7px 0;
+  line-height: 33px;
+  border-top: 1px dotted #dbdbdb;
+}
+.tlist_wrap .tlist_selc .tlist_item dt {
+  width: 78px;
+  text-align: center;
+  float: left;
+  font-size: 14px;
+}
+.tlist_wrap .tlist_selc .tlist_item dd {
+  float: left;
+  padding-left: 22px;
+  border-left: 1px solid #eaeaea;
+  width: 1060px;
+  position: relative;
+  height: 33px;
+  overflow: hidden;
+}
+.tlist_wrap .tlist_selc .tlist_item dd span {
+  margin-right: 20px;
+  vertical-align: middle;
+  line-height: 20px;
+}
+.tlist_wrap .tlist_selc .tlist_item dd span a {
+  padding: 0 3px;
+  font-size: 12px;
+  color: #333;
+}
+.tlist_wrap .tlist_selc .tlist_item dd span a:hover {
+  background: #d00;
+  color: #fff;
+  border-radius: 2px;
+}
+.tlist_wrap .tlist_selc .tlist_item dd span a.on {
+  color: #d00;
+}
+.tlist_wrap .tlist_selc .tlist_item dd span a.on:hover {
+  background: transparent;
+  color: #d00;
+}
+.tlist_wrap .tlist_selc .tlist_item dd .color_set {
+  width: 40px;
+  height: 16px;
+  display: inline-block;
+  margin-right: 0;
+  padding: 0;
+  border-radius: 0;
+  margin-top: 9px;
+}
+.tlist_wrap .tlist_selc .tlist_item dd .beauty_c1 {
+  background-color: #fff;
+  width: 38px;
+  border: 1px solid #eee;
+  height: 14px;
+}
+.tlist_wrap .tlist_selc .tlist_item dd .beauty_c2 {
+  background-color: #f1ebe5;
+}
+.tlist_wrap .tlist_selc .tlist_item dd .beauty_c3 {
+  background-color: #f4e8b1;
+}
+.tlist_wrap .tlist_selc .tlist_item dd .beauty_c4 {
+  background-color: #f4cdb0;
+}
+.tlist_wrap .tlist_selc .tlist_item dd .beauty_c5 {
+  background-color: #eca9b1;
+}
+.tlist_wrap .tlist_selc .tlist_item dd .beauty_c6 {
+  background-color: #f4c6cf;
+}
+.tlist_wrap .tlist_selc .tlist_item dd .beauty_c7 {
+  background-color: #dfe6ae;
+}
+.tlist_wrap .tlist_selc .tlist_item dd .beauty_c8 {
+  background-color: #bcd1e6;
+}
+.tlist_wrap .tlist_selc .tlist_item dd .beauty_c9 {
+  background-color: #ccb8e0;
+}
+.tlist_wrap .tlist_selc .tlist_item dd .beauty_c10 {
+  background-color: #999999;
+}
+.tlist_wrap .tlist_selc .tlist_item dd .beauty_c11 {
+  background-color: #d6c5b3;
+}
+.tlist_wrap .tlist_selc .tlist_item dd .beauty_c12 {
+  background-color: #d0d0d0;
+}
+.tlist_wrap .tlist_selc .tlist_item dd .beauty_c13 {
+  background: url(http://fastued3.jia.com/image/tuku/jiaju/fur_icon.png) -120px 0 no-repeat;
+}
+.tlist_wrap .tlist_selc .tlist_item dd .beauty_c14 {
+  background: url(http://fastued3.jia.com/image/tuku/jiaju/fur_icon.png) -172px 0 no-repeat;
+}
+.tlist_wrap .tlist_selc .tlist_item dd .beauty_c15 {
+  background: url(http://fastued3.jia.com/image/tuku/jiaju/fur_icon.png) -212px 0 no-repeat;
+}
+.tlist_wrap .tlist_selc .tlist_item dd .color_set.beauty_c1:hover {
+  background-color: #f8f8f8;
+  border: 1px solid #eee;
+  width: 38px;
+  height: 14px;
+}
+.tlist_wrap .tlist_selc .tlist_item dd .color_set.beauty_c2:hover {
+  background-color: #edddce;
+}
+.tlist_wrap .tlist_selc .tlist_item dd .color_set.beauty_c3:hover {
+  background-color: #eed047;
+}
+.tlist_wrap .tlist_selc .tlist_item dd .color_set.beauty_c4:hover {
+  background-color: #f0924b;
+}
+.tlist_wrap .tlist_selc .tlist_item dd .color_set.beauty_c5:hover {
+  background-color: #df394c;
+}
+.tlist_wrap .tlist_selc .tlist_item dd .color_set.beauty_c6:hover {
+  background-color: #f17e94;
+}
+.tlist_wrap .tlist_selc .tlist_item dd .color_set.beauty_c7:hover {
+  background-color: #bfd244;
+}
+.tlist_wrap .tlist_selc .tlist_item dd .color_set.beauty_c8:hover {
+  background-color: #689cd2;
+}
+.tlist_wrap .tlist_selc .tlist_item dd .color_set.beauty_c9:hover {
+  background-color: #8d6dac;
+}
+.tlist_wrap .tlist_selc .tlist_item dd .color_set.beauty_c10:hover {
+  background-color: #111111;
+}
+.tlist_wrap .tlist_selc .tlist_item dd .color_set.beauty_c11:hover {
+  background-color: #aa7f52;
+}
+.tlist_wrap .tlist_selc .tlist_item dd .color_set.beauty_c12:hover {
+  background-color: #999999;
+}
+.tlist_wrap .tlist_selc .tlist_item dd .color_set.beauty_c13:hover {
+  background: transparent url(http://fastued3.jia.com/image/tuku/jiaju/fur_icon.png) -120px -16px no-repeat;
+}
+.tlist_wrap .tlist_selc .tlist_item dd .color_set.beauty_c14:hover {
+  background: transparent url(http://fastued3.jia.com/image/tuku/jiaju/fur_icon.png) -172px -16px no-repeat;
+}
+.tlist_wrap .tlist_selc .tlist_item dd .color_set.beauty_c15:hover {
+  background: transparent url(http://fastued3.jia.com/image/tuku/jiaju/fur_icon.png) -212px -16px no-repeat;
+}
+.tlist_container {
+  overflow: hidden;
+}
+.tlist_container ul {
+  width: 1208px;
+  position: relative;
+  overflow: hidden;
+}
+.tlist_container ul li {
+  position: absolute;
+  background: #fff;
+  left: 0px;
+  top: 0;
+  width: 283px;
+  margin-top: 19px;
+  margin-right: 19px;
+}
+.tlist_container ul li .tlist_show {
+  position: relative;
+}
+.tlist_container ul li .tlist_show > a {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  display: block;
+  font-size: 0;
+}
+.tlist_container ul li .tlist_show > a img {
+  width: 100%;
+  height: auto;
+}
+.tlist_container ul li .tlist_show .tlist_col_wrap {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 32px;
+  display: none;
+}
+.tlist_container ul li .tlist_show .tlist_col_wrap a {
+  background: rgba(254, 44, 44, 0.9);
+  display: block;
+  color: #fff;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  width: 141px;
+}
+.tlist_container ul li .tlist_show > a:hover {
+  opacity: 0.8;
+}
+.tlist_container ul li .tlist_show:hover .tlist_col_wrap {
+  display: block;
+}
+.tlist_container ul li .tlist_info {
+  width: 100%;
+  line-height: 40px;
+  text-indent: 11px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.tlist_container ul li .tlist_info a {
+  font-size: 14px;
+}
+.tlist_container ul li .tlist_item {
+  padding: 0 8px;
+}
+.tlist_container ul li .tlist_item p {
+  overflow: hidden;
+  border-top: 1px solid #eceae6;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  width: 233px;
+  padding-left: 34px;
+}
+.tlist_container ul li .tlist_item p i {
+  position: absolute;
+  width: 12px;
+  height: 16px;
+  background: url(http://fastued3.jia.com/image/tuku/jiaju/fur_icon.png) -160px top no-repeat;
+  top: 14px;
+  left: 6px;
+}
+.tlist_container ul li .tlist_item p a {
+  color: #9e7e6b;
+  margin-right: 10px;
+  display: block;
+  float: left;
+  width: 48px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tag_interest .intere_tit {
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #ddd;
+}
+.tag_interest .intere_tit h2 {
+  border-color: transparent;
+  cursor: pointer;
+  padding: 0 20px;
+  float: left;
+  border-bottom: 1px solid #333;
+  font-size: 20px;
+  font-weight: 400;
+}
+.tag_interest .intere_tit a {
+  float: right;
+  color: #999999;
+  margin-right: 15px;
+}
+.tag_interest .intere_inner {
+  padding-top: 7px;
+}
+.tag_interest .intere_inner ul li {
+  line-height: 36px;
+  float: left;
+  margin-right: 20px;
+}
+.tlist_bottom {
+  margin-top: 20px;
+}
+.quote_shade {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.6;
+  z-index: 99998;
+  display: none;
+}
+.sh_close {
+  width: 30px;
+  height: 30px;
+  background: url(http://fastued3.jia.com/image/tuku/tg_rec_bg.png) left -79px no-repeat;
+  position: absolute;
+  right: 0px;
+  top: -35px;
+  text-indent: -999px;
+  overflow: hidden;
+  z-index: 2;
+}
+.shade_dis {
+  display: none;
+}
+.shade_style {
+  box-sizing: border-box;
+  width: 420px;
+  height: 400px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -210px;
+  margin-top: -250px;
+  z-index: 99999;
+  border-radius: 4px;
+  background: #fff;
+}
+.shade_ad {
+  width: 100%;
+  height: 120px;
+  background: #f3edde;
+}
+.shade_form {
+  width: 420px;
+  height: 280px;
+  background: #fff;
+}
+.shade_form form {
+  position: relative;
+  padding-left: 140px;
+  width: 250px;
+  height: 250px;
+  background: #fff;
+}
+.shade_form form p {
+  width: 100%;
+  left: -50px;
+  position: relative;
+  font-size: 14px;
+  color: #666;
+  padding-top: 20px;
+  line-height: 28px;
+  height: 28px;
+  text-align: center;
+}
+.shade_form form .magic_wrap .inputBox {
+  position: relative;
+  height: 35px;
+  padding-top: 12px;
+  line-height: 35px;
+}
+.shade_form form .magic_wrap .inputBox span {
+  position: absolute;
+  height: 35px;
+  bottom: 0;
+  color: #333;
+  font-size: 14px;
+  text-align: right;
+  width: 100px;
+  left: -110px;
+}
+.shade_form form .magic_wrap .inputBox input {
+  height: 16px;
+  line-height: 16px;
+  background: #fff;
+  padding: 8px 10px 9px;
+  width: 200px;
+  border: 1px solid #ddd;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.shade_form form .magic_wrap .inputBox b {
+  position: absolute;
+  left: 200px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-top: 8px solid #929292;
+  top: 26px;
+  transition: 0.6s all ease;
+  transform-origin: 50% 25%;
+}
+.shade_form form .magic_wrap .inputBox i {
+  position: absolute;
+  left: 200px;
+  top: 10px;
+  font-size: 16px;
+}
+.shade_form form .magic_wrap .shade_tips {
+  display: block;
+  margin-top: 10px;
+  color: #DD0000;
+}
+.shade_form form .perch a {
+  display: block;
+  width: 222px;
+  border-radius: 4px;
+  background: #d00;
+  height: 34px;
+  line-height: 34px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+}

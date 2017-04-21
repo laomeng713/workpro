@@ -272,6 +272,7 @@ span {
   display: -webkit-flex;
   display: flex;
   margin: 0.7rem 0 1.6rem;
+  position: relative;
 }
 .group_act .apply_mess input {
   -webkit-box-flex: 1;
@@ -293,6 +294,12 @@ span {
   text-align: center;
   color: #fff;
   font-size: 1.5rem;
+}
+.group_act .apply_mess .count {
+  color: #DD0000;
+  position: absolute;
+  top: 4rem;
+  left: 1rem;
 }
 .more_href {
   padding: 1rem 0 1.2rem;
@@ -934,4 +941,78 @@ span {
 }
 .footer_nav ul li a p {
   margin-top: 0.2rem;
+}
+.search_page {
+  display: none;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  height: 100%;
+  background-color: #FFFFFF;
+  z-index: 200;
+}
+.search_page .app_search {
+  position: relative;
+  box-sizing: border-box;
+  background-color: #EE2D1B;
+  padding: 0.5rem 1rem;
+}
+.search_page .app_search .search_header {
+  position: relative;
+  width: 100%;
+  padding-right: 13%;
+  box-sizing: border-box;
+}
+.search_page .app_search .search_header input {
+  border: 0;
+  -webkit-appearance: none;
+  font-size: 1.36rem;
+  height: 2.4rem;
+  line-height: 2.4rem;
+  background: #fff;
+  width: 100%;
+  border-radius: 2rem;
+  padding-left: 3rem;
+}
+.search_page .app_search .search_header input:focus {
+  outline: none;
+}
+.search_page .app_search .search_header i {
+  position: absolute;
+  top: 0.6rem;
+  left: 1rem;
+  background-size: 100% auto;
+  width: 1.3rem;
+  height: 1.3rem;
+  background: url("../../images/search.jpg") no-repeat;
+}
+.search_page .app_search span {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.1rem;
+  font-size: 1.5rem;
+  width: 13%;
+  text-align: right;
+  color: #fff;
+  height: .2rem;
+  line-height: .2rem;
+}
+.search_page .hot_search {
+  padding: 1.2rem 1.5rem 1.9rem;
+}
+.search_page .hot_search .search_title {
+  font-size: 1rem;
+  color: #666;
+  margin: 1.7rem 0 0 -0.02rem;
+}
+.search_page .hot_search .search_key a {
+  float: left;
+  font-size: 1.2rem;
+  padding: 0.4rem 1.2rem;
+  color: #666;
+  border-radius: 2rem;
+  margin: 0.7rem 0.9rem 0 0;
+  height: 1.8rem;
+  line-height: 1.8rem;
+  background: #f4f4f4;
 }
