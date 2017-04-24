@@ -76,8 +76,10 @@ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
-input:focus {
-  border-color: #00a151;
+input,
+textarea {
+  border: 0;
+  -webkit-appearance: none;
 }
 /* 保持垂直居中 */
 img,
@@ -141,6 +143,11 @@ textarea {
   position: absolute;
   top: 0;
   left: 0;
+}
+.pr {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .lf {
   float: left;
