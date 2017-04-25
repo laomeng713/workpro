@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<title>您查找的页面出错了！- 原野映像网</title>
+<meta content="您查找的页面出错了！" name="keywords">
+<meta content="您查找的页面出错了！" name="description">
+
+<style>
+			* {margin:0;padding:0;}
+			html {background:#FFF;font-family:"Microsoft Yahei","songti",STHeiti,Tahoma, Aria, Helvetica;font-size:14px;}
+			.clear:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+			.clear{zoom:1;}
+        	.cuowu {width:679px;height:208px;margin:0 auto;}
+        	.cuowu404 {width:679px;height:208px;background:url(/y/uploadfile/201404/9/1727255761.jpg) no-repeat; margin-top:110px;position:relative;}
+        	.cuowu404404 {width:100%;height:70px; background-color:#ebebe4; margin-top:40px;}
+        	.cuowu404404  p{ line-height:22px; padding-top:15px; padding-left:30px;color:#4c4c4c; font-size:14px;font-family:"songti";}
+			.jump {position:absolute;left:350px;top:120px;}
+			.jump a{cursor:pointer;color:#FF9900;}
+			.jump a:hover{color:#1baef0;}
+        	.cuowu404404 span{color:#FF0000;}
+        </style>
+</head>
+<body>
+<div class="cuowu">
+   		     <div class="cuowu404">
+        	    <p class="jump">您可以<a href="javascript:history.back();">返回上一级</a>或<a href="http://www.lyy99.com/">返回首页</a></p>
+             </div>
+             <div class="cuowu404404">
+        	    <p class="">1、请确认您输入的网址是否正确。<br>2、如果问题继续存在，请发邮件至<span>2659779151@qq.com</span>与我们联系400-6163520。</p>
+             </div>
+ </div>
+</body></html>

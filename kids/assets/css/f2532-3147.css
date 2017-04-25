@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* CSS Document */
+body,html { 
+	min-width:1200px;
+}
+body{zoom:1;}
+body,html {margin:0; padding:0; font-family:Arial, Verdana,"微软雅黑","宋体";color:#666; font-size:16px; line-height:1.8;-webkit-text-size-adjust: none;}
+table,td,tr,th{font-size:12px;}
+li{list-style-type:none;}
+img{vertical-align:top;border:0;}
+h1,h2,h3,h4,h5,h6 {font-size:12px; font-weight:normal;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;font-style:normal;
+	vertical-align: baseline;
+	*zoom: 1;_zoom: 1;
+	-webkit-text-size-adjust: none;
+}
+article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}
+.c:after{content:"."; display:block; height:0; clear:both; visibility:hidden;}
+
+.l{float:left;}
+.r{float:right;}
+
+.fl, .fr {display: inline; zoom:1;float: left;}.fr {float: right;}.cl{clear:both;}
+ins,i{ text-decoration:none; font-style:normal;}
+.lh10{ line-height:1}
+.lh12{ line-height:1.2}
+.lh15{ line-height:1.5}
+.lh18{ line-height:1.8}
+.lh20{ line-height:2}
+/*字体大小*/
+.fyc{ text-indent:-2000em}
+.fB{font-weight:bold;}.fem{font-style:italic;}.fU{text-decoration:underline;}
+.fs6{font-size:6px;}.fs9{font-size:9px;-webkit-text-size-adjust: none;}.fs10{font-size:10px;}.fs11{font-size:11px;}.fs12{font-size:12px;}.fs13{font-size:13px;}.fs14{font-size:14px;}.fs15{font-size:15px;}.fs16{font-size:16px;}.fs17{font-size:17px;}.fs18{font-size:18px;}.fs20{font-size:20px;}.fs22{font-size:22px;}.fs23{font-size:23px;}.fs24{font-size:24px;}.fs25{font-size:25px;}.fs26{font-size:26px;}.fs27{font-size:27px;}.fs28{font-size:28px;}.fs30{font-size:30px;}.fs32{font-size:32px;}.fs34{font-size:34px;}.fs42{font-size:42px;}.fs45{font-size:45px;}.fs49{font-size:49px;}.fs60{font-size:60px;}
+.ff1{font-family:"宋体";}
+.ff2{font-family:Georgia, "Times New Roman", Times, serif;}
+.ff3{font-family:"Times New Roman", Times;}
+.ff4{font-family:"微软雅黑","黑体";}
+/* 修正IE6振动bug */
+html,body{background-attachment:fixed; overflow-x:hidden;}
+
+
+/* link css */
+a {color:#666; text-decoration:none; cursor:pointer;}
+a:visited {text-decoration:none;}
+a:hover {text-decoration:none; color:#014596;}
+a:active {color:#447fc4;}
+a:focus { outline: none; }
+
+
+.ct1,a.ct1,.ct1 a,.ct1 a:visited{ color:#FFF;}
+a.ct1:hover,.ct1 a:hover{ color:#00ADA8;}
+
+.ct2,a.ct2,.ct2 a,.ct2 a:visited{ color:#646464;}
+a.ct2:hover,.ct2 a:hover{ color:#646464;}
+
+.ct3,a.ct3,.ct3 a,.ct3 a:visited{ color:#646464;}
+a.ct3:hover,.ct3 a:hover{ color:#FD283C;}
+
+.ct4,a.ct4,.ct4 a,.ct4 a:visited{ color:#FFF;}
+a.ct4:hover,.ct4 a:hover{ color:#191919;}
+
+.ct5,a.ct5,.ct5 a,.ct5 a:visited{color: #7699c3;}
+a.ct5:hover,.ct5 a:hover{ color:#014596;}
+
+.ct6,a.ct6,.ct6 a,.ct6 a:visited{ color:#FFF}
+a.ct6:hover,.ct6 a:hover{ color:#FFF;}
+
+.ct11,a.ct11,.ct11 a,.ct11 a:visited{ color:#FFF;}
+a.ct11:hover,.ct11 a:hover{ color:#000;}
+
+.cWhite,a.T_bai,.cWhite a,.cWhite a:visited{color:#FFF;}
+a.cWhite:hover,.cWhite a:hover{color:#FDDD47;}
+.cDGray,.cDGray:visited,.cDGray a{color:#727171;}
+.cBlue,.cBlue:visited,.cBlue a{color:#1E50A2;}
+.cDRed,.cDRed:visited,.cDRed a{color:#ba2636;}
+
+.fc{ color:#686868;}
+.fc1{ color:#aeaeaf;}
+
+/*block*/
+.t_nowrap li{text-overflow:ellipsis; white-space:nowrap; overflow:hidden; width:100%;}
+#nowrap{text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+.blk1,.blk5,.blk8,.blk10,.blk12,.blk15,.blk20,.blk22,.blk30,.blk40,.blk50,.blk60,.blk80,.blk140{height:5px; font:0; overflow:hidden; clear:both;}
+.blk1{height:1px;}.blk8{height:8px;}.blk10{height:10px;}.blk12{height:12px;}.blk15{height:15px;}.blk20{height:20px;}.blk22{height:22px;}.blk30{height:30px;}.blk40{height:40px;}.blk50{height:50px;}.blk60{height:60px;}.blk70{height:70px;}.blk80{height:80px;}.blk100{height:100px;}
+/*clear*/
+.cf:before, .cf:after { content:""; display:table;}.cf:after { clear:both;}.cf { zoom:1;}
+.clearboth,.clh{height:0px; font:0; overflow:hidden; clear:both;}
+*html .fixed { height: 1%; }
+
+.pab{position:absolute;}.pre{position:relative;}.dsn{display:none}.dsb{display:block}
+.ma0{ margin:0 auto;}.ma10{ margin:10px auto;}
+.mt5{margin-top:5px}.mt10{margin-top:10px}.mt20{margin-top:20px}.mt30{margin-top:30px}.mt45{margin-top:45px}.mb10{margin-bottom:10px}.mb20{margin-bottom:20px}.mt-10{margin-top:-10px}.ml10{ margin-left:10px;}
+.pt5{ padding-top:5px;}.pt10{ padding-top:10px;}.pt20{ padding-top:20px;}.pt30{ padding-top:30px;}.pt40{ padding-top:40px;}.pt60{ padding-top:60px;}.pb10{ padding-bottom:10px;}.pb20{ padding-bottom:20px;}.pb25{ padding-bottom:25px;}
+.pl10{ padding-left:10px;}.pl20{ padding-left:20px;}.pl30{ padding-left:30px;}.pl40{ padding-left:40px;}.pl50{ padding-left:50px;}.pl100{ padding-left:100px;}.pr10{ padding-right:10px;}
+
+.det img{ max-width:100%}
+.det p img{ max-width:100%}
+.tac{ text-align:center}.tal{ text-align:left;}.tar{ text-align:right;}
+.hengqie {width:1200px; margin:0 auto; text-align:center;}
+.hengqie1 {width:1000px; margin:0 auto;}
+.hengqie2 { margin:0px 0px 0px -360px;}
+.hengqie3 {width:762px; margin:0 auto; overflow:hidden}
+/* mbbg */
+.mb1{ background:#C4C4C4;}
+.xian{ height:1px; border-top:#8C8C8C 1px solid;width:1200px; margin:0 auto;}
+.xian1{ height:1px; border-top:#8C8C8C 1px solid;width:1920px;  margin:0px 0px 0px -360px;}
+
+.footHome{background: #94b1d3;padding:18px 0 18px 0;line-height:16px;text-align:center;color:#ffffff;font-size:12px;font-family:Microsoft YaHei;}
+.footHome a{color:#fff; text-decoration:none;}
+.footHome a:hover{color:#fff; text-decoration:underline;}
+.footHomeIco{width: 268px;height: 66px;margin: 0 auto;}
+.footHomeIco li{float:left; width:46px; padding:0 12px;margin-right: 18px;}
+.footHomeIco li a{background:url(../images/f4f5a-5985.png) no-repeat 0 -9999em; width:45px; height:59px; display:block; overflow:hidden; text-indent:-9999em;}
+.footHomeIco li a.address{background-position:0 0;}
+.footHomeIco li a.tianmao{background-position:-46px 0;width:77px;}
+.footHomeIco li a.hotline{background-position:-122px 0;margin-left: 15px;}
+.footHomeHotline{line-height:38px; margin:12px 0 0 0; font-size:38px; font-weight:bold;color: #fcff00;}
+.footHomeAddress{line-height:36px; font-size:16px; padding-bottom:24px;}
+

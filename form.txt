@@ -9,25 +9,23 @@
             display: inline-block;
             margin-right: 1rem;
         }
-        .mt{margin-bottom: 10px}
-        .cRed{color:#EF6B64; font-weight: bold}
     </style>
 </head>
 <body>
-<div class="row mt">
+<div class="row">
     <div class="small-12  columns">
         派单时间：
         <span class="starttime">2017/04/24 20:29:22</span>
     </div>
 </div>
-<div class="row mt">
+<div class="row">
     <div class="small-12  columns">
         距离关闭申请退单请求还有：
-        <span class="endtime cRed"></span>
+        <span class="endtime"></span>
     </div>
 </div>
 <div class="row">
-    <div class="small-12 columns">
+    <div class="small-12 form_radio columns">
         是否申请退单：<label class="input_label"><input class="form_input" name="identity" type="radio" value="是"/>是</label>
         <label class="input_label"><input class="form_input" name="identity" type="radio" value="否"/>否</label>
     </div>
