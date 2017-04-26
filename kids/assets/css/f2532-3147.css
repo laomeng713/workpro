@@ -47,37 +47,37 @@ html,body{background-attachment:fixed; overflow-x:hidden;}
 /* link css */
 a {color:#666; text-decoration:none; cursor:pointer;}
 a:visited {text-decoration:none;}
-a:hover {text-decoration:none; color:#014596;}
-a:active {color:#447fc4;}
+a:hover {text-decoration:none;}
+/*a:active {color:#447fc4;}*/
 a:focus { outline: none; }
 
 
 .ct1,a.ct1,.ct1 a,.ct1 a:visited{ color:#FFF;}
 a.ct1:hover,.ct1 a:hover{ color:#00ADA8;}
 
-.ct2,a.ct2,.ct2 a,.ct2 a:visited{ color:#646464;}
-a.ct2:hover,.ct2 a:hover{ color:#646464;}
+/*.ct2,a.ct2,.ct2 a,.ct2 a:visited{ color:#646464;}*/
+/*a.ct2:hover,.ct2 a:hover{ color:#646464;}*/
 
-.ct3,a.ct3,.ct3 a,.ct3 a:visited{ color:#646464;}
-a.ct3:hover,.ct3 a:hover{ color:#FD283C;}
+/*.ct3,a.ct3,.ct3 a,.ct3 a:visited{ color:#646464;}*/
+/*a.ct3:hover,.ct3 a:hover{ color:#FD283C;}*/
 
-.ct4,a.ct4,.ct4 a,.ct4 a:visited{ color:#FFF;}
-a.ct4:hover,.ct4 a:hover{ color:#191919;}
+/*.ct4,a.ct4,.ct4 a,.ct4 a:visited{ color:#FFF;}*/
+/*a.ct4:hover,.ct4 a:hover{ color:#191919;}*/
 
-.ct5,a.ct5,.ct5 a,.ct5 a:visited{color: #7699c3;}
-a.ct5:hover,.ct5 a:hover{ color:#014596;}
+/*.ct5,a.ct5,.ct5 a,.ct5 a:visited{color: #7699c3;}*/
+/*a.ct5:hover,.ct5 a:hover{ color:#014596;}*/
 
-.ct6,a.ct6,.ct6 a,.ct6 a:visited{ color:#FFF}
-a.ct6:hover,.ct6 a:hover{ color:#FFF;}
+/*.ct6,a.ct6,.ct6 a,.ct6 a:visited{ color:#FFF}*/
+/*a.ct6:hover,.ct6 a:hover{ color:#FFF;}*/
 
-.ct11,a.ct11,.ct11 a,.ct11 a:visited{ color:#FFF;}
-a.ct11:hover,.ct11 a:hover{ color:#000;}
+/*.ct11,a.ct11,.ct11 a,.ct11 a:visited{ color:#FFF;}*/
+/*a.ct11:hover,.ct11 a:hover{ color:#000;}*/
 
-.cWhite,a.T_bai,.cWhite a,.cWhite a:visited{color:#FFF;}
-a.cWhite:hover,.cWhite a:hover{color:#FDDD47;}
-.cDGray,.cDGray:visited,.cDGray a{color:#727171;}
-.cBlue,.cBlue:visited,.cBlue a{color:#1E50A2;}
-.cDRed,.cDRed:visited,.cDRed a{color:#ba2636;}
+/*.cWhite,a.T_bai,.cWhite a,.cWhite a:visited{color:#FFF;}*/
+/*a.cWhite:hover,.cWhite a:hover{color:#FDDD47;}*/
+/*.cDGray,.cDGray:visited,.cDGray a{color:#727171;}*/
+/*.cBlue,.cBlue:visited,.cBlue a{color:#1E50A2;}*/
+/*.cDRed,.cDRed:visited,.cDRed a{color:#ba2636;}*/
 
 .fc{ color:#686868;}
 .fc1{ color:#aeaeaf;}
@@ -110,15 +110,4 @@ a.cWhite:hover,.cWhite a:hover{color:#FDDD47;}
 .xian{ height:1px; border-top:#8C8C8C 1px solid;width:1200px; margin:0 auto;}
 .xian1{ height:1px; border-top:#8C8C8C 1px solid;width:1920px;  margin:0px 0px 0px -360px;}
 
-.footHome{background: #94b1d3;padding:18px 0 18px 0;line-height:16px;text-align:center;color:#ffffff;font-size:12px;font-family:Microsoft YaHei;}
-.footHome a{color:#fff; text-decoration:none;}
-.footHome a:hover{color:#fff; text-decoration:underline;}
-.footHomeIco{width: 268px;height: 66px;margin: 0 auto;}
-.footHomeIco li{float:left; width:46px; padding:0 12px;margin-right: 18px;}
-.footHomeIco li a{background:url(../images/f4f5a-5985.png) no-repeat 0 -9999em; width:45px; height:59px; display:block; overflow:hidden; text-indent:-9999em;}
-.footHomeIco li a.address{background-position:0 0;}
-.footHomeIco li a.tianmao{background-position:-46px 0;width:77px;}
-.footHomeIco li a.hotline{background-position:-122px 0;margin-left: 15px;}
-.footHomeHotline{line-height:38px; margin:12px 0 0 0; font-size:38px; font-weight:bold;color: #fcff00;}
-.footHomeAddress{line-height:36px; font-size:16px; padding-bottom:24px;}
 

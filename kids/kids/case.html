@@ -233,28 +233,30 @@
                 </p>
             </div>
         </div>
-        <!--<script src="http://60.205.145.0/filesys/spider/pages/asset/hulian/js/int.js"></script>-->
-        <!--<script type="text/javascript" src="http://60.205.145.0/filesys/spider/pages/asset/hulian/js/jquery.superslide.js"></script>-->
-        <!--<script type="text/javascript" src="http://60.205.145.0/filesys/spider/pages/asset/hulian/js/ap.js"></script>-->
-        <!--<script type="text/javascript">$("a.lightbox2").fancybox({-->
-                <!--'transitionIn': 'fade',-->
-                <!--'transitionOut': 'fade',-->
-                <!--'speedIn': 600,-->
-                <!--'speedOut': 200,-->
-                <!--'overlayShow': false,-->
-                <!--'padding': 10,-->
-                <!--'centerOnScroll': true,-->
-                <!--'loop': 0-->
-            <!--});</script>-->
+        <!--报名窗口-->
+        <div class="collect_info">
+            <div class="collect_contain clearboth">
+                <div class="collect_left">
+                    <p class="text_top">
+                        KIDSIDOL
+                    </p>
+                    <p class="text_bottom">
+                        ONLINE BOOKING
+                    </p>
+                </div>
+                <div class="collect_right">
+                    <form>
+                        <input name='uname' type="text" placeholder="请输入姓名"/>
+                        <input name='phone' type="tel" placeholder="请输入手机号码" maxlength="11"/>
+                        <a onclick="phoneCheck($(this))">预约</a>
+                        <p class="err_tips"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
         <script src="../assets/js/jquery.min.js"></script>
         <script src="../assets/js/swiper.min.js"></script>
-        <script>
-            var mySwiper = new Swiper('.swiper-container',{
-                pagination : '.swiper-pagination',
-                autoplay : 5000,
-                paginationClickable :true
-            })
-        </script>
+        <script src="../assets/js/template.js"></script>
     </body>
 
 </html>
