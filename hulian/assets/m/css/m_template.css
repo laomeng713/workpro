@@ -40,8 +40,9 @@ ul{ list-style-type:none}
 }
 .top a{
     display:block;
-    padding:0;
+    /*padding:0;*/
     width:100%;
+    /*padding: 1rem;*/
 }
 .top a h1{
     width:100%;
