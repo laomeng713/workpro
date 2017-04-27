@@ -42,46 +42,11 @@ ins,i{ text-decoration:none; font-style:normal;}
 .ff4{font-family:"微软雅黑","黑体";}
 /* 修正IE6振动bug */
 html,body{background-attachment:fixed; overflow-x:hidden;}
-
-
 /* link css */
-a {color:#666; text-decoration:none; cursor:pointer;}
+a {text-decoration:none; cursor:pointer;}
 a:visited {text-decoration:none;}
 a:hover {text-decoration:none;}
-/*a:active {color:#447fc4;}*/
 a:focus { outline: none; }
-
-
-.ct1,a.ct1,.ct1 a,.ct1 a:visited{ color:#FFF;}
-a.ct1:hover,.ct1 a:hover{ color:#00ADA8;}
-
-/*.ct2,a.ct2,.ct2 a,.ct2 a:visited{ color:#646464;}*/
-/*a.ct2:hover,.ct2 a:hover{ color:#646464;}*/
-
-/*.ct3,a.ct3,.ct3 a,.ct3 a:visited{ color:#646464;}*/
-/*a.ct3:hover,.ct3 a:hover{ color:#FD283C;}*/
-
-/*.ct4,a.ct4,.ct4 a,.ct4 a:visited{ color:#FFF;}*/
-/*a.ct4:hover,.ct4 a:hover{ color:#191919;}*/
-
-/*.ct5,a.ct5,.ct5 a,.ct5 a:visited{color: #7699c3;}*/
-/*a.ct5:hover,.ct5 a:hover{ color:#014596;}*/
-
-/*.ct6,a.ct6,.ct6 a,.ct6 a:visited{ color:#FFF}*/
-/*a.ct6:hover,.ct6 a:hover{ color:#FFF;}*/
-
-/*.ct11,a.ct11,.ct11 a,.ct11 a:visited{ color:#FFF;}*/
-/*a.ct11:hover,.ct11 a:hover{ color:#000;}*/
-
-/*.cWhite,a.T_bai,.cWhite a,.cWhite a:visited{color:#FFF;}*/
-/*a.cWhite:hover,.cWhite a:hover{color:#FDDD47;}*/
-/*.cDGray,.cDGray:visited,.cDGray a{color:#727171;}*/
-/*.cBlue,.cBlue:visited,.cBlue a{color:#1E50A2;}*/
-/*.cDRed,.cDRed:visited,.cDRed a{color:#ba2636;}*/
-
-.fc{ color:#686868;}
-.fc1{ color:#aeaeaf;}
-
 /*block*/
 .t_nowrap li{text-overflow:ellipsis; white-space:nowrap; overflow:hidden; width:100%;}
 #nowrap{text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
@@ -106,8 +71,8 @@ a.ct1:hover,.ct1 a:hover{ color:#00ADA8;}
 .hengqie2 { margin:0px 0px 0px -360px;}
 .hengqie3 {width:762px; margin:0 auto; overflow:hidden}
 /* mbbg */
-.mb1{ background:#C4C4C4;}
-.xian{ height:1px; border-top:#8C8C8C 1px solid;width:1200px; margin:0 auto;}
-.xian1{ height:1px; border-top:#8C8C8C 1px solid;width:1920px;  margin:0px 0px 0px -360px;}
+/*.mb1{ background:#C4C4C4;}*/
+/*.xian{ height:1px; border-top:#8C8C8C 1px solid;width:1200px; margin:0 auto;}*/
+/*.xian1{ height:1px; border-top:#8C8C8C 1px solid;width:1920px;  margin:0px 0px 0px -360px;}*/
 
 
