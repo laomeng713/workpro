@@ -13,6 +13,10 @@ a{color: #666;}
 .hide {
     display: none;
 }
+.hot_line{
+    font-weight: bold;
+    color: #7699c3;
+}
 .ert {
     width: 700px;
     height: 50px;
@@ -25,6 +29,7 @@ a{color: #666;}
     overflow: hidden;
     vertical-align: middle;
     background-color: #efefef;
+    cursor: pointer;
 }
 
 .ert .p1 {
