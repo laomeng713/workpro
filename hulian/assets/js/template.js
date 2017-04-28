@@ -36,12 +36,18 @@ function phoneCheck($obj){
         }
     })
 }
-window.addEventListener("scroll",function(){
+$(window).bind('scroll',autoScroll);
+function  autoScroll(){
     var height=document.documentElement.scrollTop|| window.pageYOffset || document.body.scrollTop;
     if(height>200){
         $('.collect_info').show();
     }else{
         $('.collect_info').hide();
     }
+}
+$('.close').click(function(){
+    $('.collect_info').hide();
+    $(window).unbind('scroll',autoScroll);
+
 })
 

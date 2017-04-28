@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 body{
-    margin-bottom: 110px;
+    /*margin-bottom: 99px;*/
 }
 header {
     width: 100%;
@@ -279,21 +279,49 @@ a{color: #666;}
 }
 
 .top2 {
-    width: 100%;
+    /*width: 100%;*/
     height: 103px;
     padding-left: 100px;
 }
 
-.top2 .top21 {
-    background: url(../images/4e764-9193.jpg) no-repeat;
-    width: 884px;
+.top2 a{
+    display: inline-block;
+    /*width: 884px;*/
     height: 103px;
+}
+.top2 a img{
+    width: 100%;
+    height: 100%;
 }
 
 .top2 .top22 {
-    background: url(../images/0f86f-1214.jpg) no-repeat;
     width: 422px;
     height: 103px;
+    line-height: 103px;
+    position: relative;
+}
+
+.top2 .top22 p{
+    float: right;
+    display: block;
+    font-weight: bold;
+    font-size: 35px;
+    height: 103px;
+    width: 300px;
+}
+.top2 .top22 div{
+    text-align: right;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 103px;
+    /*line-height: 103px;*/
+}
+.top2 .top22 span{
+    font-size: 15px;
+    display: block;
+    line-height: 76px;
+    height: 18px;
 }
 
 .topnav {
@@ -445,29 +473,35 @@ a{color: #666;}
 
 /*手机收集*/
 .collect_info{
+    /*position: relative;*/
     display: none;
     width: 100%;
-    height: 111px;
-    background-color: #A8C6E8;
+    height: 100px;
+    /*background-color: #A8C6E8;*/
     position: fixed;
     bottom: -1px;
     left: 0;
     right: 0;
     z-index: 100;
+    opacity: 0.9;
+    background:#A8C6E8 url(../images/background.png) no-repeat;
 }
 .collect_info .collect_contain{
-    width: 1200px;
+    width: 1100px;
     margin: 0 auto;
     text-align: center;
     height: 100%;
 }
 .collect_info .collect_contain .collect_left{
+    /*text-align: right;*/
+    box-sizing: border-box;
+    padding: 10px 10px;
     float: left;
     height: 100%;
-    width: 540px;
+    width: 500px;
 }
 .collect_info .collect_contain .collect_left p{
-    font-size: 28px;
+    font-size: 25px;
     font-weight: bold;
     font-style: oblique;
 
@@ -481,8 +515,9 @@ a{color: #666;}
 .collect_info .collect_contain .collect_right{
     float: left;
     height: 100%;
-    width: 540px;
-    padding-left: 30px;
+    width: 500px;
+    position: relative;
+    /*padding-left: 30px;*/
 }
 .collect_info .collect_contain .collect_right input{
     display: inline-block;
@@ -494,20 +529,40 @@ a{color: #666;}
     border: 0px #000 solid;
     outline: none;
     margin-right: 20px;
-    margin-top: 45px;
+    margin-top: 40px;
     border-radius: 5px;
 }
 .collect_info .collect_contain .collect_right a{
     display: inline-block;
-    width: 73px;
-    height: 42px;
-    line-height: 42px;
+    width: 40px;
+    height: 40px;
     color: #ffffff;
     background-color: #6986A8;
     border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 10px 10px;
+    position: absolute;
+    top: 20px;
+    right: -35px;
+    /*margin-top: 10px;*/
+}
+.collect_info .collect_contain .collect_right a span{
+
 }
 .collect_info .collect_contain .collect_right .err_tips{
     color: #ffffff;
+    font-size: 14px;
+}
+.close{
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    font-size: 25px;
+    color: #ffffff;
+    cursor: pointer;
 }
 /*底部列表新闻*/
 .latestNewsList {
@@ -583,17 +638,27 @@ a{color: #666;}
 }
 
 /*footer*/
-.footHome{background: #94b1d3;padding:18px 0 18px 0;line-height:16px;text-align:center;color:#ffffff;font-size:12px;font-family:Microsoft YaHei;}
-.footHome a{color:#fff; text-decoration:none;}
-.footHome a:hover{color:#fff; text-decoration:underline;}
-.footHomeIco{width: 268px;height: 66px;margin: 0 auto;}
-.footHomeIco li{float:left; width:46px; padding:0 12px;margin-right: 18px;}
-.footHomeIco li a{background:url(../images/f4f5a-5985.png) no-repeat 0 -9999em; width:45px; height:59px; display:block; overflow:hidden; text-indent:-9999em;}
-.footHomeIco li a.address{background-position:0 0;}
-.footHomeIco li a.tianmao{background-position:-46px 0;width:77px;}
-.footHomeIco li a.hotline{background-position:-122px 0;margin-left: 15px;}
-.footHomeHotline{line-height:38px; margin:12px 0 0 0; font-size:38px; font-weight:bold;color: #fcff00;}
-.footHomeAddress{line-height:36px; font-size:16px; padding-bottom:24px;}
+.footHome{
+    background: #94b1d3;
+    padding:18px 0 18px 0;
+    line-height:16px;
+    text-align:center;
+    color:#ffffff;
+    font-size:12px;
+}
+.footHome a{
+    color:#fff;
+    text-decoration:none;
+}
+.footHome a:hover{
+    color:#fff;
+    text-decoration:underline;
+}
+.footHomeAddress{
+    line-height:36px;
+    font-size:12px;
+    padding-bottom:24px;
+}
 
 
 

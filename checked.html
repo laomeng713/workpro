@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<table>
+    <tbody class="files">
+    <tr>
+        <td>
+                <span>
+                    1是否置为主图：
+                    是：<input onclick="inputChecked($(this))" type="checkbox" name="attachment1" />
+                </span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+                <span>
+                    2是否置为主图：
+                    是：<input onclick="inputChecked($(this))" type="checkbox" name="attachment2"/>
+                </span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+                <span>
+                    3是否置为主图：
+                    是：<input onclick="inputChecked($(this))" type="checkbox" name="attachment3"/>
+                </span>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<script src="common/js/jquery-1.11.3.min.js"></script>
+<script>
+
+    function inputChecked($obj){
+        var td=$obj.parents("tr").siblings('tr').children('td');
+        var span=td.children('span');
+        if($obj.is(':checked')){
+            span.children("input[type='checkbox']").prop('checked',false);
+        }
+    }
+</script>
+</body>
+</html>
+<!--//    $('.files .img input').click(function(){-->
+<!--//        var td=$(this).parents("tr").siblings('tr').children('td');-->
+<!--//        var span=td.children('.img');-->
+<!--//        if($(this).is(':checked')){-->
+<!--//           span.children("input[type='checkbox']").prop('checked',false);-->
+<!--//        }-->
+<!--//    })-->
