@@ -37,6 +37,7 @@ function phoneCheck($obj){
     })
 }
 $(window).bind('scroll',autoScroll);
+$(window).bind('scroll',slide_help);
 function  autoScroll(){
     var height=document.documentElement.scrollTop|| window.pageYOffset || document.body.scrollTop;
     if(height>200){
@@ -45,9 +46,23 @@ function  autoScroll(){
         $('.collect_info').hide();
     }
 }
+//返回顶部
+function slide_help(){
+        var height=document.documentElement.scrollTop|| window.pageYOffset || document.body.scrollTop;
+        if(height>400){
+            $('.slide_help').show();
+        }else{
+            $('.slide_help').hide();
+        }
+}
 $('.close').click(function(){
-    $('.collect_info').hide();
+    $('.collect_info').fadeOut();
+    $('.slide_show').fadeIn();
     $(window).unbind('scroll',autoScroll);
 
 })
+//$('.slide_show').click(function(){
+//    $('.collect_info').fadeIn();
+//    $('.slide_show').fadeOut();
+//})
 

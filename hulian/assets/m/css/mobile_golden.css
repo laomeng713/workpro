@@ -61,6 +61,29 @@ input:focus{outline: none;}
 .dh{ width:100%; margin-top:15px; padding:15px 0;}
 .dh dl{ float:left; width:25%; margin-top:10px;}
 .dh dl dd{ text-align:center}
+.dh dl dd a{
+    display: inline-block;width: 54px;height: 54px;
+    text-align:center;
+}
+
+.dh dl dd .index{
+    background: url(../../../assets/m/images/m_index.png) 0 0 no-repeat;
+    background-size: 100%;
+}
+.dh dl dd .nav{
+    background: url(../../../assets/m/images/m_nav.png) 0 0 no-repeat;
+    background-size: 100%;
+}
+.dh dl dd .container{
+    background: url(../../../assets/m/images/m_container.png) 0 0 no-repeat;
+    background-size: 100%;
+}
+.dh dl dd .location{
+    background: url(../../../assets/m/images/m_location.png) 0 0 no-repeat;
+    background-size: 100%;
+}
+
+
 .dh dl dd p{
     /*color: #525F81; */
     color: #CFAA75;
@@ -130,26 +153,18 @@ ul{ margin:0; padding:0; list-style-type:none}
 .listp li a .tit{ width:100%; height:40px; font-size:14px; line-height:24px; text-align:center}
 .listp li a { color:#666666; text-decoration:none}
 
-.tel{ width:100%; padding: 0.5rem 0}
-.tel a{
-    display: block;
+.ff{
+    width:100%;
+    /*padding:3rem 0;*/
+   padding-top: 1rem;
+    padding-bottom: 3rem;
     text-align: center;
-}
-.tel a h2{
-    /*color:#7699C3;*/
-    color:#CFAA75;
-}
-.tel a p{
-    /*color:#AFB0B2;*/
-    color:#333;
-}
-.ff{ width:100%; padding:3rem 0;text-align: center; margin-bottom: 2rem;}
-.ff h1{
-    color: #CFAA75;
+    margin-bottom: 2rem;
 }
 .ff p{
-    color: #CFAA75;
-    font-size: 0.1rem;
+    /*color: #CFAA75;*/
+    color: #aaa;
+    font-size: 0.05rem;
 }
 .bigp{ width:100%;}
 .bigp img{ width:100%; border:none}
@@ -220,8 +235,9 @@ ul{ margin:0; padding:0; list-style-type:none}
     background: url(../../../assets/m/images/icon.png)  no-repeat;
     background-size: 100%;
 }
-.fudzuo .icon_left{background-position: 0px 0px;}
-.fudzuo .icon_right{background-position: 0px -27px;}
+.fudzuo .icon_left{background-position: 0px -27px;}
+.fudzuo .icon_right{background-position: 0px 0px;}
+
 .fudzuo_left{
     /*background-color: #636F8D;*/
     background-color: #222;

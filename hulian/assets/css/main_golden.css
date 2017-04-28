@@ -334,18 +334,19 @@ a{color: #666;}
 .topnav {
     background: #333333;
     height: 52px;
-    width: 1920px;
-    margin-left: -160px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .top_menu {
     display: block;
-    width: 1400px;
+    width: 1200px;
+    height: 100%;
     margin: 0 auto;
 }
 
 .top_menu ul {
-    padding: 0px 0 0 0;
+    /*padding: 0px 0 0 0;*/
     float: left;
 }
 
@@ -361,7 +362,7 @@ a{color: #666;}
     line-height: 52px;
     text-align: center;
     float: left;
-    width: 175px;
+    width: 150px;
     display: block;
     letter-spacing: 2px;
     color: #CFAA75;
@@ -369,12 +370,14 @@ a{color: #666;}
 
 .top_menu ul li a:hover, .top_menu ul li a.hover {
     /*background: #8dafd5;*/
+    background: #444;
     color: #FFF
 }
 
 .top_menu ul li a.active {
-    background: #151515;
+    background: #222;
     color: #FFF;
+    /*color: #CFAA75;*/
     font-weight: bold;
 }
 
@@ -514,12 +517,14 @@ a{color: #666;}
     height: 100%;
 }
 .collect_info .collect_contain .collect_left{
+    box-sizing: border-box;
+    padding: 10px 10px;
     float: left;
     height: 100%;
-    width: 555px;
+    width: 500px;
 }
 .collect_info .collect_contain .collect_left p{
-    font-size: 28px;
+    font-size: 25px;
     font-weight: bold;
     font-style: oblique;
 
@@ -533,7 +538,8 @@ a{color: #666;}
 .collect_info .collect_contain .collect_right{
     float: left;
     height: 100%;
-    width: 521px;
+    width: 500px;
+    position: relative;
     /*padding-left: 30px;*/
 }
 .collect_info .collect_contain .collect_right input{
@@ -546,21 +552,27 @@ a{color: #666;}
     border: 0px #000 solid;
     outline: none;
     margin-right: 20px;
-    margin-top: 40px;
+    margin-top: 35px;
     border-radius: 5px;
 }
 .collect_info .collect_contain .collect_right a{
     display: inline-block;
-    width: 73px;
-    height: 42px;
-    line-height: 42px;
+    width: 40px;
+    height: 40px;
     color: #ffffff;
     background-color: #CFAA75;
     border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 10px 10px;
+    position: absolute;
+    top: 20px;
+    right: -35px;
 }
 .collect_info .collect_contain .collect_right .err_tips{
     color: #ffffff;
-    font-size: 12px;
+    font-size: 14px;
 }
 .close{
     display: block;
@@ -648,21 +660,72 @@ a{color: #666;}
 }
 
 /*footer*/
-.footHome{background: #555;padding:18px 0 18px 0;line-height:16px;text-align:center;color:#ffffff;font-size:12px;font-family:Microsoft YaHei;}
-.footHome a{color:#fff; text-decoration:none;}
-.footHome a:hover{color:#fff; text-decoration:underline;}
-.footHomeIco{width: 268px;height: 66px;margin: 0 auto;}
-.footHomeIco li{float:left; width:46px; padding:0 12px;margin-right: 18px;}
-.footHomeIco li a{background:url(../images/f4f5a-5985.png) no-repeat 0 -9999em; width:45px; height:59px; display:block; overflow:hidden; text-indent:-9999em;}
-.footHomeIco li a.address{background-position:0 0;}
-.footHomeIco li a.tianmao{background-position:-46px 0;width:77px;}
-.footHomeIco li a.hotline{background-position:-122px 0;margin-left: 15px;}
-.footHomeHotline{line-height:38px; margin:12px 0 0 0; font-size:38px; font-weight:bold;color: #CFAA75;}
-.footHomeAddress{line-height:36px; font-size:16px; padding-bottom:24px;}
+.footHome{
+    /*background: #94b1d3;*/
+    border-top: 1px solid #aaa;
+    padding:18px 0;
+    line-height:26px;
+    text-align:center;
+    color:#979797;
+    font-size:12px;
+    margin-top: 10px;
+}
+.footHome a{
+    color:#979797;
+    text-decoration:none;
+}
+.footHome a:hover{
+    /*color:#fff;*/
+    text-decoration:underline;
+}
 .swiper-pagination-bullet-active {
     opacity: 1;
     background: #CFAA75;
 }
+/*返回顶部*/
+.slide_help{
+    text-align: center;
+    display: none;
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    bottom: 120px;
+    right: 10px;
+    border: 1px solid #ddd;
+    background-color: #FFFFFF;
+    z-index: 10;
+
+}
+.slide_help a{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 5px 5px;
+    font-size: 14px;
+    line-height: 18px;
+}
+.slide_help:hover{
+    background-color:#333 ;
+    border-color: #333;
+
+}
+.slide_help:hover a{
+    color: #CFAA75;
+}
+/*.slide_show{*/
+    /*/!*display: block;*!/*/
+    /*display: none;*/
+    /*/!*background: url("http://fastued3.jia.com/image/zixun/stage3/zxbj_icon.png") no-repeat 0 0;*!/*/
+    /*bottom: 0px;*/
+    /*cursor: pointer;*/
+    /*height: 140px;*/
+    /*position: fixed;*/
+    /*width: 186px;*/
+    /*z-index: 10000;*/
+    /*/!*left: -100%;*!/*/
+    /*border: 1px solid #dddddd;*/
+/*}*/
 
 
 

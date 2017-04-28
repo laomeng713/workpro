@@ -52,9 +52,9 @@ a{color: #666;}
     font-size: 30px;
 }
 
-.ert a:hover .p2 {
-    color: #7699c3;
-}
+/*.ert a:hover .p2 {*/
+    /*color: #7699c3;*/
+/*}*/
 
 .sobox1 {
     width: 1200px;
@@ -91,10 +91,10 @@ a{color: #666;}
 }
 
 .soul_t li:hover p{
-    color: #014596;
+    color: #81A6D0;
 }
 .soul_t li:hover span{
-    color: #014596;
+    color: #81A6D0;
 }
 
 .soul_t li i {
@@ -327,18 +327,18 @@ a{color: #666;}
 .topnav {
     background: #b6b6b6;
     height: 52px;
-    width: 1920px;
-    margin-left: -160px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .top_menu {
     display: block;
-    width: 1400px;
+    width: 1200px;
+    height: 100%;
     margin: 0 auto;
 }
 
 .top_menu ul {
-    padding: 0px 0 0 0;
     float: left;
 }
 
@@ -354,7 +354,7 @@ a{color: #666;}
     line-height: 52px;
     text-align: center;
     float: left;
-    width: 175px;
+    width: 150px;
     display: block;
     letter-spacing: 2px;
 }
@@ -529,7 +529,7 @@ a{color: #666;}
     border: 0px #000 solid;
     outline: none;
     margin-right: 20px;
-    margin-top: 40px;
+    margin-top: 35px;
     border-radius: 5px;
 }
 .collect_info .collect_contain .collect_right a{
@@ -639,27 +639,53 @@ a{color: #666;}
 
 /*footer*/
 .footHome{
-    background: #94b1d3;
-    padding:18px 0 18px 0;
-    line-height:16px;
+    /*background: #94b1d3;*/
+    border-top: 1px solid #aaa;
+    padding:18px 0;
+    line-height:26px;
     text-align:center;
-    color:#ffffff;
+    color:#979797;
     font-size:12px;
+    margin-top: 10px;
 }
 .footHome a{
-    color:#fff;
+    color:#979797;
     text-decoration:none;
 }
 .footHome a:hover{
-    color:#fff;
     text-decoration:underline;
 }
-.footHomeAddress{
-    line-height:36px;
-    font-size:12px;
-    padding-bottom:24px;
-}
+/*返回顶部*/
+.slide_help{
+    text-align: center;
+    display: none;
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    bottom: 120px;
+    right: 10px;
+    border: 1px solid #ddd;
+    background-color: #FFFFFF;
+    z-index: 10;
 
+}
+.slide_help a{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 5px 5px;
+    font-size: 14px;
+    line-height: 18px;
+}
+.slide_help:hover{
+    background-color:#7699C3 ;
+    border-color: #7699C3;
+
+}
+.slide_help:hover a{
+    color: #fff;
+}
 
 
 
