@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>kidsidol儿童摄影-北京儿童摄影|宝贝摄影|宝宝照|儿童摄影工作室</title>
+    <meta name="description"
+          content="kidsidol儿童摄影官网-对于摄影,我们回归本心.打造中国最专业宝宝摄影品牌,我们回归初心!宝宝照,亲子照,婴儿摄影,百天照,满月照,首选北京儿童摄影kidsidol"/>
+    <meta name="keywords" content="北京儿童摄影|北京宝宝摄影|宝宝照|宝宝摄影|儿童摄影|儿童摄影工作室"/>
+    <meta name="viewport"
+          content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link type="text/css" rel="stylesheet" href="../assets/m/css/swiper.min.css">
+    <!--<link type="text/css" rel="stylesheet" href="../assets/m/css/mobile_blue.css">-->
+    <link type="text/css" rel="stylesheet" href="../assets/m/css/mobile_golden.css">
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=KzlZ4l6eMZHvnakAW6MjTc5dOhFKT4VX"></script>
+</head>
+<body>
+<div class="top">
+    <a href="/">
+        <img src="../assets/m/images/shoot_mobile.png" alt=""/>
+    </a>
+</div>
+<!--导航-->
+<div class="dh clearfix">
+    <dl>
+        <dd>
+            <a  class="index" href="/">
+            </a>
+
+            <p>首页HOME</p>
+        </dd>
+    </dl>
+    <dl>
+        <dd>
+            <a  class="nav" href="/case/">
+                <!--<img src="../assets/m/img/da328-1649_01.png"></a>-->
+            </a>
+            <p>作品欣赏</p>
+        </dd>
+    </dl>
+    <dl>
+        <dd>
+            <a class="container" href="/show/">
+                <!--<img src="../assets/m/img/da328-1649_01.png"></a>-->
+            </a>
+            <p>公司简介</p>
+        </dd>
+    </dl>
+    <dl>
+        <dd>
+            <a  class="location" href="/events/">
+                <!--<img src="../assets/m/img/da328-1649_01.png"></a>-->
+            </a>
+            <p>联系我们</p>
+        </dd>
+    </dl>
+</div>
+<!--casetit-->
+<div class="casetit">
+    <div class="case_title">
+        <span class="case_left">CASE&nbsp;&nbsp;&amp;</span>
+        <span class="case_right">联系我们</span>
+    </div>
+</div>
+<!--内容-->
+<div class="mabout">
+    <h2>联系我们</h2>
+    <ul>
+        <li>地址：北京市朝阳区广渠路3号竞园产业基地10-A</li>
+        <li>电话：010-87779660</li>
+        <li>微博：http://weibo.com/turuiyingxiang</li>
+        <li>乘车路线：地铁7号线百子湾站A口出向东150米后</li>
+    </ul>
+    <div id="allmap" class="mabout_map"></div>
+    <p></p>
+</div>
+<!--表单值-->
+<div class="ff">
+    <P>copyright © 2005-2017 互联影像 版权所有</P>
+    <P>沪ICP备13002314号 沪B2-20090108</P>
+</div>
+<div class="fud">
+    <a class="fudzuo fudzuo_left" href="#">
+        <i class="icon_left"></i> 客服
+    </a>
+    <a class="fudzuo fudzuo_right" href="tel:">
+        <i class="icon_right"></i> 电话
+    </a>
+</div>
+<script type="text/javascript" src="../assets/m/js/jquery-1.8.3.min.js"></script>
+<script>
+    var map = new BMap.Map("allmap");
+    map.addControl(new BMap.MapTypeControl());
+    map.setCurrentCity("北京");
+    map.enableScrollWheelZoom(true);
+    var point = new BMap.Point(116.516407,39.901525);
+    var marker = new BMap.Marker(point);
+    map.addOverlay(marker);
+    map.centerAndZoom(point, 16);
+    var opts = {
+        width : 200,     // 信息窗口宽度
+        height: 100,     // 信息窗口高度
+        title : "途睿文化" ,// 信息窗口标题
+        position : point,    // 指定文本标注所在的地理位置
+        offset   : new BMap.Size(20, -25)    //设置文本偏移量
+    }
+    var infoWindow = new BMap.InfoWindow("地址：北京市朝阳区广渠路3号竞园产业基地10-A", opts);  // 创建信息窗口对象
+
+    var label = new BMap.Label("途睿文化", opts);  // 创建文本标注对象
+    label.setStyle({
+        color : "red",
+        fontSize : "12px",
+        height : "20px",
+        lineHeight : "20px",
+        fontFamily:"微软雅黑"
+    });
+    marker.addEventListener("click", function(){
+        map.openInfoWindow(infoWindow,point);
+    });
+    var top_left_control = new BMap.ScaleControl({anchor: BMAP_ANCHOR_TOP_LEFT});// 左上角，添加比例尺
+    var top_left_navigation = new BMap.NavigationControl();  //左上角，添加默认缩放平移控件
+    var top_right_navigation = new BMap.NavigationControl({anchor: BMAP_ANCHOR_TOP_RIGHT, type: BMAP_NAVIGATION_CONTROL_SMALL}); //右上角，仅包含平移和缩放按钮
+    map.addControl(top_left_control);
+    map.addControl(top_left_navigation);
+    map.addControl(top_right_navigation);
+    map.addOverlay(label);
+</script>
+</body>
+</html>

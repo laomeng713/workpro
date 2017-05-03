@@ -70,9 +70,11 @@ a:focus { outline: none; }
 .hengqie1 {width:1000px; margin:0 auto;}
 .hengqie2 { margin:0px 0px 0px -360px;}
 .hengqie3 {width:762px; margin:0 auto; overflow:hidden}
-/* mbbg */
-/*.mb1{ background:#C4C4C4;}*/
-/*.xian{ height:1px; border-top:#8C8C8C 1px solid;width:1200px; margin:0 auto;}*/
-/*.xian1{ height:1px; border-top:#8C8C8C 1px solid;width:1920px;  margin:0px 0px 0px -360px;}*/
-
+.fix{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 100;
+}
 
