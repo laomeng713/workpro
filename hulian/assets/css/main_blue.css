@@ -382,6 +382,7 @@ a{color: #666;}
     padding: 0px 0 0px 0px;
     float: left;
     display: inline;
+    /*position: relative;*/
 }
 .top_menu ul li a {
     height: 52px;
@@ -392,6 +393,17 @@ a{color: #666;}
     display: block;
     letter-spacing: 2px;
 }
+.top_menu ul li div{
+    display: none;
+    position: absolute;
+    top: 52px;
+    left: 300px;
+    background-color: #B6B6B6;
+    z-index: 100;
+}
+.top_menu ul li div a{
+    float: none;
+}
 /*.top_menu ul li a:hover, .top_menu ul li a.hover {*/
     /*background: #8dafd5;*/
     /*color: #FFF*/
@@ -399,6 +411,9 @@ a{color: #666;}
 .top_menu ul li :hover{
     background: #8dafd5;
     color: #FFF;
+}
+.top_menu ul li:hover div{
+    display: block;
 }
 .last_li{
     height: 58px;
@@ -411,10 +426,10 @@ a{color: #666;}
 }
 .last_li:hover{
     color: #fff;
-    background-color: #FF6600;
+    background-color: #FF9355;
 }
 .top_menu ul li:last-child :hover{
-     background-color: #FF6600;
+     background-color: #FF9355;
      color: #fff;
  }
 
@@ -701,7 +716,7 @@ a{color: #666;}
     text-align:center;
     color:#979797;
     font-size:12px;
-    /*margin-top: 70px;*/
+    margin-top: 10px;
 }
 .footHome a{
     color:#979797;
@@ -759,13 +774,19 @@ a{color: #666;}
 }
 .right_ads .right_service{
     background: url(../images/icon1_01.png) no-repeat;
-    background-size: 75%;
+    background-size: 70%;
     background-position: 10px 12px;
 }
 .right_ads .right_order{
     background: url(../images/icon1_02.png) no-repeat;
-    background-size: 75%;
+    background-size: 70%;
     background-position: 10px 12px;
+}
+.right_ads .right_help{
+    background: url(../images/icon3.png) no-repeat;
+    background-size: 70%;
+    background-position: 10px 12px;
+    display: none;
 }
 .right_ads li a{
     opacity: 0;
@@ -804,9 +825,6 @@ a{color: #666;}
     color: #333;
     font-weight: normal;
 }
-.about .about_container ul{
-    margin-bottom: 20px;
-}
 .about .about_container p{
     margin: 10px 0;
     color: #757575;
@@ -815,11 +833,45 @@ a{color: #666;}
     text-indent: 35px;
 }
 /*联系我们*/
-.contact_map{
-    width: 100%;
-    height: 400px;
+.contact{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 50px;
+}
+.contact .contact_container{
+    width: 440px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+.contact .contact_container h2{
+    font-size: 28px;
+    color: #333;
+    font-weight: normal;
+}
+.contact .contact_container p{
+    margin-top: 15px;
+    color: #757575;
+}
+.contact .contact_container .server_btns{
+    margin-top: 20px;
+    display: inline-block;
+    width: 210px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    background: #ff670a;
+    color: #fff;
+    font-size: 16px;
+}
+.contact .contact_map{
+    width: 680px;
+    height: 390px;
+
 }
 
+/*咨询有礼*/
 .about_gift{
     display: block;
     position: fixed;

@@ -10,8 +10,8 @@
     <title>关于我们_kidsidol儿童摄影</title>
     <link rel="stylesheet" type="text/css" href="../assets/css/common.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/main_golden.css">
-    <!--<link rel="stylesheet" type="text/css" href="../assets/css/main_blue.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="../assets/css/main_golden.css">-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/main_blue.css">
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=KzlZ4l6eMZHvnakAW6MjTc5dOhFKT4VX"></script>
 </head>
 <body>
@@ -49,32 +49,40 @@
                                 <li>
                                     <a href="/news/">新闻动态</a></li>
                                 <li>
-                                    <a href="/about/" class="active">关于我们</a></li>
-                                <li>
-                                    <a href="/local/">场景展示</a></li>
+                                    <a href="/about/" class="active">联系我们</a></li>
+                                <li class="last_li">
+                                    <a href="/local/">
+                                        优惠活动
+                                    </a>
+                                </li>
                             </ul>
+                            <p class="hot_phone"><span>咨询电话：</span>010-5950731</p>
                         </div>
                     </div>
-                    <div class="clh"></div>
                 </div>
             </div>
         </div>
     </div>
 </header>
-<div class="about c">
-    <div class="about_container">
-        <h2>联系我们</h2>
+
+<div class="contact c">
+    <div class="contact_container fl">
+        <h2>北京途睿文化</h2>
         <ul>
             <li>地址：北京市朝阳区广渠路3号竞园产业基地10-A</li>
-            <li>电话：010-87779660</li>
+            <li>咨询电话：010-87779660</li>
+            <li>营业时间：周一至周日 9：00 ~ 18：00</li>
             <li>微博：http://weibo.com/turuiyingxiang</li>
-            <li>乘车路线：地铁7号线百子湾站A口出向东150米后</li>
+            <!--<li>乘车路线：地铁7号线百子湾站A口出向东150米后</li>-->
         </ul>
-        <div id="allmap" class="contact_map"></div>
-        <p></p>
-
+        <p>
+            乘车路线：地铁7号线百子湾站A口出向东150米后
+        </p>
+        <a class="server_btns" href="#">预约到店</a>
     </div>
+    <div id="allmap" class="contact_map fl"></div>
 </div>
+
 <div class="footHome">
     <p>
         地址：北京市朝阳区酒仙桥798艺术区3818库
@@ -104,36 +112,42 @@
         地址：北京市朝阳区酒仙桥798艺术区3818库 地址：北京市朝阳区酒仙桥798艺术区3818库
     </p>
 </div>
-<!--报名窗口-->
-<div class="collect_info">
-    <div class="collect_contain clearboth">
-        <div class="collect_left">
-            <p class="text_top">
-                咨询热线
-            </p>
+<!--&lt;!&ndash;报名窗口&ndash;&gt;-->
+<!--<div class="collect_info">-->
+    <!--<div class="collect_contain clearboth">-->
+        <!--<div class="collect_left">-->
+            <!--<p class="text_top">-->
+                <!--咨询热线-->
+            <!--</p>-->
 
-            <p class="text_bottom">
-                010-56200936
-            </p>
-        </div>
-        <div class="collect_right">
-            <form>
-                <input name='uname' type="text" placeholder="请输入姓名"/>
-                <input name='phone' type="tel" placeholder="请输入手机号码" maxlength="11"/>
-                <a onclick="phoneCheck($(this))">
-                    <span>拍摄</span>
-                    <span>预约</span>
-                </a>
-                <p class="err_tips"></p>
-            </form>
-        </div>
-    </div>
-    <p class="close">x</p>
+            <!--<p class="text_bottom">-->
+                <!--010-56200936-->
+            <!--</p>-->
+        <!--</div>-->
+        <!--<div class="collect_right">-->
+            <!--<form>-->
+                <!--<input name='uname' type="text" placeholder="请输入姓名"/>-->
+                <!--<input name='phone' type="tel" placeholder="请输入手机号码" maxlength="11"/>-->
+                <!--<a onclick="phoneCheck($(this))">-->
+                    <!--<span>拍摄</span>-->
+                    <!--<span>预约</span>-->
+                <!--</a>-->
+                <!--<p class="err_tips"></p>-->
+            <!--</form>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<p class="close">x</p>-->
+<!--</div>-->
+<!--&lt;!&ndash;返回顶部&ndash;&gt;-->
+<!--<div class="slide_help">-->
+    <!--<a href="#">返回顶部</a>-->
+<!--</div>-->
+<div class="right_ads">
+    <li class="right_service"><a href="#">客服咨询</a></li>
+    <li class="right_order"><a href="#">在线预约</a></li>
+    <li class="right_help"><a href="#">返回顶部</a></li>
 </div>
-<!--返回顶部-->
-<div class="slide_help">
-    <a href="#">返回顶部</a>
-</div>
+
 <script src="../assets/js/jquery.min.js"></script>
 <script src="../assets/js/swiper.min.js"></script>
 <script src="../assets/js/template.js"></script>
@@ -142,38 +156,20 @@
     var map = new BMap.Map("allmap");
     map.addControl(new BMap.MapTypeControl());
     map.setCurrentCity("北京");
-//    map.enableScrollWheelZoom(true);
     var point = new BMap.Point(116.516407,39.901525);
     var marker = new BMap.Marker(point);
     map.addOverlay(marker);
     map.centerAndZoom(point, 16);
     var opts = {
-        width : 200,     // 信息窗口宽度
-        height: 100,     // 信息窗口高度
-        title : "途睿文化" ,// 信息窗口标题
+        width : 400,     // 信息窗口宽度
+        height: 70,     // 信息窗口高度
+        title : "北京途睿文化" ,// 信息窗口标题
         position : point,    // 指定文本标注所在的地理位置
-        offset   : new BMap.Size(20, -25)    //设置文本偏移量
+        offset   : new BMap.Size(10,-10)    //设置文本偏移量
     }
     var infoWindow = new BMap.InfoWindow("地址：北京市朝阳区广渠路3号竞园产业基地10-A", opts);  // 创建信息窗口对象
+    map.openInfoWindow(infoWindow,point);
 
-    var label = new BMap.Label("途睿文化", opts);  // 创建文本标注对象
-    label.setStyle({
-        color : "red",
-        fontSize : "12px",
-        height : "20px",
-        lineHeight : "20px",
-        fontFamily:"微软雅黑"
-    });
-    marker.addEventListener("click", function(){
-        map.openInfoWindow(infoWindow,point);
-    });
-    var top_left_control = new BMap.ScaleControl({anchor: BMAP_ANCHOR_TOP_LEFT});// 左上角，添加比例尺
-    var top_left_navigation = new BMap.NavigationControl();  //左上角，添加默认缩放平移控件
-    var top_right_navigation = new BMap.NavigationControl({anchor: BMAP_ANCHOR_TOP_RIGHT, type: BMAP_NAVIGATION_CONTROL_SMALL}); //右上角，仅包含平移和缩放按钮
-    map.addControl(top_left_control);
-    map.addControl(top_left_navigation);
-    map.addControl(top_right_navigation);
-    map.addOverlay(label);
 </script>
 </body>
 </html>

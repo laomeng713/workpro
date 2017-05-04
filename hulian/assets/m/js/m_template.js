@@ -36,3 +36,10 @@ var mySwiper = new Swiper('.swiper-container', {
     autoplay: 3000,
     pagination: '.swiper-pagination'
 })
+$('.top_menu').click(function(){
+    if($('.slide_menu').css("display")=="none"){
+        $('.slide_menu').show();
+    }else{
+        $('.slide_menu').hide();
+    }
+})

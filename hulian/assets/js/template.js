@@ -59,7 +59,7 @@ function slide_help(){
 }
 function fixedNav(){
     var height=document.documentElement.scrollTop|| window.pageYOffset || document.body.scrollTop;
-    console.log(height);
+    //console.log(height);
     if(height>100){
         $('.topnav').addClass('fix');
         $('.hot_phone').show();
