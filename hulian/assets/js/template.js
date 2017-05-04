@@ -38,6 +38,8 @@ function phoneCheck($obj){
 }
 $(window).bind('scroll',autoScroll);
 $(window).bind('scroll',slide_help);
+$(window).bind('scroll',fixedNav);
+//$(window).bind('scroll',giftInfo);
 function  autoScroll(){
     var height=document.documentElement.scrollTop|| window.pageYOffset || document.body.scrollTop;
     if(height>200){
@@ -50,19 +52,51 @@ function  autoScroll(){
 function slide_help(){
         var height=document.documentElement.scrollTop|| window.pageYOffset || document.body.scrollTop;
         if(height>400){
-            $('.slide_help').show();
+            $('.right_help').show();
         }else{
-            $('.slide_help').hide();
+            $('.right_help').hide();
         }
 }
-$('.close').click(function(){
-    $('.collect_info').fadeOut();
-    $('.slide_show').fadeIn();
-    $(window).unbind('scroll',autoScroll);
-
-})
-//$('.slide_show').click(function(){
-//    $('.collect_info').fadeIn();
-//    $('.slide_show').fadeOut();
+function fixedNav(){
+    var height=document.documentElement.scrollTop|| window.pageYOffset || document.body.scrollTop;
+    console.log(height);
+    if(height>100){
+        $('.topnav').addClass('fix');
+        $('.hot_phone').show();
+    }else{
+        $('.topnav').removeClass('fix');
+        $('.hot_phone').hide();
+    }
+}
+//function giftInfo(){
+//    var height=document.documentElement.scrollTop|| window.pageYOffset || document.body.scrollTop;
+//    var height1=parseFloat(height/9);
+//    console.log(height);
+//    //if(height<200){
+//    //    $('.about_gift').css('top','300px');
+//    //
+//    //}else{
+//    //
+//    //}
+//    $('.about_gift').css('top',height1);
+//}
+//$('.close').click(function(){
+//    $('.collect_info').fadeOut();
+//    $('.slide_show').fadeIn();
+//    $(window).unbind('scroll',autoScroll);
+//
+//})
+//$('body').mousewheel(function(event,delta){
+//    console.log(delta);
+//    var top=parseInt($('.about_gift').css('top'));
+//    if (delta == 1) { //鼠标向上滚delta=1，
+//        top--;
+//        $('.about_gift').css('top',top);
+//
+//    }
+//    if (delta == -1) {//鼠标向下滚delta=-1
+//       top++;
+//        $('.about_gift').css('top',top);
+//    }
 //})
 
