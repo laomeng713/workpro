@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 body{
-    /*margin-bottom: 99px;*/
+   background-color: #F5F5F5;
 }
 header {
     width: 100%;
@@ -39,7 +39,7 @@ a{color: #666;}
 .ert {
     width: 700px;
     height: 50px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 .ertcon {
@@ -47,7 +47,7 @@ a{color: #666;}
     text-align: center;
     overflow: hidden;
     vertical-align: middle;
-    background-color: #efefef;
+    background-color: #E3E3E3;
     cursor: pointer;
 }
 
@@ -303,24 +303,24 @@ a{color: #666;}
 
 .top2 {
     /*width: 100%;*/
-    height: 83px;
+    height: 87px;
     padding-left: 100px;
 }
 
 .top2 a{
     display: inline-block;
     /*width: 884px;*/
-    height: 83px;
+    height: 87px;
 }
 .top2 a img{
-    width: 90%;
+    /*width: 90%;*/
     height: 100%;
 }
 
 .top2 .top22 {
     width: 422px;
-    height: 83px;
-    line-height: 83px;
+    height: 87px;
+    line-height: 87px;
     position: relative;
 }
 
@@ -329,7 +329,7 @@ a{color: #666;}
     display: block;
     font-weight: bold;
     font-size: 35px;
-    height: 83px;
+    height: 87px;
     width: 300px;
 }
 .top2 .top22 div{
@@ -337,7 +337,7 @@ a{color: #666;}
     position: absolute;
     top: 0px;
     left: 0px;
-    height: 83px;
+    height: 87px;
     /*line-height: 103px;*/
 }
 .top2 .top22 span{
@@ -403,7 +403,7 @@ a{color: #666;}
 .last_li{
     height: 58px;
     line-height: 58px;
-    background-color: #FF6612;
+    background-color: #FF6600;
     z-index: 100;
     position: absolute;
     top: 0px;
@@ -411,10 +411,10 @@ a{color: #666;}
 }
 .last_li:hover{
     color: #fff;
-    background-color: #FF9355;
+    background-color: #FF6600;
 }
 .top_menu ul li:last-child :hover{
-     background-color: #FF9355;
+     background-color: #FF6600;
      color: #fff;
  }
 
@@ -701,7 +701,7 @@ a{color: #666;}
     text-align:center;
     color:#979797;
     font-size:12px;
-    margin-top: 10px;
+    /*margin-top: 70px;*/
 }
 .footHome a{
     color:#979797;
@@ -744,11 +744,11 @@ a{color: #666;}
 /*右侧功能列表*/
 .right_ads{
     width: 74px;
-    height: 222px;
+    /*height: 222px;*/
     position: fixed;
     right: 0px;
     bottom: 35px;
-    background-color:#FF6612;
+    background-color:#FF6600;
     color: #fff;
     z-index: 100;
 }
@@ -756,10 +756,16 @@ a{color: #666;}
     width: 74px;
     height: 74px;
     border-bottom: 1px solid #ffffff;
+}
+.right_ads .right_service{
     background: url(../images/icon1_01.png) no-repeat;
     background-size: 75%;
     background-position: 10px 12px;
-
+}
+.right_ads .right_order{
+    background: url(../images/icon1_02.png) no-repeat;
+    background-size: 75%;
+    background-position: 10px 12px;
 }
 .right_ads li a{
     opacity: 0;

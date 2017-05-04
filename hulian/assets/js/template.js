@@ -52,9 +52,9 @@ function  autoScroll(){
 function slide_help(){
         var height=document.documentElement.scrollTop|| window.pageYOffset || document.body.scrollTop;
         if(height>400){
-            $('.slide_help').show();
+            $('.right_help').show();
         }else{
-            $('.slide_help').hide();
+            $('.right_help').hide();
         }
 }
 function fixedNav(){
