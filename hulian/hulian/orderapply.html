@@ -115,7 +115,7 @@
                 </a>
             </li>
         </ul>
-        <p class="next_step">下一步</p>
+        <!--<p class="next_step">下一步</p>-->
     </div>
     <!--step2-->
     <form class="order_form">
@@ -126,41 +126,96 @@
             </select>
             <span>* 其他城市暂不支持</span>
         </div>
-       <ul class="order_price c">
+       <ul class="order_price cur c">
           <li>选择拍摄价格：</li>
            <li>
                <span>199~299</span>
                <input name="price" type="radio" value="199~299"/>
-               <label></label>
+               <label><i></i></label>
+
            </li>
            <li>
                <span>199~299</span>
                <input name="price" type="radio" value="199~299"/>
-               <label></label>
+               <label><i></i></label>
            </li>
            <li>
                <span>199~299</span>
                <input name="price" type="radio" value="199~299"/>
-               <label></label>
+               <label><i></i></label>
            </li>
            <li>
                <span>199~299</span>
                <input name="price" type="radio" value="199~299"/>
-               <label></label>
+               <label><i></i></label>
            </li>
        </ul>
-        <div class="order_info">
-            <p> 姓名： <input type="text" placeholder="您的称呼"/></p>
-            <p> 电话： <input type="text" placeholder="您的手机号码"/></p>
-            <p> 地址： <input type="text" placeholder="您的地址"/></p>
-            <p class="c">
-                <span>留言：</span>
-                <textarea placeholder="定制意向留言"></textarea>
-            </p>
-        </div>
-        <a class="order_btn">下一步</a>
-    </form>
+       <ul class="order_price  c">
+          <li>选择拍摄价格：</li>
+           <li>
+               <span>299~299</span>
+               <input name="price" type="radio" value="199~299"/>
+               <label><i></i></label>
 
+           </li>
+           <li>
+               <span>199~299</span>
+               <input name="price" type="radio" value="199~299"/>
+               <label><i></i></label>
+           </li>
+           <li>
+               <span>199~299</span>
+               <input name="price" type="radio" value="199~299"/>
+               <label><i></i></label>
+           </li>
+           <li>
+               <span>199~299</span>
+               <input name="price" type="radio" value="199~299"/>
+               <label><i></i></label>
+           </li>
+       </ul>
+       <ul class="order_price  c">
+          <li>选择拍摄价格：</li>
+           <li>
+               <span>399~299</span>
+               <input name="price" type="radio" value="199~299"/>
+               <label><i></i></label>
+           </li>
+           <li>
+               <span>199~299</span>
+               <input name="price" type="radio" value="199~299"/>
+               <label><i></i></label>
+           </li>
+           <li>
+               <span>199~299</span>
+               <input name="price" type="radio" value="199~299"/>
+               <label><i></i></label>
+           </li>
+           <li>
+               <span>199~299</span>
+               <input name="price" type="radio" value="199~299"/>
+               <label><i></i></label>
+           </li>
+       </ul>
+
+        <div class="order_info">
+            <p> 姓名： <input type="text"  name="uname" placeholder="您的称呼"/></p>
+            <p> 电话： <input type="text"  name="phone" placeholder="您的手机号码"/></p>
+            <p> 地址： <input type="text"  name="address" placeholder="您的地址"/></p>
+            <p  class="order_message c">
+                <span>留言：</span>
+                <textarea name="message" placeholder="定制意向留言"></textarea>
+            </p>
+            <i class="err_tips"></i>
+            <a class="order_btn" onclick="phoneCheck($(this))">下一步</a>
+        </div>
+
+    </form>
+    <!--step3-->
+    <div class="success_info">
+        <p>恭喜您xxxxxxxxxxxxxxxxx</p>
+        <a href="">返回</a>
+    </div>
 </section>
 
 
