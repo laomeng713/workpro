@@ -257,50 +257,47 @@ a{color: #666;}
 
 /* 子页面分页效果*/
 .mpage {
-    display: block;
-    padding: 40px 0 40px;
+    width: 1200px;
+    height: 32px;
+    line-height: 25px;
+    /*display: block;*/
+    padding: 40px  40px;
     margin: 0 auto;
     text-align: center;
 }
-
-.mpage li {
-    display: inline;
-    padding: 5px;
+.mpage .pagination{
+    float: left;
+    /*margin: 0 100px;*/
+    margin-left: 300px;
+    margin-right: 20px;
 }
-
-.mpage .count, .mpage .pend, .mpage .phome {
-    display: none;
+.mpage .pagination li{
+    float: left;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 3px 9px;
 }
-
-.mpage .pnext a, .mpage .ppre a, .mpage .ppage a {
-    display: inline-block;
-    *display: inline;
-    zoom: 1;
-    line-height: 42px;
-    width: 42px;
-    text-align: center;
-    border-radius: 21px;
-    -webkit-border-radius: 21px;
-    -moz-border-radius: 21px;
-    -o-border-radius: 21px;
-    -khtml-border-radius: 21px;
-    font-size: 16px;
-    background: #FFBB00;
-    color: #FFF;
+.mpage .pagination li:hover{
+    color: #CFAA75;
+    cursor: pointer;
+    background-color: #333333;
 }
-
-.mpage .pnext a, .mpage .ppre a {
-    width: auto;
-    padding: 0 20px;
-    /*background: #94b1d3;*/
-    background: #E0BF89;
-    color: #FFF;
+.mpage .pagination li.active{
+    background-color: #333333;
 }
-
-.mpage a:hover, .mpage a.hover {
-    /*background: #5d82ad;*/
-    background: #CFAA75;
-    color: #FFF;
+.mpage .pagination li.active a{
+    color: #CFAA75;
+}
+.mpage .pagination li:hover a{
+    color: #CFAA75;
+}
+.mpage .all-page{
+    float: left;
+    color:#666666 ;
+    font-size: 14px;
+    /*height: 32px;*/
+    line-height: 30px;
 }
 
 /* 头部菜单效果*/
