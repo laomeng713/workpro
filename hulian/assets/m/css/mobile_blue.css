@@ -10,10 +10,11 @@ a {
     color: #333333;
 }
 html {
-    font-size: 62.5%;
+    font-size:62.5%;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     color: #444;
+    height: 100%;
 }
 body{
     font-family: 'Microsoft YaHei', Helvetica, Arial, sans-serif;
@@ -35,6 +36,7 @@ ul{ list-style-type:none}
     height: 5rem;
     line-height: 5rem;
     display: flex;
+    display: -webkit-flex; /* Safari */
     justify-content:space-between;
 }
 .top a{
@@ -58,31 +60,10 @@ ul{ list-style-type:none}
 
 .top .top_logo img{
    vertical-align: middle;
-    width: 180px;
-    height: 54px;
+    /*width: 180px;*/
+    /*height: 4.5rem;*/
 }
-/*.top a h1{*/
-    /*width:100%;*/
-    /*color: #ffffff;*/
-    /*font-weight: 500;*/
-    /*font-size: 2.6rem;*/
-/*}*/
-.slide_menu{
-    position: absolute;
-    top: 5rem;
-    right: 0px;
-    z-index: 100;
-    /*background-color: #ffffff;*/
-    width: 8rem;
-    height: 11rem;
-    text-align: center;
-    background-color: #CCCCCC;
-}
-.slide_menu li{
-    padding: 0.5rem 0.5rem;
-    border-bottom: 1px solid #ddd;
-    font-size: 15px;
-}
+
 input:focus{outline: none;}
 
 .dh{
@@ -190,8 +171,9 @@ ul{ margin:0; padding:0; list-style-type:none}
 }
 .ff p{
     /*color: #CFAA75;*/
+    height: 1.5rem;
     color: #aaa;
-    font-size: 0.05rem;
+    font-size: 1rem;
 }
 .bigp{ width:100%;}
 .bigp img{ width:100%; border:none}
@@ -279,10 +261,14 @@ box-shadow:1px 1px 1px #999;
     display: inline-block;
     margin-top: -0.4rem;
     margin-right: 1rem;
-    background: url(../../../assets/m/images/icon.png) 0 0 no-repeat;
-    background-size: 100%;
+    background: url(../../../assets/m/images/icon.png)  no-repeat;
+    /*background-size: 100%;*/
+    background-size: 100% auto;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+
 }
-.fudzuo .icon_left{background-position: 0px -27px;}
+.fudzuo .icon_left{background-position: 0px -2.3rem;}
 .fudzuo .icon_right{background-position: 0px 0px;}
 
 .fudzuo_left{background-color: #636F8D;}
@@ -361,4 +347,103 @@ box-shadow:1px 1px 1px #999;
 .mabout_map{
     width: 100%;
     height: 20rem;
+}
+/*弹出导航*/
+.navs_wrap {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    display: none;
+}
+.navs_wrap .sub_navs_wrap {
+    margin-top: 4.3rem;
+}
+.navs_wrap .sub_navs_wrap .close {
+    background: rgba(255, 255, 255, 0.8) url(../../../assets/m/images/close.png) no-repeat right center;
+    height: 4.3rem;
+    display: block;
+    width: 95%;
+    background-size: 2rem auto;
+    box-sizing: border-box;
+    margin-right: 5%;
+}
+.navs_wrap .sub_navs_wrap .common_ul {
+    background: transparent;
+}
+.navs_wrap .sub_navs_wrap .common_ul .common_li {
+    width: 25%;
+    float: left;
+    text-align: center;
+    margin-top: 1.4rem;
+}
+.navs_wrap .sub_navs_wrap .common_ul .common_li a {
+    display: block;
+    font-size: 1.6rem;
+    color: #666;
+}
+.navs_wrap .sub_navs_wrap .common_ul .common_li a i {
+    display: block;
+    width: 4.3rem;
+    height: 4.3rem;
+    margin: 0 auto 0.25rem auto;
+}
+.navs_wrap .sub_navs_wrap .common_ul .common_li a .m_index{
+    background: url(../../../assets/m/images/b_index.png) no-repeat;
+    background-size: 90%;
+}
+.navs_wrap .sub_navs_wrap .common_ul .common_li a .m_container{
+    background: url(../../../assets/m/images/b_container.png) no-repeat;
+    background-size: 90%;
+}
+.navs_wrap .sub_navs_wrap .common_ul .common_li a .m_location{
+    background: url(../../../assets/m/images/b_location.png) no-repeat;
+    background-size: 90%;
+}
+.navs_wrap .sub_navs_wrap .common_ul .common_li a .m_nav{
+    background: url(../../../assets/m/images/b_nav.png) no-repeat;
+    background-size: 90%;
+}
+
+.navs_wrap .sub_navs_wrap .more_title {
+    position: relative;
+    margin: 1.4rem 3.2rem 0 3.2rem;
+    text-align: center;
+    line-height: 2.2rem;
+    font-weight: 500;
+    font-size: 1.9rem;
+}
+.navs_wrap .sub_navs_wrap .more_title .more_text {
+    position: relative;
+    z-index: 5;
+    padding: 0 0.4rem;
+    color: #333;
+    font-size: 1.9rem;
+    background: #fff;
+}
+.navs_wrap .sub_navs_wrap .more_title:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    border-bottom: 1px solid #ccc;
+}
+.navs_wrap .sub_navs_wrap .hot_zixun {
+    margin: 0 2.8rem;
+}
+.navs_wrap .sub_navs_wrap .hot_zixun li a {
+    display: block;
+    float: left;
+    width: 28.5%;
+    background: #f5f5f5;
+    font-size: 1.4rem;
+    height: 2.7rem;
+    line-height: 2.7rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    margin: 1.2rem 4.7% 0 0;
 }

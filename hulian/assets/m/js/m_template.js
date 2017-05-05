@@ -43,3 +43,11 @@ $('.top_menu').click(function(){
         $('.slide_menu').hide();
     }
 })
+$('.top_menu').click(function(){
+    $('.navs_wrap').show();
+})
+$('.close').click(function(){
+    $('.navs_wrap').hide();
+})
+
+
