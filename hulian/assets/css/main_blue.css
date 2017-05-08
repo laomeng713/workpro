@@ -904,13 +904,15 @@ a{color: #666;}
     background-color: #81A6D0;
 }
 .step_detail p{
+    color: #FF6600;
     border-bottom: 3px solid #81A6D0;
     width: 250px;
     margin-top: 1px;
 }
+/*step1*/
 .order_area .order_style{
     text-align: center;
-    margin: 0 auto;
+    margin: 30px auto;
     display: block;
 }
 .order_area .order_style li{
@@ -929,26 +931,9 @@ a{color: #666;}
     display: block;
 }
 .order_area .order_style li img{
+    width: 100%;
     height: 100%;
 }
-.order_style .next_step{
-    text-align: center;
-    width: 100px;
-    height: 40px;
-    line-height: 40px;
-    margin: 20px auto;
-    /*background-color: #81A6D0;*/
-    background-color:#B6B6B6 ;
-    color: #ffffff;
-    padding: 0px 0px;
-}
-.order_style .next_step.active{
-    background-color: #81A6D0;
-}
-.order_style .next_step:hover{
-    cursor: pointer;
-}
-
 /*step2*/
 .order_form{
     margin: 10px 250px;
@@ -956,6 +941,7 @@ a{color: #666;}
     display: none;
     /*text-align: center;*/
 }
+
 .order_form li{
     position: relative;
     width: 112px;
@@ -990,10 +976,11 @@ a{color: #666;}
 }
 .order_form .order_price{
     padding: 10px;
+    display: none;
 }
 .order_form .order_price span{
     float: right;
-    margin: 0px 19px;
+    margin: 0px 13px;
 }
 .order_form .order_price label{
     margin: 0 0;
@@ -1009,7 +996,7 @@ a{color: #666;}
     -webkit-border-radius: 3px;
     border-radius: 3px;
 }
-.order_form .order_price label:after{
+.order_form .order_price i{
     opacity: 0;
     content: '';
     position: absolute;
@@ -1027,7 +1014,7 @@ a{color: #666;}
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
-.order_form .order_price label:hover:after{
+.order_form .order_price label:hover i{
     opacity: 0.5;
 }
 .order_form .order_btn{
@@ -1037,19 +1024,19 @@ a{color: #666;}
     height: 40px;
     line-height: 40px;
     margin: 20px auto;
-    /*background-color: #81A6D0;*/
-    background-color:#B6B6B6 ;
+    background-color: #81A6D0;
     color: #ffffff;
     padding: 0px 0px;
 }
-.order_form .order_btn.active{
-    background-color: #81A6D0;
-}
+
 
 .order_info p{
     margin: 10px auto;
     padding: 10px;
     vertical-align: middle;
+}
+.order_info .err_tips{
+    color: #FF6600;
 }
 .order_info input{
     outline: none;
@@ -1059,12 +1046,12 @@ a{color: #666;}
     border: 1px solid #ccc;
     padding-left: 15px;
 }
-.order_info p:last-child{
-  /*text-indent: 35px;*/
-    height: 100px;
-    line-height: 100px;
-}
-.order_info p:last-child span{
+/*.order_info p:last-child{*/
+  /*/!*text-indent: 35px;*!/*/
+    /*height: 100px;*/
+    /*line-height: 100px;*/
+/*}*/
+.order_info .order_message span{
     float: left;
    display: block;
     width: 50px;
@@ -1076,6 +1063,26 @@ a{color: #666;}
     outline: none;
 }
 
+/*step3*/
+.success_info{
+    text-align: center;
+   margin: 0 auto;
+}
+.success_info p{
+    margin: 135px auto;
+    color: #FF6600;
+    font-size: 70px;
+    /*font-weight: bold;*/
+}
+.success_info a{
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    background-color:#81A6D0 ;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 14px;
+}
 
 
 

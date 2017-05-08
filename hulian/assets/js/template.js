@@ -7,29 +7,47 @@ var mySwiper = new Swiper('.swiper-container',{
     paginationClickable :true
 })
 function phoneCheck($obj){
-    var $form = $obj.closest("form");
-    var uname = "", phone = "";
+    var $div = $obj.closest("div");
+    var uname = "", phone = "",address='',message='';
     var regPhone = /^1[3578]\d{9}$/;
-    uname = $.trim($form.find("input[name='uname']").val());
-    phone = $.trim($form.find("input[name='phone']").val());
+    uname = $.trim($div.find("input[name='uname']").val());
+    phone = $.trim($div.find("input[name='phone']").val());
+    address = $.trim($div.find("input[name='address']").val());
+    message = $div.find("[name='message']").val();
+    console.log(message);
+    if(!$('.order_price input').is(':checked')){
+        $div.find(".err_tips").text("请选择价格");
+        return false;
+    }
     if (uname == "") {
-        $form.find(".err_tips").text("姓名不能为空");
+        $div.find(".err_tips").text("姓名不能为空");
         return false;
     }
     if (phone == '') {
-        $form.find(".err_tips").text("手机号不能为空");
+        $div.find(".err_tips").text("手机号不能为空");
         return false;
     }
     if (!regPhone.test(phone)) {
-        $form.find(".err_tips").text("请填写正确的手机号码");
+        $div.find(".err_tips").text("请填写正确的手机号码");
         return false;
-    }else {
-        $form.find(".err_tips").text("");
+    }
+    if (address == "") {
+        $div.find(".err_tips").text("地址不能为空");
+        return false;
+    }
+    if (message == "") {
+        $div.find(".err_tips").text("留言不能为空");
+        return false;
+    }else{
+        $div.find(".err_tips").text("");
     }
     $.ajax({
         type:'post',
         success:function(){
             console.log('success');
+            $('.order_form').hide();
+            $('.step_detail span').removeClass('active');
+            $('.step_detail span').eq(2).addClass('active');
         },
         error:function(){
             console.log('error');
@@ -68,35 +86,22 @@ function fixedNav(){
         $('.hot_phone').hide();
     }
 }
-//function giftInfo(){
-//    var height=document.documentElement.scrollTop|| window.pageYOffset || document.body.scrollTop;
-//    var height1=parseFloat(height/9);
-//    console.log(height);
-//    //if(height<200){
-//    //    $('.about_gift').css('top','300px');
-//    //
-//    //}else{
-//    //
-//    //}
-//    $('.about_gift').css('top',height1);
-//}
-//$('.close').click(function(){
-//    $('.collect_info').fadeOut();
-//    $('.slide_show').fadeIn();
-//    $(window).unbind('scroll',autoScroll);
-//
-//})
-//$('body').mousewheel(function(event,delta){
-//    console.log(delta);
-//    var top=parseInt($('.about_gift').css('top'));
-//    if (delta == 1) { //鼠标向上滚delta=1，
-//        top--;
-//        $('.about_gift').css('top',top);
-//
-//    }
-//    if (delta == -1) {//鼠标向下滚delta=-1
-//       top++;
-//        $('.about_gift').css('top',top);
-//    }
-//})
+
+$('.order_style li').click(function(){
+    var index=$(this).index();
+    $(this).addClass('data-checked');
+    $('.order_style').hide();
+    $('.order_form').show();
+    $('.step_detail span').removeClass('active');
+    $('.step_detail span').eq(1).addClass('active');
+    $('.order_form .order_price').eq(index).show();
+
+
+})
+$('.order_price label').click(function(){
+  $(this).children().css('opacity','1');
+   $(this).siblings('input').prop('checked','true');
+  $(this).parent().siblings('li').children('label').children('i').css('opacity','0');
+})
+
 
