@@ -902,8 +902,6 @@ a{color: #666;}
 
 }
 
-
-
 /*咨询有礼*/
 .about_gift{
     display: block;
@@ -913,6 +911,223 @@ a{color: #666;}
     left: 0px;
     z-index: 100;
 }
+
+/*登记预约页面*/
+.order_area{
+    width: 1200px;
+    /*text-align: center;*/
+    margin: 0 auto;
+}
+.order_area .step_detail{
+    text-align: center;
+    margin: 20px auto;
+}
+.step_detail span,.step_detail p{
+    display: inline-block;
+}
+.step_detail span{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: #ccc;
+    border-radius: 50px;
+    color: #fff;
+}
+.step_detail span.active{
+    background-color: #333;
+    color: #CFAA75;
+}
+.step_detail p{
+    color: #FF6600;
+    border-bottom: 3px solid #81A6D0;
+    width: 250px;
+    margin-top: 1px;
+}
+/*step1*/
+.order_area .order_style{
+    text-align: center;
+    margin: 30px auto;
+    display: block;
+}
+.order_area .order_style li{
+    padding: 15px 15px;
+    margin: 5px 25px;
+    width: 18%;
+    height: 300px;
+    border: 2px solid #dddddd;
+    border-radius: 10px;
+}
+.order_area .order_style li:hover{
+    cursor: pointer;
+    border-color: #333;
+}
+.order_area .order_style li a{
+    display: block;
+}
+.order_area .order_style li img{
+    width: 100%;
+    height: 100%;
+}
+/*step2*/
+.order_form{
+    margin: 10px 250px;
+    padding: 10px;
+    display: none;
+    /*text-align: center;*/
+}
+
+.order_form li{
+    position: relative;
+    width: 112px;
+    float: left;
+    height: 28px;
+    line-height: 28px;
+    margin-right: 10px;
+}
+.order_form input[type=radio]{
+    visibility: hidden;
+    margin: 0 0;
+}
+.order_form .order_city{
+    padding: 10px;
+}
+.order_form .order_city select{
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    border: 1px solid #ccc;
+    width: 50px;
+    height: 25px;
+    padding: 4px 10px;
+    text-align: center;
+    font-size: 14px;
+    outline: none;
+    margin-right: 10px;
+}
+.order_form .order_city span{
+    color: #FF6600;
+    font-size: 12px;
+}
+.order_form .order_price{
+    padding: 10px;
+    display: none;
+}
+.order_form .order_price span{
+    float: right;
+    margin: 0px 13px;
+}
+.order_form .order_price label{
+    margin: 0 0;
+    cursor: pointer;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 5px;
+    left: 0;
+    background: #fff;
+    border: 2px solid #ccc;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+.order_form .order_price i{
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 7px;
+    background: transparent;
+    top: 0px;
+    left: 2px;
+    border: 2px solid #333;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.order_form .order_price label:hover i{
+    opacity: 0.5;
+}
+.order_form .order_btn,.order_form .order_pre{
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 160px;
+    background-color: #333;
+    color: #CFAA75;
+    padding: 0px 0px;
+}
+
+/*.order_info{*/
+/*margin: 0 auto;*/
+/*}*/
+.order_info p{
+    /*text-align:none;*/
+    margin: 10px auto;
+    padding: 10px;
+    vertical-align: middle;
+}
+.order_info .err_tips{
+    color: #FF6600;
+}
+.order_info input{
+    outline: none;
+    width: 400px;
+    height: 35px;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+}
+/*.order_info p:last-child{*/
+/*/!*text-indent: 35px;*!/*/
+/*height: 100px;*/
+/*line-height: 100px;*/
+/*}*/
+.order_info .order_message span{
+    float: left;
+    display: block;
+    width: 50px;
+}
+.order_info textarea{
+    float: left;
+    width: 400px;
+    height: 100px;
+    outline: none;
+}
+
+/*step3*/
+.success_info{
+    display: none;
+    text-align: center;
+    margin: 0 auto;
+}
+.success_info p{
+    margin: 135px auto;
+    color: #FF6600;
+    font-size: 70px;
+    /*font-weight: bold;*/
+}
+.success_info a{
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    background-color:#333 ;
+    color: #CFAA75;
+    display: inline-block;
+    font-size: 14px;
+}
+
+
+
+
 
 
 

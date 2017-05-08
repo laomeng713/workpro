@@ -230,7 +230,7 @@ a{color: #666;}
 /*广告滚动*/
 /* sobox */
 .sobox {
-    width: 1200px;
+    /*height: 500px;*/
     position: relative;
     text-align: center;
 }
@@ -242,10 +242,10 @@ a{color: #666;}
     position: relative;
 }
 .sobox .a_bigImg img{
-    height: 100%;
-    position: absolute;
-    left: 50%;
-    margin-left: -960px;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
 }
 
 /* 子页面分页效果*/
@@ -1017,20 +1017,25 @@ a{color: #666;}
 .order_form .order_price label:hover i{
     opacity: 0.5;
 }
-.order_form .order_btn{
-    display: block;
+.order_form .order_btn,.order_form .order_pre{
+    display: inline-block;
     text-align: center;
     width: 100px;
     height: 40px;
     line-height: 40px;
-    margin: 20px auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 160px;
     background-color: #81A6D0;
     color: #ffffff;
     padding: 0px 0px;
 }
 
-
+/*.order_info{*/
+    /*margin: 0 auto;*/
+/*}*/
 .order_info p{
+    /*text-align:none;*/
     margin: 10px auto;
     padding: 10px;
     vertical-align: middle;
@@ -1065,6 +1070,7 @@ a{color: #666;}
 
 /*step3*/
 .success_info{
+    display: none;
     text-align: center;
    margin: 0 auto;
 }

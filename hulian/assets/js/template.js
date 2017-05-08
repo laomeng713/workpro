@@ -4,9 +4,11 @@
 var mySwiper = new Swiper('.swiper-container',{
     pagination : '.swiper-pagination',
     autoplay : 5000,
-    paginationClickable :true
+    paginationClickable :true,
+    direction: 'horizontal',
+    autoHeight: true
 })
-function phoneCheck($obj){
+function phoneCheck($obj){ 
     var $div = $obj.closest("div");
     var uname = "", phone = "",address='',message='';
     var regPhone = /^1[3578]\d{9}$/;
@@ -46,6 +48,7 @@ function phoneCheck($obj){
         success:function(){
             console.log('success');
             $('.order_form').hide();
+            $('.success_info').show();
             $('.step_detail span').removeClass('active');
             $('.step_detail span').eq(2).addClass('active');
         },
@@ -57,7 +60,7 @@ function phoneCheck($obj){
 $(window).bind('scroll',autoScroll);
 $(window).bind('scroll',slide_help);
 $(window).bind('scroll',fixedNav);
-//$(window).bind('scroll',giftInfo);
+
 function  autoScroll(){
     var height=document.documentElement.scrollTop|| window.pageYOffset || document.body.scrollTop;
     if(height>200){
@@ -94,6 +97,7 @@ $('.order_style li').click(function(){
     $('.order_form').show();
     $('.step_detail span').removeClass('active');
     $('.step_detail span').eq(1).addClass('active');
+    $('.order_form .order_price').hide();
     $('.order_form .order_price').eq(index).show();
 
 
@@ -103,5 +107,10 @@ $('.order_price label').click(function(){
    $(this).siblings('input').prop('checked','true');
   $(this).parent().siblings('li').children('label').children('i').css('opacity','0');
 })
-
+$('.order_pre').click(function(){
+    $('.order_form').hide();
+    $('.order_style').show();
+    $('.step_detail span').removeClass('active');
+    $('.step_detail span').eq(0).addClass('active');
+})
 
