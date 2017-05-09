@@ -1,0 +1,340 @@
+.active_banner {
+  position: relative;
+  z-index: -1;
+  background: url("../../images/zbnew_banner.jpg") center;
+  height: 500px;
+}
+.active_container {
+  box-sizing: border-box;
+  background-color: #FFFDF9;
+  width: 1198px;
+  border: 1px solid #F9C;
+  margin: -170px auto auto;
+  -webkit-box-shadow: #F90 0px 0px 5px;
+  -moz-box-shadow: #F90 0px 0px 5px;
+  box-shadow: #F90 0px 0px 5px;
+  padding: 15px 50px 40px 50px;
+}
+.active_compare {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 1080px;
+  border: 2px solid #EF450F;
+}
+.active_compare p {
+  text-align: center;
+  background-color: #EF450F;
+  height: 50px;
+  line-height: 50px;
+}
+.active_compare p span {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 30px;
+  margin-right: 20px;
+}
+.active_compare p i {
+  display: inline-block;
+  font-style: italic;
+  color: #ffffff;
+  font-size: 36px;
+  margin-right: 20px;
+}
+.active_compare ul li {
+  box-sizing: border-box;
+  font-size: 16px;
+  text-align: left;
+  padding-left: 100px;
+  width: 538px;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #EF450F;
+}
+.active_compare .compare_lf li {
+  border-right: 1px solid #EF450F ;
+}
+.active_compare .compare_lf li i {
+  vertical-align: middle;
+  display: inline-block;
+  background: url("../../images/write-close.png");
+  background-size: 100%;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.active_compare .compare_lf li:last-child {
+  border-bottom: none;
+}
+.active_compare .compare_rt li i {
+  vertical-align: middle;
+  display: inline-block;
+  background: url("../../images/write-close.png");
+  background-size: 100%;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.active_compare .compare_rt li:last-child {
+  border-bottom: none;
+}
+.active_info {
+  width: 1080px;
+  margin: 0 auto;
+}
+.active_info p {
+  margin: 40px auto;
+  text-align: center;
+  color: #EF450F;
+  font-size: 40px;
+  font-weight: bold;
+}
+.active_info dl {
+  padding: 5px 5px;
+  margin: 0 12px;
+  border: 1px solid #ccc;
+  width: 30%;
+}
+.active_info dl dt img {
+  width: 100%;
+}
+.active_info dl .info_title {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px auto;
+  color: #333333;
+}
+.active_info dl .info_detail {
+  font-size: 14px;
+  padding: 5px 5px;
+  position: relative;
+  letter-spacing: 1px;
+}
+.active_collect {
+  width: 1080px;
+  margin: 0 auto;
+}
+.active_collect .collect_title {
+  padding: 30px 5px 20px 0px;
+  line-height: 35px;
+}
+.active_collect .collect_title h3 {
+  float: left;
+  width: 350px;
+  height: 35px;
+  color: #FF1620;
+  font-size: 20px;
+  background: url("../../images/zbnew_tit_bg.png");
+}
+.active_collect .collect_title h3 i {
+  color: #FFF;
+  margin: auto 35px auto 15px;
+}
+.active_collect .collect_title span {
+  float: left;
+  font-size: 16px;
+  vertical-align: middle;
+  margin-left: -70px;
+  font-weight: bold;
+}
+.active_collect .collect_title .order_num {
+  width: 242px;
+  height: 36px;
+  display: block;
+  float: right;
+  margin-left: -60px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 34px;
+  border: 1px solid #FEE6C3;
+  border-radius: 30px;
+}
+.active_collect .collect_title .order_num font {
+  margin: auto 3px;
+  color: #EF450F;
+  font-size: 18px;
+}
+.active_collect .active_company ul {
+  border-collapse: collapse;
+  width: 1080px;
+  border: none 0;
+  margin-top: -1px;
+  margin-bottom: 20px;
+}
+.active_collect .active_company ul li {
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  height: 140px;
+  width: 258px;
+  display: block;
+  float: left;
+  margin-right: 12px;
+  margin-top: 12px;
+  padding: 5px 5px;
+  text-align: center;
+  font-size: 12px;
+  background: #FFF;
+}
+.active_collect .active_company ul li a {
+  display: block;
+  vertical-align: middle;
+  color: #000;
+}
+.active_collect .active_company ul li a img {
+  width: 100%;
+  height: auto;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  -moz-transition: -moz-transform 0.2s linear;
+  -o-transition: -o-transform 0.2s linear;
+}
+.active_collect .active_company ul li a p {
+  line-height: 30px;
+  height: 30px;
+  overflow: auto;
+  zoom: 1;
+  clear: both;
+  font-size: 14px;
+}
+.active_collect .active_company ul li a p input {
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+  margin: -3px 5px auto auto;
+}
+.active_collect .active_company ul li a p i {
+  display: inline-block;
+  width: 70px;
+  height: 20px;
+  margin-left: 20px;
+}
+.active_collect .active_company ul li a p span {
+  width: 22px;
+  line-height: 20px;
+  display: inline-block;
+  height: 16px;
+  background: url("../../images/3fa98-1808_01.png");
+}
+.active_collect .active_company ul li a p .two_start {
+  width: 44px;
+}
+.active_collect .active_company ul li a p .three_start {
+  width: 66px;
+}
+.active_collect .active_company ul li:hover img {
+  transform: scale(1.05, 1.05);
+  -webkit-transform: scale(1.05, 1.05);
+  -moz-transform: scale(1.05, 1.05);
+  -ms-transform: scale(1.05, 1.05);
+  -o-transform: scale(1.05, 1.05);
+}
+.active_collect .collect_phone {
+  text-align: center;
+  width: 264px;
+  border: 1px solid #ccc;
+  padding: 5px 5px;
+  margin: 20px auto;
+}
+.active_collect .collect_phone .phone_title {
+  background-color: #EF450F;
+  color: #ffffff;
+  font-size: 18px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 5px;
+}
+.active_collect .collect_phone .phone_add {
+  color: #FF0C0B;
+  font-size: 14px;
+  background-color: #FBFBFB;
+  border: 1px solid #F1F1F1;
+  border-top: none;
+  height: 40px;
+  line-height: 40px;
+}
+.active_collect .collect_phone input {
+  box-sizing: border-box;
+  width: 100%;
+  outline: none;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  padding-left: 10px;
+  border: 1px solid #CBCBCB;
+  margin: 10px 0 ;
+}
+.active_collect .collect_phone a {
+  display: block;
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  color: #ffffff;
+  background-color: #53B333;
+  margin: 10px auto;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.active_collect .collect_phone div {
+  background-color: #F6F6F6;
+  border: 1px solid #E7E7E7;
+  margin: 5px;
+  padding: 5px;
+}
+.active_collect .collect_phone div span {
+  display: block;
+  text-align: left;
+}
+.active_collect .collect_phone div .phone_text {
+  text-align: left;
+  text-indent: 35px;
+  letter-spacing: 1px;
+}
+.active_collect .collect_form {
+  width: 590px;
+  font-size: 14px;
+  margin: 0 auto;
+}
+.active_collect .collect_form p {
+  margin: 30px auto;
+  vertical-align: middle;
+}
+.active_collect .collect_form .err_tips {
+  color: #EF450F;
+}
+.active_collect .collect_form input,
+.active_collect .collect_form textarea {
+  outline: none;
+  border: 1px solid #CBCBCB;
+  margin-left: 10px;
+}
+.active_collect .collect_form input[type='text'] {
+  height: 20px;
+  border: 1px solid #CCC;
+  padding: 5px;
+  width: 250px;
+}
+.active_collect .collect_form select {
+  outline: none;
+  height: 30px;
+  width: 90px;
+  margin-left: 5px;
+}
+.active_collect .collect_form textarea {
+  width: 250px;
+  height: 50px;
+}
+.active_collect .collect_form a {
+  display: inline-block;
+  width: 180px;
+  height: 38px;
+  line-height: 38px;
+  color: #ffffff;
+  background-color: #EF450F;
+  text-align: center;
+  margin-left: 130px;
+}
+.active_collect .collect_form span {
+  margin-left: 5px;
+  display: inline-block;
+  color: #EF450F;
+  font-size: 12px;
+}

@@ -246,6 +246,10 @@ a {
   background: #DF0303;
   color: #fff;
 }
+.nav ul li a.active {
+  background: #C60505;
+  color: #fff;
+}
 footer {
   position: relative;
   left: 0;
