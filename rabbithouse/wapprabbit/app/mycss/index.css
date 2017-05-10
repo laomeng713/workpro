@@ -16,7 +16,7 @@ span {
   line-height: 4rem;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
 }
-.index_header h1 {
+.index_header h2 {
   display: inline-block;
   font-weight: 500;
 }
@@ -82,7 +82,7 @@ span {
   background-color: #FFFFFF;
 }
 .main_nav ul {
-  padding: 0.2rem 1.3rem ;
+  padding: 1rem 0.3rem ;
 }
 .main_nav ul li {
   position: relative;
@@ -131,7 +131,7 @@ span {
   color: #ee2d1b;
   font-weight: bold;
   font-style: italic;
-  width: 7.3rem;
+  width: 8.3rem;
   margin: 0 0.5rem;
   height: 1.5rem;
 }
@@ -188,13 +188,13 @@ span {
 }
 .warm_home .home_name p {
   color: #d00;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 .warm_home .home_btn {
   display: inline-block;
   border-radius: 25px;
   padding: 0.5rem 1.2rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #fff;
   background-color: #d00;
 }
@@ -209,7 +209,7 @@ span {
   font-weight: 700;
 }
 .group_act .group_text {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #666;
 }
 .group_act .group_contain .group_logo {
@@ -227,14 +227,14 @@ span {
   margin-bottom: 0.8rem;
 }
 .group_act .group_contain .group_time {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #999;
   padding-left: 1.3rem;
   margin-bottom: 0.4rem;
 }
 .group_act .group_contain .group_address {
   overflow: hidden;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #999;
   padding-left: 1.3rem;
   margin-bottom: 0.4rem;
@@ -254,13 +254,13 @@ span {
   -o-flex: 1;
   -webkit-box-flex: 1;
   flex: 1;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 .group_act .ac_mess .over_time span {
   border: 1px solid #000;
 }
 .group_act .ac_mess .apply_num {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #343434;
 }
 .group_act .ac_mess .apply_num i {
@@ -279,7 +279,7 @@ span {
   -ms-flex: 1;
   -webkit-flex: 1;
   flex: 1;
-  padding: 0.9rem;
+  padding: 0.5rem;
   border: 1px solid #e0e0e0;
   border-radius: 4px;
 }
@@ -306,7 +306,7 @@ span {
 }
 .more_href .sign {
   display: inline-block;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #666;
   border: 1px solid #e0e0e0;
   border-radius: 25px;
@@ -350,7 +350,7 @@ span {
   color: #fff;
   background-color: #ff790d;
   display: inline-block;
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding: 0.2rem 0.3rem;
   border-radius: 4px;
   margin-left: 0.5rem;
@@ -373,7 +373,7 @@ span {
   display: inline-block;
   border-radius: 25px;
   padding: 0.3rem 1rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #fff;
   background-color: #dd0000;
 }
@@ -422,7 +422,7 @@ span {
   -webkit-line-clamp: 3;
   overflow: hidden;
   margin-bottom: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: #999;
 }
 .zx_server .server_message li .message_btn {
@@ -467,7 +467,7 @@ span {
   display: -webkit-flex;
   display: flex;
   margin-top: 0.4rem;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: #999;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -486,7 +486,7 @@ span {
   padding: 0.5rem;
   box-sizing: border-box;
   color: #fff;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   position: relative;
 }
 .zx_server .server_bottom .server_tab a .icon {
@@ -510,7 +510,7 @@ span {
   display: -webkit-flex;
   display: flex;
   margin-top: 0.4rem;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: #999;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -550,7 +550,7 @@ span {
   color: #333333;
 }
 .zx_company .company_tip li .details {
-  font-size: .1rem;
+  font-size: 1.2rem;
   color: #999;
   padding-top: .02rem;
   position: relative;
@@ -609,7 +609,7 @@ span {
   display: -webkit-box;
 }
 .zx_company .company_content li .company_mess .text .comment {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-top: 0.7rem;
 }
 .zx_company .company_content li .company_mess .text .comment p {
@@ -619,13 +619,13 @@ span {
   position: absolute;
   right: 0;
   top: 0;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   text-align: right;
 }
 .zx_company .company_content li .company_mess .btn {
   display: inline-block;
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.2rem;
   background-color: #d00;
   padding: 0.3rem 0.7rem;
   border-radius: 25px;
@@ -635,7 +635,7 @@ span {
 }
 .zx_company .company_content li .company_combo {
   margin-left: 8rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #666;
   padding: 0.7rem 0;
   border-top: 1px solid #e0e0e0;
@@ -707,7 +707,7 @@ span {
   display: -webkit-box;
 }
 .shop_store li .store_mess .text .store_appraise {
-  font-size: .1rem;
+  font-size: 1.2rem;
   margin-top: 0.7rem;
 }
 .shop_store li .store_mess .text .store_appraise .star_icon {
@@ -719,14 +719,14 @@ span {
 }
 .shop_store li .store_mess .text .store_tips {
   color: #999;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-top: 0.5rem;
 }
 .shop_store li .store_mess .text .store_details {
   position: absolute;
   right: 0;
   top: 0;
-  font-size: .11rem;
+  font-size: 1.2rem;
   text-align: right;
 }
 .shop_store li .store_mess .text .store_details span {
@@ -738,7 +738,7 @@ span {
 .shop_store li .store_mess .btn {
   display: inline-block;
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.2rem;
   background-color: #d00;
   padding: 0.3rem 0.7rem;
   border-radius: 25px;
@@ -751,7 +751,7 @@ span {
 }
 .shop_store li .store_content .content_title {
   margin-right: 1rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #666;
   padding: 0.7rem 0;
   border-top: 1px dashed #e0e0e0;
@@ -789,7 +789,7 @@ span {
 }
 .shop_store li .store_content .myswiper-container ul li a .shop_name {
   padding-top: 0.3rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.5rem;
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -797,7 +797,7 @@ span {
   overflow: hidden;
 }
 .shop_store li .store_content .myswiper-container ul li a .shop_price {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: #999;
   line-height: 1.4rem;
   display: -webkit-box;
@@ -829,7 +829,7 @@ span {
   padding-top: 0.3rem;
 }
 .more_case ul li .text .details {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #666;
   padding-top: 0.2rem;
 }
@@ -863,7 +863,7 @@ span {
   font-size: 1.5rem;
 }
 .group_price .title .main_desc {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #666666;
 }
 .group_price ul li {
@@ -880,14 +880,14 @@ span {
   margin-left: 4% ;
 }
 .info_intru {
-  padding: 0.76rem 16% 0;
+  padding: 2rem  0;
   background-color: #efefef;
 }
 .info_intru p {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: #999;
   text-align: center;
-  padding: 1.2rem 0;
+  padding-bottom: 0.5rem;
 }
 .hot_line {
   font-size: 1.24rem;
@@ -902,7 +902,7 @@ span {
   font-weight: 600;
 }
 .footer_nav {
-  padding: 0.4rem 0 0.36rem;
+  padding: 0.5rem 0 0.5rem;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -926,7 +926,7 @@ span {
   flex: 1;
   text-align: center;
   color: #333;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 .footer_nav ul li a {
   display: block;
@@ -1001,7 +1001,7 @@ span {
   padding: 1.2rem 1.5rem 1.9rem;
 }
 .search_page .hot_search .search_title {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #666;
   margin: 1.7rem 0 0 -0.02rem;
 }

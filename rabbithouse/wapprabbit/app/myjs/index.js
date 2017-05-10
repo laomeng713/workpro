@@ -26,7 +26,7 @@ function noScrollCom() {
 }
 //报名按钮显示判断
 function f1() {
-    var height = document.body.scrollTop;
+    var height = document.documentElement.scrollTop|| window.pageYOffset || document.body.scrollTop;
     if (height > 100) {
         $('.text').show();
     } else {

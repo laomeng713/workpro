@@ -17,12 +17,9 @@ function main(){
     $('.logo_list').on('click','li',function(e){
         e.preventDefault();
         var a=$(this);
-        console.log(a);
         var t= a.index();
-        console.log(t);
         var b=a[a.length-1].innerText;
-        console.log(b);
-        $('#logo_text')[$('#logo_text').length-1].innerHTML=b;
+        $('#logo_text i')[0].innerHTML=b;
         if(t==0){
             $('.logo_input').attr('placeholder','挑选您心仪的装修公司')
         }

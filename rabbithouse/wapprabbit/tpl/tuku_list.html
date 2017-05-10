@@ -347,7 +347,7 @@
         $('.nav_ul .nav_li').find('.nav_em').css('margin', '-0.5rem');
     })
     function topFixed() {
-        var height = document.body.scrollTop;
+        var height = document.documentElement.scrollTop|| window.pageYOffset || document.body.scrollTop;
         if (height > 120) {
             $('.tuku_img_nav').css('position', 'fixed');
             $('.tuku_img_nav').css('top', '0');

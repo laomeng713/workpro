@@ -179,6 +179,9 @@ a {
   cursor: pointer;
   border-right: 1px solid #eee;
 }
+.logo .logo_center .logo_select .logo_text {
+  display: inline-block;
+}
 .logo .logo_center .logo_select .logo_text .icon_arrows {
   display: inline-block;
   vertical-align: middle;
