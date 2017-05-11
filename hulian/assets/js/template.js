@@ -73,9 +73,9 @@ function  autoScroll(){
 function slide_help(){
         var height=document.documentElement.scrollTop|| window.pageYOffset || document.body.scrollTop;
         if(height>400){
-            $('.right_help').show();
+            $('.slide_help').show();
         }else{
-            $('.right_help').hide();
+            $('.slide_help').hide();
         }
 }
 function fixedNav(){
