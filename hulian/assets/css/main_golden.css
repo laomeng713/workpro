@@ -329,14 +329,14 @@ a{color: #666;}
 
 .top2 {
     /*width: 100%;*/
-    height: 87px;
+    height: 77px;
     padding-left: 100px;
 }
 
 .top2 a{
     display: inline-block;
     /*width: 884px;*/
-    height: 87px;
+    height: 77px;
 }
 .top2 a img{
     /*width:90%;*/
@@ -345,7 +345,7 @@ a{color: #666;}
 
 .top2 .top22 {
     width: 422px;
-    height: 87px;
+    height: 77px;
     line-height: 87px;
     position: relative;
 }
@@ -355,14 +355,14 @@ a{color: #666;}
     display: block;
     font-weight: bold;
     font-size: 35px;
-    height: 87px;
+    height: 77px;
     width: 300px;
 }
 .top2 .top22 div{
     text-align: right;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 8px;
+    left: -60px;
     height: 87px;
     /*line-height: 103px;*/
 }
@@ -371,6 +371,9 @@ a{color: #666;}
     display: block;
     line-height: 56px;
     height: 18px;
+}
+.top2 .top22 .ser_phone{
+    letter-spacing: 3px;
 }
 .topnav {
     background: #777;
@@ -452,7 +455,7 @@ a{color: #666;}
 .last_li{
     height: 45px;
     line-height: 45px;
-    background-color: #FF6600;
+    background-color: #D3A55D;
     z-index: 100;
     position: absolute;
     top: 0px;
@@ -464,10 +467,10 @@ a{color: #666;}
 }
 .last_li:hover{
     color: #fff;
-    background-color: #FF9355;
+    background-color: #D3A55D;
 }
 .top_menu ul li:last-child :hover{
-    background-color: #FF9355;
+    background-color: #D3A55D;
     color: #fff;
 }
 .top_menu ul li a.active {
@@ -711,7 +714,7 @@ a{color: #666;}
     display: block;
     overflow: hidden;
     /*color: #ff0000;*/
-    color: #CFAA75;
+    color: #D3A55D;
     font-size: 18px;
     font-weight: normal;
     margin: 12px 0 16px 0;
@@ -719,13 +722,13 @@ a{color: #666;}
 
 .latestNewsTit a {
     /*color: #ff0000;*/
-    color:#CFAA75;;
+    color:#D3A55D;;
     text-decoration: none;
 }
 
 .latestNewsTit a:hover {
     /*color: #ff0000;*/
-    color: #CFAA75;
+    color: #D3A55D;
     text-decoration: underline;
 }
 
@@ -913,7 +916,7 @@ a{color: #666;}
     height: 48px;
     line-height: 48px;
     text-align: center;
-    background: #ff670a;
+    background: #D3A55D;
     color: #fff;
     font-size: 16px;
 }
