@@ -1,32 +1,17 @@
 .active_banner{
   position: relative;
-  z-index: 1;
-  width: 100%;
+  z-index: -1;
   background: url("../../images/zbnew_banner.jpg") center ;
   height: 500px;
-  a{
-    position: absolute;
-    display: block;
-    width: 140px;
-    height: 140px;
-    background:url("../../images/button.png") center ;
-    top: 150px;
-    right: 217px;
-  }
-  p{
-    position: absolute;
-    top: 0px;
-    right: 290px;
-    height: 160px;
-    border-right: 4px dotted #E1130B;
-  }
 }
 .active_container{
-  z-index: 1000;
-  position: absolute;
-  top: 505px;
-  left: 50%;
-  margin-left: -599px;
+  //z-index: 1000;
+  //position: absolute;
+  //top: 505px;
+  //left: 50%;
+  //margin-left: -599px;
+  position: relative;
+  margin: -170px auto 0;
   box-sizing: border-box;
   background-color: #FFFDF9;
   width: 1198px;
@@ -35,6 +20,22 @@
   -moz-box-shadow: #F90 0px 0px 5px;
   box-shadow: #F90 0px 0px 5px;
   padding: 15px 50px 40px 50px;
+  .active_icon{
+    position: absolute;
+    display: block;
+    width: 140px;
+    height: 140px;
+    background:url("../../images/button.png") center ;
+    top: -188px;
+    right: 170px;
+  }
+  .active_border{
+    position: absolute;
+    top: -330px;
+    right: 245px;
+    height: 160px;
+    border-right: 4px dotted #E1130B;
+  }
 }
 
 .active_compare{
@@ -465,9 +466,4 @@
       font-size: 12px;
     }
   }
-}
-.active_footer{
-  position: absolute;
-  bottom: 0;
-  right: 0;
 }

@@ -10,7 +10,6 @@
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="../../../common/css/webcommon.css"/>
     <link rel="stylesheet" href="../web/mycss/main.css"/>
-    <!--<link rel="stylesheet" href="../web/mycss/calculator.css"/>-->
     <link rel="stylesheet" href="../web/mycss/active_page.css"/>
 </head>
 <body>
@@ -88,8 +87,8 @@
 </header>
 <!--banner 背景图-->
 <div class="active_banner">
-    <a href="#form_list"></a>
-    <p></p>
+    <a href="#form_list" class="active_icon"></a>
+    <p class="active_border"></p>
 </div>
 <section class="active_container clearfloat">
     <!--服务流程-->
@@ -309,7 +308,7 @@
             <p class="phone_title">与装修客服免费通话</p>
 
             <p class="phone_add">无需话费，立即沟通！</p>
-            <input type="text" placeholder="在此输入您的手机号码(或电话)"/>
+            <input type="text" placeholder="在此输入您的手机号码(或固定电话)"/>
             <a href="javascript:;">点击通话</a>
 
             <div>
@@ -362,14 +361,15 @@
             </p>
 
             <a onclick="activeCheck($(this))" href="javascript:;">填写完毕，立即申请</a>
-            <!--<span>-->
-                <!--*请尽量填写详细，方便后续设计师与您联系-->
-            <!--</span>-->
+
         </form>
     </div>
+
+    <a href="#form_list" class="active_icon"></a>
+    <p class="active_border"></p>
 </section>
 <!--页脚-->
-<div class="active_footer">
+<footer>
 
     <div class="footer_row2">
         <p>
@@ -386,7 +386,7 @@
 
         <p>京ICP备17003882号</p>
     </div>
-</div>
+</footer>
 <script src="../../../common/js/jquery-1.11.3.min.js"></script>
 <script src="../web/myjs/mainFunction.js"></script>
 <script>
