@@ -1049,21 +1049,42 @@ a{color: #666;}
 .order_area .order_style li{
     padding: 15px 15px;
     margin: 5px 25px;
-    width: 18%;
+    width: 13%;
     height: 300px;
     border: 2px solid #dddddd;
     border-radius: 10px;
+    position: relative;
 }
 .order_area .order_style li:hover{
     cursor: pointer;
     border-color: #777;
+
 }
+.order_area .order_style li:hover p{
+    color: #CFAA75;
+}
+
 .order_area .order_style li a{
     display: block;
+    height: 100%;
 }
 .order_area .order_style li img{
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
+    height: auto;
+    transition: all .5s;
+    -moz-transition: all .5s; /* Firefox 4 */
+    -webkit-transition: all .5s; /* Safari 和 Chrome */
+    -o-transition: all .5s; /* Opera */
+}
+.order_area .order_style li:hover img{
+    transform: scale(1.05,1.05);
+    -ms-transform:scale(1.05,1.05); /* IE 9 */
+    -webkit-transform:scale(1.05,1.05); /* Safari and Chrome */
+}
+.order_area .order_style li p{
+    font-size: 20px;
+    margin-top: 35px;
 }
 /*step2*/
 .order_form{
