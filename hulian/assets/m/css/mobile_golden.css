@@ -252,11 +252,64 @@ input:focus{outline: none;}
     font-size: 1.2rem;
     color: #CFAA75;
 }
-
-
-
-
-
+/*服务保障*/
+.mguarantee{
+padding: 0 1.2rem;
+}
+.mguarantee h2{
+    font-weight: normal;
+    padding: 1rem 0;
+}
+.mguarantee span{
+    display: block;
+    font-size: 1.6rem;
+    margin: 1rem 0;
+    border-left: 0.5rem solid #CFAA75;
+    padding-left: 1.2rem;
+    }
+/*摄影流程*/
+.mflow{
+    padding: 1rem 0;
+}
+.mflow h2{
+    font-weight: normal;
+    padding: 1rem 0;
+}
+.mflow ul{
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.mflow ul li{
+    width: 43%;
+    margin: 0.5rem;
+    border: 1px solid #DDDDDD;
+    text-align: center;
+    padding: 0.5rem;
+}
+.mflow ul li .mflow_title{
+    font-size: 2rem;
+}
+.mflow ul li .mflow_text{
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+.mflow ul li .mflow_step{
+    height: 4rem;
+    line-height: 4rem;
+    margin: 1rem 0;
+}
+.mflow ul li i{
+    display: inline-block;
+    width: 10%;
+    height: 1.5rem;
+    line-height:  1.5rem;
+    border: 1px solid #D3A55D;
+}
+.mflow ul li i.cur_step{
+    background-color:#D3A55D ;
+}
 
 
 

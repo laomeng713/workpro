@@ -293,7 +293,7 @@ input::-webkit-input-placeholder {
 }
 .cascade_scroll_selects .scs_container .scs_dialog .scs_btns .scs_btn_ok {
   background-color: #EA5504;
-  color: #ffffff;
+  color: #fff;
 }
 .cascade_scroll_selects .scs_container .scs_dialog .scs_btns .scs_btn_span {
   -webkit-box-flex: 2;

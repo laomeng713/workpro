@@ -22,22 +22,22 @@ a{color: #666;}
     font-weight: bold;
     color: #CFAA75;
 }
-.china .crumbs{
+.crumbs{
      padding: 12px 0 15px;
      height: 26px;
     line-height: 26px;
  }
-.china .crumbs a{
+ .crumbs a{
     color: #333;
     font-size: 12px;
     float: left;
     padding-top: 8px;
 }
-.china .crumbs span{
+ .crumbs span{
     float: left;
     padding: 8px 5px 0;
 }
-.china .crumbs .last_child{
+ .crumbs .last_child{
     color: #999999;
 }
 
@@ -509,7 +509,7 @@ a{color: #666;}
 .top_menu ul li div{
     display: none;
     position: absolute;
-    top: 52px;
+    top: 40px;
     left: 150px;
     background-color: #333;
     z-index: 100;
@@ -1245,8 +1245,68 @@ a{color: #666;}
     display: inline-block;
     font-size: 14px;
 }
+/*拍摄流程*/
+.flow_container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.flow_container h2{
+    width: 1200px;
+    margin: 0 auto;
+}
+.flow_container li{
+    border: 1px solid #DDDDDD;
+    width: 22%;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
 
+}
+.flow_container li .flow_title{
+    font-size: 20px;
+}
+.flow_container li .flow_text{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.flow_container li .flow_step{
+   height: 40px;
+    line-height: 40px;
+    margin: 10px 0;
+}
+.flow_container li i{
+    display: inline-block;
+    width: 10%;
+    height: 15px;
+    line-height: 15px;
+    border: 1px solid #D3A55D;
 
+}
+.flow_container li i.cur_step{
+    background-color:#D3A55D ;
+}
+/*服务保障*/
+.guarantee_container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.guarantee_container h2{
+    font-size: 25px;
+    padding: 10px 0;
+}
+.guarantee_container .guarantee_title{
+    display: block;
+    border-left: 5px solid #D3A55D;
+    padding-left: 10px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 18px;
+    margin-top: 25px ;
+}
+.guarantee_container p{
+    font-size: 14px;
+    text-indent: 35px;
+}
 
 
 

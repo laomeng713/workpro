@@ -292,7 +292,7 @@
   border: 1px solid #cecece;
   border-left: none;
   margin-left: -4px;
-  background: linear-gradient(#d7d7d7, #ffffff);
+  background: linear-gradient(#d7d7d7, #fff);
   cursor: pointer;
 }
 .quto_detail .quote_area ul .active {
