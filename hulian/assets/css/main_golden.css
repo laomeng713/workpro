@@ -304,25 +304,46 @@ a{color: #666;}
 .viimgz:hover img{
     transform: scale(1.05,1.05);
 }
-
+.chinacon{
+    text-align: left;
+    line-height: 1.5;
+}
 .chinacon ul {
     width: 1300px;
-    overflow: hidden;
+    /*overflow: hidden;*/
+    /*padding: 0 10px;*/
 }
 
 .chinacon ul li {
     float: left;
     width: 290px;
     height: 530px;
+    position: relative;
     margin: 35px 10px 10px 10px;
 }
 .chinacon ul li a:hover p{
     /*color:#A8C6E8;*/
     color:#CFAA75;
 }
-.chinacon ul li a:hover .xj{
-    opacity: 0.8;
+.chinacon ul li:hover .xj{
+    opacity: .5;
 }
+.swiper-button-prev, .swiper-button-next{
+    position: absolute;
+    top: 245px;
+    right: 0px;
+    /*width: 43px;*/
+    /*height: 75px;*/
+    /*background: #000 url(../images/iconlist.png) no-repeat;*/
+    /*z-index: 20;*/
+    /*opacity: 0.3;*/
+}
+/*.swiper-button-prev{*/
+    /*background-position: 10px -275px;*/
+/*}*/
+/*.swiper-button-next{*/
+    /*background-position: 10px -335px;*/
+/*}*/
 /*广告滚动*/
 /* sobox */
 .sobox {
@@ -1044,7 +1065,8 @@ a{color: #666;}
 .order_area .order_style{
     text-align: center;
     margin: 30px auto;
-    display: block;
+    /*display: block;*/
+    /*display: none;*/
 }
 .order_area .order_style li{
     padding: 15px 15px;
@@ -1125,6 +1147,17 @@ a{color: #666;}
 .order_form .order_city span{
     color: #D3A55D;
     font-size: 12px;
+}
+/*拍摄日期*/
+.order_form .order_date{
+    padding: 10px;
+}
+.order_form .order_date input{
+    border: 1px solid #ccc;
+    outline: none;
+    height: 25px;
+    font-size: 14px;
+    text-align: center;
 }
 .order_form .order_price{
     padding: 10px;
@@ -1229,83 +1262,78 @@ a{color: #666;}
     display: none;
     text-align: center;
     margin: 0 auto;
+
 }
-.success_info p{
-    margin: 135px auto;
-    color: #FF6600;
-    font-size: 70px;
-    /*font-weight: bold;*/
+.success_info .succ_container{
+    background-color: #EAEAEA;
+    padding: 30px 0;
 }
-.success_info a{
-    width: 80px;
-    height: 40px;
-    line-height: 40px;
-    background-color:#777;
-    color: #ffffff;
-    display: inline-block;
-    font-size: 14px;
+.success_info .succ_title{
+    font-size: 28px;
+    font-weight: bold;
+    color: #D3A55D;
 }
+.success_info .succ_tips{
+    color: #D3A55D;
+    padding-bottom: 20px;
+}
+.success_info .succ_tips a:hover{
+    color: red;
+}
+.success_info .succ_detail{
+    width: 550px;
+    margin-top: 45px;
+
+
+}
+.success_info .succ_wechat{
+    margin-left: 100px;
+    width: 400px;
+    text-align: right;
+
+
+}
+.success_info .succ_wechat .wechat_title{
+    display: block;
+}
+.success_info .succ_wechat .wechat_text{
+    display: block;
+
+}
+
 /*拍摄流程*/
 .flow_container{
     width: 1200px;
     margin: 0 auto;
+    text-align: center;
 }
-.flow_container h2{
-    width: 1200px;
-    margin: 0 auto;
+.flow_container ul{
+    /*margin: 0 auto;*/
+    text-align: center;
+    /*margin-left: 100px;*/
+   display: inline-block;
 }
 .flow_container li{
-    border: 1px solid #DDDDDD;
-    width: 22%;
+    display: inline-block;
+    padding: 20px;
+    width: 15%;
     margin: 10px;
-    padding: 5px;
     text-align: center;
+    position: relative;
 
 }
-.flow_container li .flow_title{
-    font-size: 20px;
-}
-.flow_container li .flow_text{
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-.flow_container li .flow_step{
-   height: 40px;
-    line-height: 40px;
-    margin: 10px 0;
+.flow_container li img{
+    width: 85%;
+    height: auto;
 }
 .flow_container li i{
+    position: absolute;
+    top: 80px;
+    right: -30px;
     display: inline-block;
-    width: 10%;
-    height: 15px;
-    line-height: 15px;
-    border: 1px solid #D3A55D;
-
-}
-.flow_container li i.cur_step{
-    background-color:#D3A55D ;
-}
-/*服务保障*/
-.guarantee_container{
-    width: 1200px;
-    margin: 0 auto;
-}
-.guarantee_container h2{
-    font-size: 25px;
-    padding: 10px 0;
-}
-.guarantee_container .guarantee_title{
-    display: block;
-    border-left: 5px solid #D3A55D;
-    padding-left: 10px;
-    height: 20px;
-    line-height: 20px;
-    font-size: 18px;
-    margin-top: 25px ;
-}
-.guarantee_container p{
-    font-size: 14px;
-    text-indent: 35px;
+    width: 40px;
+    height: 25px;
+    background: url("../../assets/images/c606e-5816.png") no-repeat;
 }
 
 

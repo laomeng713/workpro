@@ -607,8 +607,8 @@ ul{ margin:0; padding:0; list-style-type:none}
 
 .crumbs{
     margin: 10px 15px 15px 15px;
-    height: 1.2rem;
-    line-height: 1.2rem;
+    /*height: 1.2rem;*/
+    /*line-height: 1.2rem;*/
 }
 .crumbs a{
     color: #777;
@@ -747,12 +747,16 @@ ul{ margin:0; padding:0; list-style-type:none}
     margin: 1.2rem 4.7% 0 0;
 }
 /*step1*/
+.order_style{
+    display: none;
+}
 .order_title{
     font-size: 25px;
     font-weight: 500;
     margin: 0.5rem 0.5rem;
     padding: 0.5rem 0.5rem;
     /*color: #525F81;*/
+
 }
 .order_title span{
     font-size: 14px;
@@ -817,6 +821,16 @@ ul{ margin:0; padding:0; list-style-type:none}
 .order_city span{
     color: #FF6600;
     font-size: 1.2rem;
+}
+.date_time{
+    padding: 1rem 1rem;
+    vertical-align: middle;
+}
+.date_time input{
+    border: 1px solid #ccc;
+    outline: none;
+    height: 2rem;
+    padding-left: 1.2rem;
 }
 .order_price{
     display: none;
@@ -919,25 +933,41 @@ ul{ margin:0; padding:0; list-style-type:none}
 }
 /*step3*/
 .success_info{
-    display: none;
+    display: block;
+
 }
-.success_info h2{
-    font-size: 30px;
-}
-.success_info a{
-    display:block;
-    width: 8rem;
-    height: 3rem;
-    line-height: 3rem;
-    margin: 2rem auto;
-    /*background-color: #525F81;*/
-    /*color: #fff;*/
-    background-color: #333;
-    color: #C5AA60;
-}
-.success_info h2,.success_info a{
+.success_info .succ_title{
+    font-size: 2.2rem;
     text-align: center;
+    margin-bottom: 1.2rem;
+    color: #D3A55D;
 }
+.success_info .succ_tips{
+    text-align: center;
+    padding-bottom: 0.5rem;
+    color: #D3A55D;
+}
+.success_info .succ_wechat{
+    display: flex;
+    display: -webkit-flex; /* Safari */
+    justify-content:center;
+    margin: 1.2rem 0;
+
+}
+.success_info .succ_wechat img{
+    width: 100px;
+    height: 100px;
+}
+.success_info .succ_wechat .wechat_text{
+    display: block;
+    padding-left: 1.2rem;
+}
+.success_info .succ_wechat .wechat_text i{
+    display: block;
+    font-style: normal;
+    margin-top: 1.2rem;
+}
+
 
 
 

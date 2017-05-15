@@ -1,12 +1,23 @@
 /**
  * Created by Administrator on 2017/4/26.
  */
-var mySwiper = new Swiper('.swiper-container',{
+var mySwiper = new Swiper('.swiper-container1',{
     pagination : '.swiper-pagination',
     autoplay : 5000,
     paginationClickable :true,
     direction: 'horizontal',
     autoHeight: true
+})
+var mySwiper = new Swiper('.chinacon',{
+//    slidesPerGroup : 4,
+    prevButton:'.swiper-button-prev',
+    nextButton:'.swiper-button-next',
+    loop : true,
+    slidesPerView : 'auto',
+    loopedSlides :4,
+    loopAdditionalSlides : 1,
+//    spaceBetween : 20
+
 })
 function phoneCheck($obj){ 
     var $div = $obj.closest("div");

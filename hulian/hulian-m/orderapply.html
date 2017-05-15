@@ -12,6 +12,7 @@
     <meta name="format-detection" content="telephone=no">
     <link type="text/css" rel="stylesheet" href="../assets/m/css/swiper.min.css">
     <!--<link type="text/css" rel="stylesheet" href="../assets/m/css/mobile_blue.css">-->
+    <link href="../assets/css/jquery-ui.min.css" rel="stylesheet" />
     <link type="text/css" rel="stylesheet" href="../assets/m/css/mobile_golden.css">
 </head>
 <body>
@@ -28,31 +29,31 @@
     <ul class="clearfix">
         <li>
             <a href="javascript:;">
-                <img src="../assets/images/car.jpg" alt=""/>
+                <img src="../assets/images/auto.jpg" alt=""/>
             </a>
             <h4>汽车摄影</h4>
         </li>
         <li>
             <a href="javascript:;">
-                <img src="../assets/images/dress.jpg" alt=""/>
+                <img src="../assets/images/fashion.jpg" alt=""/>
             </a>
             <h4>服装摄影</h4>
         </li>
         <li>
             <a href="javascript:;">
-                <img src="../assets/images/electric.jpg" alt=""/>
+                <img src="../assets/images/elec.jpg" alt=""/>
             </a>
             <h4>电器摄影</h4>
         </li>
         <li>
             <a href="javascript:;">
-                <img src="../assets/images/food.jpg" alt=""/>
+                <img src="../assets/images/cate.jpg" alt=""/>
             </a>
             <h4>美食摄影</h4>
         </li>
         <li>
             <a href="javascript:;">
-                <img src="../assets/images/things.jpg" alt=""/>
+                <img src="../assets/images/still.jpg" alt=""/>
             </a>
             <h4>静物摄影</h4>
         </li>
@@ -67,7 +68,7 @@
     </ul>
 </section>
 <!--step2-->
-<section class="order_form">
+<section class="order_form" style="margin-top: 4rem">
     <p class="order_title">step2:<span>&nbsp;&nbsp; 请登记您的信息</span></p>
     <div class="order_city">
         选择拍摄城市:
@@ -75,6 +76,10 @@
             <option>北京</option>
         </select>
         <span>*其他城市暂不支持</span>
+    </div>
+    <div class="date_time">
+        选择拍摄日期:
+        <input id="date_time" type="text" placeholder="请选择拍摄日期">
     </div>
     <ul class="order_price clearfix">
         <p>选择拍摄价格：</p>
@@ -217,10 +222,56 @@
     </div>
 </section>
 <!--step3-->
-<section class="success_info">
+<section class="success_info" style="margin-top: 4rem">
     <p class="order_title">step3:<span>&nbsp;&nbsp; 完成登记</span></p>
-    <h2>恭喜您xxxxxx</h2>
-    <a href="">返回</a>
+    <p class="succ_title">恭喜您预约成功！</p>
+    <p class="succ_tips">
+        稍后我们会有专员与您联系，请您保持手机畅通。
+    </p>
+    <p class="succ_wechat">
+        <img src="../assets/images/weiixn.png" alt=""/>
+        <span class="wechat_text">
+            <i>扫一扫关注我们</i>
+            <i>获取更多动态信息</i>
+        </span>
+    </p>
+    <div class="casetit">
+        <div class="case_title">
+            <span class="case_left">SHOW&nbsp;&nbsp;&amp;</span>
+            <span class="case_right">你可能会喜欢</span>
+        </div>
+    </div>
+    <div class="biaoda">
+        <div class="biaodan">
+            <a href="/caseshow_469.html" title="DQ">
+                <div class="tupian">
+                    <img src="http://upthird.xiaomishijia.cn/shoot/sample/picture/f0/f070e7403947a67d2c1f991d89ad8e17.jpg?x-oss-process=image/resize,m_fill,w_280,h_440,limit_0/auto-orient,0/quality,q_90" alt="DQ" /></div>
+                <div class="tupiantitle">DQ</div>
+            </a>
+        </div>
+        <div class="biaodan">
+            <a href="/caseshow_470.html" title="PiPaLLi">
+                <div class="tupian">
+                    <img src="http://upthird.xiaomishijia.cn/shoot/sample/picture/d6/d687d8e912cb1431760bd67ce7298ede.jpg?x-oss-process=image/resize,m_fill,w_280,h_440,limit_0/auto-orient,0/quality,q_90" alt="PiPaLLi" /></div>
+                <div class="tupiantitle">PiPaLLi</div>
+            </a>
+        </div>
+        <div class="biaodan">
+            <a href="/caseshow_472.html" title="吉野家1">
+                <div class="tupian">
+                    <img src="http://upthird.xiaomishijia.cn/shoot/sample/picture/e4/e46bb555b41c923060d4442cd9fb3e9b.jpg?x-oss-process=image/resize,m_fill,w_280,h_440,limit_0/auto-orient,0/quality,q_90" alt="吉野家1" /></div>
+                <div class="tupiantitle">吉野家1</div>
+            </a>
+        </div>
+        <div class="biaodan">
+            <a href="/caseshow_473.html" title="美食精选">
+                <div class="tupian">
+                    <img src="http://upthird.xiaomishijia.cn/shoot/sample/picture/fe/fef1e5b475aa569de596c443e0bb7f18.jpg?x-oss-process=image/resize,m_fill,w_280,h_440,limit_0/auto-orient,0/quality,q_90" alt="美食精选" /></div>
+                <div class="tupiantitle">美食精选</div>
+            </a>
+        </div>
+    </div>
+    <div style="clear:both"></div>
 </section>
 <!--弹出导航-->
 <div class="navs_wrap">
@@ -324,5 +375,9 @@
 <script type="text/javascript" src="../assets/m/js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="../assets/m/js/swiper.min.js"></script>
 <script type="text/javascript" src="../assets/m/js/m_template.js"></script>
+<script src="../assets/js/jquery-ui.min.js"></script>
+<script>
+    $('#date_time').datepicker();
+</script>
 </body>
 </html>
