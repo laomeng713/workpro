@@ -282,35 +282,40 @@ padding: 0 1.2rem;
     justify-content: center;
 }
 .mflow ul li{
-    width: 43%;
-    margin: 0.5rem;
-    border: 1px solid #DDDDDD;
+    width: 50%;
+    position: relative;
+   margin-bottom: 4rem;
     text-align: center;
-    padding: 0.5rem;
 }
-.mflow ul li .mflow_title{
-    font-size: 2rem;
-}
-.mflow ul li .mflow_text{
-    font-size: 1.6rem;
-    margin-bottom: 0.5rem;
-}
-.mflow ul li .mflow_step{
-    height: 4rem;
-    line-height: 4rem;
-    margin: 1rem 0;
+.mflow ul li img{
+    width: 65%;
+    height: auto;
+
 }
 .mflow ul li i{
-    display: inline-block;
-    width: 10%;
-    height: 1.5rem;
-    line-height:  1.5rem;
-    border: 1px solid #D3A55D;
-}
-.mflow ul li i.cur_step{
-    background-color:#D3A55D ;
-}
+    width: 40px;
+    height: 25px;
+    background: url("../../../assets/images/c606e-5816.png") no-repeat;
 
+}
+.mflow ul li .step1{
+    position: absolute;
+    top: 40%;
+    right:-1.8rem;
+    /*transform:rotate(90deg);*/
+}
+.mflow ul li .step2{
+    position: absolute;
+    bottom: -3rem;
+    right:40%;
+    transform:rotate(90deg);
+}
+.mflow ul li .step3{
+    position: absolute;
+    top: 40%;
+    right:-1.8rem;
+    transform:rotate(180deg);
+}
 
 
 

@@ -21,14 +21,20 @@ var mySwiper = new Swiper('.chinacon',{
 })
 function phoneCheck($obj){ 
     var $div = $obj.closest("div");
-    var uname = "", phone = "",address='',message='';
+    var uname = "", phone = "",address='',message='',time='';
     var regPhone = /^1[3578]\d{9}$/;
     uname = $.trim($div.find("input[name='uname']").val());
     sort = $.trim($div.find("input[name='sort']").val());
     phone = $.trim($div.find("input[name='phone']").val());
     address = $.trim($div.find("input[name='address']").val());
     message = $div.find("[name='message']").val();
+    time=$( "#date_time" ).datepicker( "getDate" );
+    console.log(time);
     console.log(message);
+    if(time==null){
+        $div.find(".err_tips").text("请选择日期");
+        return false;
+    }
     if(!$('.order_price input').is(':checked')){
         $div.find(".err_tips").text("请选择价格");
         return false;

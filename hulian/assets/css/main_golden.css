@@ -1220,9 +1220,6 @@ a{color: #666;}
     /*background-color: #555;*/
 }
 
-/*.order_info{*/
-/*margin: 0 auto;*/
-/*}*/
 .order_info p{
     /*text-align:none;*/
     margin: 10px auto;
@@ -1240,11 +1237,7 @@ a{color: #666;}
     border: 1px solid #ccc;
     padding-left: 15px;
 }
-/*.order_info p:last-child{*/
-/*/!*text-indent: 35px;*!/*/
-/*height: 100px;*/
-/*line-height: 100px;*/
-/*}*/
+
 .order_info .order_message span{
     float: left;
     display: block;

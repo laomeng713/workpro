@@ -412,6 +412,9 @@
 <script src="../assets/js/jquery-ui.min.js"></script>
 <script>
 $('#date_time').datepicker();
+var currentDate = $( "#date_time" ).datepicker( "getDate" );
+
+$( "#date_time" ).datepicker( "option", "dateFormat", "yy-mm-dd" );
 
 </script>
 </body>
