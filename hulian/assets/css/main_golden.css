@@ -1295,40 +1295,122 @@ a{color: #666;}
 }
 
 /*拍摄流程*/
-.flow_container{
-    width: 1200px;
-    margin: 0 auto;
+.flow_container,.guarantee_container{
+    height: 720px;
     text-align: center;
 }
-.flow_container ul{
-    /*margin: 0 auto;*/
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+.flow_container{
+    /*background-color: #F0F0F0;*/
+    background: url("../../assets/images/background.jpg");
+}
+.guarantee_container{ background-color: #fff;}
+
+.flow_container ul,.guarantee_container ul{
     text-align: center;
-    /*margin-left: 100px;*/
    display: inline-block;
+    margin-top: 12%;
 }
 .flow_container li{
     display: inline-block;
-    padding: 20px;
-    width: 15%;
-    margin: 10px;
     text-align: center;
+    background: #fd6d49;
+    width: 245px;
+    height: 320px;
     position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
 
 }
 .flow_container li img{
-    width: 85%;
-    height: auto;
+    margin-top: 45px;
 }
-.flow_container li i{
+.flow_container li .flow_text{
+    background: #fff;
     position: absolute;
-    top: 80px;
-    right: -30px;
-    display: inline-block;
-    width: 40px;
-    height: 25px;
-    background: url("../../assets/images/c606e-5816.png") no-repeat;
+    top: 170px;
+    height: 100px;
+    width: 195px;
+    padding: 25px;
+}
+.flow_container li .flow_text p{
+    font-size: 20px;
+    color: #666;
+    line-height: 20px;
+}
+.flow_container li .flow_text .flow_title{
+    font-size: 35px;
+    color: #00224b;
+    margin-bottom: 30px;
 }
 
+.flow_container .oBox{
+
+}
+
+.guarantee_container li{
+    display: inline-block;
+    text-align: center;
+    width: 245px;
+    height: 320px;
+    position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 1px solid #777777;
+}
+.guarantee_container li img{
+    margin-top: 45px;
+}
+.guarantee_container li p{
+    color: #666;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 40px;
+}
+.guarantee_container li .guarant_title{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+}
+/*.flow_container li i,.guarantee_container li i{*/
+    /*position: absolute;*/
+    /*top: 80px;*/
+    /*right: -30px;*/
+    /*display: inline-block;*/
+    /*width: 40px;*/
+    /*height: 25px;*/
+    /*background: url("../../assets/images/c606e-5816.png") no-repeat;*/
+/*}*/
+/*立即预约*/
+.appointment_box{
+    height: 240px;
+    position: relative;
+    margin-top: 35px;
+    text-align: center;
+}
+.appointment_box .appoint_title{
+    font-size: 35px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.appointment_box .appoint_text{
+    font-size: 25px;
+    margin: 10px 0;
+}
+.appointment_box .app_btn{
+    margin-top: 10px;
+    display: inline-block;
+    width: 200px;
+    height: 75px;
+    line-height: 75px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    font-size: 22px;
+
+}
 
 
 

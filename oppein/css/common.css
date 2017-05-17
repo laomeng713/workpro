@@ -1,0 +1,499 @@
+@charset utf-8;
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,form,input,table,tr,td,dl,dt,dd,div {
+    margin:0;
+    padding:0;
+    border:0;
+}
+body {
+    font:12px/20px "SimSun",Arial;
+    color:#3d3d3d;
+    background:#fff;
+}
+ol,ul {
+    list-style-type:none;
+}
+img {
+    margin:0 auto;
+    display:block;
+    border:0;
+}
+a {
+    text-decoration:none;
+    color:#716c6a;
+}
+a:hover {
+    text-decoration:underline;
+    color:#ff9000;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size:100%;
+}
+em,i {
+    font-style:normal;
+}
+:focus {
+    outline:0;
+}
+.clear {
+    clear:both;
+    height:0;
+}
+/*澶撮儴*/
+.header .header_top {
+    background:url(http://img.oppein.cn/oppein/edmsys/images/top_bg.jpg);
+}
+/*搴曢儴*/
+.footer .footer_info {
+    padding:35px 0 10px;
+    background:#3B3837;
+    overflow:hidden;
+    font:12px/20px "瀹嬩綋",Arial;
+    color:#716c6a;
+}
+.footer_info .wrap {
+    width:1210px;
+    margin:0 auto;
+    position:relative;
+}
+.footer_info .serverbox {
+    margin-left:95px;
+    padding-bottom:30px;
+    overflow:hidden;
+    zoom:1;
+}
+.footer_info .serverbox dl {
+    margin-top:-10px;
+    float:left;
+    color:#e0d7d3;
+    margin-right:110px;
+}
+.footer_info .serverbox dt {
+    margin-top:10px;
+    font-size:14px;
+    font-weight:bold;
+}
+.footer_info .serverbox .tel_service {
+    margin-right:58px;
+    width:200px;
+}
+.footer_info .serverbox .tel_service .tel {
+    margin:24px 0 19px;
+    font-family:"榛戜綋";
+    font-size:30px;
+    color:#fff;
+    font-weight:bold;
+}
+.footer_info .serverbox .tel_service dd a {
+    margin:5px 0 8px;
+    padding-left:49px;
+    display:block;
+    width:151px;
+    text-indent:30px;
+    height:38px;
+    line-height:38px;
+    font-size:18px;
+    color:#fff;
+    text-decoration:none;
+    background:url(http://img.oppein.cn/images/header_top_icon.png) no-repeat -1px -59px;
+}
+.footer_info .serverbox .tel_service dd a:hover {
+    color:#fff;
+    background-position:-1px -101px;
+}
+.footer_info .serverbox dd {
+    margin-top:10px;
+}
+.footer_info .serverbox dd a {
+    color:#e0d7d3;
+}
+.footer_info .serverbox dd a:hover {
+    color:#ff9000;
+}
+.footer_info .serverbox .social {
+    margin-right:0;
+}
+.footer_info .serverbox .social dd {
+    position:relative;
+    width:130px;
+    height:38px;
+    margin-left:5px;
+    background:#262524;
+}
+.footer_info .serverbox .social dd p {
+    cursor:pointer;
+}
+.footer_info .serverbox .social dd p:hover {
+    color:#ff9000;
+}
+.footer_info .serverbox .social dd a {
+    display:block;
+}
+.footer_info .serverbox .social dd a:hover {
+    text-decoration:none;
+}
+.footer_info .serverbox .social i {
+    position:absolute;
+    width:5px;
+    height:38px;
+    background:url(http://img.oppein.cn/oppein/edmsys/images/common_icon.png) no-repeat;
+}
+.footer_info .serverbox .social .radius_l {
+    left:-5px;
+    _left:-4px;
+    background-position:-178px 0;
+}
+.footer_info .serverbox .social .radius_r {
+    right:-5px;
+    background-position:-189px 0;
+}
+.footer_info .serverbox .social span {
+    position:absolute;
+    top:7px;
+    left:0;
+    display:block;
+    width:30px;
+    height:25px;
+    margin:0;
+    background:url(http://img.oppein.cn/oppein/edmsys/images/common_icon.png) no-repeat;
+}
+.footer_info .serverbox .social .wx {
+    background-position:0 -140px;
+}
+.footer_info .serverbox .social .xl {
+    background-position:-33px -140px;
+}
+.footer_info .serverbox .social .tx {
+    background-position:-68px -140px;
+}
+.footer_info .serverbox .social p {
+    height:38px;
+    line-height:38px;
+    text-align:center;
+    margin-left:40px;
+    padding:0 5px;
+    border-left:1px solid #393836;
+}
+.footer_info .copyright {
+    text-align:center;
+    color:#e0d7d3;
+    padding:25px 0 0;
+    border-top:1px solid #716C6A;
+    white-space:nowrap;
+}
+.footer_info .copyright p {
+    margin-bottom:10px;
+    zoom:1;
+}
+.footer_info .copyright a {
+    color:#e0d7d3;
+}
+.footer_info .copyright a:hover {
+    color:#ff9000;
+}
+#weixin_1 {
+    z-index:99;
+}
+#weixin_2 {
+    position:absolute;
+    left:-222px;
+    top:-30px;
+    width:160px;
+    text-align:center;
+    z-index:10;
+    display:none;
+}
+#weixin_2 em {
+    font-style:normal;
+}
+/*鏃у鏈�*/
+.kefu_chinese,.kefu_english {
+    position:fixed;
+    top:50%;
+    right:10px;
+    z-index:998;
+    margin-top:-77px;
+    width:79px;
+    height:155px;
+    background:url(http://img.oppein.cn/oppein/edmsys/images/consult_kefu_chinese.png);
+    text-indent:-9999px;
+}
+.kefu_english {
+    background:url(http://img.oppein.cn/oppein/edmsys/images/consult_kefu_english.png);
+}
+.kefu_icon {
+    display:block;
+    width:79px;
+    height:107px;
+}
+.go_up {
+    display:block;
+    margin-top:17px;
+    width:79px;
+    height:31px;
+}
+/*鏂板鏈�*/
+.consult_ser {
+    position:fixed;
+    top:50%;
+    margin-top:-107px;
+    right:15px;
+    z-index:998;
+}
+.consult_ser .ser_list li {
+    position:relative;
+    width:70px;
+    height:70px;
+    margin-bottom:5px;
+}
+.consult_ser .ser_list li a {
+    position:relative;
+    display:block;
+    width:70px;
+    height:70px;
+    color:#666666;
+    text-align:center;
+    border:1px solid #DEDEDE;
+    background:#fff;
+}
+.consult_ser .ser_list li a em {
+    font-style:normal;
+}
+.consult_ser .ser_list li:first-child a em {
+    position:absolute;
+    width:72px;
+    text-align:center;
+    left:0;
+    bottom:0;
+}
+.consult_ser .ser_list li i {
+    display:block;
+    width:52px;
+    height:40px;
+    margin:8px auto 0;
+    background:url(http://img.oppein.cn/oppein/edmsys/images/consult_icon.png) no-repeat;
+}
+.consult_ser .ser_list li .mobile_code {
+    position:absolute;
+    left:-260px;
+    top:-35px;
+    display:none;
+}
+.consult_ser .ser_list li a i.kf {
+    position:absolute;
+    left:7px;
+    top:-24px;
+    width:75px;
+    height:65px;
+    background-position:-242px -5px;
+}
+.consult_ser .ser_list li a i.design {
+    background-position:-5px -2px;
+}
+.consult_ser .ser_list li a i.privilege {
+    background-position:-122px -81px;
+}
+.consult_ser .ser_list li a i.book {
+    background-position:-66px -4px;
+}
+.consult_ser .ser_list li a i.privi {
+    background-position:-118px -4px;
+}
+.consult_ser .ser_list li a.go_up {
+    margin-top:0;
+}
+.consult_ser .ser_list li a.go_up i {
+    background-position:-172px -2px;
+}
+.consult_ser .ser_list li a i.bh {
+    background-position:-228px -77px;
+    margin:5px 0 2px 12px;
+}
+.consult_ser .ser_list li a i.mobile {
+    background-position:-313px 2px;
+    margin:5px 0 2px 15px;
+}
+.consult_ser .ser_list li i.go_top {
+    width:80px;
+    height:100px;
+    background-position:-314px 0;
+    cursor:pointer;
+}
+.consult_ser .ser_list li a:hover {
+    color:#fff;
+    background:#FF6000;
+    border:1px solid #FF900C;
+    text-decoration:none;
+}
+.consult_ser .ser_list li a:hover .design {
+    background-position:-5px -43px;
+}
+.consult_ser .ser_list li a:hover .book {
+    background-position:-67px -43px;
+}
+.consult_ser .ser_list li a:hover .privi {
+    background-position:-118px -43px;
+}
+.consult_ser .ser_list li a:hover .bh {
+    background-position:-271px -77px;
+    margin-left:11px;
+}
+.consult_ser .ser_list li a:hover .mobile {
+    background-position:-313px -40px;
+}
+.consult_ser .ser_list li a:hover.go_up i {
+    background-position:-172px -42px;
+}
+.lim_float_icon {
+    display:none;
+}
+/*绗竴娆″姞杞介〉闈㈠脊鍑鸿璁℃*/
+.des_dialog {
+    position:fixed;
+    z-index:998;
+    right:50%;
+    bottom:50%;
+    width:350px;
+    height:350px;
+    margin:0 -175px -175px 0;
+    display:none
+}
+.des_dialog .later {
+    position:absolute;
+    left:190px;
+    bottom:32px;
+    font-size:12px;
+    text-decoration:underline
+}
+.mb_zx {
+    display:block;
+    font-size:14px;
+    color:#fff;
+    position:fixed;
+    text-align:center;
+    right:0;
+    top:30%;
+    width:15px;
+    padding:20px 15px;
+    background:#FF9627;
+    border-radius:5px;
+}
+/*EDM鍏叡閭杈撳叆*/
+.edm_email {
+    position:fixed;
+    width:141px;
+    top:50%;
+    left:10px;
+    margin-top:-109px;
+    padding:15px 0;
+    text-align:center;
+    border-left:1px solid #CACACA;
+    border-right:1px solid #CACACA;
+    background:#fff;
+}
+.email_con .email_tit {
+    width:120px;
+    height:75px;
+    margin:0 auto;
+    background:url(http://img.oppein.cn/oppein/edmsys/images/email_bg.png) -13px -22px no-repeat;
+}
+.email_con .email_inp {
+    width:115px;
+    height:25px;
+    margin:15px 0;
+    color:#999;
+    line-height:25px;
+    text-align:right;
+    border:1px solid #A8A8A8;
+}
+.email_con .email_sub {
+    width:110px;
+    height:42px;
+    border:none;
+    background:url(http://img.oppein.cn/oppein/edmsys/images/email_bg.png) -15px -101px no-repeat;
+    cursor:pointer;
+}
+.email_bt .bt_top {
+    position:absolute;
+    left:-1px;
+    top:-7px;
+    display:block;
+    width:145px;
+    height:10px;
+    background:url(http://img.oppein.cn/oppein/edmsys/images/email_bg.png) 0 0 no-repeat;
+}
+.email_bt .bt_bottom {
+    position:absolute;
+    left:-1px;
+    bottom:-7px;
+    display:block;
+    width:145px;
+    height:10px;
+    background:url(http://img.oppein.cn/oppein/edmsys/images/email_bg.png) 0 -10px no-repeat;
+}
+.email_tips {
+    padding:0 12px;
+}
+.email_tips span {
+    color:#D9010E;
+    display:none;
+}
+/*EDM鍏叡鐢佃瘽杈撳叆*/
+.edm_tel {
+    position:fixed;
+    width:141px;
+    top:50%;
+    left:10px;
+    margin-top:-109px;
+    padding:15px 0;
+    text-align:center;
+    border-left:1px solid #CACACA;
+    border-right:1px solid #CACACA;
+    background:#fff;
+}
+.tel_con .tel_tit {
+    width:120px;
+    height:75px;
+    margin:0 auto;
+    background:url(http://img.oppein.cn/oppein/edmsys/images/tel_bg.png) -13px -22px no-repeat;
+}
+.tel_con .tel_inp {
+    width:115px;
+    height:25px;
+    margin:15px 0;
+    color:#999;
+    line-height:25px;
+    text-align:left;
+    border:1px solid #A8A8A8;
+}
+.tel_con .tel_sub {
+    width:110px;
+    height:42px;
+    border:none;
+    background:url(http://img.oppein.cn/oppein/edmsys/images/tel_bg.png) -15px -101px no-repeat;
+    cursor:pointer;
+}
+.tel_bt .bt_top {
+    position:absolute;
+    left:-1px;
+    top:-7px;
+    display:block;
+    width:145px;
+    height:10px;
+    background:url(http://img.oppein.cn/oppein/edmsys/images/tel_bg.png) 0 0 no-repeat;
+}
+.tel_bt .bt_bottom {
+    position:absolute;
+    left:-1px;
+    bottom:-7px;
+    display:block;
+    width:145px;
+    height:10px;
+    background:url(http://img.oppein.cn/oppein/edmsys/images/tel_bg.png) 0 -10px no-repeat;
+}
+.tel_tips {
+    padding:0 12px;
+}
+.tel_tips span {
+    color:#D9010E;
+    display:none;
+}
