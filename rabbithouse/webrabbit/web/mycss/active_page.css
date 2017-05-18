@@ -1,6 +1,7 @@
 .active_banner {
+  display: block;
   position: relative;
-  z-index: -1;
+  /*z-index: -1;*/
   background: url("../../images/zbnew_banner.jpg") center;
   height: 500px;
 }

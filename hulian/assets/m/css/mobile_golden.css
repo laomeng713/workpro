@@ -76,6 +76,10 @@ ul{ list-style-type:none}
 
 input:focus{outline: none;}
 
+.index_banner li img{
+    width: 100%;
+    height: auto;
+}
 .swiper-pagination-bullet-active {
     opacity: 1;
     background: #777;
@@ -252,72 +256,117 @@ input:focus{outline: none;}
     font-size: 1.2rem;
     color: #CFAA75;
 }
-/*服务保障*/
-.mguarantee{
-padding: 0 1.2rem;
+/*分页器*/
+.mpage{
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
 }
-.mguarantee h2{
-    font-weight: normal;
-    padding: 1rem 0;
+.mpage a{
+    text-align: center;
+    display: inline-block;
+    width: 6rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    border: 1px solid #CCCCCC;
 }
-.mguarantee span{
-    display: block;
-    font-size: 1.6rem;
-    margin: 1rem 0;
-    border-left: 0.5rem solid #CFAA75;
-    padding-left: 1.2rem;
-    }
+.mpage .mpage_option{
+    width: 6rem;
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
+
+}
+.mpage select{
+    font-size: 1.4rem;
+    width: 8rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    outline: none;
+    border: none;
+    padding-left: 1.5rem;
+}
+.mpage select option{
+    text-align: center;
+}
+.mpage .cur{
+    background-color: #777;
+    color: #ffffff;
+}
 /*摄影流程*/
+.mflow,.mguarantee{
+    padding: 1.2rem 0rem;
+}
 .mflow{
-    padding: 1rem 0;
+    background-color: #eeeeee;
 }
-.mflow h2{
-    font-weight: normal;
-    padding: 1rem 0;
+.mguarantee{
+    background-color: #dddddd;
 }
-.mflow ul{
+.mflow>p,.mguarantee>p{
+    margin-left: 0.7rem;
+    font-size: 1.8rem;
+    padding: 0.1rem;
+}
+.mflow ul,.mguarantee ul{
     display: flex;
     display: -webkit-flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.mflow ul li{
-    width: 50%;
+.mflow ul li,.mguarantee ul li{
+    /*background-color: #1EC2B8;*/
+    width: 45%;
     position: relative;
-   margin-bottom: 4rem;
+    margin: 1rem 0;
     text-align: center;
 }
+
+.mflow ul li.oBox{
+    background-color: #FD6D49;
+}
+.mflow ul li.gBox{
+    background-color: #BAD878;
+}
+.mflow ul li.bBox{
+    background-color: #4787B3;
+}
+.mflow ul li.lBox{
+    background-color: #1EC2B8;
+}
 .mflow ul li img{
-    width: 65%;
+    margin: 1.2rem 0;
+    width: 50%;
     height: auto;
-
 }
-.mflow ul li i{
-    width: 40px;
-    height: 25px;
-    background: url("../../../assets/images/c606e-5816.png") no-repeat;
-
+.mflow ul li .mflow_text{
+    background-color: #ffffff;
+    padding: 1.2rem;
+    height: auto;
 }
-.mflow ul li .step1{
-    position: absolute;
-    top: 40%;
-    right:-1.8rem;
-    /*transform:rotate(90deg);*/
+.mflow ul li .mflow_text p{
+    font-size: 1.4rem;
+    color: #666;
+    line-height: 1.8rem;
 }
-.mflow ul li .step2{
-    position: absolute;
-    bottom: -3rem;
-    right:40%;
-    transform:rotate(90deg);
+.mflow ul li .mflow_text .mflow_title{
+    font-size: 2rem;
+    color: #00224b;
+    margin-bottom: 1rem;
 }
-.mflow ul li .step3{
-    position: absolute;
-    top: 40%;
-    right:-1.8rem;
-    transform:rotate(180deg);
+.mguarantee li .mguaran_title{
+    font-weight: bold;
+    font-size: 1.8rem;
 }
-
-
+.mguarantee li p{
+    line-height: 2rem;
+    margin-top: 1rem;
+}
+.mguarantee ul li{
+    background-color: #ffffff;
+    padding: 1.2rem 0;
+}
 
 
 
@@ -367,37 +416,51 @@ padding: 0 1.2rem;
 .dh dl dd img{ width:60% ; }
 .dh dl dt{ font-size:14px; line-height:24px; text-align:center}
 
-.casetit{ width:100%;}
-.casetit .case_title{
+.casetit {
+    width:100%;
     height: 4rem;
-    text-align: center;
+    /*text-align: center;*/
     overflow: hidden;
     vertical-align: middle;
-    /*background-color: #efefef;*/
     background-color: #777;
+
 }
-.casetit .case_title .case_left{
+.casetit a{
+    display: block;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.2rem;
+}
+.casetit a span{
+    display: block;
+    height: 4rem;
+    line-height: 4rem;
+    vertical-align: middle;
+    zoom: 1;
+}
+.casetit  .case_left{
     font-weight: bold;
     font-size: 2rem;
-    padding: 0 20px;
-    /*color: #7699c3;*/
     color: #CFAA75;
-    display: inline-block;
-    height: 4rem;
-    line-height: 4rem;
-    vertical-align: middle;
-    zoom: 1;
     text-transform: uppercase;}
-.casetit .case_title .case_right{
-    padding: 0 10px;
-    /*color: #979797;*/
+.casetit  .case_right{
     color: #ffffff;
-    display: inline-block;
-    height: 4rem;
-    line-height: 4rem;
-    vertical-align: middle;
-    zoom: 1;
     font-size: 1.8rem;
+}
+.casetit .case_more{
+    background: url(../../../assets/m/img/chat.png) no-repeat;
+    background-size: 100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    z-index: 6;
+    text-align: center;
+    width: 3.5rem;
+    line-height: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.2rem;
+    margin-top: 0.3rem;
+
 }
 .lbb{
     width:100%;

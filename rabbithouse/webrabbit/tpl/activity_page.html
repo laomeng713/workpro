@@ -86,10 +86,8 @@
     </div>
 </header>
 <!--banner 背景图-->
-<div class="active_banner">
-    <a href="#form_list" class="active_icon"></a>
-    <p class="active_border"></p>
-</div>
+<a href="#form_list" class="active_banner">
+</a>
 <section class="active_container clearfloat">
     <!--服务流程-->
     <div class="active_flow">
@@ -100,21 +98,25 @@
             </li>
             <li>
                 <span class="step_num">1</span><span class="step_title">提交信息</span>
+
                 <p>在线提交房屋信息</p>
                 <i class="active_arrows"></i>
             </li>
             <li>
                 <span class="step_num">2</span><span class="step_title">免费上门</span>
+
                 <p>量房、设计、报价</p>
                 <i class="active_arrows"></i>
             </li>
             <li>
                 <span class="step_num">3</span><span class="step_title">开始装修</span>
+
                 <p>选定方案进行装修</p>
                 <i class="active_arrows"></i>
             </li>
             <li>
                 <span class="step_num">4</span><span class="step_title">验收入住</span>
+
                 <p>装修完毕，验收</p>
             </li>
         </ul>
@@ -127,7 +129,7 @@
             <span>传统装修</span>
         </p>
         <ul class="compare_lf lf">
-            <li>兔班长	</li>
+            <li>兔班长</li>
             <li><i></i>免费上门量房，帮您规划合理的采光与空间布局</li>
             <li><i></i>专业设计师免费出装修报价方案，满意为止</li>
             <li><i></i>多家设计方案报价对比，谁好谁坏一目了然</li>
@@ -199,6 +201,7 @@
                 <li>
                     <a href="javascript:;">
                         <img src="../images/company_01.jpg"/>
+
                         <p>
                             <input value="轻舟装饰1" type="checkbox"/>
                             轻舟装饰
@@ -274,7 +277,7 @@
                         <img src="../images/company_07.jpg"/>
 
                         <p>
-                            <input   value="轻舟装饰7" type="checkbox"/>
+                            <input value="轻舟装饰7" type="checkbox"/>
                             轻舟装饰
                             <i>推荐指数：</i>
                             <span></span>
@@ -286,7 +289,7 @@
                         <img src="../images/company_08.jpg"/>
 
                         <p>
-                            <input  value="轻舟装饰8" type="checkbox"/>
+                            <input value="轻舟装饰8" type="checkbox"/>
                             轻舟装饰
                             <i>推荐指数：</i>
                             <span></span>
@@ -296,7 +299,7 @@
             </ul>
         </div>
         <!--第二步-->
-        <div  class="collect_title clearfloat" >
+        <div class="collect_title clearfloat">
             <h3>
                 <i>第二步</i>
                 填写装修报名表
@@ -329,15 +332,15 @@
             <p>
                 户型结构：
                 <select>
-                   <option value="一室">一室</option>
-                   <option value="二室">二室</option>
-                   <option value="三室">三室</option>
-                   <option value="四室">四室</option>
-                   <option value="五室">五室</option>
-                   <option value="复式">复式</option>
-                   <option value="别墅">别墅</option>
-                   <option value="工装">工装</option>
-                   <option value="其它">其它</option>
+                    <option value="一室">一室</option>
+                    <option value="二室">二室</option>
+                    <option value="三室">三室</option>
+                    <option value="四室">四室</option>
+                    <option value="五室">五室</option>
+                    <option value="复式">复式</option>
+                    <option value="别墅">别墅</option>
+                    <option value="工装">工装</option>
+                    <option value="其它">其它</option>
 
                 </select>
                 装修预算：
@@ -351,11 +354,12 @@
                 </select>
             </p>
             <p>
-               回访时间：
-                <input value="9:00-18:00" name="visited_time"  type="radio"/> 上班时间(9:00-18:00)
+                回访时间：
+                <input value="9:00-18:00" name="visited_time" type="radio"/> 上班时间(9:00-18:00)
                 <input value="18:00 以后" name="visited_time" type="radio"/> 下班时间(18:00 以后)
                 <input value="anytime" name="visited_time" checked type="radio"/> 随时
             </p>
+
             <p class="err_tips">
                 <!--错误提示-->
             </p>
@@ -364,9 +368,10 @@
 
         </form>
     </div>
-
-    <a href="#form_list" class="active_icon"></a>
-    <p class="active_border"></p>
+    <!--
+        <a href="#form_list" class="active_icon"></a>
+        <p class="active_border"></p>
+        -->
 </section>
 <!--页脚-->
 <footer>
@@ -396,64 +401,64 @@
         slide_help(); //返回顶部
         sign_area(); //页面达到一定高度。。。只显示收集信息框
     })
-    var company='';
-    $('.active_company li').click(function(){
-        if($(this).find('input').is(':checked')){
-            $(this).find('input').prop('checked',false);
-        }else{
-            $(this).find('input').prop('checked',true);
-            company=$(this).find('input').val();
+    var company = '';
+    $('.active_company li').click(function () {
+        if ($(this).find('input').is(':checked')) {
+            $(this).find('input').prop('checked', false);
+        } else {
+            $(this).find('input').prop('checked', true);
+            company = $(this).find('input').val();
 //            console.log(company);
         }
     })
 
-    $('.active_company li input').click(function(){
-        if($(this).is(':checked')){
-            $(this).prop('checked',false);
-        }else{
-            $(this).prop('checked',true);
+    $('.active_company li input').click(function () {
+        if ($(this).is(':checked')) {
+            $(this).prop('checked', false);
+        } else {
+            $(this).prop('checked', true);
         }
     })
 
-    function  activeCheck($obj){
-        var uname='',uphone='',umeter='';
-        $form=$obj.closest("form");
-        uname= $.trim($("input[name='uname']").val());
-        uphone= $.trim($("input[name='uphone']").val());
-        umeter= $.trim($("input[name='umeter']").val());
+    function activeCheck($obj) {
+        var uname = '', uphone = '', umeter = '';
+        $form = $obj.closest("form");
+        uname = $.trim($("input[name='uname']").val());
+        uphone = $.trim($("input[name='uphone']").val());
+        umeter = $.trim($("input[name='umeter']").val());
 //        console.log(mobile);
         var regPhone = /^1[3578]\d{9}$/;
-        if(uname==''){
+        if (uname == '') {
             $('.err_tips').text('姓名不能为空');
             return false;
         }
-        if(uphone==''){
+        if (uphone == '') {
             $('.err_tips').text('手机号码不能为空');
             return false;
         }
-        if(!regPhone.test(uphone)) {
+        if (!regPhone.test(uphone)) {
             $('.err_tips').text('请填写正确的手机号码');
             return false;
         }
-        if(umeter==''){
+        if (umeter == '') {
             $('.err_tips').text('面积不能为空');
             return false;
         }
-        else{
+        else {
             $('.err_tips').text('');
         }
         $.ajax({
-            type:'post',
-            success:function(){
+            type: 'post',
+            success: function () {
                 console.log('success');
 //                收集所有选中的信息
-                for(var i=0;i<$(':checked').size();i++){
-                    b=($(':checked')[i].value);
+                for (var i = 0; i < $(':checked').size(); i++) {
+                    b = ($(':checked')[i].value);
                     console.log(b);
                 }
 
             },
-            error:function(){
+            error: function () {
                 console.log('error');
 
             }
