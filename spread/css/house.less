@@ -6,9 +6,10 @@ img{
 }
 .house_main{
   padding-top: 2rem;
-  .house_home{
-    padding: 0 1.2rem;
-  }
+
+}
+.house_home{
+  padding: 0 1.2rem;
 }
 .house_page_head{
   position: relative;
@@ -32,4 +33,33 @@ img{
   margin: 1.2rem 0;
   font-size: 1.6rem;
   color: #666666;
+}
+.house_page_select{
+  padding-top: 1rem;
+  padding-bottom: 0.4rem;
+  zoom: 1;
+}
+.house_page_li{
+  position: relative;
+  width: 48%;
+  text-align: center;
+  .house_page_icon{
+    width: 0.26rem;
+    height: 0.26rem;
+    position: absolute;
+    bottom: 45px;
+    right: 0.17rem;
+  }
+  .house_page_icon.checked{
+    display: none;
+  }
+  .house_page_icon.unchecked {
+    display: block;
+  }
+}
+.house_page_li:nth-child(odd){
+  float: left;
+}
+.house_page_li:nth-child(even){
+  float: right;
 }

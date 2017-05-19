@@ -265,30 +265,38 @@ input:focus{outline: none;}
 }
 .mpage a{
     text-align: center;
-    display: inline-block;
+    display: block;
     width: 6rem;
     height: 2.5rem;
     line-height: 2.5rem;
     border: 1px solid #CCCCCC;
 }
 .mpage .mpage_option{
+    box-sizing: border-box;
+    border: 1px solid #CCCCCC;
     width: 6rem;
-    position: relative;
-    background-color: transparent;
-    overflow: hidden;
-
-}
-.mpage select{
-    font-size: 1.4rem;
-    width: 8rem;
     height: 2.5rem;
     line-height: 2.5rem;
-    outline: none;
-    border: none;
-    padding-left: 1.5rem;
-}
-.mpage select option{
+    position: relative;
+    background-color: #ffffff;
+    z-index: 100;
     text-align: center;
+}
+.mpage .mpage_option ul{
+    width: 6rem;
+    position: absolute;
+    top: 2.4rem;
+    left: -.1rem;
+    right: 0rem;
+    display: none;
+}
+.mpage .mpage_option li{
+    background-color: #ffffff;
+    border: 1px solid #CCCCCC;
+    border-top: none;
+}
+.mpage .mpage_option li a{
+    border: none;
 }
 .mpage .cur{
     background-color: #777;

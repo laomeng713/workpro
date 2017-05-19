@@ -116,8 +116,14 @@ function errCheck($obj){
     })
 }
 
-
-
+//    分页器切换
+$('.mpage_option').click(function(){
+    $('.mpage_option ul').show();
+})
+$('.mpage_option ul li').click(function(){
+    $('.mpage_option span').text($(this).text());
+    $(this).parents('ul').fadeOut();
+})
 
 
 
