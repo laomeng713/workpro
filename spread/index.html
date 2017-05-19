@@ -20,6 +20,7 @@
 </head>
 <body>
     <section class="house_main">
+        <!--选择新房/老房-->
         <div class="house_home">
             <div class="house_page_head">
                 <img src="images/zxbj_top1.jpg" alt=""/>
@@ -28,39 +29,270 @@
                 </h4>
             </div>
             <h5 class="house_page_tip">选择房屋类型与城市 1/3</h5>
-            <ul class="house_page_select">
-                <li class="house_page_li">
+            <ul class="house_page_select clearfix">
+                <li class="house_page_li lf">
                     <img src="images/zxbj_01_left.jpg" alt=""/>
                     <img class="house_page_icon checked" src="images/check2.png" alt=""/>
                     <img class="house_page_icon unchecked" src="images/no_check2.png" alt=""/>
+                    <span>新房装修</span>
                 </li>
-                <li class="house_page_li">
-                    <img src="images/zxbj_01_left.jpg" alt=""/>
+                <li class="house_page_li rt">
+                    <img src="images/zxbj_01_right.jpg" alt=""/>
                     <img class="house_page_icon checked" src="images/check2.png" alt=""/>
                     <img class="house_page_icon unchecked" src="images/no_check2.png" alt=""/>
+                    <span>旧房翻新</span>
                 </li>
             </ul>
+            <div class="house_page_error">
+                *你还没有选择房屋类型
+            </div>
+            <form class="house_page_input arrow">
+                <input type="text" value="北京"/>
+            </form>
+            <div class="house_page_error">
+                *你还没有选择房屋所在城市
+            </div>
+            <div class="house_page_btn">
+                <a class="house_page_btn_sub page_next" href="javascript:;">下一步</a>
+            </div>
+            <div class="house_page_footer">
+                <img src="images/zxbj_footer1.jpg" alt=""/>
+                <p class="footer_text">
+                    Copyright 北京维纳亚科技有限公司 2010-2017, All Rights Reserved
+                </p>
+            </div>
+        </div>
+        <!--新房选择户型-->
+        <div class="house_huxing">
+            <div class="house_page_head">
+                <img src="images/zxbj_top1.jpg" alt=""/>
+                <h4 class="house_page_head_title">
+                    免费获取装修报价
+                </h4>
+            </div>
+            <h5 class="house_page_tip">选择房屋类型与城市 2/3</h5>
+            <ul class="house_page_select clearfix">
+                <li class="house_page_li">
+                    <img src="images/zxbj_02_11.jpg" alt=""/>
+                    <img class="house_page_icon checked" src="images/check2.png" alt=""/>
+                    <img class="house_page_icon unchecked" src="images/no_check2.png" alt=""/>
+                    <span>一室一厅</span>
+                </li>
+                <li class="house_page_li">
+                    <img src="images/zxbj_02_12.jpg" alt=""/>
+                    <img class="house_page_icon checked" src="images/check2.png" alt=""/>
+                    <img class="house_page_icon unchecked" src="images/no_check2.png" alt=""/>
+                    <span>一室两厅</span>
+                </li>
+                <li class="house_page_li">
+                    <img src="images/zxbj_02_21.jpg" alt=""/>
+                    <img class="house_page_icon checked" src="images/check2.png" alt=""/>
+                    <img class="house_page_icon unchecked" src="images/no_check2.png" alt=""/>
+                    <span>两室一厅</span>
+                </li>
+                <li class="house_page_li">
+                    <img src="images/zxbj_02_22.jpg" alt=""/>
+                    <img class="house_page_icon checked" src="images/check2.png" alt=""/>
+                    <img class="house_page_icon unchecked" src="images/no_check2.png" alt=""/>
+                    <span>两室两厅</span>
+                </li>
+                <li class="house_page_li">
+                    <img src="images/zxbj_02_31.jpg" alt=""/>
+                    <img class="house_page_icon checked" src="images/check2.png" alt=""/>
+                    <img class="house_page_icon unchecked" src="images/no_check2.png" alt=""/>
+                    <span>三室一厅</span>
+                </li>
+                <li class="house_page_li">
+                    <img src="images/zxbj_02_32.jpg" alt=""/>
+                    <img class="house_page_icon checked" src="images/check2.png" alt=""/>
+                    <img class="house_page_icon unchecked" src="images/no_check2.png" alt=""/>
+                    <span>三室两厅</span>
+                </li>
+                <li class="house_page_li">
+                    <img src="images/zxbj_02_41.jpg" alt=""/>
+                    <img class="house_page_icon checked" src="images/check2.png" alt=""/>
+                    <img class="house_page_icon unchecked" src="images/no_check2.png" alt=""/>
+                    <span>四室一厅</span>
+                </li>
+                <li class="house_page_li">
+                    <img src="images/zxbj_02_42.jpg" alt=""/>
+                    <img class="house_page_icon checked" src="images/check2.png" alt=""/>
+                    <img class="house_page_icon unchecked" src="images/no_check2.png" alt=""/>
+                    <span>四室两厅</span>
+                </li>
+            </ul>
+            <div class="house_page_error">
+                *你还没有选择户型
+            </div>
+            <form class="house_page_input">
+                <input type="text" placeholder="输入房屋面积"/>
+                <span class="page_squar">㎡</span>
+            </form>
+            <div class="house_page_error">
+                *你还没有输入房屋面积
+            </div>
+            <div class="house_page_btn">
+                <a class="house_page_btn_sub page_prev" href="javascript:;">上一步</a>
+                <a class="house_page_btn_sub page_next" href="javascript:;">下一步</a>
+            </div>
+            <div class="house_page_footer">
+                <img src="images/zxbj_footer5.jpg" alt=""/>
+                <p class="footer_text">
+                    Copyright 北京维纳亚科技有限公司 2010-2017, All Rights Reserved
+                </p>
+            </div>
+        </div>
+        <!--老房选择改造类型-->
+        <div class="house_remould">
+            <div class="house_page_head">
+                <img src="images/zxbj_top1.jpg" alt=""/>
+                <h4 class="house_page_head_title">
+                    免费获取装修报价
+                </h4>
+            </div>
+            <h5 class="house_page_tip">选择户型与面积 2/3</h5>
+            <ul class="house_page_select clearfix">
+                <li class="house_page_li lf">
+                    <img class="page_imgleft" src="images/zxbj_all.jpg" alt=""/>
+                    <img class="house_page_icon checked" src="images/check2.png" alt=""/>
+                    <img class="house_page_icon unchecked" src="images/no_check2.png" alt=""/>
+                    <span>整体改造</span>
+                </li>
+                <li class="house_page_li rt">
+                    <img src="images/zxbj_per.jpg" alt=""/>
+                    <img class="house_page_icon checked" src="images/check2.png" alt=""/>
+                    <img class="house_page_icon unchecked" src="images/no_check2.png" alt=""/>
+                    <span>局部翻新</span>
+                </li>
+
+            </ul>
+            <div class="house_page_error">
+                *你还没有选择户型
+            </div>
+            <form class="house_page_input">
+                <input type="text" placeholder="输入房屋面积"/>
+                <span class="page_squar">㎡</span>
+            </form>
+            <div class="house_page_error">
+                *你还没有输入房屋面积
+            </div>
+            <div class="house_page_btn">
+                <a class="house_page_btn_sub page_prev" href="javascript:;">上一步</a>
+                <a class="house_page_btn_sub page_next" href="javascript:;">下一步</a>
+            </div>
+            <div class="house_page_footer">
+                <img src="images/zxbj_footer5.jpg" alt=""/>
+                <p class="footer_text">
+                    Copyright 北京维纳亚科技有限公司 2010-2017, All Rights Reserved
+                </p>
+            </div>
+        </div>
+        <!--选择装修风格-->
+        <div class="house_style">
+            <div class="house_page_head">
+                <img src="images/zxbj_top1.jpg" alt=""/>
+                <h4 class="house_page_head_title">
+                    免费获取装修报价
+                </h4>
+            </div>
+            <h5 class="house_page_tip">选择装修风格 3/3</h5>
+            <ul class="house_page_select clearfix">
+                <li class="house_page_li lf">
+                    <img  src="images/style_left.jpg" alt=""/>
+                    <img class="house_page_icon checked" src="images/check2.png" alt=""/>
+                    <img class="house_page_icon unchecked" src="images/no_check2.png" alt=""/>
+                    <span>简约装修</span>
+                </li>
+                <li class="house_page_li rt">
+                    <img src="images/style_right.jpg" alt=""/>
+                    <img class="house_page_icon checked" src="images/check2.png" alt=""/>
+                    <img class="house_page_icon unchecked" src="images/no_check2.png" alt=""/>
+                    <span>精致装修</span>
+                </li>
+
+            </ul>
+            <div class="house_page_error">
+                *你还没有选择装修风格
+            </div>
+            <form class="house_page_input">
+                <input type="text" placeholder="输入手机号码，短信接收报价结果"/>
+            </form>
+            <div class="house_page_error">
+                *你还没有输入手机号码
+            </div>
+            <div class="house_page_btn">
+                <a class="house_page_btn_sub page_next" href="javascript:;">立即计算</a>
+            </div>
+            <div class="house_page_footer">
+                <img src="images/zxbj_footer3.jpg" alt=""/>
+                <p class="footer_text">
+                    Copyright 北京维纳亚科技有限公司 2010-2017, All Rights Reserved
+                </p>
+            </div>
+        </div>
+        <!--选择改造区域-->
+        <div class="house_area">
+            <div class="house_page_head">
+                <img src="images/zxbj_top1.jpg" alt=""/>
+                <h4 class="house_page_head_title">
+                    免费获取装修报价
+                </h4>
+            </div>
+            <h5 class="house_page_tip">选择改造区域 3/3</h5>
+            <ul class="house_page_select clearfix">
+                <li class="house_page_li lf">
+                    <img  src="images/area1.jpg" alt=""/>
+                    <img class="house_page_icon checked" src="images/check2.png" alt=""/>
+                    <img class="house_page_icon unchecked" src="images/no_check2.png" alt=""/>
+                    <span>简约装修</span>
+                </li>
+                <li class="house_page_li lf">
+                    <img src="images/area2.jpg" alt=""/>
+                    <img class="house_page_icon checked" src="images/check2.png" alt=""/>
+                    <img class="house_page_icon unchecked" src="images/no_check2.png" alt=""/>
+                    <span>精致装修</span>
+                </li>
+                <li class="house_page_li lf">
+                    <img  src="images/area3.jpg" alt=""/>
+                    <img class="house_page_icon checked" src="images/check2.png" alt=""/>
+                    <img class="house_page_icon unchecked" src="images/no_check2.png" alt=""/>
+                    <span>简约装修</span>
+                </li>
+                <li class="house_page_li lf">
+                    <img src="images/area4.jpg" alt=""/>
+                    <img class="house_page_icon checked" src="images/check2.png" alt=""/>
+                    <img class="house_page_icon unchecked" src="images/no_check2.png" alt=""/>
+                    <span>精致装修</span>
+                </li>
+                <li class="house_page_li lf">
+                    <img  src="images/area5.jpg" alt=""/>
+                    <img class="house_page_icon checked" src="images/check2.png" alt=""/>
+                    <img class="house_page_icon unchecked" src="images/no_check2.png" alt=""/>
+                    <span>简约装修</span>
+                </li>
+
+
+            </ul>
+            <div class="house_page_error">
+                *你还没有选择装修风格
+            </div>
+            <form class="house_page_input">
+                <input type="text" placeholder="输入手机号码，短信接收报价结果"/>
+            </form>
+            <div class="house_page_error">
+                *你还没有输入手机号码
+            </div>
+            <div class="house_page_btn">
+                <a class="house_page_btn_sub page_next" href="javascript:;">立即计算</a>
+            </div>
+            <div class="house_page_footer">
+                <img src="images/zxbj_footer3.jpg" alt=""/>
+                <p class="footer_text">
+                    Copyright 北京维纳亚科技有限公司 2010-2017, All Rights Reserved
+                </p>
+            </div>
         </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
 </html>

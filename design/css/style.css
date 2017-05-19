@@ -35,7 +35,7 @@ input,
 select,
 textarea {
   font: 12px/1.5 tahoma, arial, '微软雅黑';
-  color: #666;
+  color: #666666;
 }
 h1,
 h2,
@@ -115,11 +115,11 @@ th {
 }
 a {
   text-decoration: none;
-  color: #666;
+  color: #666666;
 }
 a:hover {
   text-decoration: none;
-  color: #d00;
+  color: #dd0000;
 }
 .clearfix:before,
 .clearfix:after {
@@ -205,6 +205,7 @@ img {
 .site_topnav .help_center,
 .site_topnav .mall_tel {
   position: relative;
+  background: url(../images/separator.png) no-repeat 0 55%;
 }
 .site_topnav .tn_menu {
   margin-left: 12px;
@@ -234,6 +235,7 @@ img {
   display: inline-block;
 }
 .site_topnav .myorder b {
+  background: url("../images/top_nav_icos.png") 0 -30px no-repeat;
   width: 7px;
   height: 4px;
   border: none;
@@ -244,6 +246,7 @@ img {
 }
 .site_topnav .mall_tel strong {
   margin-left: 20px;
+  background: url("../images/top_nav_icos.png") 0 -45px no-repeat;
   color: #dd0000;
   font-weight: bold;
   padding-left: 15px;
@@ -263,9 +266,11 @@ img {
   height: 75px;
 }
 #header .wrap .jia_logo {
+  width: 250px;
+  height: 90%;
   position: absolute;
   left: 0;
-  top: -14px;
+  top: -22px;
 }
 #header .wrap .outWrap {
   width: 850px;
@@ -304,6 +309,7 @@ img {
 #header .wrap .outWrap .searchWrap .choose_out_jcy .more_jcy i {
   width: 6px;
   height: 3px;
+  background: url(../images/searchbackground.png) -106px -3px no-repeat;
   position: absolute;
   top: 8px;
   right: 7px;
@@ -319,6 +325,7 @@ img {
   position: absolute;
   width: 10px;
   height: 10px;
+  background: url(../images/searchbackground.png) -75px top no-repeat;
   left: 4px;
   top: 11px;
 }
@@ -337,11 +344,12 @@ img {
 #header .wrap .outWrap .searchWrap .searchBox .searchBtn {
   width: 94px;
   height: 32px;
+  background: url(../images/searchbackground.png) left bottom no-repeat;
   cursor: pointer;
   position: absolute;
   right: 0;
   top: 0;
-  _border: none;
+  border: none;
 }
 #header .wrap .outWrap .my_Qj {
   width: 118px;
@@ -369,6 +377,7 @@ img {
   top: 12px;
   width: 16px;
   height: 16px;
+  background: url(../images/searchbackground.png) -94px -56px no-repeat;
   vertical-align: middle;
 }
 #header .wrap .outWrap .my_Qj .my_Qj_wrap p a {
@@ -420,9 +429,35 @@ img {
   position: absolute;
   width: 7px;
   height: 5px;
+  background: url(../images/searchbackground.png) -91px top no-repeat;
   top: 18px;
   right: 11px;
   overflow: hidden;
+}
+#header .wrap .outWrap .cart .cartTxt .num_jcy {
+  height: 15px;
+  line-height: 15px;
+  padding-left: 7px;
+  background: url(../images/searchbackground.png) -116px top no-repeat;
+  color: #fff;
+  position: absolute;
+  left: 66px;
+  top: -2px;
+}
+#header .wrap .outWrap .cart .cartTxt .num_jcy b {
+  display: inline-block;
+  padding-right: 7px;
+  height: 15px;
+  line-height: 15px;
+  background: url(../images/searchbackground.png) right -15px no-repeat;
+}
+#header .wrap .outWrap .cart .cartTxt .num_jcy strong {
+  width: 4px;
+  height: 3px;
+  position: absolute;
+  background: url(../images/searchbackground.png) -116px -30px no-repeat;
+  left: 6px;
+  top: 15px;
 }
 #header .wrap .outWrap .cart .cartshow {
   position: absolute;
@@ -450,6 +485,7 @@ img {
   position: relative;
   white-space: nowrap;
   width: 1190px;
+  font-size: 14px;
 }
 .g_web_nav .top_nav_ul li {
   height: 33px;
@@ -478,6 +514,7 @@ img {
   position: absolute;
   width: 8px;
   height: 4px;
+  background: url(../images/nav_background.png) left -18px no-repeat;
   top: 15px;
   right: 8px;
   overflow: hidden;
@@ -576,6 +613,7 @@ img {
   display: block;
   width: 8px;
   height: 5px;
+  background: url("../images/putin_icon.png") no-repeat 0 -531px;
   position: absolute;
   right: 10px;
   top: 18px;
@@ -798,6 +836,7 @@ img {
   display: block;
   width: 39px;
   height: 39px;
+  background: url("../images/putin_icon.png") no-repeat 0 -483px;
   margin: 0 auto 20px;
 }
 .newput_main .member_case .memtag span {
@@ -1133,26 +1172,20 @@ img {
   display: none;
 }
 .newput_main .famous_company .company_list {
-  padding: 40px 0 55px;
+  padding: 40px 5px 55px;
   overflow: hidden;
   border: 1px solid #ddd;
   position: relative;
 }
 .newput_main .famous_company .company_list li {
-  float: left;
-  padding: 0 20px;
   position: relative;
-}
-.newput_main .famous_company .company_list li > a {
-  float: left;
+  text-align: center;
 }
 .newput_main .famous_company .company_list li > a img {
   width: 100px;
   height: 100px;
 }
 .newput_main .famous_company .company_list li .message_r {
-  float: left;
-  width: 87px;
   height: 100px;
   padding-left: 10px;
 }
@@ -1180,67 +1213,45 @@ img {
   right: -1px;
   top: 15px;
 }
-.newput_main .famous_company .company_list .flex-direction-nav {
-  width: 40px;
-  position: absolute;
-  bottom: 12px;
-  left: 570px;
-}
-.newput_main .famous_company .company_list .flex-direction-nav li {
-  padding: 0 6px;
-}
-.newput_main .famous_company .company_list .flex-direction-nav a {
-  display: block;
-  width: 8px;
-  height: 15px;
-  background: url("../images/putin_icon.png") no-repeat;
-  text-indent: -9999em;
-}
-.newput_main .famous_company .company_list .flex-direction-nav a.flex-prev {
-  background-position: -16px -542px;
-}
-.newput_main .famous_company .company_list .flex-direction-nav a.flex-disabled {
+.newput_main .famous_company .company_list a.flex-prev.flex-disabled {
   background-position: -16px -526px;
 }
-.newput_main .famous_company .company_list .flex-direction-nav a.flex-next {
-  background-position: -37px -526px;
-}
-.newput_main .famous_company .company_list .flex-direction-nav a.flex-disabled {
+.newput_main .famous_company .company_list a.flex-next.flex-disabled {
   background-position: -37px -542px;
 }
-.newput_main .AdPositionId {
+.AdPositionId {
   padding-top: 55px;
 }
-.newput_main .AdPositionId a {
+.AdPositionId a {
   float: left;
   display: block;
   width: 585px;
   height: 110px;
 }
-.newput_main .AdPositionId .ad_baojia {
+.AdPositionId .ad_baojia {
   margin-right: 20px;
 }
-.newput_main .designer_li ul {
+.designer_li ul {
   margin-right: -20px;
 }
-.newput_main .designer_li ul li {
+.designer_li ul li {
   float: left;
   height: 250px;
   width: 222px;
   position: relative;
   margin-right: 20px;
 }
-.newput_main .designer_li ul li a.anlitu {
+.designer_li ul li a.anlitu {
   display: block;
   width: 222px;
   height: 177px;
   margin-bottom: 15px;
 }
-.newput_main .designer_li ul li a.anlitu img {
+.designer_li ul li a.anlitu img {
   width: 222px;
   height: 177px;
 }
-.newput_main .designer_li ul li .topn {
+.designer_li ul li .topn {
   display: block;
   width: 45px;
   height: 28px;
@@ -1253,17 +1264,17 @@ img {
   background: #be9954;
   text-align: center;
 }
-.newput_main .designer_li ul li .personal_details p {
+.designer_li ul li .personal_details p {
   font-size: 12px;
   color: #999;
   line-height: 26px;
 }
-.newput_main .designer_li ul li .personal_details p span {
+.designer_li ul li .personal_details p span {
   font-size: 16px;
   color: #2d2d2d;
   padding-right: 15px;
 }
-.newput_main .designer_li ul li .head_portrait {
+.designer_li ul li .head_portrait {
   display: block;
   width: 58px;
   height: 58px;
@@ -1275,12 +1286,12 @@ img {
   top: 147px;
   overflow: hidden;
 }
-.newput_main .designer_li ul li .head_portrait img {
+.designer_li ul li .head_portrait img {
   width: 58px;
   height: 58px;
   border-radius: 50%;
 }
-.newput_main .designer_li ul li .head_portrait span {
+.designer_li ul li .head_portrait span {
   display: none;
   font-size: 16px;
   color: #fff;
@@ -1288,23 +1299,23 @@ img {
   padding: 8px;
   text-align: center;
 }
-.newput_main .designer_li ul li .replace {
+.designer_li ul li .replace {
   background: #f26122;
 }
-.newput_main .designer_li ul li .replace img {
+.designer_li ul li .replace img {
   display: none;
 }
-.newput_main .designer_li ul li .replace span {
+.designer_li ul li .replace span {
   display: block;
 }
-.newput_main .live_case {
+.live_case {
   float: left;
   width: 860px;
 }
-.newput_main .live_case ul {
+.live_case ul {
   margin: -30px 0 0 -20px;
 }
-.newput_main .live_case ul li {
+.live_case ul li {
   float: left;
   width: 273px;
   height: 203px;
@@ -1312,15 +1323,15 @@ img {
   margin: 30px 0 0 20px;
   overflow: hidden;
 }
-.newput_main .live_case ul li a {
+.live_case ul li a {
   display: block;
   height: 203px;
 }
-.newput_main .live_case ul li a img {
+.live_case ul li a img {
   width: 273px;
   height: 203px;
 }
-.newput_main .live_case ul li a > span {
+.live_case ul li a > span {
   display: block;
   width: 63px;
   height: 63px;
@@ -1329,22 +1340,22 @@ img {
   right: 0;
   top: 0;
 }
-.newput_main .live_case ul li .kaigong {
+.live_case ul li .kaigong {
   background-position: 0 0;
 }
-.newput_main .live_case ul li .shuidian {
+.live_case ul li .shuidian {
   background-position: 0 -63px;
 }
-.newput_main .live_case ul li .nimu {
+.live_case ul li .nimu {
   background-position: 0 -126px;
 }
-.newput_main .live_case ul li .youqi {
+.live_case ul li .youqi {
   background-position: 0 -189px;
 }
-.newput_main .live_case ul li .jungong {
+.live_case ul li .jungong {
   background-position: 0 -252px;
 }
-.newput_main .live_case ul li .bom_ceng {
+.live_case ul li .bom_ceng {
   height: 86px;
   width: 253px;
   padding: 0 10px;
@@ -1353,20 +1364,20 @@ img {
   bottom: -50px;
   left: 0;
 }
-.newput_main .live_case ul li p {
+.live_case ul li p {
   font-size: 14px;
   color: #fff;
 }
-.newput_main .live_case ul li p span {
+.live_case ul li p span {
   padding-right: 25px;
 }
-.newput_main .live_case ul li .pT {
+.live_case ul li .pT {
   line-height: 35px;
 }
-.newput_main .live_case ul li .pb {
+.live_case ul li .pb {
   line-height: 50px;
 }
-.newput_main .live_case ul li .pb a {
+.live_case ul li .pb a {
   display: block;
   width: 83px;
   height: 30px;
@@ -1379,31 +1390,31 @@ img {
   bottom: 10px;
   border-radius: 3px;
 }
-.newput_main .live_case ul li .pb span i {
+.live_case ul li .pb span i {
   display: inline-block;
   height: 15px;
   width: 16px;
   background: url("../images/putin_icon.png") no-repeat;
   margin-right: 5px;
 }
-.newput_main .live_case ul li .pb .kan i {
+.live_case ul li .pb .kan i {
   background-position: -50px -524px;
 }
-.newput_main .live_case ul li .pb .zan i {
+.live_case ul li .pb .zan i {
   background-position: -50px -542px;
 }
-.newput_main .live_comment {
+.live_comment {
   float: left;
   width: 308px;
   margin-left: 20px;
   border: 1px solid #dfd5ba;
 }
-.newput_main .live_comment h3 {
+.live_comment h3 {
   padding-bottom: 15px;
   font-size: 24px;
   color: #9f8627;
 }
-.newput_main .live_comment h3 i.comment {
+.live_comment h3 i.comment {
   display: inline-block;
   width: 31px;
   height: 31px;
@@ -1411,7 +1422,7 @@ img {
   vertical-align: middle;
   margin-right: 5px;
 }
-.newput_main .live_comment li {
+.live_comment li {
   position: relative;
   border-top: 1px solid #f7f3e9;
   font-size: 14px;
@@ -1419,36 +1430,36 @@ img {
   padding: 12px 0px 12px 60px;
   *padding-top: 0px;
 }
-.newput_main .live_comment li img {
+.live_comment li img {
   border-radius: 50%;
   position: absolute;
   top: 25px;
   left: 0;
 }
-.newput_main .live_comment li .ment_r {
+.live_comment li .ment_r {
   display: inline-block;
   width: 182px;
 }
-.newput_main .live_comment li .ment_r p.tit {
+.live_comment li .ment_r p.tit {
   color: #cdb88b;
   margin-bottom: 5px;
 }
-.newput_main .live_comment li .ment_r p.tit span {
+.live_comment li .ment_r p.tit span {
   display: inline-block;
   float: right;
   width: 16px;
   height: 16px;
   background: url(../images/star.png) no-repeat -114px 0px;
 }
-.newput_main .comment_roll {
+.comment_roll {
   height: 372px;
   overflow: hidden;
   position: relative;
 }
-.newput_main .plotgd_live > ul {
+.plotgd_live > ul {
   margin-left: -20px;
 }
-.newput_main .plotgd_live > ul li {
+.plotgd_live > ul li {
   float: left;
   width: 222px;
   height: 178px;
@@ -1456,11 +1467,11 @@ img {
   position: relative;
   overflow: hidden;
 }
-.newput_main .plotgd_live > ul li img {
+.plotgd_live > ul li img {
   width: 222px;
   height: 178px;
 }
-.newput_main .plotgd_live > ul li .fl_layer {
+.plotgd_live > ul li .fl_layer {
   width: 222px;
   height: 178px;
   background: url("../images/opactiy.png");
@@ -1469,7 +1480,7 @@ img {
   left: 0;
   z-index: 1;
 }
-.newput_main .plotgd_live > ul li p {
+.plotgd_live > ul li p {
   width: 202px;
   height: 35px;
   line-height: 35px;
@@ -1481,7 +1492,7 @@ img {
   font-size: 14px;
   z-index: 2;
 }
-.newput_main .plotgd_live > ul li a {
+.plotgd_live > ul li a {
   display: none;
   width: 148px;
   height: 30px;
@@ -1495,14 +1506,14 @@ img {
   left: 36px;
   z-index: 3;
 }
-.newput_main .plotgd_live .live_widthalter {
+.plotgd_live .live_widthalter {
   width: 880px;
   float: left;
 }
-.newput_main .plotgd_live .live_widthalter ul {
+.plotgd_live .live_widthalter ul {
   margin-left: -20px;
 }
-.newput_main .plotgd_live .live_widthalter ul li {
+.plotgd_live .live_widthalter ul li {
   float: left;
   width: 273px;
   height: 203px;
@@ -1510,11 +1521,11 @@ img {
   position: relative;
   overflow: hidden;
 }
-.newput_main .plotgd_live .live_widthalter ul li img {
+.plotgd_live .live_widthalter ul li img {
   width: 270px;
   height: 203px;
 }
-.newput_main .plotgd_live .live_widthalter ul li .fl_layer {
+.plotgd_live .live_widthalter ul li .fl_layer {
   width: 270px;
   height: 203px;
   background: url("../images/opactiy.png");
@@ -1523,7 +1534,7 @@ img {
   left: 0;
   z-index: 1;
 }
-.newput_main .plotgd_live .live_widthalter ul li p {
+.plotgd_live .live_widthalter ul li p {
   width: 250px;
   height: 35px;
   line-height: 35px;
@@ -1535,7 +1546,7 @@ img {
   font-size: 14px;
   z-index: 2;
 }
-.newput_main .plotgd_live .live_widthalter ul li a {
+.plotgd_live .live_widthalter ul li a {
   display: none;
   width: 148px;
   height: 30px;
@@ -1549,14 +1560,14 @@ img {
   left: 60px;
   z-index: 3;
 }
-.newput_main .plotgd_live .seek_home {
+.plotgd_live .seek_home {
   float: left;
   width: 310px;
   height: 203px;
   background: #e9e2d4;
   position: relative;
 }
-.newput_main .plotgd_live .seek_home h3 {
+.plotgd_live .seek_home h3 {
   font-size: 18px;
   color: #514a44;
   margin-left: 6px;
@@ -1564,17 +1575,17 @@ img {
   text-align: center;
   padding: 20px 0 15px;
 }
-.newput_main .plotgd_live .seek_home .seek_form {
+.plotgd_live .seek_home .seek_form {
   width: 200px;
   margin-left: 11px;
 }
-.newput_main .plotgd_live .seek_home .seek_form .row_item {
+.plotgd_live .seek_home .seek_form .row_item {
   position: relative;
   height: 34px;
   background: #fff;
   margin-bottom: 6px;
 }
-.newput_main .plotgd_live .seek_home .seek_form .row_item .tab_select_v2 {
+.plotgd_live .seek_home .seek_form .row_item .tab_select_v2 {
   width: 350px;
   font-size: 12px;
   position: absolute;
@@ -1585,13 +1596,13 @@ img {
   line-height: 22px;
   z-index: 10;
 }
-.newput_main .plotgd_live .seek_home .seek_form .row_item input {
+.plotgd_live .seek_home .seek_form .row_item input {
   height: 20px;
   padding: 7px 10px;
   width: 180px;
   color: #333;
 }
-.newput_main .plotgd_live .seek_home .seek_form .row_item .placeholder {
+.plotgd_live .seek_home .seek_form .row_item .placeholder {
   height: 16px;
   line-height: 20px;
   padding: 7px 10px;
@@ -1601,7 +1612,7 @@ img {
   color: #999;
   z-index: 2;
 }
-.newput_main .plotgd_live .seek_home .seek_form .row_item i {
+.plotgd_live .seek_home .seek_form .row_item i {
   display: block;
   position: absolute;
   width: 8px;
@@ -1611,7 +1622,7 @@ img {
   background: url("../images/newly_icon.png") no-repeat -76px -487px;
   z-index: 3;
 }
-.newput_main .plotgd_live .seek_home .seet_submit {
+.plotgd_live .seek_home .seet_submit {
   display: block;
   width: 66px;
   height: 66px;
@@ -1625,27 +1636,27 @@ img {
   top: 83px;
   right: 17px;
 }
-.newput_main .plotgd_live .seek_home .seet_submit:hover {
+.plotgd_live .seek_home .seet_submit:hover {
   background: #ea5000;
 }
-.newput_main .technology_safeguard .shigong_gongyi {
+.technology_safeguard .shigong_gongyi {
   float: left;
   width: 560px;
 }
-.newput_main .technology_safeguard .shigong_gongyi ul {
+.technology_safeguard .shigong_gongyi ul {
   margin: -20px 0 0 -20px;
 }
-.newput_main .technology_safeguard .shigong_gongyi ul li {
+.technology_safeguard .shigong_gongyi ul li {
   float: left;
   width: 173px;
   margin: 20px 0 0 20px;
 }
-.newput_main .technology_safeguard .shigong_gongyi ul li a {
+.technology_safeguard .shigong_gongyi ul li a {
   display: block;
   height: 204px;
   position: relative;
 }
-.newput_main .technology_safeguard .shigong_gongyi ul li a p {
+.technology_safeguard .shigong_gongyi ul li a p {
   width: 153px;
   height: 35px;
   line-height: 35px;
@@ -1657,83 +1668,83 @@ img {
   bottom: 0;
   left: 0;
 }
-.newput_main .technology_safeguard .shigong_gongyi ul li img {
+.technology_safeguard .shigong_gongyi ul li img {
   width: 173px;
   height: 204px;
 }
-.newput_main .technology_safeguard .qijia_baozhang {
+.technology_safeguard .qijia_baozhang {
   float: left;
   width: 610px;
   margin-left: 20px;
 }
-.newput_main .technology_safeguard .safeguard_cont ul {
+.technology_safeguard .safeguard_cont ul {
   margin-left: -20px;
   margin-bottom: 20px;
 }
-.newput_main .technology_safeguard .safeguard_cont ul li {
+.technology_safeguard .safeguard_cont ul li {
   float: left;
   width: 106px;
   height: 106px;
   background: #ab9a7d;
   margin-left: 20px;
 }
-.newput_main .technology_safeguard .safeguard_cont ul li a {
+.technology_safeguard .safeguard_cont ul li a {
   display: block;
   height: 88px;
   padding-top: 18px;
 }
-.newput_main .technology_safeguard .safeguard_cont ul li span {
+.technology_safeguard .safeguard_cont ul li span {
   display: block;
   width: 50px;
   height: 42px;
   margin: 0 auto 10px;
   background: url("../images/putin_icon.png") no-repeat;
 }
-.newput_main .technology_safeguard .safeguard_cont ul li .fw_01 {
+.technology_safeguard .safeguard_cont ul li .fw_01 {
   background-position: 0 -217px;
 }
-.newput_main .technology_safeguard .safeguard_cont ul li .fw_02 {
+.technology_safeguard .safeguard_cont ul li .fw_02 {
   background-position: 0 -270px;
 }
-.newput_main .technology_safeguard .safeguard_cont ul li .fw_03 {
+.technology_safeguard .safeguard_cont ul li .fw_03 {
   background-position: 0 -322px;
 }
-.newput_main .technology_safeguard .safeguard_cont ul li .fw_04 {
+.technology_safeguard .safeguard_cont ul li .fw_04 {
   background-position: 0 -376px;
 }
-.newput_main .technology_safeguard .safeguard_cont ul li .fw_05 {
+.technology_safeguard .safeguard_cont ul li .fw_05 {
   background-position: 0 -431px;
 }
-.newput_main .technology_safeguard .safeguard_cont ul li p {
+.technology_safeguard .safeguard_cont ul li p {
   font-size: 14px;
   color: #fff;
   text-align: center;
 }
-.newput_main .technology_safeguard .terrace_referral {
+.technology_safeguard .terrace_referral {
   padding: 15px;
   margin-top: 2px;
 }
-.newput_main .technology_safeguard .terrace_referral h3 {
+.technology_safeguard .terrace_referral h3 {
   color: #514a43;
   font-size: 20px;
   padding-bottom: 6px;
 }
-.newput_main .technology_safeguard .terrace_referral h3 img {
+.technology_safeguard .terrace_referral h3 img {
   margin-left: 20px;
   vertical-align: middle;
 }
-.newput_main .technology_safeguard .terrace_referral p {
+.technology_safeguard .terrace_referral p {
   color: #666;
   font-size: 14px;
   line-height: 24px;
 }
-.newput_main .technology_safeguard .jiabg {
+.technology_safeguard .jiabg {
   background: url("../images/jiabg.jpg") no-repeat right bottom #f9f7f5;
 }
-.newput_main .technology_safeguard .shield {
+.technology_safeguard .shield {
   background: url("../images/shield.jpg") no-repeat right bottom #f9f7f5;
 }
-.newput_main .technology_safeguard .change_item .tab_select_v2 {
+.technology_safeguard .change_item .tab_select_v2 {
   width: 350px;
   font-size: 12px;
   position: absolute;
@@ -1744,7 +1755,7 @@ img {
   line-height: 22px;
   z-index: 10;
 }
-.newput_main .technology_safeguard .change_item .menu_li .get_code {
+.technology_safeguard .change_item .menu_li .get_code {
   display: block;
   height: 40px;
   line-height: 40px;
@@ -1753,10 +1764,10 @@ img {
   right: 10px;
   top: 0;
 }
-.newput_main .technology_safeguard .change_item .menu_li .JJ_getCode {
+.technology_safeguard .change_item .menu_li .JJ_getCode {
   color: #999;
 }
-.newput_main .technology_safeguard .change_item .menu_li .Turing_number {
+.technology_safeguard .change_item .menu_li .Turing_number {
   width: 150px;
   height: 28px;
   position: absolute;
@@ -1764,31 +1775,29 @@ img {
   top: 8px;
   z-index: 4;
 }
-.newput_main .technology_safeguard .change_item .menu_li .Turing_number span {
+.technology_safeguard .change_item .menu_li .Turing_number span {
   display: inline-block;
   width: 18px;
   height: 15px;
-  background: url("../images/correct.png") no-repeat;
 }
-.newput_main .technology_safeguard .change_item .menu_li .Turing_number img {
+.technology_safeguard .change_item .menu_li .Turing_number img {
   vertical-align: top;
   *vertical-align: middle;
 }
-.newput_main .technology_safeguard .change_item .menu_li .Turing_number a {
+.technology_safeguard .change_item .menu_li .Turing_number a {
   color: #007fd7;
   line-height: 28px;
 }
-.newput_main .technology_safeguard .change_item .verify_tips {
+.technology_safeguard .change_item .verify_tips {
   font-size: 12px;
   color: #f26122;
   line-height: 14px;
   margin-top: 10px;
 }
-.newput_main .technology_safeguard .change_item .verify_tips i {
+.technology_safeguard .change_item .verify_tips i {
   display: inline-block;
   width: 15px;
   height: 15px;
-  background: url('../images/my_finish/my_zx.png') no-repeat -110px 0;
   vertical-align: middle;
   margin-right: 5px;
 }
@@ -1803,6 +1812,22 @@ img {
 #jia_footer .jia_foot_info p {
   line-height: 24px;
   color: #aaa;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  width: 8px;
+  height: 15px;
+  background: url("../images/putin_icon.png") no-repeat;
+}
+.swiper-button-prev {
+  background-position: -16px -542px;
+  top: 95%;
+  left: 47%;
+}
+.swiper-button-next {
+  background-position: -37px -526px;
+  top: 95%;
+  right: 47%;
 }
 /*城市选择*/
 .tab_select_v2 {
@@ -1963,7 +1988,6 @@ img {
   display: inline-block;
   width: 15px;
   height: 15px;
-  background: url('../images/my_zx.png') no-repeat -110px 0;
   vertical-align: middle;
   margin-right: 5px;
 }
@@ -1977,7 +2001,17 @@ img {
   color: #fff;
   margin-top: 36px;
 }
+.toufang_kf {
+  height: 80px;
+  margin-top: -40px;
+  position: fixed;
+  right: 18px;
+  top: 30%;
+  width: 80px;
+  z-index: 1000;
+}
 .J_returnTop {
+  display: block;
   width: 50px;
   height: 50px;
   background: url("../images/JiaMarry_gotoTop.png") no-repeat -97px 0;
@@ -2014,7 +2048,7 @@ img {
   position: absolute;
   right: 0;
   top: 4px;
-  background: url("http://fastued3.jia.com/image/zhuangxiu/new_finish/order_ico.png") no-repeat;
+  background: url("../images/order_ico.png") no-repeat;
 }
 .contr_center .add_img {
   width: 1190px;
@@ -2147,7 +2181,7 @@ img {
 }
 .slide_show {
   display: block;
-  background: url("http://fastued3.jia.com/image/zixun/stage3/zxbj_icon.png") no-repeat 0 0;
+  background: url("../images/zxbj_icon.png") no-repeat 0 0;
   bottom: 0px;
   cursor: pointer;
   height: 140px;

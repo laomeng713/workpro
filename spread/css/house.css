@@ -6,13 +6,40 @@ h5,
 h6 {
   font-weight: normal;
 }
+body {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 640px;
+  height: 100%;
+  color: #666;
+}
 img {
   max-width: 100%;
+}
+input[type='text'],
+input[type='tel'],
+input[type='number'],
+input[type='button'] {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  display: block;
+  width: 100%;
+  height: 3.5rem;
+  padding: 0rem 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: 0;
+  -webkit-appearance: none;
+  color: #666666;
 }
 .house_main {
   padding-top: 2rem;
 }
-.house_home {
+.house_home,
+.house_huxing,
+.house_remould,
+.house_style,
+.house_area {
   padding: 0 1.2rem;
 }
 .house_page_head {
@@ -49,11 +76,11 @@ img {
   text-align: center;
 }
 .house_page_li .house_page_icon {
-  width: 0.26rem;
-  height: 0.26rem;
+  width: 2.5rem;
+  height: 2.5rem;
   position: absolute;
-  bottom: 45px;
-  right: 0.17rem;
+  right: 1.5rem;
+  bottom: 3.5rem;
 }
 .house_page_li .house_page_icon.checked {
   display: none;
@@ -61,9 +88,95 @@ img {
 .house_page_li .house_page_icon.unchecked {
   display: block;
 }
-.house_page_li:nth-child(odd) {
-  float: left;
+.house_page_li span {
+  padding-top: 0.6rem;
+  display: block;
+  font-size: 1.6rem;
+  color: #666666;
 }
-.house_page_li:nth-child(even) {
-  float: right;
+.house_huxing .house_page_li,
+.house_area .house_page_li {
+  box-sizing: border-box;
+  float: left;
+  width: 33.3%;
+  padding: 0.5rem 0.8rem;
+}
+.house_remould .house_page_li {
+  width: 43%;
+  height: 16rem;
+  padding: 0 0.8rem;
+}
+.house_remould .house_page_li .page_imgleft {
+  margin-top: 6.5rem;
+}
+.house_page_error {
+  display: none;
+  font-size: 14px;
+  color: #ff7a7a;
+}
+.arrow {
+  position: relative;
+}
+.arrow:before,
+.arrow:after {
+  position: absolute;
+  top: 1rem;
+  display: block;
+  width: 0;
+  height: 0;
+  content: '';
+}
+.arrow:after {
+  right: 1px;
+  border: 10px solid transparent;
+  border-left: 10px solid #ccc;
+}
+.arrow:before {
+  right: 3px;
+  border: 10px solid transparent;
+  border-left: 10px solid #fff;
+  z-index: 99;
+}
+.house_page_input {
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 0.4rem;
+}
+.house_page_input .page_squar {
+  position: absolute;
+  color: #666;
+  top: 1rem;
+  right: 1rem;
+}
+.house_page_btn {
+  padding-top: 3rem;
+  text-align: center;
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  justify-content: center;
+}
+.house_page_btn_sub {
+  display: block;
+  padding: 0.7rem 2.5rem;
+  border-radius: 2rem;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #fff;
+  margin: 0 1.2rem;
+}
+.page_prev {
+  background-color: #dbdbdb;
+}
+.page_next {
+  background-color: #3bbe81;
+}
+.house_page_footer {
+  margin-top: 1.2rem;
+}
+.footer_text {
+  text-align: center;
+  color: #ccc;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
 }

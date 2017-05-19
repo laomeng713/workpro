@@ -175,7 +175,7 @@ img {
   }
   .myorder, .seller_center, .mini_cart, .help_center, .mall_tel {
     position: relative;
-    //background: url(../images/separator.png) no-repeat 0 55%;
+    background: url(../images/separator.png) no-repeat 0 55%;
   }
   .tn_menu {
     margin-left: 12px;
@@ -206,7 +206,7 @@ img {
   }
   .myorder {
     b {
-      //background: url("../images/top_nav_icos.png") 0 -30px no-repeat;
+      background: url("../images/top_nav_icos.png") 0 -30px no-repeat;
       width: 7px;
       height: 4px;
       border: none;
@@ -219,7 +219,7 @@ img {
   .mall_tel {
     strong {
       margin-left: 20px;
-      //background: url("../images/top_nav_icos.png") 0 -45px no-repeat;
+      background: url("../images/top_nav_icos.png") 0 -45px no-repeat;
       color: #dd0000;
       font-weight: bold;
       padding-left: 15px
@@ -241,9 +241,11 @@ img {
     z-index: 10000;
     height: 75px;
     .jia_logo {
+      width: 250px;
+      height: 90%;
       position: absolute;
       left: 0;
-      top: -14px;
+      top: -22px;
     }
     .outWrap {
       width: 850px;
@@ -282,7 +284,7 @@ img {
             i {
               width: 6px;
               height: 3px;
-              //background: url(../images/searchbackground.png) -106px -3px no-repeat;
+              background: url(../images/searchbackground.png) -106px -3px no-repeat;
               position: absolute;
               top: 8px;
               right: 7px;
@@ -299,7 +301,7 @@ img {
             position: absolute;
             width: 10px;
             height: 10px;
-            //background: url(../images/searchbackground.png) -75px top no-repeat;
+            background: url(../images/searchbackground.png) -75px top no-repeat;
             left: 4px;
             top: 11px;
           }
@@ -318,12 +320,12 @@ img {
           .searchBtn {
             width: 94px;
             height: 32px;
-            //background: url(../images/searchbackground.png) left bottom no-repeat;
+            background: url(../images/searchbackground.png) left bottom no-repeat;
             cursor: pointer;
             position: absolute;
             right: 0;
             top: 0;
-            _border: none;
+            border: none;
           }
         }
       }
@@ -350,7 +352,7 @@ img {
               top: 12px;
               width: 16px;
               height: 16px;
-              //background: url(../images/searchbackground.png) -94px -56px no-repeat;
+              background: url(../images/searchbackground.png) -94px -56px no-repeat;
               vertical-align: middle;
             }
             a {
@@ -403,10 +405,35 @@ img {
             position: absolute;
             width: 7px;
             height: 5px;
-            //background: url(../images/searchbackground.png) -91px top no-repeat;
+            background: url(../images/searchbackground.png) -91px top no-repeat;
             top: 18px;
             right: 11px;
             overflow: hidden;
+          }
+          .num_jcy{
+            height: 15px;
+            line-height: 15px;
+            padding-left: 7px;
+            background: url(../images/searchbackground.png) -116px top no-repeat;
+            color: #fff;
+            position: absolute;
+            left: 66px;
+            top: -2px;
+            b{
+              display: inline-block;
+              padding-right: 7px;
+              height: 15px;
+              line-height: 15px;
+              background: url(../images/searchbackground.png) right -15px no-repeat;
+            }
+            strong{
+              width: 4px;
+              height: 3px;
+              position: absolute;
+              background: url(../images/searchbackground.png) -116px -30px no-repeat;
+              left: 6px;
+              top: 15px;
+            }
           }
         }
         .cartshow {
@@ -440,6 +467,7 @@ img {
     position: relative;
     white-space: nowrap;
     width: 1190px;
+    font-size: 14px;
     li {
       height: 33px;
       line-height: 33px;
@@ -466,7 +494,7 @@ img {
         position: absolute;
         width: 8px;
         height: 4px;
-        //background: url(../images/nav_background.png) left -18px no-repeat;
+        background: url(../images/nav_background.png) left -18px no-repeat;
         top: 15px;
         right: 8px;
         overflow: hidden;
@@ -568,7 +596,7 @@ img {
                 display: block;
                 width: 8px;
                 height: 5px;
-                //background: url("../images/putin_icon.png") no-repeat 0 -531px;
+                background: url("../images/putin_icon.png") no-repeat 0 -531px;
                 position: absolute;
                 right: 10px;
                 top: 18px;
@@ -800,7 +828,7 @@ img {
         display: block;
         width: 39px;
         height: 39px;
-        //background: url("../images/putin_icon.png") no-repeat 0 -483px;
+        background: url("../images/putin_icon.png") no-repeat 0 -483px;
         margin: 0 auto 20px;
       }
       span {
@@ -1155,24 +1183,21 @@ img {
       }
     }
     .company_list {
-      padding: 40px 0 55px;
+      padding: 40px 5px 55px;
       overflow: hidden;
       border: 1px solid #ddd;
       position: relative;
       li {
-        float: left;
-        padding: 0 20px;
+        //padding: 0 20px;
         position: relative;
+        text-align: center;
         > a {
-          float: left;
           img {
             width: 100px;
             height: 100px;
           }
         }
         .message_r {
-          float: left;
-          width: 87px;
           height: 100px;
           padding-left: 10px;
           a {
@@ -1201,31 +1226,13 @@ img {
           top: 15px;
         }
       }
-      .flex-direction-nav {
-        width: 40px;
-        position: absolute;
-        bottom: 12px;
-        left: 570px;
-        li {
-          padding: 0 6px;
-        }
-        a {
-          display: block;
-          width: 8px;
-          height: 15px;
-          background: url("../images/putin_icon.png") no-repeat;
-          text-indent: -9999em;
-        }
-        a.flex-prev {
-          background-position: -16px -542px;
-        }
-        a.flex-disabled {
+
+
+        a.flex-prev.flex-disabled {
           background-position: -16px -526px;
         }
-        a.flex-next {
-          background-position: -37px -526px;
-        }
-        a.flex-disabled {
+
+        a.flex-next.flex-disabled{
           background-position: -37px -542px;
         }
       }
@@ -1811,7 +1818,7 @@ img {
             display: inline-block;
             width: 18px;
             height: 15px;
-            background: url("../images/correct.png") no-repeat;
+            //background: url("../images/correct.png") no-repeat;
           }
           img {
             vertical-align: top;
@@ -1832,7 +1839,7 @@ img {
           display: inline-block;
           width: 15px;
           height: 15px;
-          background: url('../images/my_finish/my_zx.png') no-repeat -110px 0;
+          //background: url('../images/my_finish/my_zx.png') no-repeat -110px 0;
           vertical-align: middle;
           margin-right: 5px;
         }
@@ -1840,7 +1847,6 @@ img {
     }
 
   }
-}
 
 //footer
 #jia_footer {
@@ -1856,7 +1862,21 @@ img {
 
   }
 }
-
+.swiper-button-prev,.swiper-button-next{
+  width: 8px;
+  height: 15px;
+  background: url("../images/putin_icon.png") no-repeat;
+}
+.swiper-button-prev{
+  background-position: -16px -542px;
+  top: 95%;
+  left: 47%;
+}
+.swiper-button-next{
+  background-position: -37px -526px;
+  top: 95%;
+  right: 47%;
+}
 /*城市选择*/
 .tab_select_v2 {
     width: 350px;
@@ -2020,7 +2040,7 @@ img {
         display: inline-block;
         width: 15px;
         height: 15px;
-        background: url('../images/my_zx.png') no-repeat -110px 0;
+        //background: url('../images/my_zx.png') no-repeat -110px 0;
         vertical-align: middle;
         margin-right: 5px;
       }
@@ -2040,7 +2060,17 @@ img {
 }
 
 //返回顶部
+.toufang_kf{
+  height: 80px;
+  margin-top: -40px;
+  position: fixed;
+  right: 18px;
+  top: 30%;
+  width: 80px;
+  z-index: 1000;
+}
 .J_returnTop{
+  display: block;
   width: 50px;
   height: 50px;
   background: url("../images/JiaMarry_gotoTop.png") no-repeat -97px 0;
@@ -2079,7 +2109,7 @@ img {
     position: absolute;
     right: 0;
     top: 4px;
-    background: url("http://fastued3.jia.com/image/zhuangxiu/new_finish/order_ico.png") no-repeat;
+    background: url("../images/order_ico.png") no-repeat;
   }
   .add_img{
     width: 1190px;
@@ -2217,7 +2247,7 @@ img {
 }
 .slide_show{
   display: block;
-  background: url("http://fastued3.jia.com/image/zixun/stage3/zxbj_icon.png") no-repeat 0 0;
+  background: url("../images/zxbj_icon.png") no-repeat 0 0;
   bottom: 0px;
   cursor: pointer;
   height: 140px;
