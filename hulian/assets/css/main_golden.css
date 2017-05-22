@@ -1243,7 +1243,7 @@ a{color: #666;}
 
 /*step3*/
 .success_info{
-    /*display: none;*/
+    display: none;
     text-align: center;
     margin: 0 auto;
     /*position: relative;*/

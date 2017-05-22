@@ -331,7 +331,7 @@
 
             <p>
                 户型结构：
-                <select>
+                <select class="house_style">
                     <option value="一室">一室</option>
                     <option value="二室">二室</option>
                     <option value="三室">三室</option>
@@ -344,7 +344,7 @@
 
                 </select>
                 装修预算：
-                <select>
+                <select class="house_price">
                     <option value="5万以下">5万以下</option>
                     <option value="5万~10万">5万~10万</option>
                     <option value="10万~20万">10万~20万</option>
@@ -357,7 +357,7 @@
                 回访时间：
                 <input value="9:00-18:00" name="visited_time" type="radio"/> 上班时间(9:00-18:00)
                 <input value="18:00 以后" name="visited_time" type="radio"/> 下班时间(18:00 以后)
-                <input value="anytime" name="visited_time" checked type="radio"/> 随时
+                <input value="随时" name="visited_time" checked type="radio"/> 随时
             </p>
 
             <p class="err_tips">
@@ -452,16 +452,20 @@
             success: function () {
                 console.log('success');
 //                收集所有选中的信息
-                for (var i = 0; i < $(':checked').size(); i++) {
-                    b = ($(':checked')[i].value);
-                    console.log(b);
-                }
+                var companyName=$('input[type=checkbox]:checked').map(function(){
+                    return $(this).val();
+                }).get().join(',');
+                var houseStyle=$('.house_style option:selected').val();
+                var housePrice=$('.house_price option:selected').val();
+                var visitedName=$('input[name=visited_time]:checked').val();
+                console.log('装修公司：'+companyName+';'+'户型结构:'+houseStyle+';'+'装修预算:'+housePrice+';'+'回访时间：'+visitedName);
 
             },
-            error: function () {
-                console.log('error');
 
+            error: function() {
+                console.log('error');
             }
+
         })
     }
 </script>
