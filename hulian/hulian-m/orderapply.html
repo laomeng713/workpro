@@ -237,8 +237,11 @@
     </p>
     <div class="casetit">
         <div class="case_title">
-            <span class="case_left">SHOW&nbsp;&nbsp;&amp;</span>
-            <span class="case_right">你可能会喜欢</span>
+            <a href="">
+                <span class="case_left">SHOW</span>
+                <span class="case_right">你可能会喜欢</span>
+                <span class="case_more">更多</span>
+            </a>
         </div>
     </div>
     <div class="biaoda">
@@ -378,6 +381,8 @@
 <script src="../assets/js/jquery-ui.min.js"></script>
 <script>
     $('#date_time').datepicker();
+    var currentDate = $( "#date_time" ).datepicker( "getDate" );
+    $( "#date_time" ).datepicker( "option", "dateFormat", "yy-mm-dd" );
 </script>
 </body>
 </html>

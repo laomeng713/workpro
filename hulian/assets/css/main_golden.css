@@ -330,20 +330,11 @@ a{color: #666;}
 }
 .swiper-button-prev, .swiper-button-next{
     position: absolute;
-    top: 245px;
+    top: 260px;
     right: 0px;
-    /*width: 43px;*/
-    /*height: 75px;*/
-    /*background: #000 url(../images/iconlist.png) no-repeat;*/
-    /*z-index: 20;*/
-    /*opacity: 0.3;*/
+
 }
-/*.swiper-button-prev{*/
-    /*background-position: 10px -275px;*/
-/*}*/
-/*.swiper-button-next{*/
-    /*background-position: 10px -335px;*/
-/*}*/
+
 /*广告滚动*/
 /* sobox */
 .sobox {
@@ -1252,9 +1243,10 @@ a{color: #666;}
 
 /*step3*/
 .success_info{
-    display: none;
+    /*display: none;*/
     text-align: center;
     margin: 0 auto;
+    /*position: relative;*/
 
 }
 .success_info .succ_container{
@@ -1283,8 +1275,6 @@ a{color: #666;}
     margin-left: 100px;
     width: 400px;
     text-align: right;
-
-
 }
 .success_info .succ_wechat .wechat_title{
     display: block;
@@ -1386,15 +1376,6 @@ a{color: #666;}
     font-size: 20px;
     margin-top: 20px;
 }
-/*.flow_container li i,.guarantee_container li i{*/
-    /*position: absolute;*/
-    /*top: 80px;*/
-    /*right: -30px;*/
-    /*display: inline-block;*/
-    /*width: 40px;*/
-    /*height: 25px;*/
-    /*background: url("../../assets/images/c606e-5816.png") no-repeat;*/
-/*}*/
 /*立即预约*/
 .appointment_box{
     height: 170px;

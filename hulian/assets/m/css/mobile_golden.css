@@ -824,7 +824,7 @@ ul{ margin:0; padding:0; list-style-type:none}
 }
 /*step1*/
 .order_style{
-    display: none;
+    /*display: none;*/
 }
 .order_title{
     font-size: 25px;
@@ -1009,7 +1009,7 @@ ul{ margin:0; padding:0; list-style-type:none}
 }
 /*step3*/
 .success_info{
-    display: block;
+    display: none;
 
 }
 .success_info .succ_title{

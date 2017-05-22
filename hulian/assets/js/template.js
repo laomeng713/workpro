@@ -1,6 +1,7 @@
 /**
  * Created by Administrator on 2017/4/26.
  */
+
 var mySwiper = new Swiper('.swiper-container1',{
     pagination : '.swiper-pagination',
     autoplay : 5000,
@@ -8,17 +9,19 @@ var mySwiper = new Swiper('.swiper-container1',{
     direction: 'horizontal',
     autoHeight: true
 })
-var mySwiper = new Swiper('.chinacon',{
-//    slidesPerGroup : 4,
+var mySwiper1 = new Swiper('.chinacon',{
+    //slidesPerGroup : 4,
     prevButton:'.swiper-button-prev',
     nextButton:'.swiper-button-next',
     loop : true,
     slidesPerView : 'auto',
     loopedSlides :4,
-    loopAdditionalSlides : 1,
+    loopAdditionalSlides : 1
 //    spaceBetween : 20
 
 })
+$('.success_info').hide();
+
 function phoneCheck($obj){ 
     var $div = $obj.closest("div");
     var uname = "", phone = "",address='',message='',time='';
@@ -72,10 +75,12 @@ function phoneCheck($obj){
         '_csrf': $("#_csrf").val(),
     };
     $.ajax({
+        async:false,
         type: 'POST',
         data: $data,
         url: window.signupUrl,// + '/jz-signup.html',
         dataType: "json",
+
         success:function(data){
             if(data.status != 200){
                 $('.err_tips').text(data.message);
@@ -83,17 +88,22 @@ function phoneCheck($obj){
             } else {
             console.log('success');
                 $('.err_tips').hide();
-            $('.order_form').hide();
-            $('.success_info').show();
-            $('.step_detail span').removeClass('active');
-            $('.step_detail span').eq(2).addClass('active');
+                $('.order_form').hide();
+                $('.success_info').fadeIn();
+                $('.step_detail span').removeClass('active');
+                $('.step_detail span').eq(2).addClass('active');
             }
         },
         error:function(){
             console.log('error');
+            $('.order_form').hide();
+            $('.success_info').show();
+
+
         }
     })
 }
+
 $(window).bind('scroll',autoScroll);
 $(window).bind('scroll',slide_help);
 $(window).bind('scroll',fixedNav);
