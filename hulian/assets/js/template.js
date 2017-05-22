@@ -24,7 +24,7 @@ $('.success_info').hide();
 
 function phoneCheck($obj){ 
     var $div = $obj.closest("div");
-    var uname = "", phone = "",address='',message='',time='';
+    var uname = "", phone = "",address='',message='',time='', sort='';
     var regPhone = /^1[3578]\d{9}$/;
     uname = $.trim($div.find("input[name='uname']").val());
     sort = $.trim($div.find("input[name='sort']").val());
@@ -88,10 +88,12 @@ function phoneCheck($obj){
             } else {
             console.log('success');
                 $('.err_tips').hide();
-                $('.order_form').hide();
-                $('.success_info').fadeIn();
-                $('.step_detail span').removeClass('active');
-                $('.step_detail span').eq(2).addClass('active');
+            $('.order_form').hide();
+            $('.success_info').show();
+            $('.step_detail span').removeClass('active');
+            $('.step_detail span').eq(2).addClass('active');
+            $('#rInfos').html(data.rInfos);
+
             }
         },
         error:function(){
