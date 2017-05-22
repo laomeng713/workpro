@@ -126,6 +126,8 @@ function errCheck($obj){
             console.log('success');
             $('.order_form').hide();
             $('.success_info').show();
+
+            $('#rInfos').html(data.rInfos);
 			}
         },
         error:function(){
