@@ -35,6 +35,12 @@ input[type='button'] {
 .house_main {
   padding-top: 2rem;
 }
+.house_huxing,
+.house_remould,
+.house_style,
+.house_area {
+  display: none;
+}
 .house_home,
 .house_huxing,
 .house_remould,
@@ -64,6 +70,11 @@ input[type='button'] {
   margin: 1.2rem 0;
   font-size: 1.6rem;
   color: #666666;
+}
+.house_page_tip_sub {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #aaaaaa;
 }
 .house_page_select {
   padding-top: 1rem;

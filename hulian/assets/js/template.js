@@ -143,9 +143,7 @@ $('.order_style li').click(function () {
     $('.order_style').hide();
     $('.order_form').show();
     $('.step_detail span').removeClass('active').eq(1).addClass('active');
-    $('.order_form .order_price').hide();
-    $('.order_form .order_price').eq(index).show();
-
+    $('.order_form .order_price').hide().eq(index).show();
 
 })
 $('.order_price label').click(function () {

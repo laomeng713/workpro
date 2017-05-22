@@ -21,7 +21,7 @@
 <body>
     <section class="house_main">
         <!--选择新房/老房-->
-        <div class="house_home">
+        <div class="house_home house_page_radio">
             <div class="house_page_head">
                 <img src="images/zxbj_top1.jpg" alt=""/>
                 <h4 class="house_page_head_title">
@@ -63,7 +63,7 @@
             </div>
         </div>
         <!--新房选择户型-->
-        <div class="house_huxing">
+        <div class="house_huxing house_page_radio">
             <div class="house_page_head">
                 <img src="images/zxbj_top1.jpg" alt=""/>
                 <h4 class="house_page_head_title">
@@ -143,7 +143,7 @@
             </div>
         </div>
         <!--老房选择改造类型-->
-        <div class="house_remould">
+        <div class="house_remould house_page_radio">
             <div class="house_page_head">
                 <img src="images/zxbj_top1.jpg" alt=""/>
                 <h4 class="house_page_head_title">
@@ -188,7 +188,7 @@
             </div>
         </div>
         <!--选择装修风格-->
-        <div class="house_style">
+        <div class="house_style house_page_radio">
             <div class="house_page_head">
                 <img src="images/zxbj_top1.jpg" alt=""/>
                 <h4 class="house_page_head_title">
@@ -231,44 +231,47 @@
             </div>
         </div>
         <!--选择改造区域-->
-        <div class="house_area">
+        <div class="house_area house_page_checkbox">
             <div class="house_page_head">
                 <img src="images/zxbj_top1.jpg" alt=""/>
                 <h4 class="house_page_head_title">
                     免费获取装修报价
                 </h4>
             </div>
-            <h5 class="house_page_tip">选择改造区域 3/3</h5>
+            <h5 class="house_page_tip">
+                选择改造区域 3/3
+                <div class="house_page_tip_sub">(可多选)</div>
+            </h5>
             <ul class="house_page_select clearfix">
                 <li class="house_page_li lf">
                     <img  src="images/area1.jpg" alt=""/>
                     <img class="house_page_icon checked" src="images/check2.png" alt=""/>
                     <img class="house_page_icon unchecked" src="images/no_check2.png" alt=""/>
-                    <span>简约装修</span>
+                    <span>客厅</span>
                 </li>
                 <li class="house_page_li lf">
                     <img src="images/area2.jpg" alt=""/>
                     <img class="house_page_icon checked" src="images/check2.png" alt=""/>
                     <img class="house_page_icon unchecked" src="images/no_check2.png" alt=""/>
-                    <span>精致装修</span>
+                    <span>卧室</span>
                 </li>
                 <li class="house_page_li lf">
                     <img  src="images/area3.jpg" alt=""/>
                     <img class="house_page_icon checked" src="images/check2.png" alt=""/>
                     <img class="house_page_icon unchecked" src="images/no_check2.png" alt=""/>
-                    <span>简约装修</span>
+                    <span>厨房</span>
                 </li>
                 <li class="house_page_li lf">
                     <img src="images/area4.jpg" alt=""/>
                     <img class="house_page_icon checked" src="images/check2.png" alt=""/>
                     <img class="house_page_icon unchecked" src="images/no_check2.png" alt=""/>
-                    <span>精致装修</span>
+                    <span>卫生间</span>
                 </li>
                 <li class="house_page_li lf">
                     <img  src="images/area5.jpg" alt=""/>
                     <img class="house_page_icon checked" src="images/check2.png" alt=""/>
                     <img class="house_page_icon unchecked" src="images/no_check2.png" alt=""/>
-                    <span>简约装修</span>
+                    <span>阳台</span>
                 </li>
 
 
@@ -293,6 +296,7 @@
             </div>
         </div>
     </section>
-
 </body>
+<script src="../common/js/jquery-1.11.3.min.js"></script>
+<script src="js/house.js"></script>
 </html>
