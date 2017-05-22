@@ -72,6 +72,7 @@ function errCheck($obj){
     var uname = "", phone = "",address='',message='';
     var regPhone = /^1[3578]\d{9}$/;
     uname = $.trim($div.find("input[name='uname']").val());
+    sort = $.trim($div.find("input[name='sort']").val());
     phone = $.trim($div.find("input[name='phone']").val());
     address = $.trim($div.find("input[name='address']").val());
     message = $div.find("[name='message']").val();
@@ -102,13 +103,30 @@ function errCheck($obj){
     }else{
         $div.find(".err_tips").text("");
     }
+
+    var $data = {
+        'name': uname,
+        'city_code': 'beijing',
+        'sort': sort,
+        'mobile': phone,
+        'address': address,
+        'content': message,
+        '_csrf': $("#_csrf").val(),
+    };
     $.ajax({
-        type:'post',
-        success:function(){
+        type: 'POST',
+        data: $data,
+        url: window.signupUrl,// + '/jz-signup.html',
+        dataType: "json",
+        success:function(data){
+            if(data.status != 200){
+                $('.err_tips').text(data.message);
+                $('.err_tips').show();
+            } else {
             console.log('success');
             $('.order_form').hide();
             $('.success_info').show();
-
+			}
         },
         error:function(){
             console.log('error');
@@ -124,10 +142,3 @@ $('.mpage_option ul li').click(function(){
     $('.mpage_option span').text($(this).text());
     $(this).parents('ul').fadeOut();
 })
-
-
-
-
-
-
-
