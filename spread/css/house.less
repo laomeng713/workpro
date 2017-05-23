@@ -96,6 +96,12 @@ input[type='text'], input[type='tel'], input[type='number'], input[type='button'
     color: #666666;
   }
 }
+.house_page_li.active .house_page_icon.checked{
+  display: block;
+}
+.house_page_li.active .house_page_icon.unchecked{
+  display: none;
+}
 .house_huxing .house_page_li,.house_area .house_page_li{
   box-sizing: border-box;
   float: left;
@@ -181,4 +187,7 @@ input[type='text'], input[type='tel'], input[type='number'], input[type='button'
   color: #ccc;
   font-size: 1.2rem;
   margin: 0.5rem 0;
+}
+.house_page_form{
+  visibility: hidden;
 }

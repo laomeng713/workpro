@@ -26,7 +26,7 @@ input::-webkit-input-placeholder{
     }
     span{
       display: block;
-      color:#DF0303 ;
+      color:#E12F32 ;
       font-size: 2.3rem;
       font-weight: 500;
     }
@@ -266,14 +266,14 @@ input::-webkit-input-placeholder{
 }
 
 .quote_list .quote_form .quote_err {
-  color: #DD0000;
+  color: #E12F32;
 }
 
 .quote_list .quote_form .quote_submit {
   border: none;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: #fff;
-  background-color: #DF0303;
+  background-color: #E12F32;
   border-radius: 0.4rem;
   -webkit-appearance: none;
   margin-top: 1.3rem;
@@ -395,7 +395,7 @@ input::-webkit-input-placeholder{
   right:auto;
   height:1px;
   width:100%;
-  background-color:#EA5504;
+  background-color:#E12F32;
   display:block;
   z-index:-1
 }
@@ -408,7 +408,7 @@ input::-webkit-input-placeholder{
   top:auto;
   height:1px;
   width:100%;
-  background-color:#EA5504;
+  background-color:#E12F32;
   display:block;
   z-index:-1
 }
@@ -425,7 +425,7 @@ input::-webkit-input-placeholder{
   white-space:nowrap;
   font-weight:bold;
   text-transform:upperscse;
-  color:#EA5504;
+  color:#E12F32;
   width:100%;
   font-size:1.375em
 }
@@ -470,7 +470,7 @@ input::-webkit-input-placeholder{
   cursor:pointer
 }
 .cascade_scroll_selects .scs_container .scs_dialog .scs_btns .scs_btn_ok {
-  background-color:#EA5504;
+  background-color:#E12F32;
   color:#fff
 }
 .cascade_scroll_selects .scs_container .scs_dialog .scs_btns .scs_btn_span {
@@ -494,28 +494,34 @@ input::-webkit-input-placeholder{
 }
 //图片列表
 .design_list{
-  padding-bottom: 4.5rem;
+  padding-bottom: 1.5rem;
   img{
     width: 100%;
+  }
+  .design_title{
+    text-align: center;
+    margin: 1.2rem auto;
+    display:block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    height: 3rem;
+    line-height: 3rem;
+    padding: 0.6rem 0rem;
+    border-bottom: 1px solid #CCCCCC;
+    i{
+      font-style: italic;
+      font-size: 2.2rem;
+    }
   }
   //如何避免
   .design_content{
     padding: 0 1.5rem;
-    .design_title{
-      text-align: center;
-      margin: 0 auto;
-      display:block;
-      font-size: 1.8rem;
-      font-weight: bold;
-      height: 3rem;
-      line-height: 3rem;
-      padding: 0.6rem 0rem;
-      border-bottom: 1px solid #CCCCCC;
-    }
     .content_list{
+      padding-bottom: 0.5rem;
       margin-top: 1.2rem;
       display: -webkit-flex; /* Safari */
       display: flex;
+      border-bottom: 1px dashed #CCCCCC;
       img{
         width: 5rem;
         height: 5rem;
@@ -529,18 +535,88 @@ input::-webkit-input-placeholder{
   }
   //对比
   .compare_list{
+    position: relative;
     margin-top: 1.2rem;
     padding: 0 1.5rem;
     display: -webkit-flex; /* Safari */
     display: flex;
     justify-content:space-between;
+    .compare_vs{
+      position: absolute;
+      top: 0rem;
+      left: 42%;
+      color: #ffffff;
+      background-color:#E12F32;
+      font-size: 3rem;
+      width: 5rem;
+      height: 5rem;
+      line-height: 5rem;
+      border-radius: 5rem;
+      text-align: center;
+    }
     ul{
-      width: 35%;
+      width: 43%;
       .content_title{
-        font-size: 1.4rem;
+        text-align: center;
+        color: #E12F32;
+        font-size: 2rem;
         font-weight: bold;
       }
+      .content_text{
+        text-align: center;
+        font-size: 1.4rem;
+        height: 4rem;
+        padding: 0.6rem 0;
+      }
+      .lh4{
+        line-height: 4rem;
+      }
+      .content_company{
+        height: 2rem;
+        line-height: 2rem;
+        color: #ffffff;
+        text-align: center;
+      }
+      .bcred{
+        background-color:#E12F32 ;
+      }
+      .bcgary{
+        background-color:#CCCCCC ;
+      }
+      .content_detail{
+        padding-top: 1.2rem;
+      }
     }
+  }
+}
+//底部咨询
+.fixed_btn{
+  width: 100%;
+  height: 4rem;
+  line-height: 4rem;
+  background: #fff;
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  display: none;
+  li{
+    width: 50%;
+    text-align: center;
+    float: left;
+    a{
+      display: block;
+      font-size: 1.6rem;
+    }
+  }
+  .cr{
+    color: #E12F32;
+  }
+  .cw{
+    color: #ffffff;
+  }
+  .bcred{
+    background-color: #E12F32;
   }
 }
 

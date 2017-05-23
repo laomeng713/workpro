@@ -29,14 +29,14 @@
                 </h4>
             </div>
             <h5 class="house_page_tip">选择房屋类型与城市 1/3</h5>
-            <ul class="house_page_select clearfix">
-                <li class="house_page_li lf">
+            <ul class="house_page_select clearfix" data-name="xinjiu">
+                <li class="house_page_li lf" data-value="1" data-value2="新房装修">
                     <img src="images/zxbj_01_left.jpg" alt=""/>
                     <img class="house_page_icon checked" src="images/check2.png" alt=""/>
                     <img class="house_page_icon unchecked" src="images/no_check2.png" alt=""/>
                     <span>新房装修</span>
                 </li>
-                <li class="house_page_li rt">
+                <li class="house_page_li rt" data-value="2" data-value2="旧房翻新">
                     <img src="images/zxbj_01_right.jpg" alt=""/>
                     <img class="house_page_icon checked" src="images/check2.png" alt=""/>
                     <img class="house_page_icon unchecked" src="images/no_check2.png" alt=""/>
@@ -70,51 +70,51 @@
                     免费获取装修报价
                 </h4>
             </div>
-            <h5 class="house_page_tip">选择房屋类型与城市 2/3</h5>
-            <ul class="house_page_select clearfix">
-                <li class="house_page_li">
+            <h5 class="house_page_tip">选择房屋与面积 2/3</h5>
+            <ul class="house_page_select clearfix" data-name="shi-ting">
+                <li class="house_page_li" data-value="1-1">
                     <img src="images/zxbj_02_11.jpg" alt=""/>
                     <img class="house_page_icon checked" src="images/check2.png" alt=""/>
                     <img class="house_page_icon unchecked" src="images/no_check2.png" alt=""/>
                     <span>一室一厅</span>
                 </li>
-                <li class="house_page_li">
+                <li class="house_page_li" data-value="1-2">
                     <img src="images/zxbj_02_12.jpg" alt=""/>
                     <img class="house_page_icon checked" src="images/check2.png" alt=""/>
                     <img class="house_page_icon unchecked" src="images/no_check2.png" alt=""/>
                     <span>一室两厅</span>
                 </li>
-                <li class="house_page_li">
+                <li class="house_page_li" data-value="2-1">
                     <img src="images/zxbj_02_21.jpg" alt=""/>
                     <img class="house_page_icon checked" src="images/check2.png" alt=""/>
                     <img class="house_page_icon unchecked" src="images/no_check2.png" alt=""/>
                     <span>两室一厅</span>
                 </li>
-                <li class="house_page_li">
+                <li class="house_page_li" data-value="2-2">
                     <img src="images/zxbj_02_22.jpg" alt=""/>
                     <img class="house_page_icon checked" src="images/check2.png" alt=""/>
                     <img class="house_page_icon unchecked" src="images/no_check2.png" alt=""/>
                     <span>两室两厅</span>
                 </li>
-                <li class="house_page_li">
+                <li class="house_page_li" data-value="3-1">
                     <img src="images/zxbj_02_31.jpg" alt=""/>
                     <img class="house_page_icon checked" src="images/check2.png" alt=""/>
                     <img class="house_page_icon unchecked" src="images/no_check2.png" alt=""/>
                     <span>三室一厅</span>
                 </li>
-                <li class="house_page_li">
+                <li class="house_page_li" data-value="3-2">
                     <img src="images/zxbj_02_32.jpg" alt=""/>
                     <img class="house_page_icon checked" src="images/check2.png" alt=""/>
                     <img class="house_page_icon unchecked" src="images/no_check2.png" alt=""/>
                     <span>三室两厅</span>
                 </li>
-                <li class="house_page_li">
+                <li class="house_page_li" data-value="4-1">
                     <img src="images/zxbj_02_41.jpg" alt=""/>
                     <img class="house_page_icon checked" src="images/check2.png" alt=""/>
                     <img class="house_page_icon unchecked" src="images/no_check2.png" alt=""/>
                     <span>四室一厅</span>
                 </li>
-                <li class="house_page_li">
+                <li class="house_page_li" data-value="4-2">
                     <img src="images/zxbj_02_42.jpg" alt=""/>
                     <img class="house_page_icon checked" src="images/check2.png" alt=""/>
                     <img class="house_page_icon unchecked" src="images/no_check2.png" alt=""/>
@@ -125,7 +125,7 @@
                 *你还没有选择户型
             </div>
             <form class="house_page_input">
-                <input type="text" placeholder="输入房屋面积"/>
+                <input name="square" class="house_page_input_meter" type="text" placeholder="输入房屋面积"/>
                 <span class="page_squar">㎡</span>
             </form>
             <div class="house_page_error">
@@ -151,14 +151,14 @@
                 </h4>
             </div>
             <h5 class="house_page_tip">选择户型与面积 2/3</h5>
-            <ul class="house_page_select clearfix">
-                <li class="house_page_li lf">
+            <ul class="house_page_select clearfix" data-name="all-per">
+                <li class="house_page_li lf" data-value="1">
                     <img class="page_imgleft" src="images/zxbj_all.jpg" alt=""/>
                     <img class="house_page_icon checked" src="images/check2.png" alt=""/>
                     <img class="house_page_icon unchecked" src="images/no_check2.png" alt=""/>
                     <span>整体改造</span>
                 </li>
-                <li class="house_page_li rt">
+                <li class="house_page_li rt" data-value="2">
                     <img src="images/zxbj_per.jpg" alt=""/>
                     <img class="house_page_icon checked" src="images/check2.png" alt=""/>
                     <img class="house_page_icon unchecked" src="images/no_check2.png" alt=""/>
@@ -170,7 +170,7 @@
                 *你还没有选择户型
             </div>
             <form class="house_page_input">
-                <input type="text" placeholder="输入房屋面积"/>
+                <input class="house_page_input_meter" type="text" placeholder="输入房屋面积"/>
                 <span class="page_squar">㎡</span>
             </form>
             <div class="house_page_error">
@@ -295,6 +295,18 @@
                 </p>
             </div>
         </div>
+        <form class="house_page_form" id="house_page_form">
+            <input type="hidden" name="xinjiu"/>
+            <input type="hidden" name="shi"/>
+            <input type="hidden" name="ting"/>
+            <input type="hidden" name="chu"/>
+            <input type="hidden" name="wei"/>
+            <input type="hidden" name="yangtai"/>
+            <input type="hidden" name="square"/>
+            <input type="hidden" name="phone"/>
+            <input type="hidden" name="city"/>
+            <input type="hidden" name="modeltype"/>
+        </form>
     </section>
 </body>
 <script src="../common/js/jquery-1.11.3.min.js"></script>

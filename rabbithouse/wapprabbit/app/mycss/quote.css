@@ -24,7 +24,7 @@ input::-webkit-input-placeholder {
 }
 .quote_header .quote_img span {
   display: block;
-  color: #DF0303 ;
+  color: #E12F32 ;
   font-size: 2.3rem;
   font-weight: 500;
 }
@@ -238,13 +238,13 @@ input::-webkit-input-placeholder {
   outline: none;
 }
 .quote_list .quote_form .quote_err {
-  color: #DD0000;
+  color: #E12F32;
 }
 .quote_list .quote_form .quote_submit {
   border: none;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: #fff;
-  background-color: #DF0303;
+  background-color: #E12F32;
   border-radius: 0.4rem;
   -webkit-appearance: none;
   margin-top: 1.3rem;
@@ -361,7 +361,7 @@ input::-webkit-input-placeholder {
   right: auto;
   height: 1px;
   width: 100%;
-  background-color: #EA5504;
+  background-color: #E12F32;
   display: block;
   z-index: -1;
 }
@@ -374,7 +374,7 @@ input::-webkit-input-placeholder {
   top: auto;
   height: 1px;
   width: 100%;
-  background-color: #EA5504;
+  background-color: #E12F32;
   display: block;
   z-index: -1;
 }
@@ -391,7 +391,7 @@ input::-webkit-input-placeholder {
   white-space: nowrap;
   font-weight: bold;
   text-transform: upperscse;
-  color: #EA5504;
+  color: #E12F32;
   width: 100%;
   font-size: 1.375em;
 }
@@ -436,7 +436,7 @@ input::-webkit-input-placeholder {
   cursor: pointer;
 }
 .cascade_scroll_selects .scs_container .scs_dialog .scs_btns .scs_btn_ok {
-  background-color: #EA5504;
+  background-color: #E12F32;
   color: #ffffff;
 }
 .cascade_scroll_selects .scs_container .scs_dialog .scs_btns .scs_btn_span {
@@ -456,17 +456,14 @@ input::-webkit-input-placeholder {
   line-height: 2rem;
 }
 .design_list {
-  padding-bottom: 4.5rem;
+  padding-bottom: 1.5rem;
 }
 .design_list img {
   width: 100%;
 }
-.design_list .design_content {
-  padding: 0 1.5rem;
-}
-.design_list .design_content .design_title {
+.design_list .design_title {
   text-align: center;
-  margin: 0 auto;
+  margin: 1.2rem auto;
   display: block;
   font-size: 1.8rem;
   font-weight: bold;
@@ -475,11 +472,20 @@ input::-webkit-input-placeholder {
   padding: 0.6rem 0rem;
   border-bottom: 1px solid #CCCCCC;
 }
+.design_list .design_title i {
+  font-style: italic;
+  font-size: 2.2rem;
+}
+.design_list .design_content {
+  padding: 0 1.5rem;
+}
 .design_list .design_content .content_list {
+  padding-bottom: 0.5rem;
   margin-top: 1.2rem;
   display: -webkit-flex;
   /* Safari */
   display: flex;
+  border-bottom: 1px dashed #CCCCCC;
 }
 .design_list .design_content .content_list img {
   width: 5rem;
@@ -491,6 +497,7 @@ input::-webkit-input-placeholder {
   font-size: 1.4rem;
 }
 .design_list .compare_list {
+  position: relative;
   margin-top: 1.2rem;
   padding: 0 1.5rem;
   display: -webkit-flex;
@@ -498,10 +505,78 @@ input::-webkit-input-placeholder {
   display: flex;
   justify-content: space-between;
 }
+.design_list .compare_list .compare_vs {
+  position: absolute;
+  top: 0rem;
+  left: 42%;
+  color: #ffffff;
+  background-color: #E12F32;
+  font-size: 3rem;
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  border-radius: 5rem;
+  text-align: center;
+}
 .design_list .compare_list ul {
-  width: 35%;
+  width: 43%;
 }
 .design_list .compare_list ul .content_title {
-  font-size: 1.4rem;
+  text-align: center;
+  color: #E12F32;
+  font-size: 2rem;
   font-weight: bold;
+}
+.design_list .compare_list ul .content_text {
+  text-align: center;
+  font-size: 1.4rem;
+  height: 4rem;
+  padding: 0.6rem 0;
+}
+.design_list .compare_list ul .lh4 {
+  line-height: 4rem;
+}
+.design_list .compare_list ul .content_company {
+  height: 2rem;
+  line-height: 2rem;
+  color: #ffffff;
+  text-align: center;
+}
+.design_list .compare_list ul .bcred {
+  background-color: #E12F32 ;
+}
+.design_list .compare_list ul .bcgary {
+  background-color: #CCCCCC ;
+}
+.design_list .compare_list ul .content_detail {
+  padding-top: 1.2rem;
+}
+.fixed_btn {
+  width: 100%;
+  height: 4rem;
+  line-height: 4rem;
+  background: #fff;
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+.fixed_btn li {
+  width: 50%;
+  text-align: center;
+  float: left;
+}
+.fixed_btn li a {
+  display: block;
+  font-size: 1.6rem;
+}
+.fixed_btn .cr {
+  color: #E12F32;
+}
+.fixed_btn .cw {
+  color: #ffffff;
+}
+.fixed_btn .bcred {
+  background-color: #E12F32;
 }

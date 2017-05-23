@@ -42,21 +42,21 @@
 <div class="design_step clearfix">
     <dl>
         <dt>
-            <img src="http://s1.17house.com/sem_h5/mfsj/images/hxsj_03_.png" alt=""/>
+            <img src="../images/hxsj_03_.png" alt=""/>
         </dt>
         <dd>上门量房</dd>
     </dl>
     <div class="border_off"></div>
     <dl>
         <dt>
-            <img src="http://s1.17house.com/sem_h5/mfsj/images/hxsj_05_.png" alt=""/>
+            <img src="../images/hxsj_05_.png" alt=""/>
         </dt>
         <dd>免费设计</dd>
     </dl>
     <div class="border_off"></div>
     <dl>
         <dt>
-            <img src="http://s1.17house.com/sem_h5/mfsj/images/hxsj_07_.png" alt=""/>
+            <img src="../images/hxsj_07_.png" alt=""/>
         </dt>
         <dd>免费预约</dd>
     </dl>
@@ -97,7 +97,7 @@
 </div>
 <!--询价列表-->
 <section class="quote_list">
-    <form class="quote_form">
+    <form id="quote_form" class="quote_form">
         <!--输入面积-->
         <div>
             <input name="meter" placeholder="请输入您的房屋面积"/>
@@ -143,30 +143,39 @@
         </div>
     </div>
     <!--对比-->
+    <span class="design_title">兔班长 <i>PK</i>  传统装修</span>
     <div class="compare_list">
+        <div class="compare_vs">
+            vs
+        </div>
         <ul>
             <li class="content_title">“利润为王”</li>
-            <li>10%高昂广告费</li>
-            <li>传统家装公司</li>
-            <li>
+            <li class="content_text lh4">10%高昂广告费</li>
+            <li class="content_company bcgary">传统家装公司</li>
+            <li class="content_detail">
                用户口碑=企业生命房屋测量设计、报价方案费用全部让利给用户，用户口碑的提升等于我们的成长
             </li>
         </ul>
         <ul>
             <li class="content_title">“口碑至上”</li>
-            <li>
-                广告费<1%
+            <li class="content_text">
+               <span>广告费<1%</span>
                 <br/>
-                70%来自口碑介绍
+                <span> 70%来自口碑介绍</span>
+
             </li>
-            <li>兔班长装修网</li>
-            <li>
+            <li class="content_company bcred">兔班长装修网</li>
+            <li class="content_detail">
                 用户口碑=企业生命房屋测量设计、报价方案费用全部让利给用户，用户口碑的提升等于我们的成长
             </li>
         </ul>
     </div>
 </div>
-
+<!--底部咨询-->
+<ul class="fixed_btn clearfix">
+    <li><a class="cr" href="tel:4008032163">立即咨询</a></li>
+    <li><a class="cw bcred" href="#quote_form">立即报名</a></li>
+</ul>
 <script src="../../../common/js/jquery-1.11.3.min.js"></script>
 <script src="../app/myjs/mobile_city.js"></script>
 <script src="../app/myjs/CNAddrArr.min.js"></script>
@@ -206,7 +215,15 @@
         })
 
     }
-
+    function fixedNav() {
+        var height = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+        if (height > 100) {
+            $('.fixed_btn').fadeIn();
+        } else {
+            $('.fixed_btn').fadeOut();
+        }
+    }
+    $(window).bind('scroll', fixedNav);
     (function ($) {
         $.fn.easysroll = function (options) {
             var parameter = {
