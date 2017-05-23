@@ -24,16 +24,42 @@
 <header class="quote_header cWhite cDGray clear">
     <div class="lf quote_img">
         <a href="">
-            <img src="http://s1.17house.com/common_h5/images/logo.png" alt=""/>
+            <!--<img src="http://s1.17house.com/common_h5/images/logo.png" alt=""/>-->
+            <span>兔班长装修网</span>
         </a>
     </div>
+    <!--
     <div class="rt quote_title">
         <p>全国一站式装修服务平台 </p>
     </div>
+<!---->
 </header>
 <!--banner-->
 <div class="quote_banner">
     <img src="http://mued3.jia.com/image/mobile/toutiao/ys_banner.jpg" alt=""/>
+</div>
+<!--step-->
+<div class="design_step clearfix">
+    <dl>
+        <dt>
+            <img src="http://s1.17house.com/sem_h5/mfsj/images/hxsj_03_.png" alt=""/>
+        </dt>
+        <dd>上门量房</dd>
+    </dl>
+    <div class="border_off"></div>
+    <dl>
+        <dt>
+            <img src="http://s1.17house.com/sem_h5/mfsj/images/hxsj_05_.png" alt=""/>
+        </dt>
+        <dd>免费设计</dd>
+    </dl>
+    <div class="border_off"></div>
+    <dl>
+        <dt>
+            <img src="http://s1.17house.com/sem_h5/mfsj/images/hxsj_07_.png" alt=""/>
+        </dt>
+        <dd>免费预约</dd>
+    </dl>
 </div>
 <!--滚动视图-->
 <div class="quote_scroll">
@@ -52,12 +78,29 @@
         </li>
     </ul>
 </div>
+<p class="cutoff_rule"></p>
+<!--剩余人数-->
+<div class="design_count">
+    今日仅剩
+        <span class="num">
+            <div class="design_img">
+                <span class="num1 animated infinite pulse">0</span>
+            </div>
+            <div class="design_img">
+                <span class="num2 animated infinite pulse">8</span>
+            </div>
+            <div class="design_img">
+                <span class="num3 animated infinite pulse">7</span>
+            </div>
+        </span>
+    免费名额
+</div>
 <!--询价列表-->
 <section class="quote_list">
     <form class="quote_form">
         <!--输入面积-->
         <div>
-            <input  name="meter" placeholder="请输入您的房屋面积"/>
+            <input name="meter" placeholder="请输入您的房屋面积"/>
         </div>
         <!--输入手机号码-->
         <div>
@@ -69,52 +112,66 @@
             <em class="quote_triangle"></em>
         </div>
         <p class="quote_err"></p>
-        <input onclick="mobileCheck($(this))" class="quote_submit" type="button" value="立即计算"/>
+        <input onclick="mobileCheck($(this))" class="quote_submit" type="button" value="免费报名"/>
     </form>
 </section>
-<section class="calu_result">
-    <p class="resul_title tc f16">
-        装修预算约
-        <span class="cBRed">0</span>
-        万元
-    </p>
-    <ul class="calu_list">
-        <li>
-            <span class="clist">卧室</span>
-            <span class="clist"><strong>0</strong>元</span>
-            <span class="clist">客厅</span>
-            <span class="clist"><strong>0</strong>元</span>
-        </li>
-        <li>
-            <span class="clist">卧室</span>
-            <span class="clist"><strong>0</strong>元</span>
-            <span class="clist">客厅</span>
-            <span class="clist"><strong>0</strong>元</span>
-        </li>
-        <li>
-            <span class="clist">卧室</span>
-            <span class="clist"><strong>0</strong>元</span>
-            <span class="clist">客厅</span>
-            <span class="clist"><strong>0</strong>元</span>
-        </li>
-    </ul>
+<!--友情提示-->
+<div class="mess_tips">
+    <b class="cBRed">我们承诺：</b>
+    <br/>
+    兔班长装修网提供该项<span class="cBRed">免费服务，绝不产生任何费用，</span>为了您的利益以及我们的口碑，您的隐私将被严格保密。
 
-</section>
-<script src="../../../common/js/swiper.min.js"></script>
-<script src="../../../common/js/zepto.min.js"></script>
+</div>
+<!--图片列表-->
+<div class="design_list">
+    <a href="javascript:;">
+        <img src="http://s1.17house.com/sem_h5/mfsj/images/hxsj_12_.png" alt=""/>
+    </a>
+    <div class="design_content">
+        <span class="design_title">如何避免这些装修问题</span>
+        <div class="content_list">
+            <img src="../images/hxsj_13__03.png" alt=""/>
+            <p>提供专业测量仪器，确保测量分毫不差</p>
+        </div>
+        <div class="content_list">
+            <img src="../images/hxsj_13__07.png" alt=""/>
+            <p>设计师现场规划简易方案，倾听客户装修需求</p>
+        </div>
+        <div class="content_list">
+            <img src="../images/hxsj_13__09.png" alt=""/>
+            <p>设计师现场沟通采光及布局方案</p>
+        </div>
+    </div>
+    <!--对比-->
+    <div class="compare_list">
+        <ul>
+            <li class="content_title">“利润为王”</li>
+            <li>10%高昂广告费</li>
+            <li>传统家装公司</li>
+            <li>
+               用户口碑=企业生命房屋测量设计、报价方案费用全部让利给用户，用户口碑的提升等于我们的成长
+            </li>
+        </ul>
+        <ul>
+            <li class="content_title">“口碑至上”</li>
+            <li>
+                广告费<1%
+                <br/>
+                70%来自口碑介绍
+            </li>
+            <li>兔班长装修网</li>
+            <li>
+                用户口碑=企业生命房屋测量设计、报价方案费用全部让利给用户，用户口碑的提升等于我们的成长
+            </li>
+        </ul>
+    </div>
+</div>
+
 <script src="../../../common/js/jquery-1.11.3.min.js"></script>
-<script src="../app/myjs/index.js"></script>
 <script src="../app/myjs/mobile_city.js"></script>
 <script src="../app/myjs/CNAddrArr.min.js"></script>
 <script src="../app/myjs/jquery.scs.min.js"></script>
 <script>
-    var mySwiper = new Swiper('.swiper-container', {
-        scrollContainer: true,
-        mode: 'vertical',
-        pagination : '.swiper-pagination',
-        paginationHide :true
-    })
-
     function mobileCheck($obj) {
         var $form = $obj.closest('form');
         var meter = "", phone = '';
@@ -150,8 +207,8 @@
 
     }
 
-    (function($) {
-        $.fn.easysroll = function(options) {
+    (function ($) {
+        $.fn.easysroll = function (options) {
             var parameter = {
                 direction: "left",
                 numberr: "1",
@@ -201,7 +258,7 @@
                                 "margin-left": -_numberr * itemsW
                             },
                             Number(_delays),
-                            function() {
+                            function () {
                                 for (var i = 0; i < _numberr; i++) {
                                     obj.find("li").eq(0).appendTo(obj);
                                 }
@@ -223,10 +280,11 @@
                                 "margin-left": 0
                             },
                             Number(_delays),
-                            function() {
+                            function () {
                                 for (var i = 0; i < _numberr; i++) {
                                     obj.find("li").eq(itemsleg - 1).prependTo(obj);
-                                };
+                                }
+                                ;
                                 obj.css("margin-left", -_numberr * itemsW);
                                 if (_fadein) {
                                     obj.find("li").eq(0).animate({
@@ -243,7 +301,7 @@
                                 "margin-top": -_numberr * itemsH
                             },
                             Number(_delays),
-                            function() {
+                            function () {
                                 for (var i = 0; i < _numberr; i++) {
                                     obj.find("li").eq(0).appendTo(obj);
                                 }
@@ -265,7 +323,7 @@
                                 "margin-top": 0
                             },
                             Number(_delays),
-                            function() {
+                            function () {
                                 for (var i = 0; i < _numberr; i++) {
                                     obj.find("li").eq(itemsleg - 1).prependTo(obj);
                                 }
@@ -282,12 +340,13 @@
                             });
                 }
             }
-            $this.hover(function() {
+
+            $this.hover(function () {
                         if (_enterStop) {
                             clearInterval(_time);
                         }
                     },
-                    function() {
+                    function () {
                         _time = setInterval(scroll, _scrolling);
                     }).trigger('mouseleave');
         }

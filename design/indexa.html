@@ -2011,7 +2011,18 @@ $(".already_among").easysroll({
     fadein: false,
     enterStop: true
 });
+//选择户型
+$('.menu_box').on('click','.p_li',function(){
+    $this=$(this);
+    $this.children('.norms_se').show();
+})
+$('.norms_se').on('click','li',function(){
+    $this=$(this);
+    var a=$.trim($this.text());
+    $this.closest('.p_li').find('.quote_select').val(a);
+    $this.parent('ul').fadeOut();
 
+})
 var mySwiper = new Swiper('.swiper-container',{
     slidesPerGroup : 5,
     prevButton:'.swiper-button-prev',

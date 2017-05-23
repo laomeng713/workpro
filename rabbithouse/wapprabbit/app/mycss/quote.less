@@ -19,10 +19,16 @@ input::-webkit-input-placeholder{
   padding: 0.5rem 0;
   background-color: #fff;
   .quote_img {
-    margin: 0.7rem 0 0 2.2rem;
+    padding: 0rem 0rem 0.5rem 1.2rem;
     //padding-left: 3%;
     img {
       width: 9rem;
+    }
+    span{
+      display: block;
+      color:#DF0303 ;
+      font-size: 2.3rem;
+      font-weight: 500;
     }
   }
   .quote_title {
@@ -41,10 +47,44 @@ input::-webkit-input-placeholder{
     height: auto;
   }
 }
+//三步
+.design_step{
+  height: 10rem;
+  //width: 100%;
+  padding: 0 1.5rem;
+  dl{
+    height: 100%;
+    width: 20%;
+    float: left;
+    padding-top: 1.5rem;
+    dt{
+      width: 100%;
+      height: auto;
+      text-align: center;
+      img{
+        width: 80%;
+        height: auto;
+      }
+    }
+    dd{
+      width: 100%;
+      font-size: 1.3rem;
+      color: #646464;
+      text-align: center;
+      padding-top: 1rem;
+    }
+  }
+  .border_off{
+    margin-top: 13%;
+    width: 19%;
+    float: left;
+    border-bottom: 2px solid #CCCCCC;
 
+  }
+}
 .quote_scroll {
+  width: 100%;
   height: 3rem;
-  margin: 0 0;
   line-height: 2.1rem;
   overflow: hidden;
   font-size: 1.4rem;
@@ -63,9 +103,128 @@ input::-webkit-input-placeholder{
     }
   }
 }
+//分割线
+.cutoff_rule{
+  margin: 1.2rem auto;
+  width: 90%;
+  border-bottom: 1px solid #ccc;
+}
+//剩余人数
+.design_count{
+  padding: 0rem 1.5rem;
+  text-align: center;
+  font-size: 2rem;
+  //background: #fff;
+  //border-top: 1px solid #ccc;
+  margin-top: 0.5rem;
+  .num{
+    vertical-align: inherit;
+    display: inline-block;
+    width: 27%;
+    font-size: 0;
+    text-align: center;
+    color: #fff;
+    .design_img{
+      display: inline-block;
+      background: url(http://s1.17house.com/common_h5/images/numbg.png) no-repeat;
+      background-size: 100% 100%;
+      width: 33.3%;
+    }
+    span{
+      display: inline-block;
+      font-size: 2.4rem;
+      line-height: 1.4;
+      color: #fff;
+      padding: 5px;
+    }
+  }
+}
+
+//动画效果******
+.animated {
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.5, 1.5, 1.5);
+    transform: scale3d(1.5, 1.5, 1.5);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@-moz-keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -moz-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.5, 1.5, 1.5);
+    -moz-transform: scale3d(1.5, 1.5, 1.5);
+    transform: scale3d(1.5, 1.5, 1.5);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -moz-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -moz-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.5, 1.5, 1.5);
+    -moz-transform: scale3d(1.5, 1.5, 1.5);
+    transform: scale3d(1.5, 1.5, 1.5);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -moz-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+//动画效果结束******
 
 .quote_list .quote_form {
-  padding: 0 15px;
+  padding: 0 1.5rem;
   background: transparent;
 }
 
@@ -114,7 +273,7 @@ input::-webkit-input-placeholder{
   border: none;
   font-size: 1.6rem;
   color: #fff;
-  background-color: #EA5504;
+  background-color: #DF0303;
   border-radius: 0.4rem;
   -webkit-appearance: none;
   margin-top: 1.3rem;
@@ -322,6 +481,67 @@ input::-webkit-input-placeholder{
   -ms-touch-action:none;
   touch-action:none;
   text-align:center
+}
+
+//友情提示
+.mess_tips{
+  //width: 100%;
+  padding: 0.8rem 1.5rem 0.8rem;
+  height: auto;
+  font-size: 1.2rem;
+  color: #999;
+  line-height: 2rem;
+}
+//图片列表
+.design_list{
+  padding-bottom: 4.5rem;
+  img{
+    width: 100%;
+  }
+  //如何避免
+  .design_content{
+    padding: 0 1.5rem;
+    .design_title{
+      text-align: center;
+      margin: 0 auto;
+      display:block;
+      font-size: 1.8rem;
+      font-weight: bold;
+      height: 3rem;
+      line-height: 3rem;
+      padding: 0.6rem 0rem;
+      border-bottom: 1px solid #CCCCCC;
+    }
+    .content_list{
+      margin-top: 1.2rem;
+      display: -webkit-flex; /* Safari */
+      display: flex;
+      img{
+        width: 5rem;
+        height: 5rem;
+        margin-right: 1.2rem;
+      }
+      p{
+        padding: 1.2rem 0rem;
+        font-size: 1.4rem;
+      }
+    }
+  }
+  //对比
+  .compare_list{
+    margin-top: 1.2rem;
+    padding: 0 1.5rem;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    justify-content:space-between;
+    ul{
+      width: 35%;
+      .content_title{
+        font-size: 1.4rem;
+        font-weight: bold;
+      }
+    }
+  }
 }
 
 
