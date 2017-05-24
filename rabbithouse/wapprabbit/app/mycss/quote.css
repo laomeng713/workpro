@@ -26,7 +26,8 @@ input::-webkit-input-placeholder {
   display: block;
   color: #E12F32 ;
   font-size: 2.3rem;
-  font-weight: 500;
+  font-weight: bold;
+  font-family: 'KaiTi ';
 }
 .quote_header .quote_title {
   color: #282828;
@@ -454,6 +455,10 @@ input::-webkit-input-placeholder {
   font-size: 1.2rem;
   color: #999;
   line-height: 2rem;
+}
+.mess_tips b,
+.mess_tips span {
+  color: #FD7038;
 }
 .design_list {
   padding-bottom: 1.5rem;
