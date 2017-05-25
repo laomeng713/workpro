@@ -1,0 +1,96 @@
+body {
+  background-color: #efefef;
+}
+.photo_header {
+  width: 100%;
+  height: 4.3rem;
+  line-height: 4.3rem;
+  color: #333333;
+  text-align: center;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0px;
+  z-index: 97;
+  background-color: #ffffff;
+}
+.photo_header .back_return {
+  border-left: 0.2rem solid #666;
+  border-bottom: 0.2rem solid #666;
+  width: 1.2rem;
+  height: 1.2rem;
+  display: inline-block;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  margin: 1.4rem 1.5rem;
+  text-indent: -9999px;
+}
+.photo_header h2 {
+  display: inline-block;
+  font-size: 1.6rem;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: 500;
+  width: 20rem;
+  text-overflow: ellipsis;
+}
+.photo_header .tuku_menu {
+  background: url('../../images/header-icon.png') 0px -2rem no-repeat;
+  height: 2rem;
+  width: 2rem;
+  display: block;
+  text-indent: -9999px;
+  margin: 1.15rem 1.1rem;
+  background-size: 100% auto;
+}
+.imgBox {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  background: #fff;
+  max-width: 640px;
+}
+.imgBox ul {
+  height: 100%;
+}
+.imgBox ul li {
+  position: relative;
+  width: 100%;
+  height: 100%!important;
+}
+.imgBox ul li img {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  vertical-align: middle;
+  top: 9%;
+}
+.imgBox ul li .img_title {
+  position: absolute;
+  left: 0;
+  bottom: 4rem;
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  background: rgba(255, 255, 255, 0.5);
+  font-size: 1.1rem;
+  padding: 0 1.2rem;
+  box-sizing: border-box;
+}
+.imgBox ul li .img_title p {
+  float: left;
+  width: 90%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.imgBox ul li .img_title span {
+  position: absolute;
+  right: 1.2rem;
+  bottom: 0;
+}

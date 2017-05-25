@@ -17,10 +17,11 @@ input::-webkit-input-placeholder {
   background-color: #fff;
 }
 .quote_header .quote_img {
-  padding: 0rem 0rem 0.5rem 1.2rem;
+  padding: 0rem 0rem 0rem 1.2rem;
 }
 .quote_header .quote_img img {
   width: 9rem;
+  height: auto;
 }
 .quote_header .quote_img span {
   display: block;
@@ -32,7 +33,7 @@ input::-webkit-input-placeholder {
 .quote_header .quote_title {
   color: #282828;
   float: right;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-right: 0.4rem;
   position: relative;
   font-size: 1.2rem;
@@ -91,7 +92,7 @@ input::-webkit-input-placeholder {
   display: inline-block;
   width: 1.2rem;
   height: 1.2rem;
-  background: url("http://s1.17house.com/common_h5/images/inform_icon1.png");
+  background: url("../../images/inform_icon1.png");
   background-size: 100%;
 }
 .cutoff_rule {
@@ -115,7 +116,7 @@ input::-webkit-input-placeholder {
 }
 .design_count .num .design_img {
   display: inline-block;
-  background: url(http://s1.17house.com/common_h5/images/numbg.png) no-repeat;
+  background: url(../../images/numbg.png) no-repeat;
   background-size: 100% 100%;
   width: 33.3%;
 }
@@ -555,6 +556,17 @@ input::-webkit-input-placeholder {
 }
 .design_list .compare_list ul .content_detail {
   padding-top: 1.2rem;
+}
+.about_list {
+  padding: 0 1.5rem;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+.about_list a {
+  display: inline-block;
+  color: #676664;
+  text-decoration: underline;
 }
 .fixed_btn {
   width: 100%;
