@@ -35,7 +35,7 @@
         <li class="swiper-slide">
             <img src="../images/banner1.jpg" alt=""/>
 
-            <div class="img_title">
+            <div class="img_title ">
                 <p>欧式风景装饰画打造品味玄关</p>
                 <span>
                     <label class="cur_num"></label>/<label class="all_num"></label>
@@ -74,7 +74,15 @@
         </li>
         <li class="swiper-slide">
             <img src="../images/banner5.jpg" alt=""/>
-
+            <div class="img_title">
+                <p>欧式风景装饰画打造品味玄关</p>
+                <span>
+                    <label class="cur_num"></label>/<label class="all_num"></label>
+                </span>
+            </div>
+        </li>
+        <li class="swiper-slide">
+            <img src="../images/banner6.jpg" alt=""/>
             <div class="img_title">
                 <p>欧式风景装饰画打造品味玄关</p>
                 <span>
@@ -84,17 +92,52 @@
         </li>
     </ul>
     <div class="swiper-pagination"></div>
-    <div class="photo_pinch"></div>
+    <div class="photo_pinch">
+    </div>
 </div>
 <!--图片描述-->
 <section class="img_detail">
     <div class="img_info">
         <p class="decoration">
-            <span class="title">图片标签</span>
+            <span class="title">图片标签：</span>
             <span class="content">地中海风格，隔断</span>
         </p>
+        <p class="decoration deco_hide">
+            <span class="title">图片描述：</span>
+            <span class="content">地中海风格的空间隔断方面肯定也必须是对应的风格了，案例中的20款隔断不仅继承了地中海的清新自然风格在实用性方面也不枉多让，美观与实用兼具。</span>
+        </p>
+        <a href="javascript:;" class="more_img">更多</a>
+    </div>
+    <div class="recomm_sec">
+        <h3 class="title">
+            <span>猜您喜欢的美图</span>
+        </h3>
+        <div class="recomm_mt">
+            <a href="">实用隔断设计 20款地中海隔断图片</a>
+            <a href="">小户型巧隔断 51平浪漫地中海婚房</a>
+            <a href="">唯美地中海风 10款客厅镂空隔断效果图</a>
+        </div>
+    </div>
+    <div class="recomm_sec">
+        <h3 class="title">
+            <span>猜你喜欢</span>
+        </h3>
+        <div class="recomm_list clearfix">
+            <a href="">地中海风格隔断</a>
+            <a href="">地中海风格家装图</a>
+            <a href="">地中海风格别墅设计</a>
+            <a href="">地中海风格家具图</a>
+            <a href="">地中海风格卧室装修图片</a>
+        </div>
+    </div>
+    <div class="footer_crumbs">
+        <span class="crumbs_title">兔班长</span>
+        >
+        <span class="crumbs_title">图库频道</span>
     </div>
 </section>
+<!--遮罩层-->
+<div class="popmask"></div>
 <!--固定底部-->
 <aside class="fixed_btn">
     <a href="javascript:;" class="btn_design">
@@ -121,6 +164,27 @@
             $('.all_num').text(total);
         }
     });
+    $('.photo_pinch').click(function(){
+        $this=$(this);
+        if( $this.hasClass('back')){
+            $this.removeClass('back');
+            $('.imgBox ').removeClass('cur');
+            $('.img_detail').hide();
+            $('.img_title').removeClass('cur');
+        }else{
+            $this.addClass('back');
+            $('.img_title').addClass('cur');
+            $('.imgBox ').addClass('cur');
+            $('.img_detail').show();
+            $('html,body').animate({scrollTop:500},300);
+        }
+    })
+    $('.more_img').click(function(){
+        $('.decoration').removeClass('deco_hide');
+        $('.more_img').hide();
+
+    })
+//    console.log($(document).height());
 </script>
 </body>
 </html>

@@ -38,6 +38,14 @@ input::-webkit-input-placeholder {
   position: relative;
   font-size: 1.2rem;
 }
+.quote_header .quote_title a {
+  padding-left: 1.2rem;
+  width: 2.2rem;
+  display: inline-block;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  background: url("../../images/searchbackground.png") no-repeat;
+}
 .quote_banner img {
   width: 100%;
   height: auto;
