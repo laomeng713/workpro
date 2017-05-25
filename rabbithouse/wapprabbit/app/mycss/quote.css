@@ -558,7 +558,7 @@ input::-webkit-input-placeholder {
   padding-top: 1.2rem;
 }
 .about_list {
-  padding: 0 1.5rem;
+  padding: 1.5rem  1.5rem 0 1.5rem;
   display: flex;
   flex-grow: 1;
   justify-content: space-around;
@@ -567,6 +567,15 @@ input::-webkit-input-placeholder {
   display: inline-block;
   color: #676664;
   text-decoration: underline;
+}
+.footer_info {
+  padding-top: 0.6rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #999999;
+}
+.footer_info p {
+  padding: 0.2rem 0;
 }
 .fixed_btn {
   width: 100%;

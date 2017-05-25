@@ -3,12 +3,12 @@ body {
 }
 .photo_header {
   width: 100%;
-  height: 4.3rem;
-  line-height: 4.3rem;
+  height: 4rem;
+  line-height: 4rem;
   color: #333333;
   text-align: center;
   box-sizing: border-box;
-  position: absolute;
+  position: relative;
   top: 0px;
   z-index: 97;
   background-color: #ffffff;
@@ -45,7 +45,7 @@ body {
   background-size: 100% auto;
 }
 .imgBox {
-  position: absolute;
+  position: relative;
   width: 100%;
   overflow: hidden;
   height: 100%;
@@ -93,4 +93,70 @@ body {
   position: absolute;
   right: 1.2rem;
   bottom: 0;
+}
+.imgBox .photo_pinch {
+  width: 3rem;
+  height: 2.9rem;
+  background: url("../../images/change.png") 0 0 no-repeat;
+  background-size: 100% auto;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  position: absolute;
+  bottom: 8rem;
+  right: 0.7rem;
+  z-index: 1000;
+}
+.img_detail {
+  background: #fff;
+  padding-bottom: 6rem;
+}
+.img_detail .img_info {
+  position: relative;
+  padding: 0.5rem 1.2rem;
+  font-size: 1.26rem;
+  line-height: 2;
+}
+.img_detail .img_info .content {
+  color: #999;
+  margin-left: 1rem;
+}
+.fixed_btn {
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 4rem;
+  line-height: 4rem;
+  background: #fff;
+  box-sizing: border-box;
+}
+.fixed_btn a {
+  text-align: center;
+  display: inline-block;
+  width: 50%;
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+.fixed_btn a i {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background: url("../../images/icon.png") no-repeat;
+  background-size: 100%;
+  vertical-align: top;
+  margin: 1rem 0.6rem 0 0;
+}
+.fixed_btn a .icon {
+  background-position: 0 100%;
+}
+.fixed_btn .btn_design {
+  background-color: #EB5F52;
+}
+.fixed_btn .btn_quote {
+  background-color: #EE2D1B;
 }
