@@ -1,4 +1,5 @@
 body {
+  min-height: 100%;
   background-color: #efefef;
 }
 .photo_header {
@@ -230,7 +231,98 @@ body {
   bottom: 0;
   z-index: 97;
   width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.4);
+}
+.headline_box {
+  z-index: 99;
+  display: none;
+  position: absolute;
+  left: 7%;
+  top: 50%;
+  width: 86%;
+  padding: 0 1.2rem 1.8rem 1.2rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.headline_box .close {
+  position: absolute;
+  right: 0;
+  top: -5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  background: url(../../images/close.png) 0 0 no-repeat;
+  background-size: 100%;
+  z-index: 2;
+}
+.headline_box .title {
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  text-align: center;
+  padding-top: 1.4rem;
+  font-weight: normal;
+}
+.headline_box .input_box {
+  position: relative;
+  padding: 0.5rem 1rem;
+  line-height: 2rem;
+  background: #f2f2f2;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+}
+.headline_box .input_box input {
+  font-size: 1.2rem;
+  display: block;
+  width: 100%;
+  height: 2rem;
+  line-height: 2rem;
+  background: #f2f2f2;
+  border-radius: 0.5rem;
+  border: none;
+}
+.headline_box .input_box .square_icon {
+  position: absolute;
+  right: 1rem;
+  top: 0.8rem;
+  font-size: 1.2rem;
+}
+.headline_box .head_btn {
+  display: block;
+  width: 100%;
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+  text-align: center;
+  line-height: 2rem;
+  background: #ee2d1b;
+  color: #fff;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+.headline_box .box_tips {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.headline_box .box_tips label {
+  color: #ee2d1b;
+}
+.error_tips {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.85);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  max-width: 80%;
+  padding: 0.6rem 1.6rem;
+  line-height: 2.4rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff;
+  border-radius: 0.6rem;
+  white-space: nowrap;
+  z-index: 999999999;
 }
 .fixed_btn {
   display: -webkit-flex;

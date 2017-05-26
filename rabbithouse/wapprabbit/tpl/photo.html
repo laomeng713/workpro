@@ -74,6 +74,7 @@
         </li>
         <li class="swiper-slide">
             <img src="../images/banner5.jpg" alt=""/>
+
             <div class="img_title">
                 <p>欧式风景装饰画打造品味玄关</p>
                 <span>
@@ -83,6 +84,7 @@
         </li>
         <li class="swiper-slide">
             <img src="../images/banner6.jpg" alt=""/>
+
             <div class="img_title">
                 <p>欧式风景装饰画打造品味玄关</p>
                 <span>
@@ -102,6 +104,7 @@
             <span class="title">图片标签：</span>
             <span class="content">地中海风格，隔断</span>
         </p>
+
         <p class="decoration deco_hide">
             <span class="title">图片描述：</span>
             <span class="content">地中海风格的空间隔断方面肯定也必须是对应的风格了，案例中的20款隔断不仅继承了地中海的清新自然风格在实用性方面也不枉多让，美观与实用兼具。</span>
@@ -112,6 +115,7 @@
         <h3 class="title">
             <span>猜您喜欢的美图</span>
         </h3>
+
         <div class="recomm_mt">
             <a href="">实用隔断设计 20款地中海隔断图片</a>
             <a href="">小户型巧隔断 51平浪漫地中海婚房</a>
@@ -122,6 +126,7 @@
         <h3 class="title">
             <span>猜你喜欢</span>
         </h3>
+
         <div class="recomm_list clearfix">
             <a href="">地中海风格隔断</a>
             <a href="">地中海风格家装图</a>
@@ -138,6 +143,46 @@
 </section>
 <!--遮罩层-->
 <div class="popmask"></div>
+<!--免费设计-->
+<div class="headline_box" id="design">
+    <a href="javascript:;" class="close"></a>
+
+    <h3 class="title">选风格，填面积，免费得3套设计方案</h3>
+
+    <div class="input_box">
+        <input name="meter" type="tel" maxlength="5" placeholder="房屋面积">
+        <span class="square_icon">㎡</span>
+    </div>
+    <div class="input_box">
+        <input name="phone" type="tel" maxlength="11" placeholder="您的手机号">
+    </div>
+    <a href="javascript:" class="head_btn" onclick="desiginCheck($(this),1)">立即预约</a>
+
+    <p class="box_tips">每日申请前100名，送设计及详细报价</p>
+</div>
+<!--装修报价-->
+<div class="headline_box" id="quote">
+    <a href="javascript:;" class="close"></a>
+
+    <h3 class="title">免费报价清单 10秒轻松获取</h3>
+
+    <div class="input_box">
+        <input name="meter" type="tel" maxlength="5" placeholder="您家的面积">
+        <span class="square_icon">㎡</span>
+    </div>
+    <div class="input_box">
+        <input name="phone" type="tel" maxlength="11" placeholder="您的手机号">
+    </div>
+    <a href="javascript:" class="head_btn" onclick="desiginCheck($(this),2)">立即报价</a>
+
+    <p class="box_tips">
+        今日已有
+        <label>1049</label>
+        人成功获取装修报价服务
+    </p>
+</div>
+<!--错误信息提示-->
+<div class="error_tips">请输入正确的手机号</div>
 <!--固定底部-->
 <aside class="fixed_btn">
     <a href="javascript:;" class="btn_design">
@@ -153,6 +198,57 @@
 <script src="../../../common/js/zepto.min.js"></script>
 <script src="../../../common/js/jquery-1.11.3.min.js"></script>
 <script>
+    //   错误信息提示
+    function error_tips(text) {
+        $('.error_tips').show().text(text).css('left',($(window).width()-$('.error_tips').width())/2);
+        setTimeout(function () {
+            $('.error_tips').hide();
+        }, 2000);
+    }
+    //信息收集
+    function desiginCheck($obj,num) {
+        var $box=$obj.closest(".headline_box");
+        var meter='',phone='';
+        var regPhone=/^1[3578]\d{9}$/;
+        function errCheck(){
+            meter= $.trim($box.find('input[name="meter"]').val());
+            phone= $.trim($box.find('input[name="phone"]').val());
+            if(meter==''){
+                error_tips('面积不能为空');
+                return false;
+            }
+            if(phone==''){
+                error_tips('手机号码不能为空');
+                return false;
+            }
+            if(!regPhone.test(phone)){
+                error_tips('请输入正确的手机号');
+                return false;
+            }
+            var data={
+                meter:meter,
+                phone:phone
+            };
+            console.log(data);
+            $.ajax({
+                type:'post',
+                success:function(){
+                    console.log('success');
+                },
+                error:function(){
+                    console.log('error');
+                }
+            })
+        }
+        switch(num){
+            case 1:
+                errCheck();
+                break;
+            case 2:
+                errCheck();
+                break;
+        }
+    }
     var swiper = new Swiper('.swiper-container', {
         zoom: true,
         zoomMax: 2,
@@ -164,27 +260,39 @@
             $('.all_num').text(total);
         }
     });
-    $('.photo_pinch').click(function(){
-        $this=$(this);
-        if( $this.hasClass('back')){
+    function commonPop(domp) {
+        $('.popmask').show();
+        domp.show().css('top', ($(window).height() - domp.height()) / 2 + $(window).scrollTop());
+    }
+
+    $('.photo_pinch').click(function () {
+        $this = $(this);
+        if ($this.hasClass('back')) {
             $this.removeClass('back');
-            $('.imgBox ').removeClass('cur');
+            $('.imgBox,.img_title').removeClass('cur');
             $('.img_detail').hide();
-            $('.img_title').removeClass('cur');
-        }else{
+            $('.popmask').height($(document).height());
+        } else {
             $this.addClass('back');
-            $('.img_title').addClass('cur');
-            $('.imgBox ').addClass('cur');
+            $('.img_title,.imgBox').addClass('cur');
             $('.img_detail').show();
-            $('html,body').animate({scrollTop:500},300);
+            $('html,body').animate({scrollTop: 500}, 300);
+            $('.popmask').height($(document).height());
         }
     })
-    $('.more_img').click(function(){
+    $('.more_img').click(function () {
         $('.decoration').removeClass('deco_hide');
         $('.more_img').hide();
-
     })
-//    console.log($(document).height());
+
+    $('.fixed_btn').on('click', 'a', function () {
+        var index = $(this).index();
+        commonPop($('.headline_box').eq(index));
+    })
+    $('.close').click(function () {
+        $('.headline_box').hide();
+        $('.popmask').hide();
+    })
 </script>
 </body>
 </html>
