@@ -1,0 +1,403 @@
+a {
+  text-decoration: none;
+  color: #222222;
+}
+.navbar {
+  background-color: #ffffff;
+  height: 38px;
+  line-height: 38px;
+  border-bottom: 1px solid #eeeeee;
+  color: #333333;
+}
+.navbar .select_city,
+.navbar .hot_online {
+  background: url("../images/group_1222.png") no-repeat;
+}
+.navbar .select_city {
+  float: left;
+  width: 95px;
+  position: relative;
+  zoom: 1;
+  background-position: 10px 12px;
+}
+.navbar .select_city .current_city {
+  padding-left: 30px;
+  display: block;
+  width: 55px;
+  height: 39px;
+  line-height: 39px;
+  cursor: pointer;
+  border-left: 1px solid #ffffff;
+}
+.navbar .select_city .current_city .arrow {
+  display: inline-block;
+  margin: 0px 5px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #222222;
+  vertical-align: middle;
+}
+.navbar .select_city .current_city:after {
+  content: "";
+  width: 0;
+  height: 20px;
+  border-left: 1px solid #222222;
+}
+.navbar .hot_online {
+  float: left;
+  width: 180px;
+  padding-left: 20px;
+  background-position: 0 -24px;
+}
+.navbar .nav_search {
+  float: right;
+  width: 310px;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 3px;
+  background: #222222;
+  border-radius: 20px;
+}
+.navbar .nav_search .search_type {
+  float: left;
+  width: 90px;
+}
+.navbar .nav_search .search_type .nav_select {
+  display: block;
+  position: relative;
+  z-index: 21;
+  margin-top: 0;
+  width: 90px !important;
+  height: 30px;
+  color: #ffffff;
+  border-radius: 20px 0 0 0;
+}
+.navbar .nav_search .search_type .nav_select dt,
+.navbar .nav_search .search_type .nav_select dd {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  text-indent: 20px;
+}
+.navbar .nav_search .search_type .nav_select dt {
+  height: 36px;
+  line-height: 33px;
+  position: relative;
+  zoom: 1;
+}
+.navbar .nav_search .search_type .nav_select dt:after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 13px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #ffffff;
+}
+.navbar .nav_search .search_type .nav_select dd {
+  display: none;
+  height: 25px;
+  line-height: 25px;
+  background-color: #fff;
+}
+.navbar .nav_search .search_type .nav_select .hover {
+  color: #ff6600;
+}
+.navbar .nav_search .search_type .nav_select_hover dd {
+  display: block;
+  float: left;
+}
+.navbar .nav_search .search_type .nav_select_hover dt:after {
+  content: "";
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #ffffff;
+  border-top-width: 0;
+}
+.navbar .nav_search .search_text {
+  float: left;
+  width: 165px;
+  height: 30px;
+  line-height: 1.2;
+  margin-left: 5px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 12px;
+  color: #ffffff;
+}
+.navbar .nav_search .search_btn {
+  float: right;
+  width: 40px;
+  height: 30px;
+  border: 0;
+  background: url("../images/group_0407.png") 12px -70px no-repeat;
+}
+.navbar .navbar_nav {
+  float: right;
+  padding-right: 20px;
+}
+.navbar .navbar_nav li {
+  float: left;
+}
+.navbar .navbar_nav .register_btn {
+  padding-left: 10px;
+}
+.navbar .navbar_nav .register_btn:before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 12px;
+  margin-right: 10px;
+  border-left: 1px solid #222222;
+  vertical-align: middle;
+  margin-bottom: 3px;
+}
+.header {
+  position: relative;
+  zoom: 1;
+  height: 88px;
+  background: #ffffff;
+}
+.header .header_cont {
+  height: 88px;
+}
+.header .header_cont .header_logo {
+  width: 260px;
+  height: 56px;
+  float: left;
+  margin-top: 15px;
+}
+.header .header_cont .header_logo a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: url("../images/qq_gjj_logo.png") no-repeat;
+  text-indent: -9999em;
+  overflow: hidden;
+}
+.header .header_cont .navigation_wrap {
+  float: right;
+  width: 780px;
+  height: 88px;
+}
+.header .header_cont .navigation_wrap li {
+  float: left;
+  width: 130px;
+  height: 48px;
+  line-height: 48px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  display: inline;
+  position: relative;
+  zoom: 1;
+}
+.header .header_cont .navigation_wrap li a {
+  position: relative;
+  zoom: 1;
+  display: block;
+  width: 100%;
+  height: 64px;
+  text-align: center;
+  font-size: 16px;
+}
+.header .header_cont .navigation_wrap li a .nav_arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid #222222;
+  margin: 0 0 2px 8px;
+  vertical-align: middle;
+}
+.header .header_cont .navigation_wrap li a.active {
+  color: #ff6600;
+}
+.header .header_cont .navigation_wrap li:hover a {
+  color: #ff6600;
+  border-bottom: 4px solid #ff6600;
+}
+.csm_slide {
+  position: relative;
+  zoom: 1;
+  height: 470px;
+  background-color: #cbcbcb;
+}
+.csm_slide a {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #ff6600;
+}
+.slide_form {
+  position: absolute;
+  left: 50%;
+  top: 40px;
+  margin-left: -600px;
+  width: 300px;
+  height: 395px;
+  z-index: 3;
+  background: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+}
+.slide_form .form_intro {
+  position: relative;
+  display: block;
+  background: #222222;
+  width: 300px;
+  height: 56px;
+  padding-top: 14px;
+  line-height: 1.3;
+  text-align: center;
+  color: #fcc084;
+  font-size: 16px;
+  border-radius: 3px 3px 0 0;
+  font-family: "Noto Sans CJK SC Light", "Source Han Sans CN Light", "Microsoft Yahei";
+  zoom: 1;
+}
+.slide_form .form_intro .p1 {
+  font-size: 16px;
+}
+.slide_form .form_intro:before {
+  content: "+";
+  position: absolute;
+  left: 50px;
+  top: 30px;
+  color: #fcc084;
+  font-size: 12px;
+  font-family: arial;
+}
+.slide_form .form_intro:after {
+  content: "+";
+  position: absolute;
+  right: 50px;
+  top: 30px;
+  color: #fcc084;
+  font-size: 12px;
+  font-family: arial;
+}
+.slide_form .form_title {
+  line-height: 48px;
+  padding-top: 7px;
+  color: #000000;
+  text-align: center;
+  font-size: 24px;
+}
+.slide_form .form_index {
+  color: #666;
+  text-align: center;
+  font-size: 14px;
+}
+.slide_form .slide_form_select {
+  padding: 5px 18px 20px;
+}
+.slide_form .slide_form_select input {
+  width: 240px;
+  margin-top: 10px;
+  outline-color: #ff6600;
+}
+.slide_form .slide_form_select .txt {
+  border: 1px solid #eeeeee;
+  padding: 5px 10px;
+  height: 30px;
+  line-height: 1.2;
+  font-size: 14px;
+  border-radius: 3px;
+}
+.slide_form .slide_form_select select {
+  width: 129px;
+  margin-top: 10px;
+  padding: 8px 10px 9px;
+  border: 1px solid #eeeeee;
+  color: #666;
+  border-radius: 3px;
+  background: #ffffff url("../images/select_aw_ico2.png") no-repeat right center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  font-size: 14px;
+  background-image: none \9;
+  background-color: #ffffff \9;
+  outline-color: #ff6600;
+}
+.slide_form .slide_form_select select option {
+  padding: 0 10px;
+  color: #999999;
+  background: #ffffff;
+}
+.slide_form .slide_form_select .subBtn {
+  width: 260px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  background-color: #ff6600;
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 0 20px;
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.slide_form .slide_form_select .user_num {
+  padding-top: 5px;
+  line-height: 1.6;
+  text-align: center;
+  font-size: 14px;
+  color: #333333;
+}
+.slide_form .slide_form_select .user_num em {
+  padding: 0 10px;
+  font-size: 18px;
+  color: #ff6600;
+}
+.guide_entrance {
+  padding: 50px 0 60px;
+}
+.guide_entrance li {
+  float: left;
+  width: 300px;
+  text-align: center;
+  position: relative;
+  zoom: 1;
+  font-size: 24px;
+  font-family: "Noto Sans CJK SC Light", "Source Han Sans CN Light", "Microsoft Yahei";
+}
+.guide_entrance li img {
+  width: 286px;
+  height: 150px;
+}
+.guide_entrance li a {
+  display: block;
+  padding-left: 8px;
+  width: 286px;
+  height: 150px;
+  color: #999999;
+}
+.guide_entrance li a .default_img {
+  display: block;
+}
+.guide_entrance li a .hover_img {
+  display: none;
+}
+.guide_entrance li a:hover .default_img {
+  display: none;
+}
+.guide_entrance li a:hover .hover_img {
+  display: block;
+}
