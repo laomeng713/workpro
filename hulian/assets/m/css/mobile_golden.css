@@ -75,10 +75,16 @@ ul{ list-style-type:none}
 }
 
 input:focus{outline: none;}
-
+.index_banner li a{
+    display: block;
+    height: 100%;
+}
 .index_banner li img{
+    display: block;
+    /*max-width: 100%;*/
     width: 100%;
-    height: auto;
+    height: 100%;
+    /*height: auto;*/
 }
 .swiper-pagination-bullet-active {
     opacity: 1;
@@ -457,16 +463,13 @@ input:focus{outline: none;}
     font-size: 1.8rem;
 }
 .casetit .case_more{
-    background: url(../../../assets/m/img/chat.png) no-repeat;
-    background-size: 100%;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
+   color: #ffffff;
     z-index: 6;
     text-align: center;
     width: 3.5rem;
     line-height: 3.5rem;
     height: 3.5rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-top: 0.3rem;
 
 }
@@ -510,6 +513,13 @@ ul{ margin:0; padding:0; list-style-type:none}
     padding-bottom: 3rem;
     text-align: center;
     margin-bottom: 2rem;
+}
+.ff .line{
+    margin:0 auto;
+    padding-bottom: 0.5rem;
+    display: block;
+    width: 90%;
+    border-top: 1px solid #ccc;
 }
 .ff p{
     /*color: #CFAA75;*/
@@ -682,7 +692,7 @@ ul{ margin:0; padding:0; list-style-type:none}
 /*面包屑导航*/
 
 .crumbs{
-    margin: 10px 15px 15px 15px;
+    margin: 4.4rem 1.2rem 1.2rem 1.2rem;
     /*height: 1.2rem;*/
     /*line-height: 1.2rem;*/
 }
