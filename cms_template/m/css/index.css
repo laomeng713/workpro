@@ -1,0 +1,62 @@
+.main_header {
+  height: 3.8rem;
+  padding: 1.2rem 1.2rem 0;
+  position: relative;
+}
+.main_header .header_icon {
+  width: 11.3rem;
+  height: 2.3rem;
+  margin-top: 0.2rem;
+  float: left;
+  background: url("../images/logo_tg.png") no-repeat;
+  background-size: contain;
+}
+.main_header .location {
+  float: left;
+  font-size: 1.4rem;
+  height: 2rem;
+  width: 5.6rem;
+  line-height: 2rem;
+  margin-left: 1.4rem;
+  margin-top: 0.7rem;
+}
+.main_header .location em {
+  display: inline-block;
+  font-size: 1.4rem;
+  width: 1.2rem;
+  height: 0.9rem;
+  line-height: 2rem;
+  margin-bottom: -0.3rem;
+  margin-left: 0.3rem;
+  background: url("../images/img_script.png") -13.5rem -7rem no-repeat;
+  background-size: 28rem 28rem;
+}
+.main_header .menu_category {
+  position: absolute;
+  height: 2.5rem;
+  width: 2.5rem;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: url("../images/h5-icos2.png") 0 -22.5rem no-repeat;
+  background-size: 3rem 44rem;
+}
+.index_swiper {
+  width: 100%;
+  height: 16rem;
+}
+.index_swiper img {
+  width: 100%;
+  height: auto;
+}
+.index_swiper .swiper-pagination {
+  bottom: 2.5rem;
+}
+.index_swiper .swiper-pagination .swiper-pagination-bullet {
+  width: 0.7rem;
+  height: 0.7rem;
+  margin: 0 0.4rem;
+}
+.index_swiper .swiper-pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: #ffffff;
+}
