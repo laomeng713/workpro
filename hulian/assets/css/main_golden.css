@@ -313,7 +313,9 @@ a{color: #666;}
     /*overflow: hidden;*/
     /*padding: 0 10px;*/
 }
-
+.chinacon .swiper-wrapper{
+    height: auto;
+}
 .chinacon ul li {
     float: left;
     width: 290px;
