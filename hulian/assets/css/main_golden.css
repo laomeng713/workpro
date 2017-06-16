@@ -229,7 +229,7 @@ a{color: #666;}
 }
 
 .type_List {
-    padding-top: 20px;
+    /*padding-top: 20px;*/
     text-align: center;
     font-style: normal;
     font-weight: normal
@@ -623,7 +623,7 @@ a{color: #666;}
     display: block;
     padding-right: 20px;
     text-transform: uppercase;
-    color: #CFAA75;
+    color: #fff;
 }
 
 .type ul li a:hover, .type ul li a.hover {
@@ -680,94 +680,7 @@ a{color: #666;}
     background: #E0BF89;
 }
 
-/*手机收集*/
-/*.collect_info{*/
-    /*display: none;*/
-    /*width: 100%;*/
-    /*height: 100px;*/
-    /*/!*background-color: #A8C6E8;*!/*/
-    /*/!*background-color: #333;*!/*/
-    /*position: fixed;*/
-    /*bottom: -1px;*/
-    /*left: 0;*/
-    /*right: 0;*/
-    /*z-index: 100;*/
-    /*opacity: 0.9;*/
-    /*background:#333 url(../images/background.png) no-repeat;*/
-/*}*/
-/*.collect_info .collect_contain{*/
-    /*width: 1100px;*/
-    /*margin: 0 auto;*/
-    /*text-align: center;*/
-    /*height: 100%;*/
-/*}*/
-/*.collect_info .collect_contain .collect_left{*/
-    /*box-sizing: border-box;*/
-    /*padding: 10px 10px;*/
-    /*float: left;*/
-    /*height: 100%;*/
-    /*width: 500px;*/
-/*}*/
-/*.collect_info .collect_contain .collect_left p{*/
-    /*font-size: 25px;*/
-    /*font-weight: bold;*/
-    /*font-style: oblique;*/
 
-/*}*/
-/*.collect_info .collect_contain .collect_left .text_top{*/
-    /*color: #CFAA75;*/
-/*}*/
-/*.collect_info .collect_contain .collect_left .text_bottom{*/
-    /*color: #E0BF89;*/
-/*}*/
-/*.collect_info .collect_contain .collect_right{*/
-    /*float: left;*/
-    /*height: 100%;*/
-    /*width: 500px;*/
-    /*position: relative;*/
-    /*/!*padding-left: 30px;*!/*/
-/*}*/
-/*.collect_info .collect_contain .collect_right input{*/
-    /*display: inline-block;*/
-    /*width: 200px;*/
-    /*height: 35px;*/
-    /*padding-left: 4px;*/
-    /*color: #c1bfbf;*/
-    /*font-size: 14px;*/
-    /*border: 0px #000 solid;*/
-    /*outline: none;*/
-    /*margin-right: 20px;*/
-    /*margin-top: 35px;*/
-    /*border-radius: 5px;*/
-/*}*/
-/*.collect_info .collect_contain .collect_right a{*/
-    /*display: inline-block;*/
-    /*width: 40px;*/
-    /*height: 40px;*/
-    /*color: #ffffff;*/
-    /*background-color: #CFAA75;*/
-    /*border-radius: 5px;*/
-    /*text-align: center;*/
-    /*font-size: 18px;*/
-    /*line-height: 22px;*/
-    /*padding: 10px 10px;*/
-    /*position: absolute;*/
-    /*top: 20px;*/
-    /*right: -35px;*/
-/*}*/
-/*.collect_info .collect_contain .collect_right .err_tips{*/
-    /*color: #ffffff;*/
-    /*font-size: 14px;*/
-/*}*/
-/*.close{*/
-    /*display: block;*/
-    /*position: absolute;*/
-    /*top: 0px;*/
-    /*right: 30px;*/
-    /*font-size: 25px;*/
-    /*color: #ffffff;*/
-    /*cursor: pointer;*/
-/*}*/
 /*底部列表新闻*/
 .latestNewsList {
     background: url(../images/a6fde-8116.png) repeat-y center top;
@@ -898,61 +811,7 @@ a{color: #666;}
 .slide_help:hover a{
     color: #fff;
 }
-/*右侧功能列表*/
-/*.right_ads{
-    width: 74px;
-    /*height: 222px;
-    position: fixed;
-    right: 0px;
-    bottom: 35px;
-    background-color:#FF6600;
-    color: #fff;
-    z-index: 100;
-}
-.right_ads li{
-    width: 74px;
-    height: 74px;
-    border-bottom: 1px solid #ffffff;
-}
-.right_ads .right_service{
-    background: url(../images/icon1_01.png) no-repeat;
-    background-size: 70%;
-    background-position: 10px 12px;
-}
-.right_ads .right_order{
-    background: url(../images/icon1_02.png) no-repeat;
-    background-size: 70%;
-    background-position: 10px 12px;
-}
-.right_ads .right_help{
-    background: url(../images/icon3.png) no-repeat;
-    background-size: 70%;
-    background-position: 10px 12px;
-    display: none;
-}
 
-.right_ads li a{
-    opacity: 0;
-    text-align: center;
-    color: #ffffff;
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    display: block;
-    padding: 15px 20px;
-    font-size: 16px;
-    line-height: 22px;
-}
-.right_ads li:hover{
-    background:none;
-}
-.right_ads li:hover a{
-    opacity: 1;
-}
-.right_ads li:last-child{
-    border-bottom:none;
-}
-*/
 /*关于我们*/
 .about{
     width: 1200px;
@@ -1442,8 +1301,8 @@ a{color: #666;}
     color: #ffffff;
     border-radius: 10px;
     font-size: 22px;
-
 }
+
 
 
 

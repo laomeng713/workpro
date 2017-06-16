@@ -141,11 +141,11 @@ a {
   width: 222px;
   height: 56px;
   margin-top: 32px;
-  background: url(../../images/logo.png) no-repeat;
+  margin-left: 20px;
 }
 .logo .logo_center {
   position: relative;
-  margin: 40px 0 0 146px;
+  margin: 40px 0 0 120px;
   height: 36px;
   border: 2px solid #df0303;
 }
