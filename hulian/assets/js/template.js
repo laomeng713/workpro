@@ -157,6 +157,11 @@ $('.order_pre').click(function () {
     $('.step_detail span').removeClass('active').eq(0).addClass('active');
 
 })
+$('.slide_help a').mouseover(function(){
+    $(this).addClass('cur').siblings('a').removeClass('cur');
+}).mouseleave(function(){
+    $('.slide_help a').removeClass('cur');
+})
 
 
 
